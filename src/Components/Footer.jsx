@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <>
-      <div className="FooterMainDiv">
+      <div className="FooterMainDiv reveal ">
         <div className="container max-w-7xl mx-auto px-4">
           <div className="FooterSplit">
             <div className="FooterInnerDiv">

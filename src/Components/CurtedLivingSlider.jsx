@@ -30,7 +30,7 @@ export default function CurtedLivingSlider() {
   };
   return (
     <>
-      <div className="curtedSectionMainRowBg">
+      <div className="curtedSectionMainRowBg reveal ">
         <div className="container max-w-7xl mx-auto px-4 ">
           <div className="curtsectionrow">
             <div className="curtSliderLeftSection">

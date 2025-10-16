@@ -1,7 +1,20 @@
+import { gsap } from "gsap";
+import { useEffect, useRef } from "react";
+
 export default function WhatMakesKeyStonesUnique() {
+
+  const boxRef = useRef(null);
+
+    useEffect(() => {
+    gsap.fromTo(
+      boxRef.current,
+      { opacity: 0, y: 100 },
+      { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
+    );
+  }, []);
   return (
     <>
-      <div className="whatsmakeSectionBG">
+      <div className="whatsmakeSectionBG reveal "  ref={boxRef}>
         <div className="container max-w-7xl mx-auto px-4 ">
           <div className="whatMakesHeadingMainRow">
             <h5 className="secondHeadingText whatMakesHeading1">What Makes</h5>

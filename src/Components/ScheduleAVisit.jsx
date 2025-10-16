@@ -1,7 +1,7 @@
 export default function ScheduleAvisit() {
   return (
     <>
-      <div className="schudleVisitsection">
+      <div className="schudleVisitsection reveal">
         <div className="container max-w-7xl mx-auto px-4 scheduleAvisitrow ">
           <div className="schdeuleMainrowsection">
             <h3 className="text-center mainheadingText textTransform text-bold">

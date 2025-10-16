@@ -31,7 +31,7 @@ export default function TestimonalSlider() {
   };
   return (
     <>
-      <div className="testimonalFullSection">
+      <div className="testimonalFullSection reveal ">
         <div className="container max-w-7xl mx-auto px-4 testimonalRow">
           <div>
             <h3 className="text-center mainheadingText textTransform ">

@@ -51,7 +51,7 @@ export default function LiveThoughtFul() {
 
   return (
     <>
-      <div className="LiveThoughtsBg">
+      <div className="LiveThoughtsBg reveal ">
         <div className="container max-w-7xl mx-auto px-4 ">
           <div className="liveThoughtsContents">
             <h3 className="text-left mainheadingText textTransform text-[#fff]">
