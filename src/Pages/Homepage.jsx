@@ -8,6 +8,8 @@ import WhatMakesKeyStonesUnique from "../Components/WhatMakesKeyStoneUnqiue";
 export default function Homepage() {
   return (
     <>
+
+    <></>
       <WhatMakesKeyStonesUnique />
       <LiveThoughtFul />
       <CurtedLivingSlider />
