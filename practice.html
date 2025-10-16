@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>GSAP Text Stroke → Fill</title>
+
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@700;800&display=swap");
+
+      :root {
+        --bg1: #aa3bb1;
+        --bg2: #582a7e;
+        --stroke-color: #000;
+        --fill-color: #f6bdfa;
+      }
+
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, var(--bg1), var(--bg2));
+        font-family: "Alexandria", system-ui, sans-serif;
+      }
+
+      .wrap {
+        width: min(900px, 90vw);
+        text-align: center;
+        padding: 3rem 1rem;
+        box-sizing: border-box;
+      }
+
+      .title {
+        display: inline-block;
+        width: 50%; /* your requested 50% width so it breaks into lines */
+        min-width: 260px;
+        color: transparent; /* keep base transparent so we rely on layers */
+        position: relative;
+        line-height: 1.05;
+        font-weight: 800;
+        font-size: clamp(40px, 8vw, 80px);
+        text-transform: uppercase;
+        margin: 0 auto;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      /* stroked (bottom) layer */
+      .title .stroke {
+        position: relative;
+        z-index: 1;
+        -webkit-text-stroke: 2.2px var(--stroke-color);
+        color: transparent;
+        pointer-events: none;
+      }
+
+      /* filled (top) layer that will be revealed */
+      .title .fill {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        overflow: hidden;
+        pointer-events: none;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+      }
+
+      /* the actual colored text inside the reveal mask */
+      .title .fill .inner {
+        color: var(--fill-color);
+        -webkit-text-stroke: 0px transparent;
+        display: block;
+        white-space: pre-wrap; /* allow wrapping */
+        width: 100%;
+      }
+
+      /* the mask div we'll animate: starts with width 0 and reveals to 100% */
+      .reveal {
+        width: 0%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      /* reload button */
+      .reload {
+        margin-top: 1.5rem;
+        display: inline-block;
+        background: #fff;
+        border-radius: 18px;
+        padding: 8px 14px;
+        font-size: 12px;
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      /* ensure stacked lines align identically */
+      .stroke,
+      .fill .inner {
+        display: block;
+        text-align: center;
+        line-height: 1.05;
+        letter-spacing: 0.02em;
+      }
+
+      /* accessibility: user-select disabled to avoid selection while animating */
+      .title * {
+        user-select: none;
+        -webkit-user-select: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- Each line separated by newline will wrap inside the 50% box.
+         You can also force breaks with <br/> inside stroke/fill text. -->
+      <div class="title" id="animatedTitle" aria-hidden="false">
+        <!-- stroked text (visible initially) -->
+        <div class="stroke" id="strokeText">KEYSTONE PROMOTERS</div>
+
+        <!-- fill layer that will be revealed left->right -->
+        <div class="fill" aria-hidden="true">
+          <div class="reveal" id="revealMask">
+            <div class="inner">KEYSTONE PROMOTERS</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center">
+        <button class="reload" id="replayBtn">Reload</button>
+      </div>
+    </div>
+
+    <script>
+      // GSAP timeline: draw stroke (simulated) then reveal fill left->right.
+      // We simulate "stroke drawing" by animating a clipPath-like trick:
+      // first animate stroke subtle fade-in / glow to mimic drawing,
+      // then animate the reveal mask width from 0% → 100%.
+
+      const stroke = document.getElementById("strokeText");
+      const reveal = document.getElementById("revealMask");
+      const replay = document.getElementById("replayBtn");
+
+      // optional: split text lines or letters for advanced stagger (not required)
+      // Here we animate the whole mask; for per-line stagger you could create
+      // multiple .reveal masks per line.
+
+      function playTimeline() {
+        // reset
+        gsap.killTweensOf([stroke, reveal]);
+        gsap.set(stroke, {
+          autoAlpha: 1,
+          filter: "drop-shadow(0 0 0px rgba(0,0,0,0))",
+        });
+        gsap.set(reveal, { width: "0%" });
+
+        // timeline
+        const tl = gsap.timeline();
+
+        // 1) subtle "stroke draw" effect: animate a stroke glow and slight dash (fake)
+        tl.fromTo(
+          stroke,
+          {
+            autoAlpha: 0.6,
+            filter: "drop-shadow(0 0 0px rgba(0,0,0,0))",
+            y: -4,
+          },
+          {
+            duration: 0.9,
+            autoAlpha: 1,
+            filter: "drop-shadow(0 0 12px rgba(0,0,0,0.18))",
+            y: 0,
+            ease: "power2.out",
+          }
+        );
+
+        // small pause, then reveal fill left->right with ease and slight skew
+        tl.to(
+          reveal,
+          {
+            duration: 1.6,
+            width: "100%",
+            ease: "power2.out",
+            onStart() {
+              // You could also animate stroke thickness to fade while fill comes in
+              gsap.to(stroke, {
+                duration: 0.9,
+                webkitTextStroke: "0px",
+                ease: "power1.out",
+              });
+            },
+          },
+          "+=0.15"
+        );
+
+        // final tiny flourish
+        tl.to(
+          reveal,
+          {
+            duration: 0.35,
+            scaleY: 1.01,
+            transformOrigin: "50% 50%",
+            yoyo: true,
+            repeat: 1,
+            ease: "sine.inOut",
+          },
+          "-=0.2"
+        );
+      }
+
+      playTimeline();
+
+      replay.addEventListener("click", () => {
+        playTimeline();
+      });
+
+      // Optional: play again when the element scrolls into view (simple)
+      // If you want scroll-triggered behavior, GSAP ScrollTrigger plugin is ideal
+      // but it needs plugin script. We can implement a simple IntersectionObserver:
+      const obs = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((ent) => {
+            if (ent.isIntersecting) {
+              // Play only once when entering view
+              playTimeline();
+            }
+          });
+        },
+        { threshold: 0.6 }
+      );
+
+      obs.observe(document.getElementById("animatedTitle"));
+    </script>
+  </body>
+</html>

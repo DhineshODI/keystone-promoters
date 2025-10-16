@@ -1,0 +1,608 @@
+.mainheadingText {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.secondHeadingText {
+  font-family: "Alexandria", sans-serif;
+  font-size: 64px;
+  line-height: 1;
+}
+
+.subHeadingText {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+.textTransform {
+  text-transform: uppercase;
+}
+
+/* testimonal-Slider */
+
+.testimonalFullSection {
+  background-image: url("/public/images/homepage/testimonal-banner.jpg");
+  height: 837px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .testimonalFullSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/public/images/homepage/testimonal-banner.jpg");
+  background-size: contain;
+  background-position: center;
+  z-index: -1;
+} */
+
+.testimonalSliderContainer {
+  width: 54%;
+  margin-top: 100px;
+  margin-left: 5%;
+}
+
+.testimonalPersonImage {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  object-fit: cover;
+}
+
+.testimonalPersonImagediv {
+  border: 5px solid #e5e5e7;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  position: relative;
+}
+
+.testimonalPersonImagediv::before {
+  content: "";
+  position: absolute;
+  width: 179%;
+  height: 1px;
+  background: #e9e9e9;
+  top: 50%;
+  right: -138px;
+}
+
+.youtubeIcontestimonal {
+  width: 50px;
+  height: 32px;
+}
+
+.testimonalSectionName {
+  background-color: #b26dac;
+  width: max-content;
+  padding: 10px 25px;
+  margin-top: 30px;
+}
+
+.testimonalSectionName h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 22.5px;
+  font-weight: bold;
+  color: #f5f5f3;
+  line-height: 1;
+}
+
+.testimonalSectionName p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #f5f5f3;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-top: 6px;
+}
+
+.testimonalContent {
+  padding: 20px 35px;
+}
+
+.testimonalSliderborder {
+  border: 1px solid #d4d4d4;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  width: 100%;
+  background: #ffffff;
+}
+
+.testimonalPersonImageContainer {
+  margin-top: 20px;
+}
+
+.testimonalSlidersSlide {
+  width: 88% !important;
+}
+
+.testimonalContent .subHeadingText {
+  color: #636465;
+}
+
+.testimonalRow .secondHeadingText {
+  color: #b26eac;
+}
+
+.testimonalFullSection .mainheadingText {
+  color: #1d1f22;
+}
+
+/* testimonal-Slider */
+
+/* schedule A visitrow */
+
+.schdeuleMainrowsection {
+  padding-top: 100px;
+}
+
+.scheduleAvisitrow .mainheadingText {
+  color: #fafafa;
+}
+
+.scheduleAvisitrow .secondHeadingText {
+  color: #f9f9f9;
+  width: 68%;
+  line-height: 0.9;
+  margin-top: 10px;
+}
+
+.schudleVisitsection {
+  /* background-color: #b26eac; */
+  /* margin: 60px 0; */
+  background-image: url("/public/images/homepage/cta-banner.jpg");
+  height: 800px;
+}
+
+.schudleVisitsection .container {
+  /* padding-top: 100px; */
+}
+
+.schudleVisitsection .subHeadingText {
+  color: #fafafa;
+  width: 50%;
+  margin-top: 6px;
+}
+
+.sechondHeadingMain {
+  display: flex;
+  justify-content: center;
+}
+
+.scheduleaVisitbutton {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.scheduleaVisitbutton button {
+  background-color: #fff;
+  width: 156px;
+  height: 46px;
+  border: 1px solid #7c4c78;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  color: #363435;
+  letter-spacing: 1px;
+}
+
+/* schedule A visitrow */
+
+/* CurtSlider- Section */
+
+.curtedSectionMainRowBg {
+  background-image: url("/public/images/homepage/cursedBanner.jpg");
+  height: 895px;
+}
+
+.curtsectionrow {
+  display: flex;
+  padding-top: 100px;
+}
+
+.curtSliderLeftSection {
+  margin-left: 9%;
+}
+
+.curtSliderLeftSection .secondHeadingText {
+  text-transform: uppercase;
+}
+
+.curtLivingSlider {
+  width: 50%;
+}
+
+.curatedSliderContainer {
+  width: 350px;
+}
+
+.curatedSliderContainer {
+  border: 8px solid transparent;
+  position: relative;
+}
+
+.curatedSliderContainer::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: -8px;
+  width: 104%;
+  height: 10%;
+  border-bottom: 8px solid #a24f9b;
+  border-left: 8px solid #a24f9b;
+  border-right: 8px solid #a24f9b;
+  box-sizing: border-box;
+}
+
+.natureIntergreated {
+  position: absolute;
+  background-color: #b26eac;
+  left: 20px;
+  padding: 0px 8px;
+  font-family: "Alexandria", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 1.1;
+}
+
+.natureIntergreated:nth-child(2) {
+  top: 20px;
+}
+
+.natureIntergreated:nth-child(3) {
+  top: 46px; /* adjust spacing as needed */
+}
+
+.natureIntergreated:nth-child(4) {
+  top: 72px; /* adjust spacing as needed */
+}
+
+.curtSliderLeftSection .secondHeadingText {
+  width: 30%;
+  color: #b26eac;
+  line-height: 0.9;
+  font-weight: 600;
+}
+
+.curtSliderLeftSection .subHeadingText {
+  width: 59%;
+  margin-top: 30px;
+  color: #636465;
+}
+/* CurtSlider- Section */
+
+/* Footer-Css */
+
+.FooterMainDiv {
+  background-color: #121212;
+  padding: 90px 0;
+}
+
+.FooterInnerDiv {
+  position: relative;
+}
+
+.FooterInnerDiv h5 {
+  color: #d5d5d5;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.footerListsul li {
+  color: #cbcbcb;
+  color: #8b8b8b;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+.footerListsul {
+  display: flex;
+  column-gap: 30px;
+  margin-top: 10px;
+}
+
+.FooterSplit {
+  display: flex;
+  column-gap: 7%;
+  justify-content: center;
+}
+
+.FooterInnerDiv::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -56px;
+  width: 1.5px;
+  height: 100%;
+  background-color: #222222;
+}
+
+.footercopyRight {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 75px;
+  position: relative;
+  margin-left: 1.5%;
+  margin-right: 5%;
+}
+
+.footercopyRight .subHeadingText {
+  color: #8b8b8b;
+  text-transform: uppercase;
+}
+
+.designByOpendesigns {
+  display: flex;
+  column-gap: 6px;
+  align-items: center;
+}
+
+.iconsFooters {
+  display: flex;
+  column-gap: 10px;
+}
+
+.iconsFooters img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.iconsMainDivFooter {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.footercopyRight::before {
+  content: "";
+  position: absolute;
+  top: -32px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #222222;
+}
+
+.text-hover-underline:hover {
+  cursor: pointer;
+}
+
+.text-hover-underline {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  width: max-content;
+}
+
+.text-hover-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0; /* Adjust depending on font */
+  width: 0;
+  height: 2px;
+  background-color: #8f8f8f; /* underline color */
+  transition: width 0.3s ease;
+}
+
+.text-hover-underline:hover::after {
+  width: 100%;
+}
+
+/* Footer-Css */
+
+/* What Makes keystone Unique */
+
+.whatMakesHeading1 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #b26eac;
+  font-weight: 600;
+}
+
+.whatMakesHeading2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #1d1f22;
+  font-weight: 600;
+  line-height: 0.7;
+}
+
+.WhatMakesKeyStonesFlex {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.WhatMakesKeyStonesFlex p {
+  width: 70%;
+}
+
+.whatsmakeSectionBG {
+  background-image: url("/public/images/homepage/seond-banner.jpg");
+  height: 1120px;
+}
+
+.whatMakesHeadingMainRow {
+  padding-top: 100px;
+}
+
+.FirstcontentWhatMakesSection .secondHeadingText {
+  text-transform: uppercase;
+  line-height: 0.8;
+}
+
+.FirstcontentWhatMakesSection .subHeadingText {
+  text-transform: uppercase;
+  background-color: #773770;
+  color: #fff;
+  width: max-content;
+  padding: 0 5px;
+  line-height: 1.1;
+}
+
+.FirstcontentWhatMakesSection {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  column-gap: 26%;
+}
+
+.FlexFirstcontentWhatMakesSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 50%;
+}
+
+.FlexFirstcontentWhatMakesSection:nth-child(2) {
+  align-items: flex-start;
+}
+
+.FirstcontentWhatMakesSection.lastSectionWhatMakes {
+  justify-content: center;
+  width: 100%;
+}
+
+.lastSectionWhatMakes .FlexFirstcontentWhatMakesSection {
+  width: max-content;
+  margin-top: 50px;
+  align-items: center;
+}
+
+/* What Makes keystone Unique */
+
+/* Live The ThoughtFull */
+
+.yearsScrollText {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 60px;
+  position: relative;
+}
+.yearsScrollText::before {
+  content: "";
+  position: absolute;
+  bottom: -27px;
+  left: -88px;
+  width: 113%;
+  height: 2px;
+  height: 1.0px;
+  background-color: #a7718a;
+}
+
+.yearsScrollText:last-child:before {
+  content: none;
+}
+
+.yearsScrollText h6 {
+  font-size: 200px;
+  line-height: 0.75;
+  color: #fff;
+}
+
+.yearsScrollText span {
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 300;
+  width: 39%;
+  line-height: 0.9;
+  color: #fff;
+  margin-left: 11px;
+}
+
+.yearsScrollText.projectsScroll h6 {
+  font-size: 95px;
+  line-height: 0.75;
+}
+
+.yearsScrollText.projectsScroll::before {
+  font-size: 95px;
+  line-height: 0.75;
+}
+
+.LiveThoughtFlex {
+  display: flex;
+  align-items: center;
+  column-gap: 6%;
+  margin-top: 20px;
+}
+
+.LiveThoughtsBg {
+  background-color: #a7578f;
+  padding: 100px 0;
+}
+
+.yearsScrollText.projectsScroll span {
+  font-size: 19px;
+  color: #fff;
+  width: 24%;
+  line-height: 1;
+}
+
+.LiveThoughtsBg .secondHeadingText {
+  text-transform: uppercase;
+  line-height: 0.8;
+  color: #fff;
+  position: relative;
+}
+
+.LiveKeystonePromoters {
+  margin-top: 10px;
+}
+
+.LiveThoughtsBg .mainheadingText {
+  font-weight: 500;
+}
+
+.LiveThoughtsBg .subHeadingText {
+  color: #ffffff;
+  line-height: 1.3;
+  width: 83%;
+  margin-top: 20px;
+  font-weight: 300;
+}
+
+.LiveThoughtFlex .secondHeadingText::before {
+  content: "+";
+  position: absolute;
+  top: -13px;
+  right: -7px;
+  font-size: 33px;
+  font-weight: 600;
+}
+
+.LiveThoughtFlex .projectsScroll .secondHeadingText::before {
+  top: -12px;
+  right: -14px;
+  font-size: 23px;
+}
+
+/* Live The ThoughtFull */
