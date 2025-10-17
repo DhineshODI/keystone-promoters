@@ -500,6 +500,30 @@
 
 /* Live The ThoughtFull */
 
+.LiveThoughtFlex .LiveThoughtFlexImg {
+  position: relative;
+}
+
+.knowMoreButtonImage {
+  position: absolute;
+  bottom: -17px;
+  left: 41%;
+  background: #fff;
+  color: #884f79;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  padding: 12px 25px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
 .yearsScrollText {
   display: flex;
   align-items: flex-end;
@@ -513,7 +537,7 @@
   left: -88px;
   width: 113%;
   height: 2px;
-  height: 1.0px;
+  height: 1px;
   background-color: #a7718a;
 }
 
@@ -556,8 +580,9 @@
 }
 
 .LiveThoughtsBg {
-  background-color: #a7578f;
+  /* background-color: #a7578f; */
   padding: 100px 0;
+  background-image: url("/public/images/homepage/livethroughBg.jpg");
 }
 
 .yearsScrollText.projectsScroll span {
@@ -606,3 +631,191 @@
 }
 
 /* Live The ThoughtFull */
+
+/* ArchitureSection */
+
+.ArchitectureContent {
+  /* display: flex;
+  position: absolute;
+  top: 0; */
+}
+
+.ArchitectureContent h4 {
+  /* display: none; */
+}
+
+.ArchitectureContent .secondHeadingText {
+  text-transform: uppercase;
+  font-size: 40px;
+  transform: rotate(270deg);
+  width: 359px;
+  position: absolute;
+  top: 46%;
+  left: -31%;
+  text-align: end;
+  font-weight: 500;
+}
+
+.architectureWidth {
+  width: 26%;
+  position: relative;
+}
+
+.architectureWidth img {
+  width: 100%;
+}
+
+.ArchitectureContent .subHeadingText {
+  width: 100%;
+  text-align: left;
+}
+
+.ArchitectureContent button {
+  text-transform: uppercase;
+  text-decoration: 3px underline;
+  text-underline-offset: 5px;
+}
+
+.archisecondHeadingText {
+  width: 65%;
+  position: absolute;
+  top: 0;
+  left: 26%;
+  top: 14%;
+}
+
+.archisecondHeadingText button {
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.MainarchitectureWidth {
+  display: flex;
+  justify-content: center;
+  column-gap: 5%;
+}
+
+.archiBg {
+  background-image: url("/public/images/homepage/architureBG.jpg");
+  height: 770px;
+  display: flex;
+  align-items: center;
+}
+
+/* ArchitureSection */
+
+/* On Going Projects */
+.projectsNameOnGoing {
+  margin-bottom: 18px;
+  margin-top: 18px;
+  position: relative;
+}
+
+.projectsNameOnGoing::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background: #7d3c69;
+  width: 100%;
+  bottom: -16px;
+}
+
+/* .projectsNameOnGoing:last-child::before {
+  content: none;
+} */
+
+.projectsNameOnGoing:nth-child(3)::before {
+  content: none;
+}
+
+.projectsNameOnGoing:first-child {
+  margin-top: 0;
+}
+
+.ongoingProjectSection {
+  display: flex;
+  align-items: center;
+  height: 370px;
+}
+
+.projectsNameOnGoing h5 {
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  line-height: 1;
+  width: max-content;
+  color: #ffffff;
+}
+
+.projectsNameOnGoing span {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #ffffff;
+}
+
+.projectsNameOnGoingmAINcONTAINER {
+  background-color: #550e40;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 25px;
+  margin-left: -3px;
+  padding-right: 50px;
+}
+
+.ongoingProjectSection img {
+  width: auto;
+  height: 100%;
+  border: 2px solid #fff;
+}
+
+.onGoingViewProject {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #ffffff;
+  text-transform: uppercase;
+  word-spacing: 2px;
+  padding: 1px 0;
+  border-top: 2px solid #7d3c69;
+  width: max-content;
+  border-bottom: 2px solid #7d3c69;
+}
+
+.ongoingBg {
+  /* background-color: #a44b97; */
+  padding: 50px 0;
+  background-image: url("/public/images/ongoing-images/onGoingProjectsBg.jpg");
+}
+
+.onGoingRightSection {
+  width: 30%;
+  margin-top: 5%;
+}
+
+.onGoingRightSection .mainheadingText {
+  text-transform: uppercase;
+  line-height: 0.8;
+  color: #fff;
+}
+
+.onGoingRightSection .secondHeadingText {
+  text-transform: uppercase;
+  width: 30%;
+  line-height: 0.8;
+  color: #fff;
+  margin-top: 15px;
+}
+
+.onGoingMainSectionDiv {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  column-gap: 50px;
+}
+
+/* On Going Projects */

@@ -72,7 +72,11 @@ export default function LiveThoughtFul() {
             magna ipsum suspendisse
           </p>
           <div className="LiveThoughtFlex">
-            <img src="/images/homepage/famil-Pic-Section.jpg" alt="" />
+            <div className="LiveThoughtFlexImg">
+              <img src="/images/homepage/famil-Pic-Section.png" alt="" />
+
+              <button className="knowMoreButtonImage">Know More</button>
+            </div>
 
             <div>
               <div className="yearsScrollText">
