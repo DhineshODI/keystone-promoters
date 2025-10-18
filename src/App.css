@@ -206,6 +206,24 @@
 
 /* CurtSlider- Section */
 
+.curlatedLine {
+  position: relative;
+}
+
+.curlatedLine::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 44%;
+  background: #d5bed0;
+  top: 50%;
+}
+
+.curlatedArrow img {
+  width: 40px;
+  height: 40px;
+}
+
 .curtedSectionMainRowBg {
   background-image: url("/public/images/homepage/cursedBanner.jpg");
   height: 895px;
@@ -720,10 +738,6 @@
   bottom: -16px;
 }
 
-/* .projectsNameOnGoing:last-child::before {
-  content: none;
-} */
-
 .projectsNameOnGoing:nth-child(3)::before {
   content: none;
 }
@@ -787,8 +801,7 @@
 }
 
 .ongoingBg {
-  /* background-color: #a44b97; */
-  padding: 50px 0;
+  padding: 100px 0;
   background-image: url("/public/images/ongoing-images/onGoingProjectsBg.jpg");
 }
 
@@ -816,6 +829,96 @@
   align-items: flex-start;
   justify-content: center;
   column-gap: 50px;
+  margin-top: 50px;
+}
+
+.onGoingRightSection .mainheadingText.onGoingSecondTextContainer {
+  line-height: 1.1;
+  width: 90%;
+  font-size: 32px;
+  text-transform: lowercase;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.ArchitectureContent .subHeadingText {
+  width: 100%;
+  text-align: left;
+}
+
+.secondSliderContentSections .subHeadingText {
+  margin-top: 25px;
+  color: #fff;
+  width: 90%;
+  font-weight: 400;
+}
+
+.onGoingMainSectionDiv:last-child .onGoingRightSection {
+  margin-top: 2%;
+}
+
+.onGoingMainSectionDiv:first-child {
+  margin-top: 0;
+}
+
+.onGoingRightSection .customDots .dot {
+  background: #a46198;
+  width: 34px;
+  height: 9px;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+.onGoingRightSection .customDots .dot.active {
+  background: #f4eef3;
+}
+
+.onGoingRightSection .customDots {
+  margin-top: 25px;
 }
 
 /* On Going Projects */
+
+/* Header */
+
+.HeaderMainSEC {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2%;
+  align-items: center;
+}
+
+.listHeaders {
+  display: flex;
+  justify-content: center;
+  column-gap: 45px;
+  align-items: center;
+}
+
+.listHeaders li {
+  font-family: "Alexandria", sans-serif;
+  font-size: 19px;
+  text-transform: uppercase;
+}
+
+.hamburgerIconImage {
+  width: 40px;
+  height: 40px;
+}
+
+.hamburgerflex {
+  display: flex;
+  align-items: center;
+  column-gap: 17px;
+  background-color: #c5c5c5;
+  padding: 5px 20px;
+}
+
+.hamburgerflex span {
+  font-family: "Alexandria", sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Header */

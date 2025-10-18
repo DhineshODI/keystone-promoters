@@ -75,24 +75,24 @@ export default function CurtedLivingSlider() {
                 </div>
               </Slider>
 
-              <div className="flex justify-center items-center gap-7 mt-6">
+              <div className="flex justify-center items-center gap-88 mt-6 curlatedLine">
                 <div
-                  className="custom-prev cursor-pointer"
+                  className="custom-prev cursor-pointer curlatedArrow"
                   onClick={() => sliderRef.current.slickPrev()}
                 >
                   <img
-                    src="/images/icons/left-arrow-testimonal.svg"
+                    src="/images/icons/arrow-l.svg"
                     alt="Previous"
                     className="w-7 h-7 hover:scale-110 transition-transform"
                   />
                 </div>
 
                 <div
-                  className="custom-next cursor-pointer"
+                  className="custom-next cursor-pointer curlatedArrow"
                   onClick={() => sliderRef.current.slickNext()}
                 >
                   <img
-                    src="/images/icons/right-arrow-testimonal.svg"
+                    src="/images/icons/arrow-r.svg"
                     alt="Next"
                     className="w-7 h-7 hover:scale-110 transition-transform"
                   />

@@ -6,12 +6,14 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SVGAnimation from "./Components/SvgAnimation";
 import TextFillAnimation from "./Components/TextFillAnimation";
+import Header from "./Components/Header";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
   return (
     <>
+      <Header />
       <Homepage />
       {/* <TextFillAnimation /> */}
 
