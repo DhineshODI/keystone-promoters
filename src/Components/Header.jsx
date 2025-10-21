@@ -2,6 +2,14 @@ export default function Header() {
   return (
     <>
       <div>
+        <div className="headerTop">
+          <div className="mailHeadingText">
+            Email : <span>enqiry@keystonepromoters.com</span>
+          </div>
+          <div  className="mailHeadingText">
+            Call us now : <span>+91 7092879022</span>
+          </div>
+        </div>
         <div className="HeaderMainSEC">
           <img src="/images/keystone-Header.jpg" alt="" />
           <ul className="listHeaders">

@@ -886,6 +886,11 @@
   justify-content: space-between;
   padding: 0 2%;
   align-items: center;
+  /* margin-top: 30px; */
+}
+
+.headerHomePage .HeaderMainSEC {
+  margin-top: 30px;
 }
 
 .listHeaders {
@@ -893,12 +898,38 @@
   justify-content: center;
   column-gap: 45px;
   align-items: center;
+  position: relative;
+}
+
+.headerTop .listHeaders {
+  position: relative;
+}
+
+.headerTop .listHeaders::before {
+  content: "" !important;
+  position: absolute !important;
+  width: 159% !important;
+  height: 1px !important;
+  background-color: #a085a0 !important;
+  bottom: -1px !important;
+  /* right: 0; */
+  left: -74% !important;
+}
+
+.listHeaders li:hover {
+  color: #b26eac !important;
+  cursor: pointer;
 }
 
 .listHeaders li {
   font-family: "Alexandria", sans-serif;
   font-size: 19px;
   text-transform: uppercase;
+}
+
+.headerHomePage .listHeaders li {
+  color: #fff;
+  font-weight: 600;
 }
 
 .hamburgerIconImage {
@@ -921,4 +952,113 @@
   font-weight: 600;
 }
 
+.headerTop {
+  display: flex;
+  background: #b26dac;
+  padding: 8px 2%;
+  justify-content: space-between;
+}
+
+.headerTop .mailHeadingText {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+.headerTop .mailHeadingText span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
+
 /* Header */
+
+/* Video Banner   */
+
+.contentHeadingBanner .secondHeadingText {
+  font-size: 170px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 0.9;
+}
+
+.contentHeadingBanner {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(161, 105, 155, 0.75);
+  background: rgba(98, 5, 88, 0.6);
+  padding-top: 120px;
+}
+
+.videoBannermainContainer {
+  position: relative;
+}
+
+.withTextContent {
+  font-family: "Alex Brush", cursive;
+  font-size: 95px;
+  line-height: 0.6;
+  color: #fff;
+}
+
+.contentHeadingBanner .subHeadingText {
+  color: #fff;
+  width: 40%;
+  text-align: center;
+  margin-top: 10px;
+}
+.videoBannerVideoFILE {
+  height: 100vh;
+}
+
+.videoBannerVideoFILE video {
+  /* display: block; */
+}
+
+.headerHomePage {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.headerHomePage .headerTop {
+  display: flex;
+  background: #b26dac;
+}
+
+.headerHomePage .headerTop {
+  background-color: #481242;
+}
+
+/* Video Banner   */
+
+/* Ongoing-Page-CSS  */
+
+.detailPageBanners img {
+  width: 100%;
+}
+
+.detailPageBanners h5 {
+  text-transform: uppercase;
+  font-size: 133px;
+  font-weight: 800;
+  color: #fff;
+  text-align: center;
+  line-height: 0.8;
+}
+.detailPageBanners {
+  background-image: url("/public/images/Contact-Us-Banner.jpg");
+  height: 523px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ongoing-Page-CSS  */

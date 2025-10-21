@@ -6,18 +6,32 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SVGAnimation from "./Components/SvgAnimation";
 import TextFillAnimation from "./Components/TextFillAnimation";
-import Header from "./Components/Header";
 
-gsap.registerPlugin(ScrollTrigger);
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import OngoingProjects from "./Pages/OngoingProjects";
+import Footer from "./Components/Footer";
+import TestimonalSlider from "./Components/TestimonalSlider";
+import ScheduleAvisit from "./Components/ScheduleAVisit";
+
+// gsap.registerPlugin(ScrollTrigger);
 
 function App() {
   return (
     <>
-      <Header />
-      <Homepage />
       {/* <TextFillAnimation /> */}
 
       {/* <SVGAnimation /> */}
+
+      <Router>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/ongoing-projects" element={<OngoingProjects />} />
+        </Routes>
+      </Router>
+
+      <TestimonalSlider />
+      <ScheduleAvisit />
+      <Footer />
     </>
   );
 }
