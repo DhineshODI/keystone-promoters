@@ -12,6 +12,9 @@ import ContactMainPage from "./Pages/ContactMainPage";
 import Footer from "./Components/Footer";
 import TestimonalSlider from "./Components/TestimonalSlider";
 import ScheduleAvisit from "./Components/ScheduleAVisit";
+import OngoingProjectsMainPage from "./Pages/OngoingProjectsMainPage";
+import CareersPage from "./Pages/CareersPage";
+import JointVentureMainPage from "./Pages/JonitVentureMainPage";
 
 // gsap.registerPlugin(ScrollTrigger);
 
@@ -26,6 +29,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/contact" element={<ContactMainPage />} />
+          <Route path="/careers" element={<CareersPage />} />
+          <Route path="/joint-venture" element={<JointVentureMainPage />} />
+          <Route
+            path="/ongoing-projects"
+            element={<OngoingProjectsMainPage />}
+          />
         </Routes>
       </Router>
 
