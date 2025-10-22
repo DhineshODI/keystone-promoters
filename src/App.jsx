@@ -8,7 +8,7 @@ import SVGAnimation from "./Components/SvgAnimation";
 import TextFillAnimation from "./Components/TextFillAnimation";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import OngoingProjects from "./Pages/OngoingProjects";
+import ContactMainPage from "./Pages/ContactMainPage";
 import Footer from "./Components/Footer";
 import TestimonalSlider from "./Components/TestimonalSlider";
 import ScheduleAvisit from "./Components/ScheduleAVisit";
@@ -25,7 +25,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/ongoing-projects" element={<OngoingProjects />} />
+          <Route path="/contact" element={<ContactMainPage />} />
         </Routes>
       </Router>
 

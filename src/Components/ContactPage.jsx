@@ -1,6 +1,7 @@
-export default function OngoingProjectsList() {
+export default function ContactPage() {
   return (
     <>
+      {/* Banner */}
       <div>
         <div className="detailPageBanners">
           <h5 className="secondHeadingText">Connect &</h5>
@@ -13,6 +14,49 @@ export default function OngoingProjectsList() {
           </div>
         </div>
       </div>
+      {/* Banner */}
+
+      {/* After-Banner-Section */}
+
+      <div className="afterMainBG">
+        <div className="container max-w-7xl mx-auto px-4 ">
+          <div className="bannerafterSectionMAIN">
+            <div className="firstbannerafterSectionMAIN">
+              <div>
+                <h4 className="gettknowHeading">Get to know us</h4>
+                <h3 className="visitOurOFficetext">
+                  Visit us at our office location
+                </h3>
+              </div>
+
+              <div style={{ marginTop: "15px" }}>
+                <h4 className="gettknowHeading">Address</h4>
+                <p className="contactPageAddress">
+                  Door No.1, GF-A, Amace Ganga Sarojini Street, Mahalingapuram,
+                  Nungambakkam, Chennai 600 034
+                </p>
+              </div>
+            </div>
+            <div className="seondbannerafterSectionMAIN"></div>
+            <div className="thirdbannerafterSectionMAIN">
+              <div style={{ marginTop: "15px" }}>
+                <h4 className="gettknowHeading">Phone</h4>
+                <p className="contactPageAddress">+91 7092879022</p>
+              </div>
+              <div style={{ marginTop: "15px" }}>
+                <h4 className="gettknowHeading">MOBILE</h4>
+                <p className="contactPageAddress">+91 7092879022</p>
+              </div>
+              <div style={{ marginTop: "15px" }}>
+                <h4 className="gettknowHeading">Email</h4>
+                <p className="contactPageAddress">info@keystonepromoters.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* After-Banner-Section */}
 
       <div className="contactPageBgPadding">
         <div className="contactUsBannerPageBg">

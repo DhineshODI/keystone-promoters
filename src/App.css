@@ -1038,7 +1038,7 @@
 
 /* Video Banner   */
 
-/* Ongoing-Page-CSS  */
+/* Contact-Page-CSS  */
 
 .detailPageBanners img {
   width: 100%;
@@ -1087,7 +1087,7 @@
 
 .formContactUsSectionFlex {
   background-image: url("/public/images//contact-us-bg-form-inside-bg.jpg");
-  width: 1115px;
+  width: 1065px;
   background-color: #fff;
   padding: 0px 70px;
   position: absolute;
@@ -1157,4 +1157,55 @@
   padding-bottom: 515px;
 }
 
-/* Ongoing-Page-CSS  */
+.bannerafterSectionMAIN {
+  display: flex;
+  justify-content: center;
+  column-gap: 80px;
+  align-items: center;
+}
+.seondbannerafterSectionMAIN {
+  width: 225px;
+  height: 225px;
+  background-color: #feff99;
+  border-radius: 50%;
+}
+
+.firstbannerafterSectionMAIN {
+  width: 30%;
+}
+
+.thirdbannerafterSectionMAIN {
+  width: 30%;
+}
+
+.afterMainBG {
+  background-color: #b26dac;
+  padding: 100px 0;
+}
+
+.gettknowHeading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffff98;
+}
+.visitOurOFficetext {
+  font-family: "Poppins", sans-serif;
+  font-size: 47px;
+  font-weight: 600;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.contactPageAddress {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  width: 80%;
+}
+
+/* Contact-Page-CSS  */
