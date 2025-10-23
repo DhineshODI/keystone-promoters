@@ -6,12 +6,16 @@ export default function Header() {
           <div className="mailHeadingText">
             Email : <span>enqiry@keystonepromoters.com</span>
           </div>
-          <div  className="mailHeadingText">
+          <div className="mailHeadingText">
             Call us now : <span>+91 7092879022</span>
           </div>
         </div>
         <div className="HeaderMainSEC">
-          <img src="/images/keystone-Header.jpg" alt="" />
+          <img
+            className="headerLogoImg"
+            src="/images/keystone-detailpage-logo.png"
+            alt=""
+          />
           <ul className="listHeaders">
             <li>Brand</li>
             <li>Ongoing</li>

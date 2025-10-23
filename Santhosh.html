@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Play Audio (No Download)</title>
+    <style>
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          "Segoe UI",
+          Roboto,
+          Arial;
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        background: #f6f7fb;
+      }
+      .player {
+        background: white;
+        padding: 18px 22px;
+        border-radius: 12px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        text-align: center;
+        width: 320px;
+      }
+      button {
+        appearance: none;
+        border: none;
+        background: #2563eb;
+        color: white;
+        padding: 10px 16px;
+        font-size: 16px;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      button:active {
+        transform: translateY(1px);
+      }
+      .status {
+        margin-top: 12px;
+        color: #374151;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="player">
+      <!-- Hidden audio element (no native controls shown) -->
+      <audio
+        id="myAudio"
+        src="/public/images/audio-file.mp3"
+        preload="auto"
+      ></audio>
+
+      <button id="playBtn" aria-label="Play audio">Play</button>
+      <div class="status" id="status">Stopped</div>
+    </div>
+
+    <script>
+      const audio = document.getElementById("myAudio");
+      const btn = document.getElementById("playBtn");
+      const status = document.getElementById("status");
+
+      // Prevent right-click / context menu on the audio element (discourages direct "Save audio as...")
+      audio.addEventListener("contextmenu", (e) => e.preventDefault());
+
+      // Toggle play/pause
+      btn.addEventListener("click", async () => {
+        try {
+          if (audio.paused) {
+            await audio.play(); // plays audio (not a download)
+            btn.textContent = "Pause";
+            status.textContent = "Playing...";
+          } else {
+            audio.pause();
+            btn.textContent = "Play";
+            status.textContent = "Paused";
+          }
+        } catch (err) {
+          // Browser may block autoplay unless triggered by user interaction —
+          // But since this is on a click, it should be allowed; show error if not.
+          console.error("Play failed:", err);
+          status.textContent = "Unable to play audio";
+        }
+      });
+
+      // Update UI when audio ends
+      audio.addEventListener("ended", () => {
+        btn.textContent = "Play";
+        status.textContent = "Finished";
+        audio.currentTime = 0;
+      });
+    </script>
+  </body>
+</html>

@@ -889,6 +889,11 @@
   /* margin-top: 30px; */
 }
 
+.HeaderMainSEC .headerLogoImg {
+  padding: 10px 0;
+  width: 200px;
+}
+
 .headerHomePage .HeaderMainSEC {
   margin-top: 30px;
 }
@@ -1495,3 +1500,152 @@
 }
 
 /* Joint Venture Page -CSS  */
+
+/* Channel-Partner Page -CSS  */
+
+.channelPartnerMainSection .firstbannerafterSectionMAIN {
+  width: 50%;
+}
+
+.channelPartnerMainSection .detailPageBanners {
+  background-image: url(/public/images/channel-partner-page-banner.jpg);
+}
+
+.channelPartnerMainSection .formContactUsSectionFlex {
+  padding: 0px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-image: none;
+  position: unset;
+  width: 40%;
+  width: 28%;
+  /* width: 100%; */
+  background-color: transparent;
+  box-shadow: unset;
+}
+
+.channelPartnerFormSection {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  column-gap: 100px;
+}
+
+.channelPartnerMainSection .contactFormInputEach {
+  width: 100%;
+}
+.channelPartnerFormSection .formChannelPartnerImage {
+  width: 35%;
+  height: 45%;
+}
+
+.channelPartnerFormSection .contactFormInputEach input {
+  margin-top: 0px;
+}
+
+.channelPartnerFormSection .formMainStyleContactPage {
+  row-gap: 25px;
+  margin-top: 0;
+}
+
+.channelPartnerFormFirst .secondHeadingText {
+  text-transform: uppercase;
+  color: #b26eac;
+  font-weight: 600;
+}
+
+.channelPartnerFormFirst .subHeadingText {
+  color: #636465;
+}
+
+.channelPartnerFormFirst {
+  background-image: url("/public/images/channel-partner-form-banner.jpg");
+  height: 890px;
+  display: flex;
+  align-items: center;
+}
+
+.channelContentPartner {
+  margin-left: 15%;
+  width: 52%;
+}
+
+/* Channel-Partner Page -CSS  */
+
+/* Project Detail -CSS  */
+
+/* 1st */
+
+.projectDetailPage .secondHeadingText {
+  font-size: 100px;
+}
+
+.projectDetailIconSection {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.projectDetailIconSection::before {
+  content: "";
+  height: 70%;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  right: -27px;
+}
+
+.projectDetailIconSection:last-child:before {
+  content: none;
+}
+
+.projectDetailIconSection img {
+  width: 50px;
+  height: 50px;
+  filter: invert(1);
+}
+
+.projectDetailIconSection .mainheadingText {
+  font-size: 25px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0px;
+  line-height: 0.9;
+  margin-left: 10px;
+}
+
+.projectDetailFlexdiv {
+  display: flex;
+  column-gap: 50px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  margin-top: 30px;
+  padding-right: 10px;
+}
+
+.projectDetailPage .BreadCrumSection {
+  margin-top: 25px;
+}
+
+.projectDetailPage .firstbannerafterSectionMAIN {
+  width: 40%;
+}
+
+.projectDetailPage .afterMainBG {
+  background-image: url("/public/images/project-detail/project-detail-page-rose-banner.jpg");
+  height: 496px;
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+}
+
+/* 1st */
+
+/* 3rd */
+
+/* 3rd */
+
+/* Project Detail -CSS  */
