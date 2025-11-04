@@ -1660,19 +1660,19 @@
 }
 
 .projectDetailProjectName {
-    display: flex;
-    align-items: flex-end;
-    column-gap: 25px;
-    flex-direction: column;
-    width: 50%;
+  display: flex;
+  align-items: flex-end;
+  column-gap: 25px;
+  flex-direction: column;
+  width: 50%;
 }
 
 .noffloorswidth {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    padding-left: 50px;
-    border-bottom: 2px solid #b9aace;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  border-bottom: 2px solid #b9aace;
 }
 
 .projectDetailProjectName img {
@@ -1699,49 +1699,49 @@
 }
 
 .projectdetailflex {
-    display: flex;
-    column-gap: 20px;
-    border-bottom: 2px solid #c8bcd8;
-    padding-bottom: 20px;
-    width: 95%;
-    padding-left: 50px;
-    padding-top: 20px;
-    align-items: center;
+  display: flex;
+  column-gap: 20px;
+  border-bottom: 2px solid #c8bcd8;
+  padding-bottom: 20px;
+  width: 95%;
+  padding-left: 50px;
+  padding-top: 20px;
+  align-items: center;
 }
 
 .projectNameDetailPage.projectdetailflex p {
-    font-size: 28px;
-    font-weight: 700;
-    margin-top: 0;
-    margin-bottom: 6px;
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 6px;
 }
 
 .mainconatinerprojectflex {
-    display: flex;
-    border-bottom: 2px solid #c8bcd8;
-    padding-bottom: 20px;
-    column-gap: 23px;
-    width: 95%;
-    padding-left: 50px;
-    align-items: center;
-    padding-top: 20px;
+  display: flex;
+  border-bottom: 2px solid #c8bcd8;
+  padding-bottom: 20px;
+  column-gap: 23px;
+  width: 95%;
+  padding-left: 50px;
+  align-items: center;
+  padding-top: 20px;
 }
 
 .spectraprojectdetailssection {
-    display: flex;
-    justify-content: center;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
 .nooffloors {
-    font-size: 24px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    line-height: 1;
-    width: max-content;
-    color: #111610;
-    margin-top: 15px;
-    margin-bottom: 16px;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  width: max-content;
+  color: #111610;
+  margin-top: 15px;
+  margin-bottom: 16px;
 }
 
 .nooffloors span {
@@ -1750,14 +1750,114 @@
 }
 
 .spectraprojectdetailssection::before {
-    content: "";
-    width: 2px;
-    height: 100%;
-    background-color: #b9aace;
-    position: absolute;
-    left: 50%;
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: #b9aace;
+  position: absolute;
+  left: 50%;
 }
 
 /* 3rd */
+
+.projectspecifiationclass .secondHeadingText {
+  font-size: 64px;
+  color: #b26eac;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.projectspecificationcard {
+  width: 90%;
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px 42px;
+  height: 347px;
+  border-bottom: 6px solid #772c72;
+}
+
+/* .projectsspccards .slick-slide {
+ display: flex;
+} */
+
+.projectspecificationcard .projectspecicon {
+  width: 100px;
+}
+
+.projectspeclist li span {
+  font-weight: 600;
+}
+
+.projectspecname {
+  font-family: "Alexandria", sans-serif;
+  font-size: 28px;
+  line-height: 1;
+  font-weight: 600;
+  color: #b26eac;
+  margin-top: 15px;
+  position: relative;
+  width: max-content;
+}
+
+.projectspecname::before {
+  content: "";
+  width: 106%;
+  height: 6px;
+  background-color: #b26eac;
+  position: absolute;
+  top: 36px;
+  z-index: 1;
+}
+
+.projectspeclist {
+  position: relative;
+  padding-top: 25px;
+}
+
+.projectspeclist::before {
+  content: "";
+  width: 90%;
+  height: 1px;
+  background-color: #d2cde1;
+  position: absolute;
+  top: 11px;
+}
+
+.projectspeclist li {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 400;
+  color: #575757;
+  margin-top: 9px;
+}
+
+.projectspecifiationclass {
+  background-color: #edeef2;
+  height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectsspccards {
+  margin-top: 80px;
+}
+
+.projectDetailPage .curlatedLine {
+  margin-top: 50px;
+  column-gap: 150px;
+}
+
+.projectDetailPage .curlatedLine::before {
+  height: 1px;
+  width: 9%;
+  background: #d3d4d6;
+}
+
+.projectDetailPage .curlatedArrow img {
+  width: 47px;
+  height: 47px;
+}
 
 /* Project Detail -CSS  */

@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfect 3 Image Peek Slider</title>
+
+    <!-- Slick CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <style>
+
+
+      .my-image-slider {
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .my-image-slider img {
+        width: 100%;
+        border-radius: 20px;
+      }
+
+      /* Slight overlap look */
+       .my-image-slider .slick-slide {
+        transition: all 0.5s ease;
+        transform: scale(0.95);
+
+      }
+
+
+
+      /* Slight overlap using margin */
+       .my-image-slider .slick-slide > div {
+        padding: 0 10px; /* Reduce this to tighten slides */
+      }
+
+      /* Custom dots */
+       .my-image-slider .slick-dots {
+        position: absolute;
+        bottom: -45px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex !important;
+        justify-content: center;
+        gap: 10px;
+      }
+
+       .my-image-slider .slick-dots li button {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: #ccc;
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+       .my-image-slider .slick-dots li.slick-active button {
+        background: #000;
+      }
+
+       .my-image-slider .slick-dots li button:before {
+        content: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="my-image-slider">
+      <div>
+        <img
+          src="https://jayaswathy.com/wp-content/uploads/2025/11/bg-main.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://jayaswathy.com/wp-content/uploads/2025/11/bg-main.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://jayaswathy.com/wp-content/uploads/2025/11/bg-main.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://jayaswathy.com/wp-content/uploads/2025/11/bg-main.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://jayaswathy.com/wp-content/uploads/2025/11/bg-main.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".my-image-slider").slick({
+          centerMode: true,
+          centerPadding: "25%", // keeps 50% visibility for sides
+          slidesToShow: 1,
+          infinite: true,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          speed: 800,
+          arrows: false,
+          dots: true,
+          pauseOnHover: false,
+          cssEase: "ease-in-out",
+        });
+      });
+    </script>
+  </body>
+</html>
