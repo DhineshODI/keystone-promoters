@@ -1578,7 +1578,7 @@
 
 /* 1st */
 
-.projectDetailPage .secondHeadingText {
+.detailPageBanners .secondHeadingText {
   font-size: 100px;
 }
 
@@ -1761,7 +1761,6 @@
 /* 3rd */
 
 .projectspecifiationclass .secondHeadingText {
-  font-size: 64px;
   color: #b26eac;
   font-weight: bold;
   margin-bottom: 12px;
@@ -1833,7 +1832,8 @@
 }
 
 .projectspecifiationclass {
-  background-color: #edeef2;
+  /* background-color: #edeef2; */
+  background-image: url("/public/images/project-detail/specifcation-bg.jpg");
   height: 750px;
   display: flex;
   justify-content: center;
@@ -1860,10 +1860,129 @@
   height: 47px;
 }
 
+.projectaminitessection {
+  background-image: url("/public/images/project-detail/aminites-bg.jpg");
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.projectaminitessection {}
+.projectaminitessection .secondHeadingText {
+  color: #b26eac;
+  text-align: right;
+  font-weight: 600;
+  line-height: 0.9;
+  margin-top: 5px;
+}
 
+.projectaminitessection .subHeadingText:first-child {
+  text-align: end;
+  color: #4d287d;
+  font-weight: 600;
+}
 
+.projectaminitessection .subHeadingText:last-child {
+  text-align: end;
+  color: #3c3c3c;
+  font-weight: 500;
+  padding-left: 50%;
+  margin-top: 10px;
+  font-size: 19px;
+}
 
+.aminitessectionproject {
+  position: relative;
+  width: 90%;
+  margin-left: 12px;
+}
+
+.contentaminities {
+  position: absolute;
+  top: 25px;
+  width: max-content;
+  background: #8d5089;
+  padding: 5px 8px;
+  font-size: 26px;
+  color: #fefefe;
+  font-family: "Alexandria", sans-serif;
+  text-transform: uppercase;
+  left: 25px;
+  font-weight: 500;
+}
+
+.aminitessectionproject::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: -6px;
+  width: 103%;
+  height: 10%;
+  border-bottom: 9px solid #901788;
+  border-left: 9px solid #901788;
+  border-right: 9px solid #901788;
+  box-sizing: border-box;
+}
+
+.projectaminitesslider {
+  width: 70%;
+}
+
+.mainprojectaminitesslider {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 50px;
+}
+
+.aminitessectionproject img {
+  width: 100%;
+}
+
+.projectaminitesslider .slick-slider .slick-list {
+  padding-bottom: 65px;
+}
+
+.projectaminitesslider .slick-slide div div {
+  display: flex !important;
+  justify-content: center;
+}
+
+.projectaminitessection .curlatedLine {
+  margin-top: 1px;
+  column-gap: 150px;
+}
+
+.arrowwidthsection {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.onearrowwidthsection {
+  width: 70%;
+}
+
+.projectaminitessection .curlatedLine::before {
+  height: 1px;
+  width: 13%;
+  background: #8b8b8b;
+}
+
+.projectlocationshighlights {
+}
+
+.projectlocationshighlights .secondHeadingText {
+  color: #b26eac;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 7%;
+}
+
+.projectlocationshighlights .subHeadingText {
+  color: #3c3c3c;
+  text-align: left;
+  padding-left: 7%;
+  margin-top: 10px;
+}
 
 /* Project Detail -CSS  */

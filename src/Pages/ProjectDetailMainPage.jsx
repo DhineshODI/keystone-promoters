@@ -3,6 +3,7 @@ import ProjectAminities from "../Components/Project-Detail-Components/ProjectAmi
 import ProjectDetailBanner from "../Components/Project-Detail-Components/ProjectDetailBanner";
 import ProjectDetailRoseSection from "../Components/Project-Detail-Components/ProjectDetailRoseSection";
 import ProjectDetailSectionContent from "../Components/Project-Detail-Components/ProjectDetailSectionContent";
+import ProjectLocationHighlights from "../Components/Project-Detail-Components/ProjectLocationHighlights";
 import ProjecSpecification from "../Components/Project-Detail-Components/ProjectSpecification";
 
 export default function ProjectDetailMainPage() {
@@ -13,8 +14,10 @@ export default function ProjectDetailMainPage() {
         <ProjectDetailBanner />
         <ProjectDetailRoseSection />
         <ProjectDetailSectionContent />
-        <ProjecSpecification/>
-        <ProjectAminities/>
+
+        <ProjectAminities />
+        <ProjecSpecification />
+        <ProjectLocationHighlights />
       </div>
     </>
   );
