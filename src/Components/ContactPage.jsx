@@ -1,8 +1,27 @@
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 export default function ContactPage() {
+  gsap.registerPlugin(ScrollTrigger);
+
+  const heroRef = useRef(null);
+
+  useEffect(() => {
+    const el = heroRef.current;
+    gsap.to(el, {
+      yPercent: 20,
+      ease: "none",
+      scrollTrigger: {
+        trigger: el,
+        start: "top top",
+        scrub: true, // smooth scroll effect
+      },
+    });
+  }, []);
   return (
     <>
       {/* Banner */}
-      <div>
+      <div ref={heroRef}>
         <div className="detailPageBanners">
           <h5 className="secondHeadingText">Connect &</h5>
           <h5 className="secondHeadingText">Collaborate</h5>

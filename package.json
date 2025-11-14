@@ -35,6 +35,7 @@
     "react-fast-marquee": "^1.6.5",
     "react-helmet-async": "^2.0.5",
     "react-icons": "^5.5.0",
+    "react-image-lightbox": "^5.1.4",
     "react-loading-skeleton": "^3.5.0",
     "react-range": "^1.10.0",
     "react-router-dom": "^7.6.0",
@@ -43,7 +44,8 @@
     "react-toastify": "^11.0.5",
     "slick-carousel": "^1.8.1",
     "tailwindcss": "^4.1.4",
-    "uuid": "^11.1.0"
+    "uuid": "^11.1.0",
+    "yet-another-react-lightbox": "^3.25.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",

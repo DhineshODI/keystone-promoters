@@ -1,5 +1,7 @@
 import Header from "../Components/Header";
+import ProjectFloorPan from "../Components/Project-Detail-Components/Project-FloorPlan";
 import ProjectAminities from "../Components/Project-Detail-Components/ProjectAminites";
+import ProjectConstructionUpdates from "../Components/Project-Detail-Components/ProjectConstructionUpdates";
 import ProjectDetailBanner from "../Components/Project-Detail-Components/ProjectDetailBanner";
 import ProjectDetailRoseSection from "../Components/Project-Detail-Components/ProjectDetailRoseSection";
 import ProjectDetailSectionContent from "../Components/Project-Detail-Components/ProjectDetailSectionContent";
@@ -18,6 +20,10 @@ export default function ProjectDetailMainPage() {
         <ProjectAminities />
         <ProjecSpecification />
         <ProjectLocationHighlights />
+
+        <ProjectFloorPan/>
+
+        <ProjectConstructionUpdates/>
       </div>
     </>
   );

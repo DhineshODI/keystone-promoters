@@ -1657,6 +1657,8 @@
 .mainContainerDetailProject {
   display: flex;
   justify-content: center;
+  padding-bottom: 115px;
+  margin-top: -100px;
 }
 
 .projectDetailProjectName {
@@ -1672,7 +1674,7 @@
   display: flex;
   align-items: center;
   padding-left: 50px;
-  border-bottom: 2px solid #b9aace;
+  border-bottom: 1px solid #b9aace;
 }
 
 .projectDetailProjectName img {
@@ -1701,7 +1703,7 @@
 .projectdetailflex {
   display: flex;
   column-gap: 20px;
-  border-bottom: 2px solid #c8bcd8;
+  border-bottom: 1px solid #c8bcd8;
   padding-bottom: 20px;
   width: 95%;
   padding-left: 50px;
@@ -1718,13 +1720,13 @@
 
 .mainconatinerprojectflex {
   display: flex;
-  border-bottom: 2px solid #c8bcd8;
+  border-bottom: 1px solid #c8bcd8;
   padding-bottom: 20px;
   column-gap: 23px;
   width: 95%;
   padding-left: 50px;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 45px;
 }
 
 .spectraprojectdetailssection {
@@ -1751,7 +1753,7 @@
 
 .spectraprojectdetailssection::before {
   content: "";
-  width: 2px;
+  width: 1px;
   height: 100%;
   background-color: #b9aace;
   position: absolute;
@@ -1767,12 +1769,27 @@
 }
 
 .projectspecificationcard {
-  width: 90%;
+  width: 100%;
   background: #fff;
   border-radius: 20px;
+
   padding: 30px 42px;
   height: 347px;
   border-bottom: 6px solid #772c72;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  background-image: url("/public/images/project-detail/slider-cards-bg.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.projectsspccards .slick-slide > div:first-of-type {
+  margin: 0 20px;
+}
+
+.projectsspccards .slick-track {
+  padding-bottom: 50px;
 }
 
 /* .projectsspccards .slick-slide {
@@ -1845,7 +1862,7 @@
 }
 
 .projectDetailPage .curlatedLine {
-  margin-top: 50px;
+  margin-top: 20px;
   column-gap: 150px;
 }
 
@@ -1969,6 +1986,17 @@
 }
 
 .projectlocationshighlights {
+  background-image: url("/public/images/project-detail/location-bg.jpg");
+  height: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.widthprojectlocationshighlights {
+  width: 100%;
+  padding: 100px 0;
+  margin-bottom: 75px;
 }
 
 .projectlocationshighlights .secondHeadingText {
@@ -1985,4 +2013,357 @@
   margin-top: 10px;
 }
 
+.downloadbrocedhurebuttonflex {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: -40px;
+  width: 100%;
+}
+
+.downloadbrocedhurebutton {
+  display: flex;
+  background-color: #b26eac;
+  padding: 15px 40px;
+  column-gap: 25px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.downloadbrocedhurebutton .subHeadingText {
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.fordownloadbrocedh {
+  position: relative;
+}
+
+.locationadvantagesicon {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  padding: 10px;
+}
+
+.locationadvantagesicon .nearbyloactions {
+  font-family: "Alexandria", sans-serif;
+  font-size: 27px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.locationadvantageflex {
+  display: flex;
+  column-gap: 5%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.locationimageside {
+  width: 43%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.onelocationimageside {
+  position: relative;
+}
+
+.locationcontentside {
+  width: 30%;
+}
+
+.locationimageside img {
+  width: 96%;
+  /* position: absolute; */
+  top: 0;
+}
+
+.locationcontentside ul {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  padding-left: 30px;
+  margin: 0;
+}
+
+.locationcontentside .open ul {
+  max-height: 500px; /* adjust based on your content size */
+  opacity: 1;
+  padding-top: 10px;
+}
+
+.locationadvantagesicon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 15px;
+  padding: 10px 0;
+  border-top: 1px solid #d8d8d8;
+  position: relative;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.locationadvantagesicon::before {
+  content: "+";
+  position: absolute;
+  top: 17px;
+  z-index: 1;
+  font-size: 29px;
+  line-height: 100%;
+  right: 12px;
+  font-weight: 600;
+}
+
+.locationadvantagesicon img {
+  width: 40px;
+  height: 40px;
+}
+.accordion-section.open .locationadvantagesicon img {
+  width: 45px;
+  height: 45px;
+}
+.nearbyloactions {
+  font-weight: 600;
+  color: #333;
+}
+
+.accordion-section.open .locationadvantagesicon .nearbyloactions {
+  font-size: 34px;
+}
+
+.accordion-section.open .locationadvantagesicon::before {
+  top: 12px;
+  z-index: 1;
+  font-size: 37px;
+}
+
+.accordion-section.open .locationadvantagesicon {
+  border-bottom: 1px solid #d8d8d8;
+  padding: 15px 5px;
+}
+
+.accordion-section {
+  margin: 13px 0;
+}
+
+.locationcontentside ul li {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #515151;
+  line-height: 100%;
+  margin-top: 10px;
+}
+
+.distance {
+  font-weight: 700;
+}
+
+.imageoverlayforprojectdetail {
+  position: absolute;
+  bottom: -31%;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  background-color: #b070ad;
+  z-index: 0;
+}
+.locationviewbutton {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  padding-top: 0px;
+  height: 100%;
+  align-items: end;
+  height: max-content;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 25px;
+}
+
+.locationviewbutton .subHeadingText {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  padding-left: 0;
+  margin-top: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.overlayimageprojectdetail {
+  background-color: #b070ad;
+  height: 70%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 10;
+  position: absolute;
+  bottom: -70px;
+  z-index: 10;
+  padding-bottom: 20px;
+}
+
+.locationimageside img {
+  z-index: 100;
+}
+
+.overlayimageprojectdetail .subHeadingText {
+  padding-left: 0;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.seocndoverlayimageprojectdetail {
+  display: flex;
+  column-gap: 15px;
+}
+
+.projectconstructionupdates .secondHeadingText {
+  color: #b26dac;
+  width: 30%;
+  line-height: 87%;
+  font-weight: 500;
+}
+
+.conatinerprojectconstructionupdates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.conatinerprojectconstructionupdates .subHeadingText {
+  width: 50%;
+  line-height: 120%;
+  color: #646464;
+  margin-top: 10px;
+}
+
+.projectconstructionupdates {
+  background-color: #f0f0f0;
+  padding: 100px 0;
+}
+
+.galleryconatiner {
+  background-color: #fff;
+  padding: 12px;
+  margin-top: 50px;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.floorplanprojectdetail {
+  width: 32%;
+  height: auto;
+  background-color: #b26dac;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fullwidthprojectdetail {
+  width: 100%;
+  padding: 70px 0px;
+}
+
+.floorplanleft h4 {
+  font-family: "Alexandria", sans-serif;
+  font-size: 55px;
+  line-height: 1;
+  text-transform: uppercase;
+  width: 50%;
+  line-height: 88%;
+  font-weight: 500;
+  color: #fff;
+  text-align: end;
+  padding-right: 40px;
+}
+
+.floorplanleft .subHeadingText {
+  color: #fff;
+  font-weight: 400;
+  width: 40%;
+  text-align: end;
+  line-height: 111%;
+  margin-top: 20px;
+  padding-right: 40px;
+  font-size: 16px;
+}
+
+.floorplanleftlist li {
+  font-family: "Alexandria", sans-serif;
+  font-size: 30px;
+  line-height: 1;
+  line-height: 88%;
+  font-weight: 500;
+  color: #fff;
+  padding: 15px 0;
+  border-top: 1px solid #9c5d96;
+  padding-right: 22px;
+  width: 50%;
+  text-align: end;
+  /* border-bottom: 1px solid #9c5d96; */
+  padding-right: 40px;
+}
+
+/* .floorplanleftlist li::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  background-color: #000;
+  left: 0;
+} */
+
+.activefloorstate .floorplanleftlist li::before {
+  top: 0;
+}
+
+.activefloorstate {
+  background-color: #7e006c;
+  width: max-content !important;
+  margin: 10px 0;
+  padding: 12px 24px !important;
+  padding-right: 40px !important;
+  position: relative;
+}
+
+.activefloorstate::before {
+  content: "";
+  width: 170%;
+  height: 1px;
+  position: absolute;
+  top: -12px;
+  background-color: #9c5d96;
+  right: 0;
+}
+
+.projectfloorflex {
+  display: flex;
+}
+
+.floorplanleftlist {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 30px;
+}
+.floorplanleft {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: self-end;
+}
 /* Project Detail -CSS  */

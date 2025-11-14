@@ -1,129 +1,146 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FAQ Section</title>
-  <style>
-    body {
-      background: #f9f9f9;
-      font-family: "Poppins", sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ Section</title>
+    <style>
+      body {
+        background: #f9f9f9;
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
 
-    .faq-container {
-      width: 600px;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      padding: 20px 30px;
-    }
+      .faq-container {
+        width: 600px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        padding: 20px 30px;
+      }
 
-    .spec-item {
-      border-bottom: 1px solid #ddd;
-      padding: 15px 0;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
+      .spec-item {
+        border-bottom: 1px solid #ddd;
+        padding: 15px 0;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
 
-    .spec-item:last-child {
-      border-bottom: none;
-    }
+      .spec-item:last-child {
+        border-bottom: none;
+      }
 
-    .spec-question {
-      margin: 0;
-      font-size: 18px;
-      font-weight: 600;
-      position: relative;
-      color: #0f335d;
-    }
+      .spec-question {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 600;
+        position: relative;
+        color: #0f335d;
+      }
 
-    .spec-question::after {
-      content: '+';
-      position: absolute;
-      right: 0;
-      font-size: 22px;
-      color: #0f335d;
-      transition: transform 0.3s ease;
-    }
+      .spec-question::after {
+        content: "+";
+        position: absolute;
+        right: 0;
+        font-size: 22px;
+        color: #0f335d;
+        transition: transform 0.3s ease;
+      }
 
-    .spec-item.active .spec-question::after {
-      content: '-';
-      transform: rotate(180deg);
-    }
+      .spec-item.active .spec-question::after {
+        content: "-";
+        transform: rotate(180deg);
+      }
 
-    .spec-answer {
-      max-height: 0;
-      overflow: hidden;
-      transition: all 0.4s ease;
-      opacity: 0;
-    }
+      .spec-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.4s ease;
+        opacity: 0;
+      }
 
-    .spec-item.active .spec-answer {
-      max-height: 200px;
-      opacity: 1;
-      margin-top: 10px;
-    }
+      .spec-item.active .spec-answer {
+        max-height: 200px;
+        opacity: 1;
+        margin-top: 10px;
+      }
 
-    .spec-answer p {
-      font-size: 16px;
-      color: #333;
-      margin: 0;
-      line-height: 1.6;
-    }
-  </style>
-</head>
-<body>
+      .spec-answer p {
+        font-size: 16px;
+        color: #333;
+        margin: 0;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="faq-container">
+      <h2 style="text-align: center; color: #0f335d">
+        Frequently Asked Questions
+      </h2>
 
-  <div class="faq-container">
-    <h2 style="text-align:center; color:#0f335d;">Frequently Asked Questions</h2>
+      <div class="spec-item">
+        <h3 class="spec-question">What is your return policy?</h3>
+        <div class="spec-answer">
+          <p>
+            We offer a 30-day return policy for all unused products with their
+            original packaging and receipt.
+          </p>
+        </div>
+      </div>
 
-    <div class="spec-item">
-      <h3 class="spec-question">What is your return policy?</h3>
-      <div class="spec-answer">
-        <p>We offer a 30-day return policy for all unused products with their original packaging and receipt.</p>
+      <div class="spec-item">
+        <h3 class="spec-question">Do you provide international shipping?</h3>
+        <div class="spec-answer">
+          <p>
+            Yes, we ship internationally. Delivery times and shipping fees vary
+            depending on your location.
+          </p>
+        </div>
+      </div>
+
+      <div class="spec-item">
+        <h3 class="spec-question">How can I track my order?</h3>
+        <div class="spec-answer">
+          <p>
+            Once your order ships, you’ll receive a tracking number via email to
+            monitor your package’s progress.
+          </p>
+        </div>
+      </div>
+
+      <div class="spec-item">
+        <h3 class="spec-question">Can I cancel my order after placing it?</h3>
+        <div class="spec-answer">
+          <p>
+            Yes, you can cancel your order within 24 hours of purchase by
+            contacting our support team.
+          </p>
+        </div>
       </div>
     </div>
 
-    <div class="spec-item">
-      <h3 class="spec-question">Do you provide international shipping?</h3>
-      <div class="spec-answer">
-        <p>Yes, we ship internationally. Delivery times and shipping fees vary depending on your location.</p>
-      </div>
-    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <div class="spec-item">
-      <h3 class="spec-question">How can I track my order?</h3>
-      <div class="spec-answer">
-        <p>Once your order ships, you’ll receive a tracking number via email to monitor your package’s progress.</p>
-      </div>
-    </div>
+    <!-- Slick JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-    <div class="spec-item">
-      <h3 class="spec-question">Can I cancel my order after placing it?</h3>
-      <div class="spec-answer">
-        <p>Yes, you can cancel your order within 24 hours of purchase by contacting our support team.</p>
-      </div>
-    </div>
-  </div>
+    <script>
+      const specItems = document.querySelectorAll(".spec-item");
 
-  <script>
-    const specItems = document.querySelectorAll(".spec-item");
-
-    specItems.forEach((item) => {
-      item.addEventListener("click", () => {
-        // Close all other items
-        specItems.forEach((i) => {
-          if (i !== item) i.classList.remove("active");
+      specItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          // Close all other items
+          specItems.forEach((i) => {
+            if (i !== item) i.classList.remove("active");
+          });
+          // Toggle active class on clicked item
+          item.classList.toggle("active");
         });
-        // Toggle active class on clicked item
-        item.classList.toggle("active");
       });
-    });
-  </script>
-
-</body>
+    </script>
+  </body>
 </html>

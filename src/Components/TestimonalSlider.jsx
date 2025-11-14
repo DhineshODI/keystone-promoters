@@ -40,6 +40,7 @@ export default function TestimonalSlider() {
             <h5
               className="secondHeadingText textTransform text-center"
               style={{ fontWeight: "600", textTransform: "uppercase" }}
+            
             >
               Stories from our Spaces
             </h5>
@@ -91,7 +92,7 @@ export default function TestimonalSlider() {
                   <div className="testimonalSectionName">
                     <h4>Mr.Dhinesh</h4>
                     <p>Chennai</p>
-                             </div>
+                  </div>
 
                   <div className="testimonalContent">
                     <p className="subHeadingText">
