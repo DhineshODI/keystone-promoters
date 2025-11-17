@@ -2367,3 +2367,219 @@
   align-items: self-end;
 }
 /* Project Detail -CSS  */
+
+/* aboutus-css */
+
+.aboutuspagesection .detailPageBanners {
+  background-image: url("/public/images/about-us/aboutus-hero-banner.jpg");
+}
+
+.aboutuspagesection .detailPageBanners .secondHeadingText {
+  font-size: 130px;
+}
+
+.aboutuspagesection .detailPageBanners .subHeadingText {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  text-transform: none;
+  font-weight: 400;
+  width: 43%;
+  text-align: center;
+  line-height: 1.2;
+  margin-top: 80px;
+}
+
+.aboutuspagesection .firstbannerafterSectionMAIN {
+  width: 43%;
+}
+.aboutuspagesection .bannerafterSectionMAIN {
+  column-gap: 35px;
+}
+
+.aboutuspagesection .thirdbannerafterSectionMAIN {
+  width: 17%;
+}
+
+.aboutuspagesection .contactPageAddress {
+  width: 100%;
+  line-height: 1.1;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.aboutuspagesection .aboutustextcontent {
+  font-family: "Poppins", sans-serif;
+  font-size: 19px;
+  margin-top: 15px;
+  color: #eca7e6;
+  font-weight: 400;
+}
+
+.underaboutusection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 1px solid #dd99d7;
+  padding-top: 30px;
+}
+
+.firstunderaboutusection {
+  width: 75%;
+}
+
+.flexunderaboutsection {
+  display: flex;
+  justify-content: center;
+  column-gap: 80px;
+  margin-top: 40px;
+  margin: 0 10%;
+  margin-top: 40px;
+}
+
+.underaboutusection .subHeadingText {
+  font-weight: 300;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.firstunderaboutusection .subHeadingText span {
+  font-weight: 700;
+  color: #fff;
+}
+.underaboutusection .subHeadingText.numbertext {
+  color: #ffff98;
+  font-weight: 400;
+}
+
+.shapeusconatiner {
+  height: 700px;
+  display: flex;
+  align-items: center;
+  background: #f9f9f9;
+}
+
+.shapeusflex {
+  display: flex;
+  width: 105%;
+}
+
+.shapeconatinerflex {
+  background: #9e5498;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 42%;
+}
+
+.shapeconatinerflex .secondHeadingText {
+  font-size: 85px;
+  line-height: 0.9;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffff98;
+}
+
+.shapeusconatiner .container {
+  margin-left: 0 !important;
+  padding-left: 0;
+}
+
+.shapeusflex img {
+  width: 58%;
+}
+
+.keystoneuniquesection {
+  background-image: url("/public/images/about-us/keystone-unique.jpg");
+  height: 1000px;
+}
+
+.keystoneuniquesection .mainheadingText {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+}
+
+.unqiuesectionflex {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  column-gap: 18px;
+}
+
+.unqiuesectionflex .secondHeadingText {
+  width: 63%;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 0.9;
+  font-weight: 600;
+}
+
+.unqiuesectionflex .subHeadingText {
+  width: 46%;
+  color: #fff;
+}
+
+.lowconatinersection {
+  margin: 0 10%;
+  padding-top: 50px;
+}
+
+.unquiecardsection {
+  background: #b26eac;
+  width: 48%;
+  border-radius: 20px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  padding-top: 20px;
+}
+
+.unquiecardsection img {
+  width: 70px;
+  height: 70px;
+  align-self: flex-end;
+}
+
+.unqiuecardsflexc {
+  display: flex;
+  width: 55%;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 10px;
+  margin-top: 30px;
+}
+
+.timedelivery {
+  line-height: 0.9;
+  width: 100%;
+  font-size: 35px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+}
+
+.unquiecardsection .subHeadingText {
+  color: #fff;
+  line-height: 1.1;
+  text-transform: uppercase;
+  font-size: 16px;
+  width: 94%;
+  font-weight: 400;
+  margin-top: 7px;
+}
+
+.aboutusfounders .secondHeadingText {
+  font-size: 95px;
+  line-height: 1;
+  font-weight: 800;
+}
+
+.aboutusfounders .subHeadingText {
+  width: 31%;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+/* aboutus-css */
