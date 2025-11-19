@@ -18,6 +18,7 @@ import JointVentureMainPage from "./Pages/JonitVentureMainPage";
 import ChannelPartner from "./Pages/ChannelPartnerMainPage";
 import ProjectDetailMainPage from "./Pages/ProjectDetailMainPage";
 import AboutUsPage from "./Pages/AboutusPage";
+import Header from "./Components/Header";
 
 // gsap.registerPlugin(ScrollTrigger);
 
@@ -27,9 +28,10 @@ function App() {
       {/* <TextFillAnimation /> */}
 
       {/* <SVGAnimation /> */}
-
+ <Header />
       <Router>
         <Routes>
+           
           <Route path="/" element={<Homepage />} />
           <Route path="/contact" element={<ContactMainPage />} />
           <Route path="/aboutus" element={<AboutUsPage />} />

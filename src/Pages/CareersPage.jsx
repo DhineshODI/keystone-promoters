@@ -6,7 +6,7 @@ export default function CareersPage() {
   return (
     <>
       <div>
-        <Header />
+        {/* <Header /> */}
         <CareerPageFunction />
       </div>
     </>

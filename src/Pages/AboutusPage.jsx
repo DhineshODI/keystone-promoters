@@ -5,7 +5,7 @@ export default function AboutUsPage() {
   return (
     <>
       <div>
-        <Header />
+        {/* <Header /> */}
         <div className="aboutuspagesection">
           {/* Banner */}
           <div>

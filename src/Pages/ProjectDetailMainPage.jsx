@@ -12,7 +12,7 @@ export default function ProjectDetailMainPage() {
   return (
     <>
       <div className="projectDetailPage">
-        <Header />
+        {/* <Header /> */}
         <ProjectDetailBanner />
         <ProjectDetailRoseSection />
         <ProjectDetailSectionContent />

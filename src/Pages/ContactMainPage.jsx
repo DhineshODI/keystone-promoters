@@ -5,7 +5,7 @@ export default function ContactMainPage() {
   return (
     <>
       <div>
-        <Header />
+        {/* <Header /> */}
         <ContactPage />
       </div>
     </>

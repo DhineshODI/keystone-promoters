@@ -6,7 +6,7 @@ export default function JointVentureMainPage() {
   return (
     <>
       <div>
-        <Header />
+        {/* <Header /> */}
         <JointVentureComponent />
       </div>
     </>

@@ -23,9 +23,9 @@ export default function VideoBanner() {
           </div>
         </div>
 
-        <div className="headerHomePage">
+        {/* <div className="headerHomePage">
           <Header />
-        </div>
+        </div> */}
       </div>
     </>
   );

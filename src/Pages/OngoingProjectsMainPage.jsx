@@ -6,7 +6,7 @@ export default function OngoingProjectsMainPage() {
   return (
     <>
       <div>
-        <Header />
+        {/* <Header /> */}
         <OngoingProjectsPage />
       </div>
     </>

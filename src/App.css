@@ -996,9 +996,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgba(161, 105, 155, 0.75);
-  background: rgba(98, 5, 88, 0.6);
-  padding-top: 120px;
+  /* background: rgba(161, 105, 155, 0.75);
+  background: rgba(98, 5, 88, 0.6); */
+  background: rgba(0, 0, 0, 0.6);
+  /* padding-top: 120px; */
 }
 
 .videoBannermainContainer {
@@ -2578,8 +2579,135 @@
 }
 
 .aboutusfounders .subHeadingText {
-  width: 31%;
+  width: 100%;
   text-transform: uppercase;
   font-weight: 500;
+  color: #fff;
 }
+
+.rectangleone {
+  background-color: #ffffff;
+  position: relative;
+  width: 65%;
+  height: 110px;
+}
+
+.rectangleone.active {
+  background-color: #b26eac;
+}
+
+.founderdetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  padding-left: 41%;
+  margin-top: 100px;
+}
+
+.founderimagee {
+  position: absolute;
+  width: 137px;
+  top: -42px;
+  left: -1px;
+}
+
+.founderdetails .secondHeadingText {
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.founderflex {
+  display: flex;
+  margin-top: 100px;
+  justify-content: flex-start;
+  column-gap: 150px;
+}
+
+.founderflex1 {
+  width: 50%;
+}
+
+.founderflex2 {
+  width: 33%;
+}
+
+.founderflexcontentpopup .foundernamepopup {
+  font-size: 50px;
+  font-family: "Alexandria", sans-serif;
+  line-height: 1;
+}
+
+.founderflexcontentpopup .subHeadingText {
+  color: #545454;
+}
+
+.subHeadingText.founderwho {
+  color: #545454;
+  text-transform: none;
+  font-weight: 400;
+  padding: 15px 0;
+}
+
+.founderflex2 hr {
+  color: #ababac;
+}
+
+/* .popupaboutusfounders ul {
+  width: 63%;
+} */
+
+.popupaboutusfounders ul li {
+  font-size: 25px;
+  font-family: "Alexandria", sans-serif;
+  line-height: 1.3;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  width: max-content;
+  position: relative;
+  width: 85%;
+}
+
+.popupaboutusfounders ul li::before {
+  content: "";
+  width: 72%;
+  height: 2px;
+  position: absolute;
+  background: green;
+  bottom: -5px;
+}
+
+.popupaboutusfounders ul li::after {
+  content: "";
+  background-image: url("/images/icons/right-arrow-testimonal.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 33px;
+  height: 28px;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: -20%;
+}
+
+/* aoutusfoundersbanner */
+
+.foundersbanner {
+  background-image: url("/public/images/about-us/aoutusfoundersbanner.jpg");
+  height: 1000px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.foundersbanner .lowconatinersection {
+  margin-right: 0;
+}
+
+.aboutusfounders .subHeadingText  {
+  width: 50%;
+}
+
 /* aboutus-css */

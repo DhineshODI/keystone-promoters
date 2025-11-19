@@ -6,7 +6,7 @@ export default function ChannelPartner() {
   return (
     <>
       <div>
-        <Header />
+        {/* <Header /> */}
         <ChannelPartnerComponent />
       </div>
     </>
