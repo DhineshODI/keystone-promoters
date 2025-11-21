@@ -11,7 +11,8 @@ export default function OngoingProjects() {
     slidesToScroll: 1,
     arrows: false,
     speed: 600,
-    autoplay: true,
+    autoplay: false,
+      swipe: false, 
     autoplaySpeed: 3500,
     beforeChange: (_, next) => setActiveIndex(next),
     afterChange: (index) => {
@@ -32,48 +33,48 @@ export default function OngoingProjects() {
     },
     {
       id: 2,
-      ProjectTitle: "Urban Heights",
-      ProjectLocation: "OMR, Chennai",
+      ProjectTitle: "Spectras",
+      ProjectLocation: "Keelkattalai, Chennai",
       BHKStatus: "2 & 3",
-      unitSize: "1045 - 1342",
+      unitSize: "1159 - 1481",
       projectImage: "/images/ongoing-images/onGoingProjectsImage.jpg",
-      projectLink: "/project2",
+      projectLink: "/project1",
     },
     {
       id: 3,
-      ProjectTitle: "Elite Residency",
-      ProjectLocation: "Velachery, Chennai",
-      BHKStatus: "3 & 4",
-      unitSize: "1250 - 1620",
+      ProjectTitle: "Spectras",
+      ProjectLocation: "Keelkattalai, Chennai",
+      BHKStatus: "2 & 3",
+      unitSize: "1159 - 1481",
       projectImage: "/images/ongoing-images/onGoingProjectsImage.jpg",
-      projectLink: "/project3",
+      projectLink: "/project1",
     },
     {
       id: 4,
-      ProjectTitle: "Serene Villas",
-      ProjectLocation: "Porur, Chennai",
-      BHKStatus: "3",
-      unitSize: "1450 - 1820",
+      ProjectTitle: "Spectras",
+      ProjectLocation: "Keelkattalai, Chennai",
+      BHKStatus: "2 & 3",
+      unitSize: "1159 - 1481",
       projectImage: "/images/ongoing-images/onGoingProjectsImage.jpg",
-      projectLink: "/project4",
+      projectLink: "/project1",
     },
     {
       id: 5,
-      ProjectTitle: "Skyline Apartments",
-      ProjectLocation: "Anna Nagar, Chennai",
+      ProjectTitle: "Spectras",
+      ProjectLocation: "Keelkattalai, Chennai",
       BHKStatus: "2 & 3",
-      unitSize: "1100 - 1600",
+      unitSize: "1159 - 1481",
       projectImage: "/images/ongoing-images/onGoingProjectsImage.jpg",
-      projectLink: "/project5",
+      projectLink: "/project1",
     },
     {
       id: 6,
-      ProjectTitle: "Harmony Homes",
-      ProjectLocation: "Tambaram, Chennai",
-      BHKStatus: "2",
-      unitSize: "980 - 1300",
+      ProjectTitle: "Spectras",
+      ProjectLocation: "Keelkattalai, Chennai",
+      BHKStatus: "2 & 3",
+      unitSize: "1159 - 1481",
       projectImage: "/images/ongoing-images/onGoingProjectsImage.jpg",
-      projectLink: "/project6",
+      projectLink: "/project1",
     },
   ];
 
@@ -138,14 +139,17 @@ export default function OngoingProjects() {
           <div className="onGoingMainSectionDiv">
             <div className="onGoingRightSection">
               <h5 className="mainheadingText onGoingSecondTextContainer">
-                Lorem ipsum dolor sitamet consecte turadipiscing
+                Designed <br /> for Today, Built for Tomorrow
               </h5>
               <div className="secondSliderContentSections">
                 <p className="subHeadingText">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit do
-                  eiusmmpor incididunt ut labore et dolore magna uis ipsum
-                  suspendisse
+                  Each project reflects our commitment to excellence, blending
+                  modern design with sustainable and lasting construction.
                 </p>
+              </div>
+
+              <div className="viewallprojectsongoing">
+                <button>View All Projects</button>
               </div>
 
               {/* ===== SINGLE DOT CONTROL ===== */}

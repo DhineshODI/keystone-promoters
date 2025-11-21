@@ -19,6 +19,9 @@ import ChannelPartner from "./Pages/ChannelPartnerMainPage";
 import ProjectDetailMainPage from "./Pages/ProjectDetailMainPage";
 import AboutUsPage from "./Pages/AboutusPage";
 import Header from "./Components/Header";
+import TestimonialPage from "./Pages/TestimonialPage";
+import NriPage from "./Pages/NriPage";
+import Menubar from "./Components/Menubar";
 
 // gsap.registerPlugin(ScrollTrigger);
 
@@ -28,10 +31,11 @@ function App() {
       {/* <TextFillAnimation /> */}
 
       {/* <SVGAnimation /> */}
- <Header />
-      <Router>
+
+      {/* <Menubar/> */}
+      <Header />
+      {/* <Router> */}
         <Routes>
-           
           <Route path="/" element={<Homepage />} />
           <Route path="/contact" element={<ContactMainPage />} />
           <Route path="/aboutus" element={<AboutUsPage />} />
@@ -43,8 +47,10 @@ function App() {
             element={<OngoingProjectsMainPage />}
           />
           <Route path="/project-detail" element={<ProjectDetailMainPage />} />
+          <Route path="/testimonial" element={<TestimonialPage />} />
+          <Route path="/nri" element={<NriPage />} />
         </Routes>
-      </Router>
+      {/* </Router> */}
 
       <TestimonalSlider />
       <ScheduleAvisit />

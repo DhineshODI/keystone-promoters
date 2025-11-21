@@ -1,4 +1,5 @@
 import AboutusFounder from "../Components/AboutUSFounders";
+import AboutusSlider from "../Components/AboutusSlider";
 import Header from "../Components/Header";
 
 export default function AboutUsPage() {
@@ -125,37 +126,31 @@ export default function AboutUsPage() {
                       alt=""
                     />
                     <h3 className="timedelivery">Timely Delivery </h3>
-                    <p className="subHeadingText ">Every commitment met with precision</p>
+                    <p className="subHeadingText ">
+                      Every commitment met with precision
+                    </p>
                   </div>
-                      <div className="unquiecardsection">
-                    <img
-                      src="/images/about-us/icons/design-led.svg"
-                      alt=""
-                    />
+                  <div className="unquiecardsection">
+                    <img src="/images/about-us/icons/design-led.svg" alt="" />
                     <h3 className="timedelivery">Design Led </h3>
                     <p className="subHeadingText ">Architecture with a soul</p>
                   </div>
-                      <div className="unquiecardsection">
-                    <img
-                      src="/images/about-us/icons/compliment.svg"
-                      alt=""
-                    />
-                    <h3 className="timedelivery">100%  Compliant</h3>
-                    <p className="subHeadingText ">Legal clarity, clear title</p>
+                  <div className="unquiecardsection">
+                    <img src="/images/about-us/icons/compliment.svg" alt="" />
+                    <h3 className="timedelivery">100% Compliant</h3>
+                    <p className="subHeadingText ">
+                      Legal clarity, clear title
+                    </p>
                   </div>
-                      <div className="unquiecardsection">
-                    <img
-                      src="/images/about-us/icons/compliment.svg"
-                      alt=""
-                    />
+                  <div className="unquiecardsection">
+                    <img src="/images/about-us/icons/compliment.svg" alt="" />
                     <h3 className="timedelivery">Solid Foundations</h3>
-                    <p className="subHeadingText ">Structurally sound and  aesthetically modern</p>
+                    <p className="subHeadingText ">
+                      Structurally sound and aesthetically modern
+                    </p>
                   </div>
-                      <div className="unquiecardsection">
-                    <img
-                      src="/images/about-us/icons/investor.svg"
-                      alt=""
-                    />
+                  <div className="unquiecardsection">
+                    <img src="/images/about-us/icons/investor.svg" alt="" />
                     <h3 className="timedelivery">Investor Friendly</h3>
                     <p className="subHeadingText ">High appreciation value</p>
                   </div>
@@ -164,8 +159,20 @@ export default function AboutUsPage() {
             </div>
           </div>
 
+          <div className=" container max-w-7xl mx-auto px-4 ">
+            <div className="vissionmissionaboutrow">
+              <div className="aboutusvissionmission">
+                <img src="/images/about-us/vissionmissonimage.jpg" alt="" />
+                <h5 className="vissionmisiontext secondHeadingText">
+                  VISION & MISSION
+                </h5>
+              </div>
+            </div>
+          </div>
 
-          <AboutusFounder/>
+          <AboutusFounder />
+
+          {/* <AboutusSlider /> */}
         </div>
       </div>
     </>

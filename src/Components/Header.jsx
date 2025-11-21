@@ -1,4 +1,24 @@
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+
 export default function Header() {
+  const [active, setActive] = useState("");
+  const handleActive = (name) => setActive(name);
+
+  useEffect(() => {
+  const handleScroll = () => {
+    const header = document.querySelector(".HeaderMainSEC");
+    if (window.scrollY > 80) {
+      header.classList.add("is-sticky");
+    } else {
+      header.classList.remove("is-sticky");
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
+
   return (
     <>
       <div>
@@ -11,17 +31,61 @@ export default function Header() {
           </div>
         </div>
         <div className="HeaderMainSEC">
-          <img
-            className="headerLogoImg"
-            src="/images/keystone-detailpage-logo.png"
-            alt=""
-          />
+          <Link to="/" onClick={() => handleActive("")}>
+            <img
+              className="headerLogoImg"
+              src="/images/keystone-detailpage-logo.jpg"
+              alt=""
+            />
+          </Link>
           <ul className="listHeaders">
-            <li>Brand</li>
-            <li>Ongoing</li>
-            <li>Upcoming</li>
-            <li>Completed</li>
-            <li>Contact us</li>
+            <li
+              className={
+                active === "aboutus" ? "active" : "text-hover-underline"
+              }
+              onClick={() => handleActive("aboutus")}
+            >
+              <Link to="/aboutus">Brand</Link>
+            </li>
+
+            <li
+              className={
+                active === "ongoing-projects"
+                  ? "active"
+                  : "text-hover-underline"
+              }
+              onClick={() => handleActive("ongoing-projects")}
+            >
+              <Link to="/ongoing-projects">Ongoing</Link>
+            </li>
+
+            <li
+              className={
+                active === "project-detail" ? "active" : "text-hover-underline"
+              }
+              onClick={() => handleActive("project-detail")}
+            >
+              <Link to="/project-detail">Upcoming</Link>
+            </li>
+
+            <li
+              className={
+                active === "completed" ? "active" : "text-hover-underline"
+              }
+              onClick={() => handleActive("completed")}
+            >
+              <Link to="/completed">Completed</Link>
+            </li>
+
+            <li
+              className={
+                active === "contact" ? "active" : "text-hover-underline"
+              }
+              onClick={() => handleActive("contact")}
+            >
+              <Link to="/contact">Contact Us</Link>
+            </li>
+
             <div className="hamburgerflex">
               <img
                 className="hamburgerIconImage"
