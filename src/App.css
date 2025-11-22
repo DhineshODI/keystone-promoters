@@ -200,6 +200,7 @@
   font-weight: 600;
   color: #363435;
   letter-spacing: 1px;
+  z-index: 10;
 }
 
 /* schedule A visitrow */
@@ -556,7 +557,7 @@
   width: 113%;
   height: 2px;
   height: 1px;
-  background-color: #a7718a;
+  background-color: #b77faa;
 }
 
 .yearsScrollText:last-child:before {
@@ -566,7 +567,7 @@
 .yearsScrollText h6 {
   font-size: 200px;
   line-height: 0.75;
-  color: #fff;
+  color: #ffff98 !important;
 }
 
 .yearsScrollText span {
@@ -601,6 +602,7 @@
   /* background-color: #a7578f; */
   padding: 100px 0;
   background-image: url("/public/images/homepage/livethroughBg.jpg");
+  background-image: url("/public/images/ongoing-images/onGoingProjectsBg.jpg");
 }
 
 .yearsScrollText.projectsScroll span {
@@ -613,6 +615,7 @@
 .LiveThoughtsBg .secondHeadingText {
   text-transform: uppercase;
   line-height: 0.8;
+  color: #ffff98;
   color: #fff;
   position: relative;
 }
@@ -630,7 +633,8 @@
   line-height: 1.3;
   width: 83%;
   margin-top: 20px;
-  font-weight: 300;
+  font-weight: 400;
+  width: 68%;
 }
 
 .LiveThoughtFlex .secondHeadingText::before {
@@ -640,6 +644,7 @@
   right: -7px;
   font-size: 33px;
   font-weight: 600;
+  color: #fff;
 }
 
 .LiveThoughtFlex .projectsScroll .secondHeadingText::before {
@@ -714,10 +719,26 @@
 }
 
 .archiBg {
-  background-image: url("/public/images/homepage/architureBG.jpg");
+  /* background-image: url("/public/images/homepage/architureBG.jpg");
+  height: 770px;
+  display: flex;
+  align-items: center; */
+  background-image: url(/public/images/homepage/architureBG.jpg);
   height: 770px;
   display: flex;
   align-items: center;
+  background-repeat: repeat-x;
+  background-size: cover;
+  animation: moveBg 20s linear infinite;
+}
+
+@keyframes moveBg {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -3000px 0;
+  }
 }
 
 /* ArchitureSection */
@@ -1116,6 +1137,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 90px;
 }
 
 .detailPageBanners .subHeadingText {
@@ -1168,21 +1190,33 @@
 }
 
 .contactFormInputEach label {
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
   font-weight: 500;
 }
 
 .contactFormInputEach label sup {
   color: red;
+  font-size: 17px;
+  top: 0px;
+  left: -2px;
+}
+.channelPartnerFormSection .contactFormInputEach label sup {
+  color: red;
+  font-size: 17px;
+  top: 0px;
+  left: -2px;
 }
 
 .contactFormInputEach input {
-  height: 50px;
+  height: 58px;
   width: 100%;
   border: 2px solid #dfdfdf;
   border-radius: 10px;
   margin-top: 10px;
+  padding-left: 10px;
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
 }
 
 .formMainStyleContactPage {
@@ -1221,6 +1255,10 @@
   align-items: center;
 }
 .seondbannerafterSectionMAIN {
+  width: 20%;
+}
+
+.seondbannerafterSectionMAINrow {
   width: 225px;
   height: 225px;
   background-color: #feff99;
@@ -1229,10 +1267,12 @@
 
 .firstbannerafterSectionMAIN {
   width: 30%;
+  width: 46%;
 }
 
 .thirdbannerafterSectionMAIN {
   width: 30%;
+  width: 34%;
 }
 
 .afterMainBG {
@@ -1274,13 +1314,15 @@
 }
 
 .ongoingProjectsPage .thirdbannerafterSectionMAIN {
-  width: 26%;
+  /* width: 26%; */
 }
 
 .ongoingProjectsPage .afterMainBG {
   background-image: url("/public/images/ongoing-images/project-Iisting-second-bg.jpg");
   padding: 100px 0;
-  height: 506px;
+  height: 806px;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .onGoingProjectsLists {
@@ -1357,6 +1399,15 @@
   color: #fff;
   font-weight: 600;
   letter-spacing: 1px;
+  transition:
+    background 0.4s ease,
+    color 0.4s ease;
+}
+
+.buttononGoingProjectsLists:hover {
+  background: #fff;
+  color: #b25d94;
+
 }
 
 .FirstonGoingProjectsLists::before {
@@ -1383,8 +1434,61 @@
 
 .ongoingProjectsDiVMain {
   margin-top: -105px;
+  margin-top: 50px;
   border-bottom: 2px solid #cdb5c7;
   padding-bottom: 50px;
+}
+
+.ongoingprojectslist li {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #7a7a7a;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  position: relative;
+  padding: 0 25px;
+  cursor: pointer;
+}
+
+.ongoingprojectslist li.activestatus {
+  color: #974579;
+  text-decoration: underline 2px solid #974579;
+  text-underline-offset: 8px;
+}
+
+.ongoingprojectslist li::before {
+  content: "";
+  width: 2px;
+  height: 60%;
+  background-color: #7a7a7a;
+  position: absolute;
+  top: 19%;
+  right: -19px;
+}
+
+.ongoingprojectslist li:last-child::before {
+  content: none;
+}
+
+.ongoingprojectslist {
+  display: flex;
+  justify-content: center;
+  column-gap: 40px;
+  width: max-content;
+  background: #fff;
+  border-radius: 50px;
+  border: 8px solid #a15c9d;
+  padding: 10px 45px;
+}
+
+.ongoingslistflex {
+  display: flex;
+  justify-content: center;
+}
+
+.margintopafterlist {
+  margin-top: -380px;
 }
 /* Ongoing-Projects-CSS  */
 
@@ -1395,11 +1499,11 @@
 }
 
 .CarrePageMainSection .firstbannerafterSectionMAIN {
-  width: 34%;
+  /* width: 34%; */
 }
 
 .CarrePageMainSection .thirdbannerafterSectionMAIN {
-  width: 32%;
+  /* width: 32%; */
 }
 
 .careersCurrentOpenings {
@@ -1572,7 +1676,7 @@
   background-image: none;
   position: unset;
   width: 40%;
-  width: 28%;
+  width: 33%;
   /* width: 100%; */
   background-color: transparent;
   box-shadow: unset;
@@ -1581,20 +1685,28 @@
 .channelPartnerFormSection {
   display: flex;
   justify-content: center;
+  justify-content: flex-start;
   margin-top: 50px;
-  column-gap: 100px;
+  column-gap: 140px;
 }
 
 .channelPartnerMainSection .contactFormInputEach {
   width: 100%;
 }
 .channelPartnerFormSection .formChannelPartnerImage {
-  width: 35%;
+  width: 46%;
   height: 45%;
 }
 
+.channelPartnerFormSection .contactFormInputEach button {
+  background: #864973;
+  font-size: 18px;
+  height: 54px;
+}
+
 .channelPartnerFormSection .contactFormInputEach input {
-  margin-top: 0px;
+  margin-top: 10px;
+  height: 58px;
 }
 
 .channelPartnerFormSection .formMainStyleContactPage {
@@ -1610,6 +1722,7 @@
 
 .channelPartnerFormFirst .subHeadingText {
   color: #636465;
+  width: 70%;
 }
 
 .channelPartnerFormFirst {
@@ -1619,9 +1732,13 @@
   align-items: center;
 }
 
+.channelPartnerFormFirst .contactFormInputEach label {
+  font-size: 18px;
+}
+
 .channelContentPartner {
-  margin-left: 15%;
-  width: 52%;
+  /* margin-left: 15%;
+  width: 52%; */
 }
 
 /* Channel-Partner Page -CSS  */
@@ -1630,8 +1747,12 @@
 
 /* 1st */
 
-.detailPageBanners .secondHeadingText {
+.spectraproject .secondHeadingText {
   font-size: 100px;
+}
+
+.detailPageBanners.spectraproject {
+  background-image: url("/public/images/project-detail/spectra-project-bg.jpg");
 }
 
 .projectDetailIconSection {
@@ -1672,10 +1793,12 @@
 .projectDetailFlexdiv {
   display: flex;
   column-gap: 50px;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   margin-top: 30px;
   padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .projectDetailPage .BreadCrumSection {
@@ -1759,6 +1882,7 @@
   padding-bottom: 20px;
   width: 95%;
   padding-left: 50px;
+  padding-left: 0px;
   padding-top: 20px;
   align-items: center;
 }
@@ -1777,6 +1901,7 @@
   column-gap: 23px;
   width: 95%;
   padding-left: 50px;
+  padding-left: 0px;
   align-items: center;
   padding-top: 45px;
 }
@@ -2492,19 +2617,165 @@
 /* popup */
 
 .vissionmisiontext.secondHeadingText {
+  font-size: 113px;
+  font-weight: 800;
+  position: absolute;
+  top: 20px;
+}
+
+.line3 {
+  position: relative;
+  display: inline-block;
+  font-family: "Alexandra", sans-serif;
   font-size: 130px;
-  font-weight: 600;
+  line-height: 1;
+  font-weight: 800;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+/* MIDDLE 80% — STROKE + #7e63ab at 0.5 opacity */
+.line3::before {
+  content: attr(data-text);
   position: absolute;
   top: 0;
+  left: 0;
+  font-weight: 800;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+
+  /* #7e63ab with 50% opacity */
+  color: rgba(126, 99, 171, 0.4);
+  -webkit-text-fill-color: rgba(126, 99, 171, 0.4);
+
+  /* stroke */
+  -webkit-text-stroke: 1px #fff;
+
+  /* show ONLY middle 80% (10% → 90%) */
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 100%,
+    transparent 100%,
+    transparent 100%
+  );
+
+  z-index: 2;
+}
+
+/* LEFT 10% + RIGHT 10% — PINK COLOR */
+.line3::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  font-weight: 800;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  color: #b26eac;
+  -webkit-text-fill-color: #b26eac;
+  -webkit-text-stroke: 0;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    black 0%,
+    /* left visible */ black 18%,
+    /* left edge end */ transparent 20%,
+    /* hide middle */ transparent 80%,
+    black 50%,
+    /* right edge start */ black 50% /* right visible */
+  );
+  z-index: 1;
+}
+
+.aboutusvissionmission {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutusvissionmission img {
+  width: 78% !important;
+  z-index: 2;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .vissionmissionaboutrow {
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
+.visionmissonrow {
+  padding: 150px 0;
+}
+
+.leftsidecontentsectionabout {
+  position: absolute;
+  width: 27%;
+  height: auto;
+  background: #b26eac;
+  left: 10%;
+  z-index: 1000;
+  top: 33%;
+  text-align: end;
+  padding: 50px 30px;
+  padding-bottom: 0px;
+}
+.leftsidecontentsectionabout .subHeadingText {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.visiiontexttransperant {
+  margin-top: 25px;
+}
+
+.visiiontexttransperant .subHeadingText {
+  font-size: 70px;
+  line-height: 51px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #a1559a;
+  -webkit-text-stroke: 1px #c99fc4;
+}
+
+.rightsidecontentsectionabout {
+  position: absolute;
+  width: 26%;
+  height: auto;
+  background: #b26eac;
+  right: 13%;
+  z-index: 1000;
+  top: 33%;
+  text-align: left;
+  padding: 50px 30px;
+  padding-bottom: 0px;
+}
+.rightsidecontentsectionabout .subHeadingText {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.visiiontexttransperant {
+  margin-top: 25px;
+}
+
+.visiiontexttransperant .subHeadingText {
+  font-size: 70px;
+  line-height: 51px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #a1559a;
+  -webkit-text-stroke: 1px #c99fc4;
+}
 .aboutusvissionmission {
-  position: relative;
+  /* position: relative; */
 }
 
 .aboutuspagesection .detailPageBanners {
@@ -2527,14 +2798,14 @@
 }
 
 .aboutuspagesection .firstbannerafterSectionMAIN {
-  width: 43%;
+  /* width: 43%; */
 }
 .aboutuspagesection .bannerafterSectionMAIN {
   column-gap: 35px;
 }
 
 .aboutuspagesection .thirdbannerafterSectionMAIN {
-  width: 17%;
+  /* width: 17%; */
 }
 
 .aboutuspagesection .contactPageAddress {
@@ -2568,7 +2839,7 @@
   justify-content: center;
   column-gap: 80px;
   margin-top: 40px;
-  margin: 0 10%;
+  /* margin: 0 10%; */
   margin-top: 40px;
 }
 
@@ -2642,6 +2913,7 @@
   width: 100%;
   justify-content: center;
   column-gap: 18px;
+  align-items: flex-end;
 }
 
 .unqiuesectionflex .secondHeadingText {
@@ -2660,6 +2932,9 @@
 .lowconatinersection {
   margin: 0 10%;
   padding-top: 50px;
+}
+.lowconatinersectionafterbanner {
+  margin: 0 7%;
 }
 
 .unquiecardsection {
@@ -2722,11 +2997,17 @@
   color: #fff;
 }
 
+.foundersbanner.active {
+}
+
 .rectangleone {
   background-color: #ffffff;
   position: relative;
   width: 59%;
   height: 110px;
+  transition:
+    background-color 0.7s ease,
+    transform 0.3s ease;
 }
 
 .rectangleone.active {
@@ -2741,6 +3022,7 @@
   height: 100%;
   padding-left: 41%;
   margin-top: 50px;
+  cursor: pointer;
 }
 
 .founderimagee {
@@ -2778,6 +3060,7 @@
   line-height: 1;
   text-transform: uppercase;
   color: #b26eac;
+  font-weight: 500;
 }
 
 .founderflexcontentpopup .subHeadingText {
@@ -2834,17 +3117,31 @@
   right: -20%;
 }
 
+.notactive .founderdetails .secondHeadingText {
+  color: #b26eac;
+}
+
+.notactive .subHeadingText {
+  color: #b26eac !important;
+}
+
 /* aoutusfoundersbanner */
 
 .foundersbanner {
   background-image: url("/public/images/about-us/aoutusfoundersbanner.jpg");
+  /* background-image: url("/public/images/about-us/aoutusfoundersbanner2.jpg"); */
   height: 1000px;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
+.foundersbanner.active {
+  background-image: url("/public/images/about-us/aoutusfoundersbanner2.jpg");
+}
+
 .foundersbanner .lowconatinersection {
   margin-right: 0;
+  padding-top: 70px;
 }
 
 .aboutusfounders .subHeadingText {
@@ -2877,9 +3174,6 @@
 /* aboutus-css */
 
 /* testimonial-css */
-.testimonialmainpage .firstbannerafterSectionMAIN {
-  width: 34%;
-}
 
 .testimonalpagedisply {
   display: flex;
@@ -3222,3 +3516,109 @@
 
 /* menubar */
 
+.line1 {
+  font-family: "Alexandra", sans-serif;
+  position: relative;
+  font-size: 88px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1;
+  -webkit-text-stroke: 1px #a762a1;
+  color: transparent !important;
+}
+
+.line1::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  color: #fff;
+  color: #b26eac;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0px solid #fff;
+  animation: reveal 7s ease-in-out infinite;
+  -webkit-text-stroke: 1px #1d1d1d;
+}
+
+@keyframes reveal {
+  0% {
+    width: 0%;
+  }
+  40% {
+    width: 100%;
+  }
+  60% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+.line2 {
+  font-family: "Alexandra", sans-serif;
+  position: relative;
+  font-size: 88px;
+  font-weight: 800;
+  color: transparent !important;
+
+  text-transform: uppercase;
+  margin: 0;
+  -webkit-text-stroke: 1px #a762a1;
+  line-height: 1;
+}
+
+.line2::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  color: #fff;
+  color: #b26eac;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0px solid #fff;
+  animation: reveal2 7s ease-in-out infinite;
+  -webkit-text-stroke: 1px #1d1d1d;
+}
+
+@keyframes reveal2 {
+  0% {
+    width: 0%;
+  }
+  40% {
+    width: 110%;
+  }
+  60% {
+    width: 110%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+.keystonesectionflexx .secondHeadingText {
+  font-size: 150px;
+  line-height: 122px;
+  margin-top: 0;
+}
+
+.onetextkeystone {
+  display: flex;
+  justify-content: center;
+  margin-left: 5%;
+}
+.twotextkeystone {
+  display: flex;
+  justify-content: center;
+}
+
+.keystonesectionflexx {
+  margin-top: -38px;
+}

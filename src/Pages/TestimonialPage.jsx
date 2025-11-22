@@ -11,9 +11,13 @@ export default function TestimonialPage() {
                 <h5 className="secondHeadingText">Inspire Trust</h5>
 
                 <div className="BreadCrumSection">
-                  <span className="subHeadingText">Home</span>
+                  <a href="/" className="subHeadingText  text-hover-underline">
+                    Home
+                  </a>
                   <span className="subHeadingText">-</span>
-                  <span className="subHeadingText">Testimonials</span>
+                  <a className="subHeadingText  text-hover-underline">
+                    Testimonials
+                  </a>
                 </div>
               </div>
             </div>
@@ -21,28 +25,33 @@ export default function TestimonialPage() {
 
             {/* After-Banner-Section */}
 
-            <div className="afterMainBG">
+            <div className="afterMainBG testimonialpageafterbanner">
               <div className="container max-w-7xl mx-auto px-4 ">
-                <div className="bannerafterSectionMAIN">
-                  <div className="firstbannerafterSectionMAIN">
-                    <div>
-                      <h4 className="gettknowHeading">
-                        Client Testimonials Showcasing
-                      </h4>
-                      <h3 className="visitOurOFficetext">
-                        {/* Driven People. <br /> Real Opportunities. <br /> Here. */}
-                        Our Dedication to Building With Integrity and Care
-                      </h3>
+                <div className="lowconatinersectionafterbanner">
+                  <div className="bannerafterSectionMAIN">
+                    <div className="firstbannerafterSectionMAIN">
+                      <div>
+                        <h4 className="gettknowHeading">
+                          Client Testimonials Showcasing
+                        </h4>
+                        <h3 className="visitOurOFficetext">
+                          {/* Driven People. <br /> Real Opportunities. <br /> Here. */}
+                          Our Dedication to Building With Integrity and Care
+                        </h3>
+                      </div>
                     </div>
-                  </div>
-                  <div className="seondbannerafterSectionMAIN"></div>
-                  <div className="thirdbannerafterSectionMAIN">
-                    <div style={{ marginTop: "15px" }}>
-                      <p className="contactPageAddress">
-                        Genuine client stories reflecting our commitment to
-                        quality, trust and satisfaction in every completed
-                        project.
-                      </p>
+                    <div className="seondbannerafterSectionMAIN">
+                      <div className="seondbannerafterSectionMAINrow"></div>
+                    </div>
+
+                    <div className="thirdbannerafterSectionMAIN">
+                      <div style={{ marginTop: "15px" }}>
+                        <p className="contactPageAddress">
+                          Genuine client stories reflecting our commitment to
+                          quality, trust and satisfaction in every completed
+                          project.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -140,7 +149,7 @@ export default function TestimonialPage() {
                       </div>
                     </div>
                   </div>
-                      <div class="testimonalSliderborder">
+                  <div class="testimonalSliderborder">
                     <div class="testimonalSectionName">
                       <h4>Mr.Dhinesh</h4>
                       <p>Chennai</p>
@@ -168,7 +177,7 @@ export default function TestimonialPage() {
                       </div>
                     </div>
                   </div>
-                      <div class="testimonalSliderborder">
+                  <div class="testimonalSliderborder">
                     <div class="testimonalSectionName">
                       <h4>Mr.Dhinesh</h4>
                       <p>Chennai</p>
@@ -196,7 +205,7 @@ export default function TestimonialPage() {
                       </div>
                     </div>
                   </div>
-                      <div class="testimonalSliderborder">
+                  <div class="testimonalSliderborder">
                     <div class="testimonalSectionName">
                       <h4>Mr.Dhinesh</h4>
                       <p>Chennai</p>

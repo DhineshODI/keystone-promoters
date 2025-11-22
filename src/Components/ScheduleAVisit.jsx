@@ -19,14 +19,26 @@ export default function ScheduleAvisit() {
 
             <div className="sechondHeadingMain">
               <p className="subHeadingText text-center text-[#1d1f22]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                deserunt officiis neque iusto a voluptas in vel fugit! Libero
-                velit similique nobis
+                Come see where craftsmanship meets your vision of dream home.
               </p>
             </div>
 
             <div className="scheduleaVisitbutton">
               <button>Enquire Now</button>
+            </div>
+
+            <div className="keystonesectionflexx">
+              <div className="onetextkeystone">
+                <div class="line1 secondHeadingText " data-text="KeyStone">
+                  KeyStone
+                </div>
+              </div>
+
+              <div className="twotextkeystone">
+                <div class="line2 secondHeadingText " data-text="Promoters">
+                  Promoters
+                </div>
+              </div>
             </div>
           </div>
         </div>

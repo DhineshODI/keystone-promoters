@@ -35,21 +35,18 @@ function App() {
       {/* <Menubar/> */}
       <Header />
       {/* <Router> */}
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/contact" element={<ContactMainPage />} />
-          <Route path="/aboutus" element={<AboutUsPage />} />
-          <Route path="/careers" element={<CareersPage />} />
-          <Route path="/joint-venture" element={<JointVentureMainPage />} />
-          <Route path="/channel-partner" element={<ChannelPartner />} />
-          <Route
-            path="/ongoing-projects"
-            element={<OngoingProjectsMainPage />}
-          />
-          <Route path="/project-detail" element={<ProjectDetailMainPage />} />
-          <Route path="/testimonial" element={<TestimonialPage />} />
-          <Route path="/nri" element={<NriPage />} />
-        </Routes>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/contact" element={<ContactMainPage />} />
+        <Route path="/aboutus" element={<AboutUsPage />} />
+        <Route path="/careers" element={<CareersPage />} />
+        <Route path="/joint-venture" element={<JointVentureMainPage />} />
+        <Route path="/channel-partner" element={<ChannelPartner />} />
+        <Route path="/ongoing-projects" element={<OngoingProjectsMainPage />} />
+        <Route path="/project-detail" element={<ProjectDetailMainPage />} />
+        <Route path="/testimonial" element={<TestimonialPage />} />
+        <Route path="/nri" element={<NriPage />} />
+      </Routes>
       {/* </Router> */}
 
       <TestimonalSlider />

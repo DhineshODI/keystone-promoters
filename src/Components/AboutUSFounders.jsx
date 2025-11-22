@@ -3,6 +3,12 @@ import { React, useState, useEffect, useRef } from "react";
 export default function AboutusFounder() {
   const [isOpen, setIsOpen] = useState(false);
   const modalRef = useRef(null);
+
+  const [activeIndex, setActiveIndex] = useState(1);
+
+  const handleToggle = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
   useEffect(() => {
     if (isOpen) {
       // 1️⃣ Disable body scroll
@@ -27,7 +33,7 @@ export default function AboutusFounder() {
   }, [isOpen]);
   return (
     <>
-      <div className="foundersbanner">
+      <div className={`foundersbanner ${activeIndex === 2 ? "active" : ""}`}>
         <div className="container max-w-7xl mx-auto px-4 ">
           <div className="lowconatinersection aboutusfounders">
             <div className="aboutusfoundermaincontent">
@@ -40,11 +46,11 @@ export default function AboutusFounder() {
             <div className="founderflex">
               <div className="founderflex1">
                 <div
-                  onClick={() => setIsOpen(true)}
-                  className="rectangleone active"
+                  onClick={() => handleToggle(1)}
+                  className={`rectangleone ${activeIndex === 1 ? "active" : "notactive"}`}
                 >
                   <div className="founderdetails">
-                    <h4 className="secondHeadingText ">Dinesh</h4>
+                    <h4 className="secondHeadingText ">Dhinesh</h4>
                     <h5 className="subHeadingText ">Director</h5>
                   </div>
 
@@ -54,51 +60,86 @@ export default function AboutusFounder() {
                     alt=""
                   />
                 </div>
-                <div className="rectangleone">
+                <div
+                  onClick={() => handleToggle(2)}
+                  className={`rectangleone  ${activeIndex === 2 ? "active" : "notactive"}`}
+                >
                   <div className="founderdetails">
-                    <h4 className="secondHeadingText ">Dinesh</h4>
+                    <h4 className="secondHeadingText ">Dhivya</h4>
                     <h5 className="subHeadingText ">Director</h5>
                   </div>
 
                   <img
                     className="founderimagee"
-                    src="/images/about-us/founder1.png"
+                    src="/images/about-us/founder2.png"
                     alt=""
                   />
                 </div>
               </div>
 
-              <div className="founderflex2">
-                <div className="founderflexcontentpopup">
-                  <h5 className="foundernamepopup">Dinesh</h5>
-                  <p className="subHeadingText ">Director</p>
+              {activeIndex === 1 && (
+                <div className="founderflex2">
+                  <div className="founderflexcontentpopup">
+                    <h5 className="foundernamepopup">Dhinesh</h5>
+                    <p className="subHeadingText ">Director</p>
+                  </div>
+
+                  <hr />
+
+                  <p className="subHeadingText founderwho">
+                   Leading with vision, integrity, and commitment to excellence in construction
+                  </p>
+
+                  <hr />
+
+                  <div className="popupaboutusfounders">
+                    <ul>
+                      <li onClick={() => setIsOpen(true)}>
+                        director's Profile
+                      </li>
+                      <li>Design Vision & Individual Aesthetic</li>
+                      <li>Professional Journey & Industry Standing</li>
+                      <li>Landmark Projects & Curated Showcase</li>
+                    </ul>
+                  </div>
                 </div>
+              )}
 
-                <hr />
+              {activeIndex === 2 && (
+                <div className="founderflex2">
+                  <div className="founderflexcontentpopup">
+                    <h5 className="foundernamepopup">Dhivya</h5>
+                    <p className="subHeadingText ">Director</p>
+                  </div>
 
-                <p className="subHeadingText founderwho">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
+                  <hr />
 
-                <hr />
+                  <p className="subHeadingText founderwho">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
 
-                <div className="popupaboutusfounders">
-                  <ul>
-                    <li>director's Profile</li>
-                    <li>Design Vision & Individual Aesthetic</li>
-                    <li>Professional Journey & Industry Standing</li>
-                    <li>Landmark Projects & Curated Showcase</li>
-                  </ul>
+                  <hr />
+
+                  <div className="popupaboutusfounders">
+                    <ul>
+                      <li onClick={() => setIsOpen(true)}>
+                        director's Profile
+                      </li>
+                      <li>Design Vision & Individual Aesthetic</li>
+                      <li>Professional Journey & Industry Standing</li>
+                      <li>Landmark Projects & Curated Showcase</li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
+              )}
             </div>
           </div>
         </div>
 
         {/* Modal */}
         {isOpen && (
-          <div className="fixed inset-0 bg-[rgba(0,0,0,0.5)] backdrop-blur-sm flex items-center justify-center z-50">
+          <div className="fixed inset-0 bg-[rgba(0,0,0,0.5)] backdrop-blur-sm flex items-center justify-center z-1000">
             {/* Modal Box */}
 
             <div className="insidepopupclass">

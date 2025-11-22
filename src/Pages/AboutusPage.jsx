@@ -32,56 +32,60 @@ export default function AboutUsPage() {
 
           <div className="afterMainBG">
             <div className="container max-w-7xl mx-auto px-4 ">
-              <div className="bannerafterSectionMAIN">
-                <div className="firstbannerafterSectionMAIN">
-                  <div>
-                    <h4 className="gettknowHeading">
-                      We are Keystone Promoters
-                    </h4>
-                    <h3 className="visitOurOFficetext">
-                      Beautifully built spaces that inspire, function
-                      seamlessly, & reflect timeless quality.
-                    </h3>
+              <div className="lowconatinersectionafterbanner">
+                <div className="bannerafterSectionMAIN">
+                  <div className="firstbannerafterSectionMAIN">
+                    <div>
+                      <h4 className="gettknowHeading">
+                        We are Keystone Promoters
+                      </h4>
+                      <h3 className="visitOurOFficetext">
+                        Beautifully built spaces that inspire, function
+                        seamlessly, & reflect timeless quality.
+                      </h3>
+                    </div>
+                  </div>
+                  <div className="seondbannerafterSectionMAIN">
+                    <div className="seondbannerafterSectionMAINrow"></div>
+                  </div>
+                  <div className="thirdbannerafterSectionMAIN">
+                    <div style={{ marginTop: "15px" }}>
+                      <p className="contactPageAddress">
+                        Built on 25 Years of Experience
+                      </p>
+                      <p className="subHeadingText aboutustextcontent">
+                        Building quality spaces with trust, innovation, and
+                        timeless craftsmanship across generations.
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <div className="seondbannerafterSectionMAIN"></div>
-                <div className="thirdbannerafterSectionMAIN">
-                  <div style={{ marginTop: "15px" }}>
-                    <p className="contactPageAddress">
-                      Built on 25 Years of Experience
-                    </p>
-                    <p className="subHeadingText aboutustextcontent">
-                      Building quality spaces with trust, innovation, and
-                      timeless craftsmanship across generations.
-                    </p>
-                  </div>
-                </div>
-              </div>
 
-              <div className="flexunderaboutsection">
-                <div className="underaboutusection">
-                  <div className="firstunderaboutusection">
-                    <p className="subHeadingText">
-                      <span>100 + </span> Projects built with enduring quality
-                    </p>
+                <div className="flexunderaboutsection">
+                  <div className="underaboutusection">
+                    <div className="firstunderaboutusection">
+                      <p className="subHeadingText">
+                        <span>100 + </span> Projects built with enduring quality
+                      </p>
+                    </div>
+                    <p className="subHeadingText numbertext">01</p>
                   </div>
-                  <p className="subHeadingText numbertext">01</p>
-                </div>
-                <div className="underaboutusection">
-                  <div className="firstunderaboutusection">
-                    <p className="subHeadingText">
-                      <span>3k +</span> Families chose us with confidence
-                    </p>
+                  <div className="underaboutusection">
+                    <div className="firstunderaboutusection">
+                      <p className="subHeadingText">
+                        <span>3k +</span> Families chose us with confidence
+                      </p>
+                    </div>
+                    <p className="subHeadingText numbertext">02</p>
                   </div>
-                  <p className="subHeadingText numbertext">02</p>
-                </div>
-                <div className="underaboutusection">
-                  <div className="firstunderaboutusection">
-                    <p className="subHeadingText">
-                      <span>5M + </span> Square feet built with care
-                    </p>
+                  <div className="underaboutusection">
+                    <div className="firstunderaboutusection">
+                      <p className="subHeadingText">
+                        <span>5M + </span> Square feet built with care
+                      </p>
+                    </div>
+                    <p className="subHeadingText numbertext">03</p>
                   </div>
-                  <p className="subHeadingText numbertext">03</p>
                 </div>
               </div>
             </div>
@@ -113,9 +117,9 @@ export default function AboutUsPage() {
                     What Makes Keystone Unique?
                   </h5>
                   <p className="subHeadingText ">
-                    Lorem ipsum dolor sit amet, consectetur adipiscingelit do
-                    eius mmporincididunt ut labore et dolore magna uis ipsum
-                    suspendisse et dolore magna uis ipsum suspendisse
+                    What sets Keystone apart is our blend of thoughtful
+                    planning, modern aesthetics, transparency, and a
+                    customer-first approach to development.
                   </p>
                 </div>
 
@@ -159,13 +163,43 @@ export default function AboutUsPage() {
             </div>
           </div>
 
-          <div className=" container max-w-7xl mx-auto px-4 ">
-            <div className="vissionmissionaboutrow">
-              <div className="aboutusvissionmission">
-                <img src="/images/about-us/vissionmissonimage.jpg" alt="" />
-                <h5 className="vissionmisiontext secondHeadingText">
+          <div className="visionmissonrow">
+            <div className=" container max-w-7xl mx-auto px-4 ">
+              <div className="vissionmissionaboutrow">
+                <div className="aboutusvissionmission">
+                  <img src="/images/about-us/vissionmissonimage.jpg" alt="" />
+                </div>
+                <h5
+                  data-text="VISION & MISSION"
+                  className="vissionmisiontext secondHeadingText line3"
+                >
                   VISION & MISSION
                 </h5>
+
+                <div className="leftsidecontentsectionabout">
+                  <p className="subHeadingText ">
+                    To redefine urban living by creating thoughtfully designed
+                    spaces that blend innovation, sustainability, and
+                    elegance—enhancing life styles and building lasting
+                    community value.
+                  </p>
+
+                  <div className="visiiontexttransperant">
+                    <p className="subHeadingText">Vision</p>
+                  </div>
+                </div>
+
+                <div className="rightsidecontentsectionabout">
+                  <p className="subHeadingText ">
+                    To deliver quality-driven developments through integrity,
+                    precision, and customer trust, ensuring every project
+                    reflects excellence in design and craftsmanship.
+                  </p>
+
+                  <div className="visiiontexttransperant">
+                    <p className="subHeadingText">Mission</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

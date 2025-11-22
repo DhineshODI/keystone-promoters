@@ -65,11 +65,10 @@ export default function LiveThoughtFul() {
           </div>
 
           <p className="subHeadingText">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit do eiusmmpor
-            ncididunt ut labore et dolore magna uis ipsum suspendisse et dolore
-            magna uis ipsum suspendisse consectetur adipiscing elit do eiusmmpor
-            incididunt ut labore et dolore magna uis ipsum suspendisse et dolore
-            magna ipsum suspendisse
+            At Keystone Promoters, we craft spaces where design meets purpose.
+            Every project reflects precision, trust, and innovation-creating
+            sustainable environments that inspire modern living and long-term
+            value for our clients and communities.
           </p>
           <div className="LiveThoughtFlex">
             <div className="LiveThoughtFlexImg">

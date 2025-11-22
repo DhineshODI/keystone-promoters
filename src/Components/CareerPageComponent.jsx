@@ -9,9 +9,13 @@ export default function CareerPageFunction() {
             <h5 className="secondHeadingText">Future with us</h5>
 
             <div className="BreadCrumSection">
-              <span className="subHeadingText">Home</span>
+              <a href="/" className="subHeadingText  text-hover-underline">
+                Home
+              </a>
               <span className="subHeadingText">-</span>
-              <span className="subHeadingText">Careers</span>
+              <span className="subHeadingText text-hover-underline">
+                Careers
+              </span>
             </div>
           </div>
         </div>
@@ -21,25 +25,29 @@ export default function CareerPageFunction() {
 
         <div className="afterMainBG">
           <div className="container max-w-7xl mx-auto px-4 ">
-            <div className="bannerafterSectionMAIN">
-              <div className="firstbannerafterSectionMAIN">
-                <div>
-                  <h4 className="gettknowHeading">
-                    Join a Legacy of exellence
-                  </h4>
-                  <h3 className="visitOurOFficetext">
-                    Driven People. <br /> Real Opportunities. <br /> Here.
-                  </h3>
+            <div className="lowconatinersectionafterbanner">
+              <div className="bannerafterSectionMAIN">
+                <div className="firstbannerafterSectionMAIN">
+                  <div>
+                    <h4 className="gettknowHeading">
+                      Join a Legacy of exellence
+                    </h4>
+                    <h3 className="visitOurOFficetext">
+                      Driven People. <br /> Real Opportunities. <br /> Here.
+                    </h3>
+                  </div>
                 </div>
-              </div>
-              <div className="seondbannerafterSectionMAIN"></div>
-              <div className="thirdbannerafterSectionMAIN">
-                <div style={{ marginTop: "15px" }}>
-                  <p className="contactPageAddress">
-                    Explore exciting roles, innovative thinking, and dynamic
-                    opportunities In a company that values your passion and
-                    fresh perspective
-                  </p>
+                 <div className="seondbannerafterSectionMAIN">
+                      <div className="seondbannerafterSectionMAINrow"></div>
+                    </div>
+                <div className="thirdbannerafterSectionMAIN">
+                  <div style={{ marginTop: "15px" }}>
+                    <p className="contactPageAddress">
+                      Explore exciting roles, innovative thinking, and dynamic
+                      opportunities In a company that values your passion and
+                      fresh perspective
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -141,42 +149,42 @@ export default function CareerPageFunction() {
                   </div>
                   <div className="contactFormInputEach">
                     <label className="subHeadingText " htmlFor="">
-                      Name <sup>*</sup>
+                      Email <sup>*</sup>
                     </label>
                     <br />
                     <input type="text" />
                   </div>
                   <div className="contactFormInputEach">
                     <label className="subHeadingText " htmlFor="">
-                      Name <sup>*</sup>
+                      Phone Number <sup>*</sup>
                     </label>
                     <br />
                     <input type="text" />
                   </div>
                   <div className="contactFormInputEach">
                     <label className="subHeadingText " htmlFor="">
-                      Name <sup>*</sup>
+                      Qualification <sup>*</sup>
                     </label>
                     <br />
                     <input type="text" />
                   </div>
                   <div className="contactFormInputEach">
                     <label className="subHeadingText " htmlFor="">
-                      Name <sup>*</sup>
+                      Apply For <sup>*</sup>
                     </label>
                     <br />
                     <input type="text" />
                   </div>
                   <div className="contactFormInputEach">
                     <label className="subHeadingText " htmlFor="">
-                      Name <sup>*</sup>
+                      Upload Resume <sup>*</sup>
                     </label>
                     <br />
                     <input type="text" />
                   </div>
                   <div className="contactFormInputEach">
                     <label className="subHeadingText " htmlFor="">
-                      Name <sup>*</sup>
+                      Message 
                     </label>
                     <br />
                     <input type="text" />

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Footer() {
   return (
     <>
@@ -84,31 +86,39 @@ export default function Footer() {
               </ul>
             </div>
             <div className="FooterInnerDiv">
-              <h5 className="subHeadingText  ">Follow Us</h5>
+              <div>
+                <h5 className="subHeadingText  ">Member</h5>
 
-              <ul className="footerListsul">
-                <div className="iconsFooters">
-                  <div className="iconsMainDivFooter">
-                    <img src="/images/icons/linkedin.svg" alt="" />
-                  </div>
-
-                  <div className="iconsMainDivFooter">
-                    <img src="/images/icons/instagram.svg" alt="" />
-                  </div>
-
-                  <div className="iconsMainDivFooter">
-                    <img src="/images/icons/facebook.svg" alt="" />
-                  </div>
-
-                  <div className="iconsMainDivFooter">
-                    <img src="/images/icons/youtube.svg" alt="" />
-                  </div>
-
-                  <div className="iconsMainDivFooter">
-                    <img src="/images/icons/twitter-x.svg" alt="" />
-                  </div>
+                <div>
+                  <img src="/images/memberlogo.png" alt="" />
                 </div>
-              </ul>
+              </div>
+              <div className="mt-5">
+                <h5 className="subHeadingText  ">Follow Us</h5>
+                <ul className="footerListsul">
+                  <div className="iconsFooters">
+                    <div className="iconsMainDivFooter">
+                      <img src="/images/icons/linkedin.svg" alt="" />
+                    </div>
+
+                    <div className="iconsMainDivFooter">
+                      <img src="/images/icons/instagram.svg" alt="" />
+                    </div>
+
+                    <div className="iconsMainDivFooter">
+                      <img src="/images/icons/facebook.svg" alt="" />
+                    </div>
+
+                    <div className="iconsMainDivFooter">
+                      <img src="/images/icons/youtube.svg" alt="" />
+                    </div>
+
+                    <div className="iconsMainDivFooter">
+                      <img src="/images/icons/twitter-x.svg" alt="" />
+                    </div>
+                  </div>
+                </ul>
+              </div>
             </div>
           </div>
 
@@ -116,12 +126,20 @@ export default function Footer() {
             <div className="subHeadingText ">
               Copyright © Keystone Promotors Pvt Ltd | Terms of Use | Privacy
               Policy
-                  </div>
-
-            <div className="designByOpendesigns">
-              <a className="subHeadingText ">Design By</a>
-              <img src="/images/homepage/open-designs-logo.webp" alt="" />
             </div>
+
+            <Link to="https://www.opendesignsin.com/"  target="_blank" >
+              <div className="designByOpendesigns">
+                <a
+                  className="subHeadingText"
+                  target="_blank"
+                  href="https://www.opendesignsin.com/"
+                >
+                  Design By
+                </a>
+                <img src="/images/homepage/open-designs-logo.webp" alt="" />
+              </div>
+            </Link>
           </div>
         </div>
       </div>

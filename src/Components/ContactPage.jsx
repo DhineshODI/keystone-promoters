@@ -6,18 +6,6 @@ export default function ContactPage() {
 
   const heroRef = useRef(null);
 
-  useEffect(() => {
-    const el = heroRef.current;
-    gsap.to(el, {
-      yPercent: 20,
-      ease: "none",
-      scrollTrigger: {
-        trigger: el,
-        start: "top top",
-        scrub: true, // smooth scroll effect
-      },
-    });
-  }, []);
   return (
     <>
       {/* Banner */}
@@ -27,9 +15,13 @@ export default function ContactPage() {
           <h5 className="secondHeadingText">Collaborate</h5>
 
           <div className="BreadCrumSection">
-            <span className="subHeadingText">Home</span>
+            <a href="/" className="subHeadingText  text-hover-underline">
+              Home
+            </a>
             <span className="subHeadingText">-</span>
-            <span className="subHeadingText">Contact US</span>
+            <span className="subHeadingText text-hover-underline">
+              Contact US
+            </span>
           </div>
         </div>
       </div>
@@ -39,36 +31,42 @@ export default function ContactPage() {
 
       <div className="afterMainBG">
         <div className="container max-w-7xl mx-auto px-4 ">
-          <div className="bannerafterSectionMAIN">
-            <div className="firstbannerafterSectionMAIN">
-              <div>
-                <h4 className="gettknowHeading">Get to know us</h4>
-                <h3 className="visitOurOFficetext">
-                  Visit us at our office location
-                </h3>
-              </div>
+          <div className="lowconatinersectionafterbanner">
+            <div className="bannerafterSectionMAIN">
+              <div className="firstbannerafterSectionMAIN">
+                <div>
+                  <h4 className="gettknowHeading">Get to know us</h4>
+                  <h3 className="visitOurOFficetext">
+                    Visit us at our office location
+                  </h3>
+                </div>
 
-              <div style={{ marginTop: "15px" }}>
-                <h4 className="gettknowHeading">Address</h4>
-                <p className="contactPageAddress">
-                  Door No.1, GF-A, Amace Ganga Sarojini Street, Mahalingapuram,
-                  Nungambakkam, Chennai 600 034
-                </p>
+                <div style={{ marginTop: "15px" }}>
+                  <h4 className="gettknowHeading">Address</h4>
+                  <p className="contactPageAddress">
+                    Door No.1, GF-A, Amace Ganga Sarojini Street,
+                    Mahalingapuram, Nungambakkam, Chennai 600 034
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="seondbannerafterSectionMAIN"></div>
-            <div className="thirdbannerafterSectionMAIN">
-              <div style={{ marginTop: "15px" }}>
-                <h4 className="gettknowHeading">Phone</h4>
-                <p className="contactPageAddress">+91 7092879022</p>
+              <div className="seondbannerafterSectionMAIN">
+                <div className="seondbannerafterSectionMAINrow"></div>
               </div>
-              <div style={{ marginTop: "15px" }}>
-                <h4 className="gettknowHeading">MOBILE</h4>
-                <p className="contactPageAddress">+91 7092879022</p>
-              </div>
-              <div style={{ marginTop: "15px" }}>
-                <h4 className="gettknowHeading">Email</h4>
-                <p className="contactPageAddress">info@keystonepromoters.com</p>
+              <div className="thirdbannerafterSectionMAIN">
+                <div style={{ marginTop: "15px" }}>
+                  <h4 className="gettknowHeading">Phone</h4>
+                  <p className="contactPageAddress">+91 44 2817 2255</p>
+                </div>
+                <div style={{ marginTop: "15px" }}>
+                  <h4 className="gettknowHeading">MOBILE</h4>
+                  <p className="contactPageAddress">+91 99400 08855</p>
+                </div>
+                <div style={{ marginTop: "15px" }}>
+                  <h4 className="gettknowHeading">Email</h4>
+                  <p className="contactPageAddress">
+                    info@keystonepromoters.com
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -97,21 +95,21 @@ export default function ContactPage() {
                 </div>
                 <div className="contactFormInputEach">
                   <label className="subHeadingText " htmlFor="">
-                    Name <sup>*</sup>
+                    Email <sup>*</sup>
                   </label>
                   <br />
                   <input type="text" />
                 </div>
                 <div className="contactFormInputEach">
                   <label className="subHeadingText " htmlFor="">
-                    Name <sup>*</sup>
+                    Phone Number <sup>*</sup>
                   </label>
                   <br />
                   <input type="text" />
                 </div>
                 <div className="contactFormInputEach">
                   <label className="subHeadingText " htmlFor="">
-                    Name <sup>*</sup>
+                    Message
                   </label>
                   <br />
                   <input type="text" />

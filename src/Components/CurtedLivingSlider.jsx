@@ -36,14 +36,16 @@ export default function CurtedLivingSlider() {
             <div className="curtSliderLeftSection">
               <h5 className="secondHeadingText">Curated Living Experiences</h5>
               <h6 className="subHeadingText">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the
+                Discover living spaces designed to inspire modern lifestyles and
+                elevate everyday comfort. Each home reflects thoughtful design,
+                blending elegance, function, and connection to nature-crafted
+                for those who value quality living and timeless appeal.
               </h6>
 
-              <h6 className="subHeadingText">
+              {/* <h6 className="subHeadingText">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the
-              </h6>
+              </h6> */}
             </div>
             <div className="curtLivingSlider">
               <Slider ref={sliderRef} className="" {...settings}>

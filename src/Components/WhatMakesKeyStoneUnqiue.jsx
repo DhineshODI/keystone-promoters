@@ -2,10 +2,9 @@ import { gsap } from "gsap";
 import { useEffect, useRef } from "react";
 
 export default function WhatMakesKeyStonesUnique() {
-
   const boxRef = useRef(null);
 
-    useEffect(() => {
+  useEffect(() => {
     gsap.fromTo(
       boxRef.current,
       { opacity: 0, y: 100 },
@@ -14,7 +13,7 @@ export default function WhatMakesKeyStonesUnique() {
   }, []);
   return (
     <>
-      <div className="whatsmakeSectionBG reveal "  ref={boxRef}>
+      <div className="whatsmakeSectionBG reveal " ref={boxRef}>
         <div className="container max-w-7xl mx-auto px-4 ">
           <div className="whatMakesHeadingMainRow">
             <h5 className="secondHeadingText whatMakesHeading1">What Makes</h5>
@@ -24,9 +23,9 @@ export default function WhatMakesKeyStonesUnique() {
 
             <div className="WhatMakesKeyStonesFlex">
               <p className="subHeadingText text-center text-[#636465]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                deserunt officiis neque iusto a voluptas in vel fugit! Libero
-                velit similique nobis
+                At Keystone, every creation embodies the harmony of engineering
+                excellence and architectural thoughtfulness crafting spaces that
+                inspire trust, reflect individuality and timeless quality.
               </p>
             </div>
           </div>
@@ -66,7 +65,9 @@ export default function WhatMakesKeyStonesUnique() {
               <div className="FlexFirstcontentWhatMakesSection">
                 <h5 className="secondHeadingText">Solid</h5>
                 <h5 className="secondHeadingText">Foundations</h5>
-                <p className="subHeadingText">Structurally sound and aesthetically modern</p>
+                <p className="subHeadingText">
+                  Structurally sound and aesthetically modern
+                </p>
               </div>
             </div>
           </div>

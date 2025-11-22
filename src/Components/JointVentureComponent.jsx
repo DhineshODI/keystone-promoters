@@ -9,9 +9,13 @@ export default function JointVentureComponent() {
             <h5 className="secondHeadingText">Commitment</h5>
 
             <div className="BreadCrumSection">
-              <span className="subHeadingText">Home</span>
+              <a href="/" className="subHeadingText  text-hover-underline">
+                Home
+              </a>
               <span className="subHeadingText">-</span>
-              <span className="subHeadingText">Joint Venture</span>
+              <span className="subHeadingText text-hover-underline">
+                Joint Venture
+              </span>
             </div>
           </div>
         </div>
@@ -21,23 +25,27 @@ export default function JointVentureComponent() {
 
         <div className="afterMainBG">
           <div className="container max-w-7xl mx-auto px-4 ">
-            <div className="bannerafterSectionMAIN">
-              <div className="firstbannerafterSectionMAIN">
-                <div>
-                  <h4 className="gettknowHeading">Grow with Us</h4>
-                  <h3 className="visitOurOFficetext">
-                    Let's Build <br /> Sucess Through <br /> Joint Ventures.
-                  </h3>
+            <div className="lowconatinersectionafterbanner">
+              <div className="bannerafterSectionMAIN">
+                <div className="firstbannerafterSectionMAIN">
+                  <div>
+                    <h4 className="gettknowHeading">Grow with Us</h4>
+                    <h3 className="visitOurOFficetext">
+                      Let's Build <br /> Sucess Through <br /> Joint Ventures.
+                    </h3>
+                  </div>
                 </div>
-              </div>
-              <div className="seondbannerafterSectionMAIN"></div>
-              <div className="thirdbannerafterSectionMAIN">
-                <div style={{ marginTop: "15px" }}>
-                  <p className="contactPageAddress">
-                    Partner with Keystone Spaces to unlock profitable
-                    development opportunities, shared growth, and long-term
-                    value through trusted, transparent collaborations
-                  </p>
+                <div className="seondbannerafterSectionMAIN">
+                  <div className="seondbannerafterSectionMAINrow"></div>
+                </div>
+                <div className="thirdbannerafterSectionMAIN">
+                  <div style={{ marginTop: "15px" }}>
+                    <p className="contactPageAddress">
+                      Partner with Keystone Spaces to unlock profitable
+                      development opportunities, shared growth, and long-term
+                      value through trusted, transparent collaborations
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -54,49 +62,50 @@ export default function JointVentureComponent() {
               <div className="formContactUsSectionFlex">
                 <h5 className="secondHeadingText ">Joint Venture</h5>
                 <p className="subHeadingText">
-                  We Value your skills and passion. Share your profile to
-                  explore exciting roles at Key Stone Promoters
+                  Partner with Keystone Promoters to create valuable,
+                  high-quality developments that redefine urban living and
+                  inspire mutual growth.
                 </p>
 
                 <div className="formMainStyleContactPage">
                   <div className="contactFormInputEach">
                     <label className="subHeadingText " htmlFor="">
-                      Name <sup>*</sup>
+                      Name of the Company <sup>*</sup>
                     </label>
                     <br />
                     <input type="text" />
                   </div>
                   <div className="contactFormInputEach">
                     <label className="subHeadingText " htmlFor="">
-                      Name <sup>*</sup>
+                      Email <sup>*</sup>
                     </label>
                     <br />
                     <input type="text" />
                   </div>
                   <div className="contactFormInputEach">
                     <label className="subHeadingText " htmlFor="">
-                      Name <sup>*</sup>
+                      Phone Number <sup>*</sup>
                     </label>
                     <br />
                     <input type="text" />
                   </div>
                   <div className="contactFormInputEach">
                     <label className="subHeadingText " htmlFor="">
-                      Name <sup>*</sup>
+                      Location of the Property <sup>*</sup>
                     </label>
                     <br />
                     <input type="text" />
                   </div>
                   <div className="contactFormInputEach">
                     <label className="subHeadingText " htmlFor="">
-                      Name <sup>*</sup>
+                      Land Extent <sup>*</sup>
                     </label>
                     <br />
                     <input type="text" />
                   </div>
                   <div className="contactFormInputEach">
                     <label className="subHeadingText " htmlFor="">
-                      Name <sup>*</sup>
+                      Remarks
                     </label>
                     <br />
                     <input type="text" />

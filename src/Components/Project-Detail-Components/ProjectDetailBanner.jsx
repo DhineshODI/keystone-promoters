@@ -4,7 +4,7 @@ export default function ProjectDetailBanner() {
       <div>
         {/* Banner */}
         <div>
-          <div className="detailPageBanners">
+          <div className="detailPageBanners spectraproject">
             <h5 className="secondHeadingText">Spectra</h5>
 
             <div className="projectDetailFlexdiv">
@@ -23,11 +23,18 @@ export default function ProjectDetailBanner() {
             </div>
 
             <div className="BreadCrumSection">
-              <span className="subHeadingText">Home</span>
+              <a href="/" className="subHeadingText  text-hover-underline">
+                Home
+              </a>
               <span className="subHeadingText">-</span>
-              <span className="subHeadingText">Ongoing Projects</span>
+              <a
+                href="/ongoing-projects"
+                className="subHeadingText text-hover-underline"
+              >
+                Ongoing Projects
+              </a>
               <span className="subHeadingText">-</span>
-              <span className="subHeadingText">Spectra</span>
+              <span className="subHeadingText text-hover-underline">Spectra</span>
             </div>
           </div>
         </div>

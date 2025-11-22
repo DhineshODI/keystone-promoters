@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function OngoingProjectsPage() {
   const OnGoingProjectsData = [
     {
@@ -7,16 +9,7 @@ export default function OngoingProjectsPage() {
       BHKStatus: "2 & 3",
       unitSize: "1159 - 1481",
       projectImage: "/images/ongoing-images/project-Iisting-projects-image.jpg",
-      projectLink: "/project1",
-    },
-    {
-      id: 2,
-      ProjectTitle: "Urban Heights",
-      ProjectLocation: "OMR, Chennai",
-      BHKStatus: "2 & 3",
-      unitSize: "1045 - 1342",
-      projectImage: "/images/ongoing-images/project-Iisting-projects-image.jpg",
-      projectLink: "/project2",
+      projectLink: "/project-detail",
     },
   ];
 
@@ -29,9 +22,13 @@ export default function OngoingProjectsPage() {
           <h5 className="secondHeadingText">Progress</h5>
 
           <div className="BreadCrumSection">
-            <span className="subHeadingText">Home</span>
+            <a href="/" className="subHeadingText  text-hover-underline">
+              Home
+            </a>
             <span className="subHeadingText">-</span>
-            <span className="subHeadingText">Ongoing Projects</span>
+            <span className="subHeadingText text-hover-underline">
+              Ongoing Projects
+            </span>
           </div>
         </div>
       </div>
@@ -41,22 +38,26 @@ export default function OngoingProjectsPage() {
 
       <div className="afterMainBG">
         <div className="container max-w-7xl mx-auto px-4 ">
-          <div className="bannerafterSectionMAIN">
-            <div className="firstbannerafterSectionMAIN">
-              <div>
-                <h4 className="gettknowHeading">Ongoing Projects</h4>
-                <h3 className="visitOurOFficetext">
-                  Currently Developing your Future Homes
-                </h3>
+          <div className="lowconatinersectionafterbanner">
+            <div className="bannerafterSectionMAIN">
+              <div className="firstbannerafterSectionMAIN">
+                <div>
+                  <h4 className="gettknowHeading">Ongoing Projects</h4>
+                  <h3 className="visitOurOFficetext">
+                    Currently Developing your Future Homes
+                  </h3>
+                </div>
               </div>
-            </div>
-            <div className="seondbannerafterSectionMAIN"></div>
-            <div className="thirdbannerafterSectionMAIN">
-              <div style={{ marginTop: "15px" }}>
-                <p className="contactPageAddress">
-                  Happy Clients already invested our ongoing projects are your
-                  next great oppurtunity.
-                </p>
+              <div className="seondbannerafterSectionMAIN">
+                <div className="seondbannerafterSectionMAINrow"></div>
+              </div>
+              <div className="thirdbannerafterSectionMAIN">
+                <div style={{ marginTop: "15px" }}>
+                  <p className="contactPageAddress">
+                    Happy Clients already invested our ongoing projects are your
+                    next great oppurtunity.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -64,6 +65,18 @@ export default function OngoingProjectsPage() {
       </div>
 
       {/* After-Banner-Section */}
+
+      <div className="margintopafterlist">
+        <div className="container max-w-7xl mx-auto px-4 ">
+          <div className="ongoingslistflex">
+            <ul className="ongoingprojectslist">
+              <li className="activestatus">Apartments</li>
+              <li>Architecture</li>
+              <li>Interior</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
       {/* Ongoing Projects*/}
 
@@ -94,7 +107,11 @@ export default function OngoingProjectsPage() {
                     </h5>
                   </div>
 
-                  <div className="buttononGoingProjectsLists">view project</div>
+                  <a href={project.projectLink}>
+                    <div className="buttononGoingProjectsLists">
+                      view project
+                    </div>
+                  </a>
                 </div>
               </div>
             ))}

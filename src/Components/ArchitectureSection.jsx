@@ -12,8 +12,8 @@ export default function ArchitectureSection() {
 
                 <div className="archisecondHeadingText">
                   <p className="subHeadingText">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At
-                    quae minima perspiciatis
+                    Innovative architecture blending functionality, aesthetics,
+                    and sustainability for timeless living environments.
                   </p>
 
                   <button className="subHeadingText">Know More</button>
@@ -28,8 +28,8 @@ export default function ArchitectureSection() {
 
                 <div className="archisecondHeadingText">
                   <p className="subHeadingText">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At
-                    quae minima perspiciatis
+                    Building with precision, quality, and trust to create
+                    lasting, high-value developments.
                   </p>
 
                   <button className="subHeadingText">Know More</button>
@@ -44,8 +44,8 @@ export default function ArchitectureSection() {
 
                 <div className="archisecondHeadingText">
                   <p className="subHeadingText">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At
-                    quae minima perspiciatis
+                    Designing interiors that blend elegance, comfort, and
+                    functionality for inspired living spaces.
                   </p>
 
                   <button className="subHeadingText">Know More</button>
