@@ -1,23 +1,23 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-export default function Header() {
+export default function Header({ menuOnlick }) {
   const [active, setActive] = useState("");
   const handleActive = (name) => setActive(name);
 
   useEffect(() => {
-  const handleScroll = () => {
-    const header = document.querySelector(".HeaderMainSEC");
-    if (window.scrollY > 80) {
-      header.classList.add("is-sticky");
-    } else {
-      header.classList.remove("is-sticky");
-    }
-  };
+    const handleScroll = () => {
+      const header = document.querySelector(".HeaderMainSEC");
+      if (window.scrollY > 80) {
+        header.classList.add("is-sticky");
+      } else {
+        header.classList.remove("is-sticky");
+      }
+    };
 
-  window.addEventListener("scroll", handleScroll);
-  return () => window.removeEventListener("scroll", handleScroll);
-}, []);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
@@ -86,7 +86,7 @@ export default function Header() {
               <Link to="/contact">Contact Us</Link>
             </li>
 
-            <div className="hamburgerflex">
+            <div className="hamburgerflex cursor-pointer" onClick={menuOnlick}>
               <img
                 className="hamburgerIconImage"
                 src="/images/icons/hamburger-icon.svg"

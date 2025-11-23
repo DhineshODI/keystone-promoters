@@ -466,6 +466,8 @@
 .whatsmakeSectionBG {
   background-image: url("/public/images/homepage/seond-banner.jpg");
   height: 1120px;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .whatMakesHeadingMainRow {
@@ -937,13 +939,15 @@
   top: 40px;
   width: 100%;
   z-index: 999;
+  /* display: none; */
 }
 
 .HeaderMainSEC.is-sticky {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 1);
   backdrop-filter: blur(0);
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
   top: 0;
+  z-index: 10000;
 }
 
 .HeaderMainSEC .headerLogoImg {
@@ -1407,7 +1411,6 @@
 .buttononGoingProjectsLists:hover {
   background: #fff;
   color: #b25d94;
-
 }
 
 .FirstonGoingProjectsLists::before {
@@ -3475,11 +3478,27 @@
 
 .menubarstyle {
   height: 100vh;
-  z-index: 10000;
+  z-index: 10000000;
   display: flex;
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100vh;
+}
+
+.menubarWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* full screen menu */
+  background: #ffffff; /* your menu bg */
+  z-index: 991099;
+  overflow-y: auto; /* scroll inside menu if needed */
+}
+
+.smoothMenu {
+  will-change: transform, opacity; /* Boost GPU */
+  transform: translate3d(0, 0, 0); /* Force hardware acceleration */
 }
 
 .onemenu {
@@ -3495,6 +3514,27 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+}
+
+.twomenu::before {
+  /* content: "";
+  position: absolute;
+  background-image: url("/public/images/hamburger-icon.svg");
+  top: 4%;
+  right: 8%;
+  width: 57px;
+  height: 76px;
+  background-size: contain; */
+}
+
+.menubarcloseicon {
+  position: absolute;
+  top: 4%;
+  right: 8%;
+  width: 57px;
+  height: 76px;
+  background-size: contain;
 }
 
 .twomenu li {
@@ -3508,6 +3548,13 @@
   padding-left: 50px;
   padding-top: 5px;
   padding-bottom: 5px;
+  cursor: pointer;
+  transition: padding-left 0.3s ease;
+}
+
+.twomenu li:hover {
+  padding-left: 70px;
+  /* color: #250521; */
 }
 
 .twomenu li:last-child {
@@ -3622,3 +3669,1169 @@
 .keystonesectionflexx {
   margin-top: -38px;
 }
+
+/* resposive start */
+@media (max-width: 1600px) and (min-width: 1400px) {
+  /* HomePage-Responsive */
+  .secondHeadingText {
+    font-size: 54px;
+  }
+
+  .subHeadingText {
+    font-size: 15px;
+  }
+
+  .contentHeadingBanner .secondHeadingText {
+    font-size: 120px;
+  }
+
+  .yearsScrollText h6 {
+    font-size: 110px;
+    line-height: 0.75;
+  }
+
+  .yearsScrollText span {
+    font-size: 22px;
+  }
+
+  .yearsScrollText.projectsScroll h6 {
+    font-size: 75px;
+    line-height: 0.75;
+  }
+
+  .whatsmakeSectionBG {
+    height: 900px;
+  }
+
+  .FirstcontentWhatMakesSection.lastSectionWhatMakes {
+    padding-top: 10px;
+  }
+
+  .FirstcontentWhatMakesSection {
+    column-gap: 31%;
+  }
+
+  .FirstcontentWhatMakesSection {
+    padding-top: 80px;
+  }
+
+  .videoBannerVideoFILE {
+    height: auto;
+  }
+
+  .ArchitectureContent .secondHeadingText {
+    font-size: 30px;
+    width: 315px;
+    top: 46%;
+    left: -36%;
+    text-align: center;
+  }
+
+  .archisecondHeadingText button {
+    margin-top: 10px;
+  }
+
+  .ongoingProjectSection {
+    height: 310px;
+  }
+
+  .projectsNameOnGoing h5 {
+    font-size: 30px;
+  }
+
+  .projectsNameOnGoing span {
+    font-size: 17px;
+  }
+
+  .onGoingMainSectionDiv {
+    column-gap: 30px;
+  }
+
+  .onGoingRightSection .mainheadingText.onGoingSecondTextContainer {
+    width: 100%;
+    font-size: 27px;
+  }
+
+  .secondSliderContentSections .subHeadingText {
+    margin-top: 15px;
+    width: 85%;
+  }
+
+  .viewallprojectsongoing button {
+    font-size: 14px;
+
+    height: 43px;
+    width: 203px;
+  }
+
+  .viewallprojectsongoing {
+    margin-top: 20px;
+  }
+
+  .testimonalSliderContainer {
+    width: 59%;
+    margin-left: 0%;
+  }
+
+  .testimonalFullSection {
+    height: auto;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .testimonalPersonImage {
+    width: 58px;
+    height: 58px;
+  }
+
+  .testimonalPersonImagediv::before {
+    right: -119px;
+  }
+
+  .testimonalSectionName h4 {
+    font-size: 20.5px;
+  }
+
+  .testimonalSectionName p {
+    font-size: 16px;
+  }
+
+  .curtedSectionMainRowBg {
+    height: auto;
+    background-position: center;
+    background-size: contain;
+    padding: 50px 0;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+  }
+
+  .curtsectionrow {
+    padding-top: 37px;
+  }
+
+  .curtSliderLeftSection {
+    margin-left: 6%;
+  }
+
+  .curtSliderLeftSection .subHeadingText {
+    width: 93%;
+  }
+
+  .curtLivingSlider {
+    width: 57%;
+  }
+
+  .curatedSliderContainer {
+    width: 320px;
+    width: 90%;
+    margin: 0 20px;
+  }
+
+  .curatedSliderContainer::before {
+    left: -6px;
+  }
+
+  .schudleVisitsection {
+    padding: 100px 0;
+    background-repeat: no-repeat;
+    height: 800px;
+    background-size: cover;
+  }
+
+  .schdeuleMainrowsection {
+    padding-top: 10px;
+    padding-bottom: 43px;
+  }
+
+  .keystonesectionflexx .secondHeadingText {
+    font-size: 120px;
+    line-height: 111px;
+  }
+
+  .FooterInnerDiv::before {
+    left: -39px;
+  }
+
+  .footerListsul li {
+    font-size: 12px;
+  }
+  .FooterSplit {
+    column-gap: 7.5%;
+  }
+
+  .footercopyRight {
+    margin-left: 1%;
+    margin-right: 4%;
+  }
+
+  .LiveThoughtFlex .LiveThoughtFlexImg {
+    width: 58%;
+  }
+  .LiveThoughtFlex {
+    column-gap: 4%;
+  }
+
+  .yearsScrollText::before {
+    left: -48px;
+  }
+
+  .yearsScrollText.projectsScroll span {
+    font-size: 15px;
+  }
+
+  .LiveThoughtFlex .secondHeadingText::before {
+    top: -21px;
+    right: -8px;
+    font-size: 26px;
+  }
+
+  .LiveThoughtFlex .projectsScroll .secondHeadingText::before {
+    top: -13px;
+    right: -11px;
+    font-size: 19px;
+  }
+
+  /* HomePage-Responsive */
+}
+
+@media (max-width: 1400px) and (min-width: 1250px) {
+  /* HomePage-Responsive */
+
+  .LiveThoughtFlex .secondHeadingText::before {
+    top: -21px;
+    right: -8px;
+    font-size: 26px;
+  }
+
+  .LiveThoughtFlex .projectsScroll .secondHeadingText::before {
+    top: -13px;
+    right: -11px;
+    font-size: 19px;
+  }
+  .secondHeadingText {
+    font-size: 50px;
+  }
+
+  .subHeadingText {
+    font-size: 15px;
+  }
+
+  .contentHeadingBanner .secondHeadingText {
+    font-size: 100px;
+  }
+
+  .contentHeadingBanner {
+    height: 85vh;
+  }
+  .hamburgerflex {
+    column-gap: 11px;
+
+    padding: 5px 17px;
+  }
+  .HeaderMainSEC .headerLogoImg {
+    width: 175px;
+  }
+
+  .hamburgerIconImage {
+    width: 35px;
+    height: 35px;
+  }
+  .listHeaders {
+    column-gap: 36px;
+  }
+
+  .listHeaders li {
+    font-size: 16px;
+  }
+
+  .yearsScrollText h6 {
+    font-size: 110px;
+    line-height: 0.75;
+  }
+
+  .yearsScrollText span {
+    font-size: 22px;
+  }
+
+  .yearsScrollText.projectsScroll h6 {
+    font-size: 75px;
+    line-height: 0.75;
+  }
+
+  .whatsmakeSectionBG {
+    height: 850px;
+  }
+
+  .FirstcontentWhatMakesSection.lastSectionWhatMakes {
+    padding-top: 10px;
+  }
+
+  .FirstcontentWhatMakesSection {
+    column-gap: 31%;
+  }
+
+  .FirstcontentWhatMakesSection {
+    padding-top: 80px;
+  }
+
+  .videoBannerVideoFILE {
+    height: auto;
+  }
+
+  .ArchitectureContent .secondHeadingText {
+    font-size: 30px;
+    width: 315px;
+    top: 46%;
+    left: -43%;
+    text-align: center;
+  }
+
+  .projectsNameOnGoing {
+    margin-bottom: 12px;
+    margin-top: 16px;
+  }
+
+  .projectsNameOnGoingmAINcONTAINER {
+    padding: 0 12px;
+    padding-right: 20px;
+  }
+
+  .onGoingViewProject {
+    margin-top: 3px;
+  }
+
+  .archiBg {
+    height: 605px;
+  }
+  .projectsNameOnGoing::before {
+    bottom: -12px;
+  }
+  .archisecondHeadingText button {
+    margin-top: 10px;
+  }
+
+  .ongoingProjectSection {
+    height: 298px;
+  }
+
+  .projectsNameOnGoing h5 {
+    font-size: 25px;
+  }
+
+  .projectsNameOnGoing span {
+    font-size: 17px;
+  }
+
+  .onGoingMainSectionDiv {
+    column-gap: 30px;
+  }
+
+  .onGoingRightSection .mainheadingText.onGoingSecondTextContainer {
+    width: 100%;
+    font-size: 24px;
+  }
+
+  .secondSliderContentSections .subHeadingText {
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .viewallprojectsongoing button {
+    font-size: 14px;
+
+    height: 43px;
+    width: 203px;
+  }
+
+  .viewallprojectsongoing {
+    margin-top: 20px;
+  }
+
+  .testimonalSliderContainer {
+    width: 59%;
+    margin-left: 0%;
+  }
+
+  .testimonalFullSection {
+    height: auto;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .testimonalPersonImage {
+    width: 58px;
+    height: 58px;
+  }
+
+  .testimonalPersonImagediv::before {
+    right: -88px;
+    width: 128%;
+  }
+
+  .testimonalSectionName h4 {
+    font-size: 20.5px;
+  }
+
+  .testimonalSectionName p {
+    font-size: 16px;
+  }
+
+  .curtedSectionMainRowBg {
+    height: auto;
+    background-position: center;
+    background-size: contain;
+    padding: 50px 0;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+  }
+
+  .curtsectionrow {
+    padding-top: 37px;
+  }
+
+  .curtSliderLeftSection {
+    margin-left: 6%;
+  }
+
+  .curtSliderLeftSection .subHeadingText {
+    width: 100%;
+  }
+
+  .curtLivingSlider {
+    width: 57%;
+  }
+
+  .curatedSliderContainer {
+    width: 320px;
+    width: 90%;
+    margin: 0 20px;
+  }
+
+  .curatedSliderContainer::before {
+    left: -6px;
+  }
+
+  .schudleVisitsection {
+    padding: 100px 0;
+    background-repeat: no-repeat;
+    height: 800px;
+    background-size: cover;
+  }
+
+  .schdeuleMainrowsection {
+    padding-top: 10px;
+    padding-bottom: 43px;
+  }
+
+  .keystonesectionflexx .secondHeadingText {
+    font-size: 100px;
+    line-height: 100px;
+  }
+
+  .FooterInnerDiv::before {
+    left: -33px;
+  }
+
+  .footerListsul li {
+    font-size: 11px;
+  }
+  .FooterSplit {
+    column-gap: 5.5%;
+  }
+
+  .footercopyRight {
+    margin-left: 1%;
+    margin-right: 4%;
+  }
+
+  .LiveThoughtFlex .LiveThoughtFlexImg {
+    width: 53%;
+  }
+  .LiveThoughtFlex {
+    column-gap: 4%;
+  }
+
+  .yearsScrollText::before {
+    left: -42px;
+  }
+
+  .yearsScrollText.projectsScroll span {
+    font-size: 15px;
+  }
+
+  .lastSectionWhatMakes .FlexFirstcontentWhatMakesSection {
+    margin-top: 20px;
+  }
+
+  /* HomePage-Responsive */
+}
+
+@media (max-width: 1250px) and (min-width: 1100px) {
+  /* HomePage-Responsive */
+
+  .LiveThoughtFlex .secondHeadingText::before {
+    top: -17px;
+    right: -8px;
+    font-size: 23px;
+  }
+
+  .LiveThoughtFlex .projectsScroll .secondHeadingText::before {
+    top: -6px;
+    right: -11px;
+    font-size: 17px;
+  }
+  .secondHeadingText {
+    font-size: 45px;
+  }
+
+  .subHeadingText {
+    font-size: 13px;
+  }
+
+  .contentHeadingBanner .secondHeadingText {
+    font-size: 90px;
+  }
+
+  .contentHeadingBanner {
+    height: 85vh;
+  }
+  .hamburgerflex {
+    column-gap: 4px;
+    padding: 5px 14px;
+  }
+  .HeaderMainSEC .headerLogoImg {
+    width: 160px;
+  }
+
+  .hamburgerIconImage {
+    width: 30px;
+    height: 30px;
+  }
+  .listHeaders {
+    column-gap: 20px;
+  }
+
+  .listHeaders li {
+    font-size: 16px;
+  }
+
+  .yearsScrollText h6 {
+    font-size: 90px;
+    line-height: 0.75;
+  }
+
+  .yearsScrollText span {
+    font-size: 22px;
+  }
+
+  .yearsScrollText.projectsScroll h6 {
+    font-size: 75px;
+    line-height: 0.75;
+  }
+
+  .whatsmakeSectionBG {
+    height: 750px;
+  }
+
+  .FirstcontentWhatMakesSection.lastSectionWhatMakes {
+    padding-top: 0px;
+  }
+
+  .FirstcontentWhatMakesSection {
+    column-gap: 31%;
+  }
+
+  .FirstcontentWhatMakesSection {
+    padding-top: 55px;
+  }
+
+  .videoBannerVideoFILE {
+    height: auto;
+  }
+
+  .ArchitectureContent .secondHeadingText {
+    font-size: 30px;
+    width: 315px;
+    top: 46%;
+    left: -52%;
+    text-align: center;
+  }
+
+  .projectsNameOnGoing {
+    margin-bottom: 12px;
+    margin-top: 16px;
+  }
+
+  .projectsNameOnGoingmAINcONTAINER {
+    padding: 0 12px;
+    padding-right: 20px;
+  }
+
+  .onGoingViewProject {
+    margin-top: 3px;
+    font-size: 14px;
+  }
+
+  .archiBg {
+    height: 555px;
+  }
+  .projectsNameOnGoing::before {
+    bottom: -12px;
+  }
+  .archisecondHeadingText button {
+    margin-top: 10px;
+  }
+
+  .ongoingProjectSection {
+    height: 260px;
+  }
+
+  .projectsNameOnGoing h5 {
+    font-size: 20px;
+  }
+
+  .projectsNameOnGoing span {
+    font-size: 14px;
+  }
+
+  .onGoingMainSectionDiv {
+    column-gap: 30px;
+  }
+
+  .onGoingRightSection .mainheadingText.onGoingSecondTextContainer {
+    width: 100%;
+    font-size: 24px;
+  }
+
+  .secondSliderContentSections .subHeadingText {
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .viewallprojectsongoing button {
+    font-size: 12px;
+    height: 38px;
+    width: 182px;
+  }
+
+  .viewallprojectsongoing {
+    margin-top: 20px;
+  }
+
+  .testimonalSliderContainer {
+    width: 65%;
+    margin-left: -3%;
+  }
+
+  .testimonalFullSection {
+    height: auto;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .testimonalPersonImage {
+    width: 58px;
+    height: 58px;
+  }
+
+  .testimonalPersonImagediv::before {
+    right: -88px;
+    width: 128%;
+  }
+
+  .testimonalSectionName h4 {
+    font-size: 20.5px;
+  }
+
+  .testimonalSectionName p {
+    font-size: 16px;
+  }
+
+  .curtedSectionMainRowBg {
+    height: auto;
+    background-position: center;
+    background-size: contain;
+    padding: 50px 0;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+  }
+
+  .curtsectionrow {
+    padding-top: 37px;
+  }
+
+  .curtSliderLeftSection {
+    margin-left: 5%;
+  }
+
+  .testimonalContent {
+    padding: 20px;
+  }
+
+  .natureIntergreated {
+    font-size: 19px;
+  }
+  .natureIntergreated:nth-child(4) {
+    top: 67px;
+  }
+
+  .natureIntergreated:nth-child(2) {
+    top: 25px;
+  }
+
+  .curtSliderLeftSection .subHeadingText {
+    width: 100%;
+  }
+
+  .curtLivingSlider {
+    width: 57%;
+  }
+
+  .curatedSliderContainer {
+    width: 320px;
+    width: 90%;
+    margin: 0 20px;
+  }
+
+  .curatedSliderContainer::before {
+    left: -6px;
+  }
+
+  .schudleVisitsection {
+    padding: 100px 0;
+    background-repeat: no-repeat;
+    height: 700px;
+    background-size: cover;
+  }
+
+  .schdeuleMainrowsection {
+    padding-top: 10px;
+    padding-bottom: 43px;
+  }
+
+  .keystonesectionflexx {
+    margin-top: -22px;
+  }
+
+  .keystonesectionflexx .secondHeadingText {
+    font-size: 90px;
+    line-height: 76px;
+  }
+
+  .FooterInnerDiv::before {
+    left: -26px;
+  }
+
+  .footerListsul li {
+    font-size: 12px;
+  }
+  .FooterSplit {
+    column-gap: 5.5%;
+  }
+
+  .footerListsul {
+    flex-direction: column;
+  }
+
+  .withTextContent {
+    font-size: 78px;
+  }
+
+  .footercopyRight {
+    margin-left: -1%;
+    margin-right: 1%;
+  }
+
+  .knowMoreButtonImage {
+    font-size: 13px;
+  }
+
+  .LiveThoughtFlex .LiveThoughtFlexImg {
+    width: 52%;
+  }
+  .LiveThoughtFlex {
+    column-gap: 4%;
+  }
+
+  .yearsScrollText::before {
+    left: -36px;
+    width: 93%;
+  }
+
+  .yearsScrollText.projectsScroll span {
+    font-size: 15px;
+  }
+
+  .lastSectionWhatMakes .FlexFirstcontentWhatMakesSection {
+    margin-top: 20px;
+  }
+
+  /* HomePage-Responsive */
+}
+
+@media (max-width: 1100px) and (min-width: 900px) {
+  /* HomePage-Responsive */
+
+  .LiveThoughtFlex .secondHeadingText::before {
+    top: -17px;
+    right: -8px;
+    font-size: 23px;
+  }
+
+  .LiveThoughtFlex .projectsScroll .secondHeadingText::before {
+    top: -6px;
+    right: -11px;
+    font-size: 17px;
+  }
+  .secondHeadingText {
+    font-size: 40px;
+  }
+
+  .subHeadingText {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .contentHeadingBanner .secondHeadingText {
+    font-size: 75px;
+  }
+
+  .contentHeadingBanner {
+    height: 69vh;
+  }
+  .hamburgerflex {
+    column-gap: 4px;
+    padding: 5px 14px;
+  }
+  .HeaderMainSEC .headerLogoImg {
+    width: 140px;
+  }
+  .architectureWidth {
+    width: 30%;
+    position: relative;
+  }
+  .hamburgerIconImage {
+    width: 30px;
+    height: 30px;
+  }
+  .listHeaders {
+    column-gap: 18px;
+  }
+
+  .listHeaders li {
+    font-size: 14px;
+  }
+
+  .yearsScrollText h6 {
+    font-size: 70px;
+    line-height: 0.75;
+  }
+
+  .yearsScrollText span {
+    font-size: 22px;
+  }
+
+  .yearsScrollText.projectsScroll h6 {
+    font-size: 50px;
+    line-height: 0.75;
+  }
+
+  .whatsmakeSectionBG {
+    height: 550px;
+    background-size: contain;
+  }
+  .whatMakesHeadingMainRow {
+    padding-top: 40px;
+  }
+  .FirstcontentWhatMakesSection.lastSectionWhatMakes {
+    padding-top: 0px;
+  }
+
+  .FirstcontentWhatMakesSection {
+    column-gap: 31%;
+  }
+
+  .mainheadingText {
+    font-size: 15px;
+  }
+
+  .FirstcontentWhatMakesSection {
+    padding-top: 30px;
+  }
+
+  .videoBannerVideoFILE {
+    height: auto;
+  }
+
+  .ArchitectureContent .secondHeadingText {
+    font-size: 23px;
+    width: 285px;
+    top: 46%;
+    left: -45%;
+    text-align: center;
+  }
+
+  .archisecondHeadingText {
+    width: 63%;
+    left: 26%;
+    top: 19%;
+  }
+
+  .onGoingRightSection .mainheadingText {
+    line-height: 1.1;
+  }
+
+  .projectsNameOnGoing {
+    margin-bottom: 8px;
+    margin-top: 16px;
+  }
+
+  .projectsNameOnGoingmAINcONTAINER {
+    padding: 0 12px;
+    padding-right: 20px;
+  }
+
+  .onGoingViewProject {
+    margin-top: 3px;
+    font-size: 14px;
+  }
+
+  .archiBg {
+    height: 505px;
+  }
+  .projectsNameOnGoing::before {
+    bottom: -12px;
+  }
+  .archisecondHeadingText button {
+    margin-top: 10px;
+  }
+
+  .ongoingProjectSection {
+    height: 220px;
+  }
+
+  .onGoingMainSectionDiv:last-child .onGoingRightSection {
+    margin-top: 0;
+  }
+
+  .projectsNameOnGoing h5 {
+    font-size: 16px;
+  }
+
+  .projectsNameOnGoing span {
+    font-size: 12px;
+  }
+
+  .onGoingMainSectionDiv {
+    column-gap: 30px;
+  }
+
+  .onGoingRightSection .mainheadingText.onGoingSecondTextContainer {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .secondSliderContentSections .subHeadingText {
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .viewallprojectsongoing button {
+    font-size: 10px;
+    height: 34px;
+    width: 160px;
+  }
+
+  .viewallprojectsongoing {
+    margin-top: 15px;
+  }
+
+  .testimonalSliderContainer {
+    width: 65%;
+    margin-left: -3%;
+  }
+
+  .testimonalFullSection {
+    height: auto;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .testimonalPersonImage {
+    width: 58px;
+    height: 58px;
+  }
+
+  .testimonalPersonImagediv::before {
+    right: -73px;
+    width: 99%;
+  }
+
+  .testimonalSectionName h4 {
+    font-size: 20.5px;
+  }
+
+  .testimonalSectionName p {
+    font-size: 16px;
+  }
+
+  .curtLivingSlider .curlatedLine {
+    gap: 150px;
+  }
+
+  .curlatedLine::before {
+    width: 29%;
+  }
+
+  .curtedSectionMainRowBg {
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+  }
+
+  .curtsectionrow {
+    padding-top: 0;
+  }
+
+  .curtSliderLeftSection {
+    margin-left: 5%;
+  }
+
+  .testimonalContent {
+    padding: 20px;
+  }
+
+  .natureIntergreated {
+    font-size: 19px;
+  }
+  .natureIntergreated:nth-child(4) {
+    top: 67px;
+  }
+
+  .natureIntergreated:nth-child(2) {
+    top: 25px;
+  }
+
+  .curtSliderLeftSection .subHeadingText {
+    width: 100%;
+  }
+
+  .curtLivingSlider {
+    width: 57%;
+  }
+
+  .curatedSliderContainer {
+    width: 320px;
+    width: 90%;
+    margin: 0 20px;
+  }
+
+  .curatedSliderContainer::before {
+    left: -6px;
+  }
+
+  .schudleVisitsection {
+    padding: 60px 0;
+    background-repeat: no-repeat;
+    height: 600px;
+    background-size: cover;
+  }
+
+  .schdeuleMainrowsection {
+    padding-top: 10px;
+    padding-bottom: 43px;
+  }
+  .scheduleaVisitbutton button {
+    width: 142px;
+    height: 39px;
+
+    font-size: 12px;
+  }
+  .keystonesectionflexx {
+    margin-top: -22px;
+  }
+
+  .scheduleaVisitbutton {
+    margin-top: 13px;
+  }
+
+  .keystonesectionflexx .secondHeadingText {
+    font-size: 76px;
+    line-height: 60px;
+  }
+
+  .FooterInnerDiv::before {
+    left: -22px;
+  }
+
+  .footerListsul li {
+    font-size: 11px;
+    margin-top: 6px;
+  }
+  .FooterSplit {
+    column-gap: 5.5%;
+  }
+
+  .FooterMainDiv {
+    padding: 50px 0;
+  }
+
+  .footerListsul {
+    flex-direction: column;
+  }
+
+  .contentHeadingBanner .subHeadingText {
+    width: 60%;
+  }
+
+  .withTextContent {
+    font-size: 65px;
+  }
+
+  .footercopyRight {
+    margin-left: -1%;
+    margin-right: 1%;
+  }
+
+  .knowMoreButtonImage {
+    font-size: 13px;
+  }
+
+  .LiveThoughtFlex .LiveThoughtFlexImg {
+    width: 52%;
+  }
+  .LiveThoughtFlex {
+    column-gap: 4%;
+  }
+
+  .yearsScrollText::before {
+    left: -36px;
+    width: 93%;
+  }
+
+  .yearsScrollText.projectsScroll span {
+    font-size: 15px;
+  }
+
+  .lastSectionWhatMakes .FlexFirstcontentWhatMakesSection {
+    margin-top: 20px;
+  }
+
+  /* HomePage-Responsive */
+}
+/* resposive start */
