@@ -3895,6 +3895,241 @@
   }
 
   /* HomePage-Responsive */
+
+  /* AboutPage-Responsive */
+
+  .detailPageBanners {
+    margin-top: 60px;
+  }
+
+  .aboutuspagesection .detailPageBanners .secondHeadingText {
+    font-size: 100px;
+  }
+
+  .aboutuspagesection .detailPageBanners .subHeadingText {
+    line-height: 1.2;
+    margin-top: 36px;
+  }
+
+  .visitOurOFficetext {
+    font-size: 37px;
+    line-height: 1;
+  }
+
+  .gettknowHeading {
+    font-size: 15px;
+  }
+
+  .afterMainBG {
+    padding: 70px 0;
+  }
+  .underaboutusection .subHeadingText {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .shapeusflex {
+    width: 95%;
+  }
+
+  .shapeusconatiner {
+    height: 580px;
+  }
+
+  .shapeconatinerflex .secondHeadingText {
+    font-size: 68px;
+    line-height: 0.9;
+  }
+  .lowconatinersection {
+    margin: 0 7%;
+    padding-top: 50px;
+  }
+
+  .timedelivery {
+    line-height: 0.9;
+    font-size: 28px;
+    width: 50%;
+  }
+
+  .keystoneuniquesection {
+    height: 858px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .unquiecardsection img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .unquiecardsection {
+    padding: 20px;
+    padding-top: 15px;
+  }
+
+  .vissionmisiontext.secondHeadingText {
+    font-size: 100px;
+    top: 20px;
+  }
+
+  .leftsidecontentsectionabout .subHeadingText {
+    font-size: 18px;
+  }
+
+  .visiiontexttransperant .subHeadingText {
+    font-size: 60px;
+    line-height: 47px;
+  }
+
+  .rightsidecontentsectionabout .subHeadingText {
+    font-size: 18px;
+  }
+
+  .visiiontexttransperant .subHeadingText {
+    font-size: 60px;
+    line-height: 47px;
+  }
+
+  .aboutusfoundermaincontent .secondHeadingText {
+    font-size: 85px;
+  }
+
+  .founderdetails .secondHeadingText {
+    font-size: 27px;
+  }
+
+  .founderflex {
+    margin-top: 15px;
+  }
+
+  .founderflexcontentpopup .foundernamepopup {
+    font-size: 45px;
+  }
+
+  .popupaboutusfounders ul li {
+    font-size: 20px;
+  }
+
+  .rectangleone {
+    width: 54%;
+  }
+
+  .founderdetails {
+    height: 100%;
+    padding-left: 45%;
+  }
+
+  .foundersbanner {
+    height: 700px;
+  }
+
+  /* AboutPage-Responsive */
+
+  /* Ongoing Page */
+
+  .detailPageBanners h5 {
+    font-size: 100px;
+  }
+
+  .detailPageBanners .subHeadingText {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .margintopafterlist {
+    margin-top: -370px;
+  }
+  .onGoingProjectsLists h5 {
+    font-size: 45px;
+  }
+
+  .onGoingProjectsLists span {
+    font-size: 26px;
+  }
+
+  .buttononGoingProjectsLists {
+    font-size: 15px;
+  }
+
+  .mainRowonGoingProjectsLists .onGoingProjectsLists {
+    padding-left: 30px;
+  }
+  .ongoingProjectsDiVMain {
+    margin-top: 60px;
+  }
+
+  .ongoingProjectsPage .afterMainBG {
+    padding: 50px 0;
+    height: 700px;
+  }
+  /* Ongoing Page */
+
+  /* joint-venture-Page */
+
+  .worthwithUsSection {
+    background-position: center;
+  }
+
+  /* joint-venture-Page */
+
+  /* channel-partner-Page */
+
+  .channelPartnerFormSection {
+    column-gap: 95px;
+  }
+  .channelPartnerFormSection .contactFormInputEach input {
+    margin-top: 6px;
+    height: 50px;
+  }
+
+  .channelPartnerMainSection .formContactUsSectionFlex {
+    width: 35%;
+  }
+
+  .channelPartnerFormSection .formChannelPartnerImage {
+    width: 49%;
+    height: 46%;
+  }
+
+  /* channel-partner-Page */
+
+  /* careers-Page */
+
+  .careersCards h4 {
+    font-size: 24px;
+
+    line-height: 1.1;
+  }
+
+  .careersCards img {
+    width: 55px;
+    height: 55px;
+  }
+  .careersCards {
+    padding: 35px 23px;
+  }
+
+  .careersCurrentOpenings {
+    height: 700px;
+    background-position: center;
+  }
+
+  /* careers-Page */
+
+  /* testimonial page */
+  .testimonalpagedisply {
+    padding: 0 3%;
+    row-gap: 70px;
+  }
+  .testimonalpagedisply .testimonalPersonImagediv::before {
+    right: -114px;
+    width: 167%;
+  }
+
+  /* testimonial page */
 }
 
 @media (max-width: 1400px) and (min-width: 1250px) {
@@ -4170,6 +4405,318 @@
   }
 
   /* HomePage-Responsive */
+
+  /* AboutPage-Responsive */
+
+  .detailPageBanners {
+    margin-top: 60px;
+  }
+
+  .aboutuspagesection .detailPageBanners .secondHeadingText {
+    font-size: 85px;
+  }
+
+  .aboutuspagesection .detailPageBanners .subHeadingText {
+    line-height: 1.2;
+    margin-top: 26px;
+  }
+
+  .lowconatinersectionafterbanner {
+    margin: 0%;
+  }
+
+  .visitOurOFficetext {
+    font-size: 33px;
+    line-height: 1;
+  }
+  .seondbannerafterSectionMAINrow {
+    width: 199px;
+    height: 200px;
+  }
+  .gettknowHeading {
+    font-size: 15px;
+  }
+
+  .afterMainBG {
+    padding: 70px 0;
+  }
+  .underaboutusection .subHeadingText {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .shapeusflex {
+    width: 100%;
+  }
+
+  .shapeusconatiner {
+    height: 530px;
+  }
+
+  .shapeconatinerflex .secondHeadingText {
+    font-size: 51px;
+    line-height: 0.9;
+  }
+  .lowconatinersection {
+    margin: 0;
+    padding-top: 50px;
+  }
+
+  .unquiecardsection .subHeadingText {
+    font-size: 14px;
+  }
+
+  .timedelivery {
+    line-height: 0.9;
+    font-size: 28px;
+    width: 50%;
+  }
+
+  .aboutuspagesection .aboutustextcontent {
+    line-height: 1.2;
+  }
+
+  .flexunderaboutsection {
+    margin-top: 30px;
+  }
+
+  .keystoneuniquesection {
+    height: 858px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .unquiecardsection img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .unquiecardsection {
+    padding: 20px;
+    padding-top: 15px;
+  }
+
+  .vissionmisiontext.secondHeadingText {
+    font-size: 100px;
+    top: 20px;
+  }
+
+  .leftsidecontentsectionabout .subHeadingText {
+    font-size: 16px;
+  }
+
+  .visiiontexttransperant .subHeadingText {
+    font-size: 60px;
+    line-height: 47px;
+  }
+
+  .rightsidecontentsectionabout .subHeadingText {
+    font-size: 16px;
+  }
+
+  .leftsidecontentsectionabout {
+    left: 3%;
+  }
+
+  .rightsidecontentsectionabout {
+    right: 1%;
+  }
+  .aboutusvissionmission img {
+    width: 70% !important;
+  }
+  .visiiontexttransperant .subHeadingText {
+    font-size: 51px;
+    line-height: 39px;
+  }
+  .visionmissonrow {
+    padding: 100px 0;
+  }
+  .aboutusfoundermaincontent .secondHeadingText {
+    font-size: 75px;
+  }
+
+  .founderdetails .secondHeadingText {
+    font-size: 27px;
+  }
+
+  .founderflex {
+    margin-top: 15px;
+  }
+
+  .founderflexcontentpopup .foundernamepopup {
+    font-size: 45px;
+  }
+
+  .popupaboutusfounders ul li {
+    font-size: 20px;
+  }
+
+  .rectangleone {
+    width: 59%;
+  }
+
+  .founderdetails {
+    height: 100%;
+    padding-left: 45%;
+  }
+
+  .foundersbanner {
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .founderflex1 {
+    width: 56%;
+    padding-left: 4%;
+  }
+
+  /* AboutPage-Responsive */
+
+  /* Ongoing Page */
+
+  .detailPageBanners h5 {
+    font-size: 85px;
+  }
+
+  .detailPageBanners .subHeadingText {
+    font-size: 16px;
+  }
+
+  .margintopafterlist {
+    margin-top: -390px;
+  }
+  .onGoingProjectsLists h5 {
+    font-size: 36px;
+  }
+
+  .onGoingProjectsLists span {
+    font-size: 23px;
+  }
+
+  .buttononGoingProjectsLists {
+    font-size: 13px;
+    height: 40px;
+  }
+
+  .mainRowonGoingProjectsLists .onGoingProjectsLists {
+    padding-left: 23px;
+  }
+  .ongoingProjectsDiVMain {
+    margin-top: 60px;
+  }
+
+  .ongoingProjectsPage .afterMainBG {
+    padding: 50px 0;
+    height: 700px;
+  }
+
+  .contactPageAddress {
+    font-size: 16px;
+    width: 85%;
+  }
+
+  .ongoingprojectslist li {
+    font-size: 16px;
+
+    letter-spacing: 2px;
+
+    padding: 0 20px;
+  }
+
+  .ongoingprojectslist {
+    padding: 10px 35px;
+  }
+  /* Ongoing Page */
+
+  /* joint-venture-Page */
+
+  .worthwithUsSection {
+    background-position: center;
+    height: 700px;
+  }
+
+  .JointVenturePage .formContactUsSectionFlex {
+    padding: 0px 0px;
+  }
+  .contactFormInputEach label {
+    font-size: 16px;
+  }
+
+  .contactFormInputEach input {
+    height: 50px;
+  }
+
+  /* joint-venture-Page */
+
+  /* channel-partner-Page */
+
+  .channelPartnerFormSection {
+    column-gap: 95px;
+  }
+  .channelPartnerFormSection .contactFormInputEach input {
+    margin-top: 6px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .channelPartnerMainSection .formContactUsSectionFlex {
+    width: 35%;
+  }
+
+  .channelPartnerFormSection .formChannelPartnerImage {
+    width: 49%;
+    height: 46%;
+  }
+
+  /* channel-partner-Page */
+
+  /* careers-Page */
+
+  .careersCards h4 {
+    font-size: 21px;
+    line-height: 1.1;
+  }
+
+  .careersCards img {
+    width: 50px;
+    height: 50px;
+  }
+  .careersCards {
+    padding: 33px 23px;
+  }
+
+  .careersCurrentOpenings {
+    height: 650px;
+    background-position: center;
+  }
+
+  .careersCards .subHeadingText {
+    margin-top: 6px;
+  }
+
+  .careerCardsFLex {
+    row-gap: 40px;
+  }
+
+  /* careers-Page */
+
+  /* testimonial page */
+  .testimonalpagedisply {
+    padding: 0%;
+    row-gap: 60px;
+  }
+  .testimonalpagedisply .testimonalPersonImagediv::before {
+    right: -114px;
+    width: 167%;
+  }
+
+  .testimonalpagedisply .testimonalSliderborder {
+    width: 28%;
+  }
+
+  /* testimonial page */
 }
 
 @media (max-width: 1250px) and (min-width: 1100px) {
@@ -4476,6 +5023,362 @@
   }
 
   /* HomePage-Responsive */
+
+  /* AboutPage-Responsive */
+
+  .detailPageBanners {
+    margin-top: 60px;
+  }
+
+  .aboutuspagesection .detailPageBanners .secondHeadingText {
+    font-size: 70px;
+  }
+
+  .aboutuspagesection .detailPageBanners .subHeadingText {
+    line-height: 1.2;
+    margin-top: 26px;
+  }
+
+  .lowconatinersectionafterbanner {
+    margin: 0%;
+  }
+
+  .aboutuspagesection .contactPageAddress {
+    font-size: 16px;
+  }
+
+  .visitOurOFficetext {
+    font-size: 28px;
+    line-height: 1.1;
+  }
+  .seondbannerafterSectionMAINrow {
+    width: 199px;
+    height: 200px;
+  }
+  .gettknowHeading {
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+
+  .afterMainBG {
+    padding: 70px 0;
+  }
+  .underaboutusection .subHeadingText {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .shapeusflex {
+    width: 100%;
+  }
+
+  .shapeusconatiner {
+    height: 530px;
+  }
+
+  .shapeconatinerflex .secondHeadingText {
+    font-size: 51px;
+    line-height: 0.9;
+  }
+  .lowconatinersection {
+    margin: 0;
+    padding-top: 50px;
+  }
+
+  .unquiecardsection .subHeadingText {
+    font-size: 14px;
+  }
+
+  .timedelivery {
+    line-height: 0.9;
+    font-size: 28px;
+    width: 50%;
+  }
+
+  .aboutuspagesection .aboutustextcontent {
+    line-height: 1.2;
+    font-size: 15px;
+  }
+
+  .flexunderaboutsection {
+    margin-top: 30px;
+  }
+
+  .keystoneuniquesection {
+    height: 858px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .unquiecardsection img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .unquiecardsection {
+    padding: 20px;
+    padding-top: 15px;
+  }
+
+  .vissionmisiontext.secondHeadingText {
+    font-size: 88px;
+    top: 20px;
+    line-height: 80px;
+  }
+
+  .leftsidecontentsectionabout .subHeadingText {
+    font-size: 16px;
+  }
+
+  .visiiontexttransperant .subHeadingText {
+    font-size: 60px;
+    line-height: 47px;
+  }
+
+  .rightsidecontentsectionabout .subHeadingText {
+    font-size: 16px;
+  }
+
+  .leftsidecontentsectionabout {
+    left: 3%;
+    width: 33%;
+  }
+
+  .rightsidecontentsectionabout {
+    right: 1%;
+    width: 32%;
+  }
+  .aboutusvissionmission img {
+    width: 70% !important;
+  }
+  .visiiontexttransperant .subHeadingText {
+    font-size: 51px;
+    line-height: 39px;
+  }
+  .visionmissonrow {
+    padding: 100px 0;
+  }
+  .aboutusfoundermaincontent .secondHeadingText {
+    font-size: 75px;
+  }
+
+  .founderdetails .secondHeadingText {
+    font-size: 27px;
+  }
+
+  .founderflex {
+    margin-top: 15px;
+  }
+
+  .founderflexcontentpopup .foundernamepopup {
+    font-size: 45px;
+  }
+
+  .popupaboutusfounders ul li {
+    font-size: 17px;
+  }
+
+  .rectangleone {
+    width: 59%;
+  }
+
+  .founderdetails {
+    height: 100%;
+    padding-left: 45%;
+  }
+
+  .foundersbanner {
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .founderflex1 {
+    width: 56%;
+    padding-left: 0;
+  }
+
+  .founderimagee {
+    width: 119px;
+    top: -23px;
+  }
+
+  /* AboutPage-Responsive */
+
+  /* Ongoing Page */
+
+  .detailPageBanners h5 {
+    font-size: 70px;
+    line-height: 0.9;
+  }
+
+  .BreadCrumSection {
+    margin-top: 10px;
+  }
+
+  .detailPageBanners .subHeadingText {
+    font-size: 15px;
+  }
+
+  .margintopafterlist {
+    margin-top: -315px;
+  }
+  .onGoingProjectsLists h5 {
+    font-size: 30px;
+  }
+
+  .onGoingProjectsLists span {
+    font-size: 20px;
+  }
+
+  .buttononGoingProjectsLists {
+    font-size: 10px;
+    height: 32px;
+  }
+
+  .mainRowonGoingProjectsLists .onGoingProjectsLists {
+    padding-left: 20px;
+  }
+  .ongoingProjectsDiVMain {
+    margin-top: 60px;
+  }
+
+  .ongoingProjectsPage .afterMainBG {
+    padding: 50px 0;
+    height: 615px;
+  }
+
+  .contactPageAddress {
+    font-size: 16px;
+    width: 85%;
+  }
+
+  .ongoingprojectslist li {
+    font-size: 16px;
+
+    letter-spacing: 2px;
+
+    padding: 0 20px;
+  }
+
+  .ongoingprojectslist {
+    padding: 10px 35px;
+  }
+  /* Ongoing Page */
+
+  /* ContactUs */
+
+  .contactUsBannerPageBg {
+    background-position: center;
+  }
+
+  /* ContactUs */
+
+  /* joint-venture-Page */
+
+  .worthwithUsSection {
+    background-position: center;
+    height: 700px;
+  }
+
+  .JointVenturePage .formContactUsSectionFlex {
+    padding: 0px 0px;
+  }
+  .contactFormInputEach label {
+    font-size: 16px;
+  }
+
+  .contactFormInputEach input {
+    height: 50px;
+    font-size: 16px;
+  }
+
+  /* joint-venture-Page */
+
+  /* channel-partner-Page */
+
+  .channelPartnerFormSection {
+    column-gap: 70px;
+  }
+  .channelPartnerFormSection .contactFormInputEach input {
+    margin-top: 5px;
+    height: 47px;
+    font-size: 16px;
+  }
+
+  .channelPartnerMainSection .formContactUsSectionFlex {
+    width: 32%;
+  }
+
+  .channelPartnerFormSection .formChannelPartnerImage {
+    width: 49%;
+    height: 46%;
+  }
+  .channelPartnerFormSection .formMainStyleContactPage {
+    row-gap: 16px;
+  }
+
+  .channelPartnerFormFirst {
+    height: auto;
+    padding-top: 70px;
+  }
+  /* channel-partner-Page */
+
+  /* careers-Page */
+
+  .careersCards h4 {
+    font-size: 21px;
+    line-height: 1.1;
+  }
+
+  .careersCards img {
+    width: 50px;
+    height: 50px;
+  }
+  .careersCards {
+    padding: 33px 23px;
+  }
+
+  .careersCurrentOpenings {
+    height: 650px;
+    background-position: center;
+  }
+
+  .careersCards .subHeadingText {
+    margin-top: 6px;
+  }
+
+  .careerCardsFLex {
+    row-gap: 40px;
+    width: 97%;
+  }
+
+  .careersCurrentOpenings .contactFormInputEach button {
+    height: 52px;
+  }
+
+  .CarrePageMainSection .formContactUsSectionFlex {
+    padding-left: 20px;
+  }
+
+  /* careers-Page */
+
+  /* testimonial page */
+  .testimonalpagedisply {
+    padding: 0%;
+    row-gap: 50px;
+  }
+  .testimonalpagedisply .testimonalPersonImagediv::before {
+    right: -95px;
+    width: 142%;
+  }
+
+  .testimonalpagedisply .testimonalSliderborder {
+    width: 28%;
+  }
+
+  /* testimonial page */
 }
 
 @media (max-width: 1100px) and (min-width: 900px) {
@@ -4506,7 +5409,8 @@
   }
 
   .contentHeadingBanner {
-    height: 69vh;
+    height: 100%;
+    /* margin-top: 50px; */
   }
   .hamburgerflex {
     column-gap: 4px;
@@ -4656,7 +5560,7 @@
   }
 
   .testimonalSliderContainer {
-    width: 65%;
+    width: 66%;
     margin-left: -3%;
   }
 
@@ -4833,5 +5737,407 @@
   }
 
   /* HomePage-Responsive */
+
+  /* AboutPage-Responsive */
+
+  .detailPageBanners {
+    margin-top: 60px;
+    background-position: center;
+  }
+
+  .aboutuspagesection .detailPageBanners .secondHeadingText {
+    font-size: 70px;
+  }
+
+  .aboutuspagesection .detailPageBanners .subHeadingText {
+    line-height: 1.2;
+    margin-top: 26px;
+  }
+
+  .lowconatinersectionafterbanner {
+    margin: 0%;
+  }
+
+  .aboutuspagesection .contactPageAddress {
+    font-size: 14px;
+  }
+
+  .visitOurOFficetext {
+    font-size: 23px;
+    line-height: 1.1;
+  }
+  .seondbannerafterSectionMAINrow {
+    width: 175px;
+    height: 175px;
+  }
+  .gettknowHeading {
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+
+  .afterMainBG {
+    padding: 70px 0;
+  }
+  .underaboutusection .subHeadingText {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  .underaboutusection {
+    padding-top: 20px;
+  }
+  .shapeusflex {
+    width: 88%;
+  }
+
+  .shapeusconatiner {
+    height: 430px;
+  }
+
+  .shapeconatinerflex .secondHeadingText {
+    font-size: 44px;
+    line-height: 0.9;
+  }
+  .lowconatinersection {
+    margin: 0;
+    padding-top: 50px;
+  }
+
+  .unquiecardsection .subHeadingText {
+    font-size: 12px;
+  }
+
+  .timedelivery {
+    line-height: 1;
+    font-size: 20px;
+    width: 50%;
+  }
+
+  .aboutuspagesection .aboutustextcontent {
+    line-height: 1.2;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .flexunderaboutsection {
+    margin-top: 30px;
+  }
+
+  .keystoneuniquesection {
+    height: 858px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .unquiecardsection img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .unquiecardsection {
+    padding: 20px;
+    padding-top: 15px;
+  }
+
+  .vissionmisiontext.secondHeadingText {
+    font-size: 73px;
+    top: 20px;
+    line-height: 73px;
+  }
+
+  .leftsidecontentsectionabout .subHeadingText {
+    font-size: 16px;
+  }
+
+  .visiiontexttransperant .subHeadingText {
+    font-size: 60px;
+    line-height: 47px;
+  }
+
+  .rightsidecontentsectionabout .subHeadingText {
+    font-size: 16px;
+  }
+
+  .leftsidecontentsectionabout {
+    left: 3%;
+    width: 40%;
+  }
+
+  .rightsidecontentsectionabout {
+    right: 1%;
+    width: 40%;
+  }
+  .aboutusvissionmission img {
+    width: 70% !important;
+  }
+  .visiiontexttransperant .subHeadingText {
+    font-size: 51px;
+    line-height: 39px;
+  }
+  .visionmissonrow {
+    padding: 100px 0;
+  }
+  .aboutusfoundermaincontent .secondHeadingText {
+    font-size: 75px;
+  }
+
+  .founderdetails .secondHeadingText {
+    font-size: 27px;
+  }
+
+  .founderflex {
+    margin-top: 15px;
+  }
+
+  .founderflexcontentpopup .foundernamepopup {
+    font-size: 38px;
+  }
+
+  .popupaboutusfounders ul li {
+    font-size: 16px;
+  }
+
+  .rectangleone {
+    width: 59%;
+    height: 93px;
+  }
+
+  .aboutuspagesection .detailPageBanners {
+    background-position: center;
+  }
+
+  .founderdetails {
+    height: 100%;
+    padding-left: 42%;
+  }
+
+  .foundersbanner {
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .founderflex1 {
+    width: 56%;
+    padding-left: 0;
+  }
+
+  .founderimagee {
+    width: 103px;
+    top: -22px;
+  }
+
+  /* AboutPage-Responsive */
+
+  /* Ongoing Page */
+
+  .detailPageBanners h5 {
+    font-size: 70px;
+    line-height: 0.9;
+  }
+
+  .BreadCrumSection {
+    margin-top: 10px;
+  }
+
+  .detailPageBanners .subHeadingText {
+    font-size: 15px;
+  }
+
+  .margintopafterlist {
+    margin-top: -315px;
+  }
+  .onGoingProjectsLists h5 {
+    font-size: 28px;
+  }
+
+  .onGoingProjectsLists span {
+    font-size: 20px;
+  }
+
+  .FirstonGoingProjectsLists,
+  .secondonGoingProjectsLists,
+  .thirdonGoingProjectsLists {
+    margin-bottom: 28px;
+  }
+
+  .buttononGoingProjectsLists {
+    font-size: 10px;
+    height: 40px;
+  }
+
+  .mainRowonGoingProjectsLists .onGoingProjectsLists {
+    padding-left: 20px;
+  }
+  .ongoingProjectsDiVMain {
+    margin-top: 60px;
+  }
+
+  .ongoingProjectsPage .afterMainBG {
+    padding: 50px 0;
+    height: 615px;
+  }
+
+  .contactPageAddress {
+    font-size: 16px;
+    width: 85%;
+  }
+
+  .ongoingprojectslist li {
+    font-size: 16px;
+
+    letter-spacing: 2px;
+
+    padding: 0 20px;
+  }
+
+  .ongoingprojectslist {
+    padding: 10px 35px;
+  }
+  /* Ongoing Page */
+
+  /* ContactUs */
+
+  .contactUsBannerPageBg {
+    background-position: center;
+  }
+
+  .formContactUsSectionFlex {
+    width: 100%;
+  }
+
+  /* ContactUs */
+
+  /* joint-venture-Page */
+
+  .worthwithUsSection {
+    background-position: center;
+    height: 700px;
+  }
+
+  .JointVenturePage .formContactUsSectionFlex {
+    padding: 0px 0px;
+  }
+  .contactFormInputEach label {
+    font-size: 14px;
+  }
+
+  .contactFormInputEach input {
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .formMainStyleContactPage {
+    column-gap: 35px;
+    row-gap: 19px;
+  }
+
+  .contactFormInputEach button {
+    padding: 7px 4px;
+    font-size: 16px;
+
+    margin-top: 13px;
+  }
+
+  /* joint-venture-Page */
+
+  /* channel-partner-Page */
+
+  .channelPartnerFormSection {
+    column-gap: 70px;
+  }
+  .channelPartnerFormSection .contactFormInputEach input {
+    margin-top: 5px;
+    height: 47px;
+    font-size: 16px;
+  }
+
+  .channelPartnerMainSection .formContactUsSectionFlex {
+    width: 35%;
+  }
+
+  .channelPartnerFormSection .formChannelPartnerImage {
+    width: 53%;
+    height: 46%;
+  }
+  .channelPartnerFormSection .formMainStyleContactPage {
+    row-gap: 16px;
+  }
+
+  .channelPartnerFormFirst {
+    height: auto;
+    padding-top: 70px;
+  }
+  /* channel-partner-Page */
+
+  /* careers-Page */
+
+  .careersCards h4 {
+    font-size: 20px;
+    line-height: 1.1;
+  }
+
+  .careersCards img {
+    width: 40px;
+    height: 40px;
+  }
+  .careersCards {
+    padding: 30px 20px;
+    padding-top: 20px;
+  }
+
+  .careersCurrentOpenings {
+    height: 550px;
+    background-position: center;
+  }
+
+  .careersMainContainer {
+    margin-top: 50px;
+  }
+
+  .careersCards .subHeadingText {
+    margin-top: 6px;
+  }
+
+  .careerCardsFLex {
+    row-gap: 30px;
+    width: 100%;
+  }
+
+  .careersCurrentOpenings .contactFormInputEach button {
+    height: 52px;
+  }
+
+  .CarrePageMainSection .formContactUsSectionFlex {
+    padding-left: 20px;
+  }
+
+  .CarrePageMainSection .contactFormInputEach input {
+    height: 45px;
+    font-size: 16px;
+  }
+
+  /* careers-Page */
+
+  /* testimonial page */
+  .testimonalpagedisply {
+    padding: 0%;
+    row-gap: 45px;
+    column-gap: 3%;
+  }
+  .testimonalpagedisply .testimonalPersonImagediv::before {
+    right: -91px;
+    width: 135%;
+  }
+
+  .testimonalpagedisply .testimonalSliderborder {
+    width: 31%;
+  }
+
+  .testimonialpagebgcars {
+    padding: 70px 0;
+  }
+
+  /* testimonial page */
 }
 /* resposive start */
