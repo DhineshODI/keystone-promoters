@@ -50,7 +50,8 @@ export default function ContactPage() {
                 </div>
               </div>
               <div className="seondbannerafterSectionMAIN">
-                <div className="seondbannerafterSectionMAINrow"></div>
+                {/* <div className="seondbannerafterSectionMAINrow"></div> */}
+                <img src="/images/contactus-banner-icon.png" alt="" />
               </div>
               <div className="thirdbannerafterSectionMAIN">
                 <div style={{ marginTop: "15px" }}>

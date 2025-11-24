@@ -37,9 +37,10 @@ export default function CareerPageFunction() {
                     </h3>
                   </div>
                 </div>
-                 <div className="seondbannerafterSectionMAIN">
-                      <div className="seondbannerafterSectionMAINrow"></div>
-                    </div>
+                <div className="seondbannerafterSectionMAIN">
+                  {/* <div className="seondbannerafterSectionMAINrow"></div> */}
+                  <img src="/images/careers-banner-icon.png" alt="" />
+                </div>
                 <div className="thirdbannerafterSectionMAIN">
                   <div style={{ marginTop: "15px" }}>
                     <p className="contactPageAddress">
@@ -184,7 +185,7 @@ export default function CareerPageFunction() {
                   </div>
                   <div className="contactFormInputEach">
                     <label className="subHeadingText " htmlFor="">
-                      Message 
+                      Message
                     </label>
                     <br />
                     <input type="text" />

@@ -41,7 +41,8 @@ export default function TestimonialPage() {
                       </div>
                     </div>
                     <div className="seondbannerafterSectionMAIN">
-                      <div className="seondbannerafterSectionMAINrow"></div>
+                      {/* <div className="seondbannerafterSectionMAINrow"></div> */}
+                      <img src="/images/testimonial-banner-icon.png" alt="" />
                     </div>
 
                     <div className="thirdbannerafterSectionMAIN">

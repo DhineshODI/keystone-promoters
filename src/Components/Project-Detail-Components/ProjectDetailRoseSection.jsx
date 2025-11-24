@@ -15,9 +15,10 @@ export default function ProjectDetailRoseSection() {
                   </h3>
                 </div>
               </div>
-                 <div className="seondbannerafterSectionMAIN">
-                      <div className="seondbannerafterSectionMAINrow"></div>
-                    </div>
+              <div className="seondbannerafterSectionMAIN">
+                {/* <div className="seondbannerafterSectionMAINrow"></div> */}
+                <img src="/images/project-detail/projectdetail-banner-icon.png" alt="" />
+              </div>
               <div className="thirdbannerafterSectionMAIN">
                 <div style={{ marginTop: "15px" }}>
                   <p className="contactPageAddress">

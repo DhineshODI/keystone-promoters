@@ -1645,6 +1645,10 @@
 
 /* Joint Venture Page -CSS  */
 
+.JointVenturePage .detailPageBanners {
+  background-image: url("/public/images/joint-venture-banner.jpg");
+}
+
 .JointVenturePage .formContactUsSectionFlex {
   padding: 0px 70px;
   border-radius: 20px;
@@ -4130,6 +4134,187 @@
   }
 
   /* testimonial page */
+
+  /* NRI page */
+
+  .nridiscoversection .mainheadingText {
+    font-size: 18px;
+  }
+
+  .maincontentnriimage {
+    font-size: 26px;
+  }
+
+  .flexnriimage .subHeadingText {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .nrilist li p {
+    font-size: 17px;
+    line-height: 1.4;
+  }
+
+  .mainlistul {
+    padding-top: 12px;
+    padding-bottom: 15px;
+  }
+
+  .nrilistenquire button {
+    font-size: 14px;
+
+    height: 43px;
+    width: 191px;
+  }
+
+  .flexnriimage {
+    column-gap: 60px;
+  }
+
+  .nrifaq {
+    height: 735px;
+  }
+
+  .faqnriconatiner.active h4 {
+    font-size: 24px;
+  }
+
+  .faqnriconatiner.active .subHeadingText {
+    font-size: 18px;
+  }
+
+  .faqnriconatiner h4 {
+    font-size: 19px;
+  }
+
+  .NriPagebutton button {
+    font-size: 14px;
+
+    height: 43px;
+    width: 191px;
+  }
+
+  .NriPagebutton {
+    margin-top: 30px;
+  }
+
+  .faqflexdiv {
+    column-gap: 29px;
+  }
+
+  .faqnriconatiner.active {
+    padding: 25px;
+  }
+
+  .faqnriconatiner h4::before {
+    font-size: 25px;
+  }
+
+  .faqnriconatiner.active h4::before {
+    font-size: 30px;
+  }
+
+  /* NRI page */
+
+  /* ProjectDetail Page  */
+
+  .spectraproject .secondHeadingText {
+    font-size: 84px;
+  }
+
+  .projectDetailIconSection .mainheadingText {
+    font-size: 20px;
+  }
+  .projectDetailPage .BreadCrumSection {
+    margin-top: 20px;
+  }
+
+  .ProjectDetailSectionContentSection {
+    max-width: 950px;
+  }
+
+  .projectNameDetailPage h5 {
+    font-size: 44px;
+  }
+
+  .projectNameDetailPage p {
+    font-size: 25px;
+  }
+
+  .projectDetailProjectName img {
+    width: 65px;
+  }
+
+  .mainconatinerprojectflex {
+    padding-top: 30px;
+  }
+
+  .projectdetailflex {
+    padding-bottom: 17px;
+    padding-top: 15px;
+  }
+
+  .nooffloors {
+    font-size: 21px;
+    margin-top: 11px;
+    margin-bottom: 12px;
+  }
+
+  .contentaminities {
+    font-size: 20px;
+    left: 19px;
+  }
+
+  .aminitessectionproject::before {
+    width: 104%;
+  }
+
+  .projectspecificationcard .projectspecicon {
+    width: 80px;
+  }
+  .projectspeclist li {
+    font-size: 16px;
+  }
+
+  .projectaminitessection .subHeadingText:last-child {
+    font-size: 17px;
+  }
+
+  .projectspecname {
+    font-size: 26px;
+
+    margin-top: 15px;
+  }
+
+  .accordion-section.open .locationadvantagesicon .nearbyloactions {
+    font-size: 30px;
+  }
+
+  .locationcontentside {
+    width: 34%;
+  }
+
+  .locationimageside {
+    width: 48%;
+  }
+  .locationcontentside ul li {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .locationadvantagesicon {
+    padding: 7px 0;
+  }
+
+  .locationcontentside .open ul {
+    padding-bottom: 10px;
+  }
+
+  .locationadvantagesicon img {
+    width: 36px;
+    height: 36px;
+  }
+
+  /* ProjectDetail Page  */
 }
 
 @media (max-width: 1400px) and (min-width: 1250px) {
@@ -4717,6 +4902,99 @@
   }
 
   /* testimonial page */
+
+  /* NRI page */
+
+  .nridiscoversection .mainheadingText {
+    font-size: 18px;
+  }
+
+  .maincontentnriimage {
+    font-size: 26px;
+  }
+
+  .flexnriimage .subHeadingText {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .nrilist li p {
+    font-size: 17px;
+    line-height: 1.4;
+  }
+
+  .twofaqnriconatiner li:first-child {
+    margin-top: 10px;
+  }
+
+  .mainlistul {
+    padding-top: 12px;
+    padding-bottom: 15px;
+  }
+
+  .nrilistenquire button {
+    font-size: 14px;
+
+    height: 43px;
+    width: 191px;
+  }
+
+  .flexnriimage {
+    column-gap: 60px;
+  }
+
+  .nrifaq {
+    height: 700px;
+  }
+
+  .faqnriconatiner.active h4 {
+    font-size: 24px;
+  }
+
+  .faqnriconatiner.active .subHeadingText {
+    font-size: 18px;
+    margin-top: 11px;
+  }
+
+  .faqnriconatiner h4 {
+    font-size: 19px;
+  }
+
+  .NriPagebutton button {
+    font-size: 14px;
+
+    height: 43px;
+    width: 191px;
+  }
+
+  .NriPagebutton {
+    margin-top: 30px;
+  }
+
+  .faqflexdiv {
+    column-gap: 29px;
+  }
+
+  .faqnriconatiner.active {
+    padding: 25px;
+  }
+
+  .faqnriconatiner h4::before {
+    font-size: 25px;
+  }
+
+  .faqnriconatiner.active h4::before {
+    font-size: 30px;
+  }
+
+  .nridiscoversection .secondHeadingText {
+    width: 75%;
+  }
+
+  .nrifaq .lowconatinersection {
+    padding-top: 0;
+  }
+
+  /* NRI page */
 }
 
 @media (max-width: 1250px) and (min-width: 1100px) {
@@ -5379,6 +5657,115 @@
   }
 
   /* testimonial page */
+
+  /* NRI page */
+
+  .nridiscoversection .mainheadingText {
+    font-size: 18px;
+  }
+
+  .maincontentnriimage {
+    font-size: 23px;
+  }
+
+  .nridiscoversection {
+    padding-bottom: 100px;
+  }
+
+  .flexnriimage .subHeadingText {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .nrilist li p {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+
+  .twofaqnriconatiner li:first-child {
+    margin-top: 10px;
+  }
+
+  .mainlistul {
+    padding-top: 12px;
+    padding-bottom: 15px;
+  }
+
+  .nrilistenquire button {
+    font-size: 14px;
+
+    height: 43px;
+    width: 191px;
+  }
+
+  .flexnriimage {
+    column-gap: 60px;
+  }
+
+  .nrifaq {
+    height: 650px;
+  }
+
+  .faqnriconatiner.active h4 {
+    font-size: 20px;
+  }
+
+  .faqnriconatiner.active .subHeadingText {
+    font-size: 14px;
+    margin-top: 11px;
+  }
+
+  .faqnriconatiner h4 {
+    font-size: 17px;
+  }
+
+  .faqnriconatiner {
+    padding: 16px;
+  }
+
+  .NriPagebutton button {
+    font-size: 14px;
+
+    height: 43px;
+    width: 191px;
+  }
+
+  .NriPagebutton {
+    margin-top: 30px;
+  }
+
+  .faqflexdiv {
+    column-gap: 29px;
+  }
+
+  .faqnriconatiner.active {
+    padding: 25px;
+  }
+
+  .faqnriconatiner h4::before {
+    font-size: 20px;
+  }
+
+  .faqnriconatiner.active h4::before {
+    font-size: 25px;
+  }
+
+  .nridiscoversection .secondHeadingText {
+    width: 75%;
+  }
+
+  .nrifaq .lowconatinersection {
+    padding-top: 0;
+  }
+
+  .detailPageBanners.NRIbaner .subHeadingText {
+    margin-top: 30px;
+  }
+
+  .NriPage .keystoneuniquesection {
+    height: 900px;
+  }
+
+  /* NRI page */
 }
 
 @media (max-width: 1100px) and (min-width: 900px) {
@@ -6139,5 +6526,126 @@
   }
 
   /* testimonial page */
+
+  /* NRI page */
+
+  .nridiscoversection .mainheadingText {
+    font-size: 18px;
+  }
+
+  .maincontentnriimage {
+    font-size: 20px;
+  }
+
+  .nridiscoversection {
+    padding-bottom: 75px;
+  }
+
+  .flexnriimage .subHeadingText {
+    margin-top: 12px;
+    margin-bottom: 16px;
+  }
+  .nrilist li p {
+    font-size: 15px;
+    line-height: 1.3;
+  }
+
+  .firstulnri {
+    width: 65%;
+  }
+
+  .twoflexnriimage {
+    width: 38%;
+  }
+
+  .nrilistenquire {
+    margin-top: 10px;
+  }
+
+  .twofaqnriconatiner li:first-child {
+    margin-top: 10px;
+  }
+
+  .mainlistul {
+    padding-top: 12px;
+    padding-bottom: 15px;
+  }
+
+  .nrilistenquire button {
+    font-size: 14px;
+
+    height: 43px;
+    width: 191px;
+  }
+
+  .flexnriimage {
+    column-gap: 35px;
+  }
+
+  .nrifaq {
+    height: 590px;
+  }
+
+  .faqnriconatiner.active h4 {
+    font-size: 20px;
+  }
+
+  .faqnriconatiner.active .subHeadingText {
+    font-size: 14px;
+    margin-top: 11px;
+  }
+
+  .faqnriconatiner h4 {
+    font-size: 17px;
+  }
+
+  .faqnriconatiner {
+    padding: 16px;
+  }
+
+  .NriPagebutton button {
+    font-size: 14px;
+
+    height: 43px;
+    width: 191px;
+  }
+
+  .NriPagebutton {
+    margin-top: 30px;
+  }
+
+  .faqflexdiv {
+    column-gap: 29px;
+  }
+
+  .faqnriconatiner.active {
+    padding: 25px;
+  }
+
+  .faqnriconatiner h4::before {
+    font-size: 20px;
+  }
+
+  .faqnriconatiner.active h4::before {
+    font-size: 25px;
+  }
+
+  .nridiscoversection .secondHeadingText {
+    width: 75%;
+  }
+
+  .nrifaq .lowconatinersection {
+    padding-top: 0;
+  }
+
+  .detailPageBanners.NRIbaner .subHeadingText {
+    margin-top: 22px;
+  }
+
+  .NriPage .keystoneuniquesection {
+    height: 800px;
+  }
+
+  /* NRI page */
 }
 /* resposive start */
