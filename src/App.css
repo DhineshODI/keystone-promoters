@@ -1211,6 +1211,7 @@
   top: 0;
   width: 100%;
   height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -3715,19 +3716,19 @@
 }
 
 .line1::before {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0%;
-  height: 100%;
-  color: #fff;
-  color: #b26eac;
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 0px solid #fff;
-  animation: reveal 7s ease-in-out infinite;
-  -webkit-text-stroke: 1px #1d1d1d;
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    color: #fff;
+    color: #843d7d;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0px solid #fff;
+    animation: reveal 7s ease-in-out infinite;
+    -webkit-text-stroke: 1px rgba(255,255,255,0.4);
 }
 
 @keyframes reveal {
@@ -3767,11 +3768,12 @@
   height: 100%;
   color: #fff;
   color: #b26eac;
+      color: #843d7d;
   overflow: hidden;
   white-space: nowrap;
   border-right: 0px solid #fff;
   animation: reveal2 7s ease-in-out infinite;
-  -webkit-text-stroke: 1px #1d1d1d;
+   -webkit-text-stroke: 1px rgba(255,255,255,0.4);
 }
 
 @keyframes reveal2 {
@@ -4479,7 +4481,7 @@
   }
 
   .contentHeadingBanner {
-    height: 85vh;
+     height: 100%;
   }
   .hamburgerflex {
     column-gap: 11px;
@@ -5292,7 +5294,7 @@
   }
 
   .contentHeadingBanner {
-    height: 85vh;
+      height: 100%;
   }
   .hamburgerflex {
     column-gap: 4px;
