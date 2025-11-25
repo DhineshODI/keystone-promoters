@@ -45,9 +45,7 @@ export default function TestimonalSlider() {
               Stories from our Spaces
             </h5>
             <p className="subHeadingText text-center text-[#636465]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-              deserunt officiis neque iusto a voluptas in vel fugit! Libero
-              velit similique nobis
+             Our Spaces come alive through the people who live there, their stories truly inspire everthying we build
             </p>
           </div>
 

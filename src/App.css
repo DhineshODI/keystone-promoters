@@ -23,11 +23,11 @@
 /* OurSignaturestyle */
 
 .marquee-loop {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-    padding-bottom: 30px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  padding-bottom: 30px;
 }
 
 .OurSignatureApproach {
@@ -46,23 +46,26 @@
 }
 
 @keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .marquee-loop span {
-    font-family: "Alexandria", sans-serif;
-    font-size: 120px;
-    line-height: 100%;
-    color: #eae3e8;
-    text-transform: uppercase;
+  font-family: "Alexandria", sans-serif;
+  font-size: 120px;
+  line-height: 100%;
+  color: #eae3e8;
+  text-transform: uppercase;
 }
-
 
 .oursignaturecontents ul li {
   font-family: "Alexandra", sans-serif;
   position: relative;
-  font-size: 100px;
+  font-size: 110px;
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
@@ -72,26 +75,26 @@
   cursor: pointer;
   width: max-content;
   position: relative;
-      transition: 0.6s ease-out;
+  /* transition: 0.6s ease-out; */
+      transition: opacity 0.3s ease, transform 0.3s ease;
 }
-
 
 .oursignaturecontents ul .active-li::before {
     content: "";
     height: 2px;
-    width: 25%;
+    width: 21%;
     background-color: #874f79;
     position: absolute;
-    right: -18%;
+    right: -17%;
     top: 50%;
     transition: 0.6s ease-out;
 }
 
 .oursignatureflex {
-    display: flex;
-    justify-content: flex-start;
-    column-gap: 20%;
-    padding: 80px 0;
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 20%;
+  padding: 80px 0;
 }
 
 .side-text {
@@ -99,7 +102,7 @@
   /* top: 10%;
   left: 121%; */
   white-space: normal;
-  width: 34%;
+  width: 30%;
   /* transition: opacity 0.3s ease, transform 0.3s ease; */
   font-family: "Poppins", sans-serif;
   font-size: 21px;
@@ -111,13 +114,14 @@
 
 .active-li .side-text {
     top: 6%;
-    left: 119%;
+    top: 1%;
+    left: 118%;
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 .active-li.hover-li .side-text {
-     top: 0%;
-    left: 119%;
-    transition: opacity 0.3s ease, transform 0.3s ease;
+  top: 1%;
+  left: 118%;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .oursignaturecontents ul li:hover .side-text {
@@ -139,8 +143,6 @@
   position: relative;
 }
 
-
-
 .oursignarurerightside img {
   /* Smooth transition */
   transition: opacity 0.4s ease, transform 0.4s ease;
@@ -154,12 +156,10 @@
   transform: scale(1.04);
 }
 
-
 .OurSignatureApproach .subHeadingText {
-      color: #1d1f22;
-    width: 50%;
+  color: #1d1f22;
+  width: 50%;
 }
-
 
 /* OurSignaturestyle */
 
@@ -272,6 +272,7 @@
 
 .testimonalSlidersSlide {
   width: 88% !important;
+
 }
 
 .testimonalContent .subHeadingText {
@@ -1086,11 +1087,11 @@
 }
 
 .HeaderMainSEC.is-sticky {
-  background: rgba(255, 255, 255, 1);
-  backdrop-filter: blur(0);
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
-  top: 0;
-  z-index: 10000;
+    background: rgba(255, 255, 255, 1);
+    backdrop-filter: blur(0);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+    top: 0;
+    z-index: 10;
 }
 
 .HeaderMainSEC .headerLogoImg {
@@ -2072,6 +2073,10 @@
   margin-bottom: 16px;
 }
 
+.overlayimageprojectdetail .subHeadingText.text-hover-underline::after {
+  background-color: #fff !important;
+}
+
 .nooffloors span {
   font-weight: 700;
   color: #404040;
@@ -2639,6 +2644,7 @@
   text-align: end;
   /* border-bottom: 1px solid #9c5d96; */
   padding-right: 40px;
+  cursor: pointer;
 }
 
 /* .floorplanleftlist li::before {
@@ -3626,14 +3632,14 @@
 }
 
 .menubarWrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh; /* full screen menu */
-  background: #ffffff; /* your menu bg */
-  z-index: 991099;
-  overflow-y: auto; /* scroll inside menu if needed */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    z-index: 1001;
+    overflow-y: auto;
 }
 
 .smoothMenu {
@@ -3642,9 +3648,9 @@
 }
 
 .onemenu {
-  width: 62%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+    width: 62%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
 }
 
 .twomenu {
@@ -3716,19 +3722,19 @@
 }
 
 .line1::before {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    color: #fff;
-    color: #843d7d;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 0px solid #fff;
-    animation: reveal 7s ease-in-out infinite;
-    -webkit-text-stroke: 1px rgba(255,255,255,0.4);
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  color: #fff;
+  color: #843d7d;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0px solid #fff;
+  animation: reveal 7s ease-in-out infinite;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
 }
 
 @keyframes reveal {
@@ -3768,12 +3774,12 @@
   height: 100%;
   color: #fff;
   color: #b26eac;
-      color: #843d7d;
+  color: #843d7d;
   overflow: hidden;
   white-space: nowrap;
   border-right: 0px solid #fff;
   animation: reveal2 7s ease-in-out infinite;
-   -webkit-text-stroke: 1px rgba(255,255,255,0.4);
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
 }
 
 @keyframes reveal2 {
@@ -4034,6 +4040,26 @@
     right: -11px;
     font-size: 19px;
   }
+
+
+.oursignaturecontents ul li {
+    font-size: 85px;
+}
+
+.side-text {
+ 
+    font-size: 17px;
+
+}
+
+.oursignarurerightside {
+      width: 33%;
+}
+
+.oursignatureflex {
+
+    padding-top: 55px;
+}
 
   /* HomePage-Responsive */
 
@@ -4452,6 +4478,21 @@
   }
 
   /* ProjectDetail Page  */
+
+  /* MenuBar-Css */
+  .twomenu li {
+    font-size: 30px;
+}
+
+.menubarcloseicon {
+    position: absolute;
+    top: 6%;
+    right: 8%;
+    width: 50px;
+    height: 67px;
+}
+
+  /* MenuBar-Css */
 }
 
 @media (max-width: 1400px) and (min-width: 1250px) {
@@ -4481,7 +4522,7 @@
   }
 
   .contentHeadingBanner {
-     height: 100%;
+    height: 100%;
   }
   .hamburgerflex {
     column-gap: 11px;
@@ -4725,6 +4766,63 @@
   .lastSectionWhatMakes .FlexFirstcontentWhatMakesSection {
     margin-top: 20px;
   }
+
+  .oursignaturecontents ul li {
+    font-size: 80px;
+}
+
+.side-text {
+ 
+     font-size: 15px;
+    width: 36%;
+
+}
+
+.oursignarurerightside {
+      width: 33%;
+}
+
+.oursignatureflex {
+    padding-top: 55px;
+    column-gap: 22%;
+    align-items: center;
+}
+
+.oursignaturecontents ul .active-li::before {
+  
+    width: 17%;
+
+    right: -10%;
+
+}
+
+.active-li .side-text {
+
+    top: 19%;
+
+}
+
+.active-li.hover-li .side-text {
+    top: 19%;
+}
+
+  /* MenuBar-Css */
+  .twomenu li {
+     font-size: 27px;
+}
+.twomenu li {
+
+    width: 70%;
+
+}
+.menubarcloseicon {
+    top: 6%;
+    right: 8%;
+    width: 36px;
+    height: 60px;
+}
+
+  /* MenuBar-Css */
 
   /* HomePage-Responsive */
 
@@ -5294,7 +5392,7 @@
   }
 
   .contentHeadingBanner {
-      height: 100%;
+    height: 100%;
   }
   .hamburgerflex {
     column-gap: 4px;
@@ -5569,6 +5667,69 @@
   .lastSectionWhatMakes .FlexFirstcontentWhatMakesSection {
     margin-top: 20px;
   }
+
+    .oursignaturecontents ul li {
+    font-size: 80px;
+}
+
+.side-text {
+ 
+     font-size: 15px;
+    width: 36%;
+
+}
+
+.oursignarurerightside {
+      width: 33%;
+}
+
+.oursignatureflex {
+    padding-top: 55px;
+    column-gap: 22%;
+    align-items: center;
+}
+
+.oursignaturecontents ul .active-li::before {
+  
+    width: 17%;
+
+    right: -10%;
+
+}
+
+.active-li .side-text {
+
+    top: 19%;
+        left: 114%;
+
+}
+
+.active-li.hover-li .side-text {
+    top: 19%;
+    left: 114%;
+}
+.marquee-loop span {
+
+    font-size: 100px;
+ 
+}
+
+  /* MenuBar-Css */
+  .twomenu li {
+        font-size: 25px;
+    width: 78%;
+}
+
+.menubarcloseicon {
+
+    top: 6%;
+    right: 8%;
+    width: 50px;
+    height: 67px;
+}
+
+
+  /* MenuBar-Css */
 
   /* HomePage-Responsive */
 
@@ -6201,6 +6362,7 @@
   .overlayimageprojectdetail .subHeadingText {
     font-size: 16px;
   }
+
   .projectconstructionupdates .secondHeadingText {
     width: 41%;
   }
@@ -6578,6 +6740,84 @@
   .lastSectionWhatMakes .FlexFirstcontentWhatMakesSection {
     margin-top: 20px;
   }
+
+      .oursignaturecontents ul li {
+    font-size: 62px;
+}
+
+.side-text {
+ 
+    font-size: 13px;
+    width: 40%;
+
+}
+
+.oursignarurerightside {
+      width: 33%;
+}
+
+.oursignatureflex {
+    padding-top: 55px;
+    column-gap: 22%;
+    align-items: center;
+}
+
+.oursignaturecontents ul .active-li::before {
+    width: 17%;
+    right: -11%;
+
+}
+
+.active-li .side-text {
+
+    top: 19%;
+        left: 114%;
+
+}
+
+.active-li.hover-li .side-text {
+    top: 19%;
+    left: 114%;
+}
+.marquee-loop span {
+
+    font-size: 100px;
+ 
+}
+
+  /* MenuBar-Css */
+  .twomenu li {
+        font-size: 23px;
+    width: 78%;
+        padding-left: 35px;
+}
+
+.menubarcloseicon {
+
+    top: 6%;
+    right: 8%;
+    width: 50px;
+    height: 67px;
+}
+
+.onemenu {
+    width: 58%;
+}
+
+.twomenu {
+    width: 42%;
+
+}
+
+
+
+.twomenu li:hover {
+    padding-left: 50px;
+    /* color: #250521; */
+}
+
+
+  /* MenuBar-Css */
 
   /* HomePage-Responsive */
 
@@ -7367,4 +7607,3 @@
 }
 
 /* TextImageSection.css - copy to same folder as component */
-
