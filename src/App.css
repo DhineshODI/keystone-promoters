@@ -20,6 +20,149 @@
   text-transform: uppercase;
 }
 
+/* OurSignaturestyle */
+
+.marquee-loop {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.OurSignatureApproach {
+  padding-top: 50px;
+}
+
+.track {
+  display: inline-flex;
+  animation: marquee 18s linear infinite;
+}
+
+.track span {
+  font-size: 40px;
+  font-weight: 700;
+  padding-right: 50px;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.marquee-loop span {
+    font-family: "Alexandria", sans-serif;
+    font-size: 120px;
+    line-height: 100%;
+    color: #eae3e8;
+    text-transform: uppercase;
+}
+
+
+.oursignaturecontents ul li {
+  font-family: "Alexandra", sans-serif;
+  position: relative;
+  font-size: 100px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1;
+  /* -webkit-text-stroke: 2px #884f79; */
+  color: transparent !important;
+  cursor: pointer;
+  width: max-content;
+  position: relative;
+      transition: 0.6s ease-out;
+}
+
+
+.oursignaturecontents ul .active-li::before {
+    content: "";
+    height: 2px;
+    width: 25%;
+    background-color: #874f79;
+    position: absolute;
+    right: -18%;
+    top: 50%;
+    transition: 0.6s ease-out;
+}
+
+.oursignatureflex {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 20%;
+    padding: 80px 0;
+}
+
+.side-text {
+  position: absolute;
+  /* top: 10%;
+  left: 121%; */
+  white-space: normal;
+  width: 34%;
+  /* transition: opacity 0.3s ease, transform 0.3s ease; */
+  font-family: "Poppins", sans-serif;
+  font-size: 21px;
+  color: #1d1f22;
+  word-break: break-word;
+  line-height: 1.1;
+  font-weight: 500;
+}
+
+.active-li .side-text {
+    top: 6%;
+    left: 119%;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.active-li.hover-li .side-text {
+     top: 0%;
+    left: 119%;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.oursignaturecontents ul li:hover .side-text {
+  opacity: 1;
+}
+
+.oursignaturecontents ul li .main-text {
+  -webkit-text-stroke: 2px #884f79;
+}
+
+.active-li .main-text {
+  color: #a762a1;
+  font-weight: 700;
+  transition: 0.6s ease-out;
+  transition: color 0.6s ease, transform 0.6s ease;
+}
+
+.active-li {
+  position: relative;
+}
+
+
+
+.oursignarurerightside img {
+  /* Smooth transition */
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  /* opacity: 0.7;
+  transform: scale(1); */
+}
+
+.oursignarurerightside img:hover,
+.active-image {
+  opacity: 1;
+  transform: scale(1.04);
+}
+
+
+.OurSignatureApproach .subHeadingText {
+      color: #1d1f22;
+    width: 50%;
+}
+
+
+/* OurSignaturestyle */
+
 /* testimonal-Slider */
 
 .testimonalFullSection {
@@ -1403,9 +1546,7 @@
   color: #fff;
   font-weight: 600;
   letter-spacing: 1px;
-  transition:
-    background 0.4s ease,
-    color 0.4s ease;
+  transition: background 0.4s ease, color 0.4s ease;
 }
 
 .buttononGoingProjectsLists:hover {
@@ -1960,8 +2101,7 @@
   padding: 30px 42px;
   height: 347px;
   border-bottom: 6px solid #772c72;
-  box-shadow:
-    rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   background-image: url("/public/images/project-detail/slider-cards-bg.png");
   background-repeat: no-repeat;
@@ -2443,8 +2583,7 @@
   background-color: #fff;
   padding: 12px;
   margin-top: 50px;
-  box-shadow:
-    rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
@@ -2705,8 +2844,7 @@
 .aboutusvissionmission img {
   width: 78% !important;
   z-index: 2;
-  box-shadow:
-    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
@@ -3012,9 +3150,7 @@
   position: relative;
   width: 59%;
   height: 110px;
-  transition:
-    background-color 0.7s ease,
-    transform 0.3s ease;
+  transition: background-color 0.7s ease, transform 0.3s ease;
 }
 
 .rectangleone.active {
@@ -3193,8 +3329,7 @@
 
 .testimonalpagedisply .testimonalSliderborder {
   width: 27%;
-  box-shadow:
-    rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
     rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
@@ -4995,6 +5130,139 @@
   }
 
   /* NRI page */
+
+  /* ProjectDetail Page  */
+
+  .spectraproject .secondHeadingText {
+    font-size: 80px;
+  }
+
+  .projectDetailIconSection .mainheadingText {
+    font-size: 20px;
+  }
+  .projectDetailPage .BreadCrumSection {
+    margin-top: 20px;
+  }
+
+  .ProjectDetailSectionContentSection {
+    max-width: 885px;
+  }
+
+  .projectNameDetailPage h5 {
+    font-size: 40px;
+  }
+
+  .projectNameDetailPage p {
+    font-size: 25px;
+  }
+
+  .projectDetailProjectName img {
+    width: 65px;
+  }
+
+  .projectNameDetailPage.projectdetailflex p {
+    font-size: 23px;
+    margin-bottom: 3px;
+  }
+
+  .mainconatinerprojectflex {
+    padding-top: 30px;
+    column-gap: 17px;
+  }
+
+  .projectdetailflex {
+    padding-bottom: 17px;
+    padding-top: 15px;
+  }
+
+  .nooffloors {
+    font-size: 19px;
+    margin-top: 9px;
+    margin-bottom: 11px;
+  }
+
+  .contentaminities {
+    font-size: 20px;
+    left: 19px;
+  }
+
+  .aminitessectionproject::before {
+    width: 104%;
+  }
+
+  .projectspecificationcard .projectspecicon {
+    width: 80px;
+  }
+  .projectspeclist li {
+    font-size: 16px;
+  }
+
+  .projectaminitessection .subHeadingText:last-child {
+    font-size: 17px;
+  }
+
+  .projectspecname {
+    font-size: 26px;
+
+    margin-top: 15px;
+  }
+
+  .accordion-section.open .locationadvantagesicon .nearbyloactions {
+    font-size: 27px;
+  }
+
+  .locationcontentside {
+    width: 34%;
+  }
+
+  .accordion-section.open .locationadvantagesicon img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .accordion-section.open .locationadvantagesicon::before {
+    font-size: 33px;
+  }
+  .locationadvantagesicon .nearbyloactions {
+    font-size: 23px;
+  }
+
+  .widthprojectlocationshighlights {
+    padding: 90px 0;
+    margin-bottom: 0;
+  }
+
+  .projectlocationshighlights {
+    height: auto;
+    background-position: bottom;
+  }
+  .locationimageside {
+    width: 50%;
+  }
+  .locationcontentside ul li {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .locationadvantagesicon {
+    padding: 7px 0;
+  }
+
+  .locationcontentside .open ul {
+    padding-bottom: 10px;
+  }
+
+  .locationadvantagesicon img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .projectDetailIconSection img {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* ProjectDetail Page  */
 }
 
 @media (max-width: 1250px) and (min-width: 1100px) {
@@ -5766,6 +6034,192 @@
   }
 
   /* NRI page */
+
+  /* ProjectDetail Page  */
+
+  .spectraproject .secondHeadingText {
+    font-size: 75px;
+  }
+
+  .projectDetailIconSection .mainheadingText {
+    font-size: 20px;
+  }
+  .projectDetailPage .BreadCrumSection {
+    margin-top: 20px;
+  }
+
+  .ProjectDetailSectionContentSection {
+    max-width: 820px;
+  }
+
+  .projectNameDetailPage h5 {
+    font-size: 40px;
+  }
+
+  .projectNameDetailPage p {
+    font-size: 25px;
+  }
+
+  .projectDetailProjectName img {
+    width: 55px;
+  }
+
+  .projectNameDetailPage.projectdetailflex p {
+    font-size: 23px;
+    margin-bottom: 3px;
+  }
+
+  .mainconatinerprojectflex {
+    padding-top: 30px;
+    column-gap: 17px;
+  }
+
+  .projectdetailflex {
+    padding-bottom: 17px;
+    padding-top: 15px;
+  }
+
+  .nooffloors {
+    font-size: 19px;
+    margin-top: 9px;
+    margin-bottom: 11px;
+  }
+
+  .contentaminities {
+    font-size: 15px;
+    left: 12px;
+  }
+
+  .aminitessectionproject::before {
+    width: 104%;
+  }
+
+  .projectDetailPage .afterMainBG {
+    height: 400px;
+  }
+
+  .mainContainerDetailProject {
+    padding-bottom: 95px;
+  }
+
+  .downloadbrocedhurebutton .subHeadingText {
+    font-size: 14px;
+  }
+  .projectspecificationcard .projectspecicon {
+    width: 55px;
+    height: 55px;
+  }
+  .projectspeclist li {
+    font-size: 16px;
+  }
+
+  .projectaminitessection .subHeadingText:last-child {
+    font-size: 17px;
+  }
+
+  .projectspecname {
+    font-size: 24px;
+    margin-top: 14px;
+  }
+
+  .projectspecname::before {
+    height: 5px;
+    top: 34px;
+  }
+
+  .projectspecificationcard {
+    padding: 20px 25px;
+    height: 324px;
+  }
+
+  .accordion-section.open .locationadvantagesicon .nearbyloactions {
+    font-size: 23px;
+  }
+
+  .locationcontentside {
+    width: 39%;
+  }
+
+  .accordion-section.open .locationadvantagesicon img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .accordion-section.open .locationadvantagesicon::before {
+    font-size: 33px;
+  }
+  .locationadvantagesicon .nearbyloactions {
+    font-size: 20px;
+  }
+
+  .widthprojectlocationshighlights {
+    padding: 90px 0;
+    margin-bottom: 0;
+  }
+
+  .projectlocationshighlights {
+    height: auto;
+    background-position: bottom;
+  }
+  .locationimageside {
+    width: 54%;
+  }
+  .locationcontentside ul li {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .locationadvantagesicon {
+    padding: 7px 0;
+  }
+
+  .locationcontentside .open ul {
+    padding-bottom: 10px;
+  }
+
+  .locationadvantagesicon img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .projectDetailIconSection img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .locationadvantagesicon::before {
+    top: 10px;
+    font-size: 24px;
+  }
+
+  .accordion-section.open .locationadvantagesicon {
+    padding: 10px 5px;
+  }
+
+  .overlayimageprojectdetail .subHeadingText {
+    font-size: 16px;
+  }
+  .projectconstructionupdates .secondHeadingText {
+    width: 41%;
+  }
+
+  .projectDetailPage .curlatedArrow img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .projectspecifiationclass {
+    height: 700px;
+  }
+
+  .projectsspccards {
+    margin-top: 50px;
+  }
+
+  .projectDetailPage .curlatedLine {
+    margin-top: 10px;
+  }
+  /* ProjectDetail Page  */
 }
 
 @media (max-width: 1100px) and (min-width: 900px) {
@@ -6647,5 +7101,268 @@
   }
 
   /* NRI page */
+
+  /* ProjectDetail Page  */
+
+  .spectraproject .secondHeadingText {
+    font-size: 70px;
+  }
+
+  .projectDetailIconSection .mainheadingText {
+    font-size: 16px;
+  }
+  .projectDetailPage .BreadCrumSection {
+    margin-top: 20px;
+  }
+
+  .ProjectDetailSectionContentSection {
+    max-width: 720px;
+  }
+
+  .projectNameDetailPage h5 {
+    font-size: 35px;
+  }
+
+  .projectNameDetailPage p {
+    font-size: 20px;
+    margin-top: 8px;
+  }
+
+  .projectDetailProjectName img {
+    width: 45px;
+  }
+
+  .projectNameDetailPage.projectdetailflex p {
+    font-size: 20px;
+    margin-bottom: 3px;
+  }
+
+  .mainconatinerprojectflex {
+    padding-top: 30px;
+    column-gap: 17px;
+  }
+
+  .projectdetailflex {
+    padding-bottom: 17px;
+    padding-top: 15px;
+  }
+
+  .nooffloors {
+    font-size: 17px;
+    margin-top: 8px;
+    margin-bottom: 9px;
+  }
+
+  .noffloorswidth {
+    padding-left: 40px;
+  }
+  .projectaminitessection {
+    height: 800px;
+  }
+
+  .contentaminities {
+    font-size: 15px;
+    left: 12px;
+  }
+
+  .aminitessectionproject::before {
+    width: 104%;
+  }
+
+  .projectDetailPage .afterMainBG {
+    height: 350px;
+  }
+
+  .mainContainerDetailProject {
+    padding-bottom: 95px;
+  }
+
+  .downloadbrocedhurebutton .subHeadingText {
+    font-size: 14px;
+  }
+  .projectspecificationcard .projectspecicon {
+    width: 55px;
+    height: 55px;
+  }
+  .projectspeclist li {
+    font-size: 14px;
+    line-height: 1.1;
+  }
+
+  .projectaminitessection .subHeadingText:last-child {
+    font-size: 17px;
+  }
+
+  .projectspecname {
+    font-size: 24px;
+    margin-top: 14px;
+  }
+
+  .projectspecname::before {
+    height: 5px;
+    top: 34px;
+  }
+
+  .projectspecificationcard {
+    padding: 20px 25px;
+    height: 324px;
+  }
+
+  .accordion-section.open .locationadvantagesicon .nearbyloactions {
+    font-size: 23px;
+  }
+
+  .locationcontentside {
+    width: 39%;
+  }
+
+  .accordion-section.open .locationadvantagesicon img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .accordion-section.open .locationadvantagesicon::before {
+    font-size: 33px;
+  }
+  .locationadvantagesicon .nearbyloactions {
+    font-size: 20px;
+  }
+
+  .widthprojectlocationshighlights {
+    padding: 90px 0;
+    margin-bottom: 0;
+  }
+
+  .projectlocationshighlights {
+    height: auto;
+    background-position: bottom;
+  }
+  .locationimageside {
+    width: 54%;
+  }
+  .locationcontentside ul li {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .locationadvantagesicon {
+    padding: 7px 0;
+  }
+
+  .locationcontentside .open ul {
+    padding-bottom: 10px;
+  }
+
+  .locationadvantagesicon img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .projectDetailIconSection img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .locationadvantagesicon::before {
+    top: 10px;
+    font-size: 24px;
+  }
+
+  .accordion-section.open .locationadvantagesicon {
+    padding: 10px 5px;
+  }
+
+  .overlayimageprojectdetail .subHeadingText {
+    font-size: 16px;
+  }
+  .projectconstructionupdates .secondHeadingText {
+    width: 41%;
+  }
+
+  .projectDetailPage .curlatedArrow img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .projectaminitesslider {
+    width: 77%;
+  }
+
+  .projectspecifiationclass {
+    height: 700px;
+  }
+
+  .projectsspccards {
+    margin-top: 50px;
+  }
+
+  .projectDetailPage .curlatedLine {
+    margin-top: 0px;
+  }
+  /* ProjectDetail Page  */
 }
 /* resposive start */
+
+.marquee {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 10rem;
+  color: #eae3e8;
+  font-weight: bold;
+}
+
+.marquee-track {
+  display: inline-flex;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+
+.marquee-track .content {
+  display: flex;
+}
+
+.marquee-track span {
+  margin-right: 1rem;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.parallax {
+  position: relative;
+  overflow: hidden;
+}
+
+.scroller {
+  display: flex;
+  white-space: nowrap;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 2.25rem;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1));
+}
+
+.scroller span {
+  flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .scroller {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+}
+
+/* TextImageSection.css - copy to same folder as component */
+

@@ -1,0 +1,229 @@
+// // import { useState } from "react";
+
+// // export default function HomepageImageHoverSection() {
+// //   const [activeImage, setActiveImage] = useState(
+// //     "/images/homepage/hoverimageone.jpg"
+// //   );
+// //   const [activeText, setActiveText] = useState("");
+
+// //   const images = {
+// //     Listen: "/images/homepage/hoverimagetwo.jpg",
+// //     Design: "/images/homepage/hoverimageone.jpg",
+// //     Build: "/images/homepage/hoverimagetwo.jpg",
+// //     Deliver: "/images/homepage/hoverimageone.jpg",
+// //     Support: "/images/homepage/hoverimagetwo.jpg",
+// //   };
+
+// //   const texts = {
+// //     Listen: "We carefully understand your needs",
+// //     Design: "We plan with function and  elegance",
+// //     Build: "Turning ideas into reality",
+// //     Deliver: "Delivering with precision and quality",
+// //     Support: "Support continues even after delivery",
+// //   };
+
+// //   const list = ["Listen", "Design", "Build", "Deliver", "Support"];
+
+// //   return (
+// //     <>
+// //       <div className="OurSignatureApproach">
+// //         <div className="container max-w-7xl mx-auto px-4">
+// //           <div className="lowconatinersectionafterbanner">
+// //             <div className="oursignatureflex">
+// //               {/* LEFT SIDE */}
+// //               <div className="oursignarureleftside">
+// //                 <div className="oursignaturecontents">
+// //                   <ul>
+// //                     {list.map((item, index) => (
+// //                       <li
+// //                         key={index}
+// //                         onMouseEnter={() => {
+// //                           setActiveImage(images[item]);
+// //                           setActiveText(texts[item]);
+// //                         }}
+// //                         onMouseLeave={() => {
+// //                           setActiveImage("/images/homepage/hoverimagetwo.jpg");
+// //                           setActiveText("");
+// //                         }}
+// //                       >
+// //                         <span className="main-text">{item}</span>
+
+// //                         {/* Side text on hover */}
+// //                         {activeText && activeText === texts[item] && (
+// //                           <span className="side-text">{texts[item]}</span>
+// //                         )}
+// //                       </li>
+// //                     ))}
+// //                   </ul>
+// //                 </div>
+// //               </div>
+
+// //               {/* RIGHT SIDE IMAGE */}
+// //               <div className="oursignarurerightside">
+// //                 <img src={activeImage} alt="" />
+// //               </div>
+// //             </div>
+// //           </div>
+// //         </div>
+// //       </div>
+// //     </>
+// //   );
+// // }
+// import { useState } from "react";
+
+// export default function HomepageImageHoverSection() {
+//   const images = {
+//     Listen: "/images/homepage/hoverimagetwo.jpg",
+//     Design: "/images/homepage/hoverimageone.jpg",
+//     Build: "/images/homepage/hoverimagetwo.jpg",
+//     Deliver: "/images/homepage/hoverimageone.jpg",
+//     Support: "/images/homepage/hoverimagetwo.jpg",
+//   };
+
+//   const texts = {
+//     Listen: "We carefully understand your needs",
+//     Design: "We plan with function and elegance",
+//     Build: "Turning ideas into reality",
+//     Deliver: "Delivering with precision and quality",
+//     Support: "Support continues even after delivery",
+//   };
+
+//   const list = ["Listen", "Design", "Build", "Deliver", "Support"];
+
+//   // ⭐ Default active is the first item "Listen"
+//   const [activeItem, setActiveItem] = useState(list[0]);
+//   const [activeImage, setActiveImage] = useState(images[list[0]]);
+//   const [activeText, setActiveText] = useState(texts[list[0]]);
+
+//   return (
+//     <div className="OurSignatureApproach">
+//       <div className="container max-w-7xl mx-auto px-4">
+//         <div className="lowconatinersectionafterbanner">
+//           <div className="oursignatureflex">
+
+//             {/* LEFT SIDE LIST */}
+//             <div className="oursignarureleftside">
+//               <div className="oursignaturecontents">
+//                 <ul>
+//                   {list.map((item, index) => (
+//                     <li
+//                       key={index}
+//                       className={activeItem === item ? "active-li" : ""}
+//                       onMouseEnter={() => {
+//                         setActiveItem(item);
+//                         setActiveImage(images[item]);
+//                         setActiveText(texts[item]);
+//                       }}
+//                       onMouseLeave={() => {}}
+//                     >
+//                       <span className="main-text">{item}</span>
+
+//                       {/* Show text only for active item */}
+//                       {activeItem === item && (
+//                         <span className="side-text">{texts[item]}</span>
+//                       )}
+//                     </li>
+//                   ))}
+//                 </ul>
+//               </div>
+//             </div>
+
+//             {/* RIGHT SIDE IMAGE */}
+//             <div className="oursignarurerightside">
+//               <img src={activeImage} alt="" />
+//             </div>
+
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+import { useState } from "react";
+
+export default function HomepageImageHoverSection() {
+  const images = {
+    Listen: "/images/homepage/hoverimagetwo.jpg",
+    Design: "/images/homepage/hoverimageone.jpg",
+    Build: "/images/homepage/hoverimagetwo.jpg",
+    Deliver: "/images/homepage/hoverimageone.jpg",
+    Support: "/images/homepage/hoverimagetwo.jpg",
+  };
+
+  const texts = {
+    Listen: "We carefully understand your needs",
+    Design: "We plan with function and elegance",
+    Build: "Turning ideas into reality",
+    Deliver: "Delivering with precision and quality",
+    Support: "Support continues even after delivery",
+  };
+
+  const list = ["Listen", "Design", "Build", "Deliver", "Support"];
+
+  const [activeItem, setActiveItem] = useState(list[0]);
+  const [activeImage, setActiveImage] = useState(images[list[0]]);
+  const [activeText, setActiveText] = useState(texts[list[0]]);
+  const [hoverItem, setHoverItem] = useState(null); // ⭐ hover state
+
+  return (
+    <div className="OurSignatureApproach">
+      <div class="marquee-loop">
+        <div class="track">
+          <span>Our Signature Approach</span>
+          <span>Our Signature Approach</span>
+          {/* <span>YOUR TEXT — YOUR TEXT — YOUR TEXT — YOUR TEXT — </span> */}
+        </div>
+      </div>
+
+      <div className="container max-w-7xl mx-auto px-4">
+        <div className="lowconatinersectionafterbanner">
+          <div>
+            <p className="subHeadingText">
+              Our approach transforms every project into a journey of
+              collaboration, creativity, and precision-delivering purposeful,
+              lasting spaces.
+            </p>
+          </div>
+          <div className="oursignatureflex">
+            {/* LEFT SIDE */}
+            <div className="oursignarureleftside">
+              <div className="oursignaturecontents">
+                <ul>
+                  {list.map((item, index) => (
+                    <li
+                      key={index}
+                      className={`
+                        ${activeItem === item ? "active-li" : ""}
+                        ${hoverItem === item ? "hover-li" : ""}
+                      `}
+                      onMouseEnter={() => {
+                        setHoverItem(item);
+                        setActiveItem(item);
+                        setActiveImage(images[item]);
+                        setActiveText(texts[item]);
+                      }}
+                      onMouseLeave={() => {
+                        setHoverItem(null);
+                      }}
+                    >
+                      <span className="main-text">{item}</span>
+
+                      {activeItem === item && (
+                        <span className="side-text">{texts[item]}</span>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* RIGHT SIDE IMAGE */}
+            <div className="oursignarurerightside">
+              <img className="active-image" src={activeImage} alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

@@ -62,13 +62,6 @@ function App() {
       <Header menuOnlick={menuOnlick} />
       {/* <Router> */}
       <Routes>
-
-  
-
-       
-
-      
-
         <Route path="/project-detail" element={<ProjectDetailMainPage />} />
 
         <Route path="/" element={<Homepage />} />

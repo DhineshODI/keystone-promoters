@@ -21,9 +21,9 @@ export default function ProjectDetailMainPage() {
         <ProjecSpecification />
         <ProjectLocationHighlights />
 
-        <ProjectFloorPan/>
+        <ProjectFloorPan />
 
-        <ProjectConstructionUpdates/>
+        <ProjectConstructionUpdates />
       </div>
     </>
   );
