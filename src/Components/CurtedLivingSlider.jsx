@@ -28,6 +28,26 @@ export default function CurtedLivingSlider() {
       },
     ],
   };
+
+  const curatedSlides = [
+    {
+      img: "/images/homepage/iStock-2160382418.png",
+      lines: ["MODERN", "MINIMALIST", "SPACES"],
+    },
+    {
+      img: "/images/homepage/iStock-1990444472.png",
+      lines: ["NATURE", "INTEGRATED", "DESIGNS"],
+    },
+        {
+      img: "/images/homepage/functional-comfort-layouts.jpg",
+     lines : ["FUNCTIONAL", "COMFORT", "LAYOUTS"]
+    },
+        {
+      img: "/images/homepage/timeless-quality-aesthetics.jpg",
+      lines: ["TIMELESS", "QUALITY", "AESTHETICS"],
+    },
+  ];
+
   return (
     <>
       <div className="curtedSectionMainRowBg reveal ">
@@ -47,7 +67,7 @@ export default function CurtedLivingSlider() {
                 industry. Lorem Ipsum has been the
               </h6> */}
             </div>
-            <div className="curtLivingSlider">
+            {/* <div className="curtLivingSlider">
               <Slider ref={sliderRef} className="" {...settings}>
                 <div>
                   <div>
@@ -77,6 +97,48 @@ export default function CurtedLivingSlider() {
                 </div>
               </Slider>
 
+              <div className="flex justify-center items-center gap-88 mt-6 curlatedLine">
+                <div
+                  className="custom-prev cursor-pointer curlatedArrow"
+                  onClick={() => sliderRef.current.slickPrev()}
+                >
+                  <img
+                    src="/images/icons/arrow-l.svg"
+                    alt="Previous"
+                    className="w-7 h-7 hover:scale-110 transition-transform"
+                  />
+                </div>
+
+                <div
+                  className="custom-next cursor-pointer curlatedArrow"
+                  onClick={() => sliderRef.current.slickNext()}
+                >
+                  <img
+                    src="/images/icons/arrow-r.svg"
+                    alt="Next"
+                    className="w-7 h-7 hover:scale-110 transition-transform"
+                  />
+                </div>
+              </div>
+            </div> */}
+            <div className="curtLivingSlider">
+              <Slider ref={sliderRef} {...settings}>
+                {curatedSlides.map((slide, index) => (
+                  <div key={index}>
+                    <div className="curatedSliderContainer">
+                      <img src={slide.img} alt={`Slide ${index}`} />
+
+                      {slide.lines.map((text, i) => (
+                        <h4 key={i} className="natureIntergreated">
+                          {text}
+                        </h4>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </Slider>
+
+              {/* Arrows */}
               <div className="flex justify-center items-center gap-88 mt-6 curlatedLine">
                 <div
                   className="custom-prev cursor-pointer curlatedArrow"

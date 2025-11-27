@@ -143,19 +143,19 @@ import { useState } from "react";
 
 export default function HomepageImageHoverSection() {
   const images = {
-    Listen: "/images/homepage/hoverimagetwo.jpg",
-    Design: "/images/homepage/hoverimageone.jpg",
-    Build: "/images/homepage/hoverimagetwo.jpg",
-    Deliver: "/images/homepage/hoverimageone.jpg",
-    Support: "/images/homepage/hoverimagetwo.jpg",
+    Listen: "/images/homepage/listen.jpg",
+    Design: "/images/homepage/design.jpg",
+    Build: "/images/homepage/build.jpg",
+    Deliver: "/images/homepage/deliver.jpg",
+    Support: "/images/homepage/support.jpg",
   };
 
   const texts = {
-    Listen: "We carefully understand your needs",
-    Design: "We plan with function and elegance",
-    Build: "Turning ideas into reality",
-    Deliver: "Delivering with precision and quality",
-    Support: "Support continues even after delivery",
+    Listen: "We hear your needs before we begin",
+    Design: "We craft spaces that elevate lifestyle",
+    Build: "With foundation of trust lifetime",
+    Deliver: "We complete the promise with precision",
+    Support: "Place where you can count on us forever",
   };
 
   const list = ["Listen", "Design", "Build", "Deliver", "Support"];

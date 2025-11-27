@@ -59,7 +59,7 @@ export default function CareerPageFunction() {
 
         {/* Current-Openings-Section */}
 
-        <div className="careersCurrentOpenings">
+        {/* <div className="careersCurrentOpenings">
           <div className="container max-w-7xl mx-auto px-4 ">
             <div className="careersCurrentOpeningSection">
               <div>
@@ -124,7 +124,7 @@ export default function CareerPageFunction() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Current-Openings-Section */}
 

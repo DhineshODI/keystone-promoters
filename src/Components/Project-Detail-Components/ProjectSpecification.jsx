@@ -3,6 +3,100 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 export default function ProjecSpecification() {
+  // const projectSpecs = [
+  //   {
+  //     icon: "/images/project-detail/specifications/builind-icon-pink.svg",
+  //     title: "Structure",
+  //     list: ["RCC Framed", "Structure (Stit + 5 Floors)", "With brick work"],
+  //   },
+  //   {
+  //     icon: "/images/project-detail/specifications/builind-icon-pink.svg",
+  //     title: "Kitchen",
+  //     list: [
+  //       "Vitrified tile flooring 2' high-glazed",
+  //       "Tile dado Granite countertop",
+  //       "Stainless steel sink",
+  //     ],
+  //   },
+  //   {
+  //     icon: "/images/project-detail/specifications/builind-icon-pink.svg",
+  //     title: "Painting",
+  //     list: [
+  //       "<span>Internal -</span> 2 coats of Putty, 1 coat primer and 2 coats emulsion",
+  //       "<span>External -</span> 2 coats of Exterior emulsion over 1 coat primer",
+  //     ],
+  //   },
+  // ];
+
+  const projectSpecs = [
+    {
+      icon: "/images/project-detail/specifications/Structure.svg",
+      title: "Structure",
+      list: ["RCC framed structure (Stilt + 5 Floors)", "With brick work"],
+    },
+    {
+      icon: "/images/project-detail/specifications/Wall finish.svg",
+      title: "Wall Finish",
+      list: [
+        "<span class='projects-text-highlight'>Internal -</span> 2 coats of Putty, 1 coat of primer and 2 coats of interior emulsion",
+        "<span class='projects-text-highlight'>External -</span> 2 coats of Exterior emulsion paint over 1 coat of primer",
+      ],
+    },
+    {
+      icon: "/images/project-detail/specifications/Joineries.svg",
+      title: "Joineries",
+      list: [
+        "<span class='projects-text-highlight'>Main door -</span> Teak wood frame with door",
+        "<span class='projects-text-highlight'>Other doors -</span> Country wood frames & flush doors with laminate",
+      ],
+    },
+    {
+      icon: "/images/project-detail/specifications/Windows.svg",
+      title: "Windows",
+      list: ["UPVC windows with grills"],
+    },
+    {
+      icon: "/images/project-detail/specifications/Flooring.svg",
+      title: "Flooring",
+      list: ["Vitrified tiles for all rooms"],
+    },
+    {
+      icon: "/images/project-detail/specifications/Kitchen.svg",
+      title: "Kitchen",
+      list: [
+        "Vitrified tile flooring",
+        "2’ high-glazed tile dado",
+        "Granite countertop",
+        "Stainless steel sink",
+      ],
+    },
+    {
+      icon: "/images/project-detail/specifications/Toilet.svg",
+      title: "Toilet",
+      list: [
+        "Ceramic tile flooring",
+        // "Glazed tile dado till roof height",
+        "Sanitary wares - Parryware / Hindware or equivalent",
+        "CP fittings - Jaquar or equivalent",
+        // "Geyser points will be provided in all toilets",
+      ],
+    },
+    {
+      icon: "/images/project-detail/specifications/Electrical.svg",
+      title: "Electrical",
+      list: [
+        "Wiring - Finolex / Polycab or equivalent",
+        "Switches - Honeywell / Crabtree or equivalent",
+        "MCB - Distribution board with 3-phase",
+      ],
+    },
+    {
+      icon: "/images/project-detail/specifications/ac.svg",
+      title: "Air Conditioner",
+      list: ["A/C provision will be provided in all bedrooms"],
+    },
+  ];
+
   const sliderRef = useRef(null);
   const settings = {
     dots: false,
@@ -44,14 +138,15 @@ export default function ProjecSpecification() {
             </div>
           </div>
 
-          <div className="projectsspccards">
+          {/* <div className="lowconatinersection"> */}
+          {/* <div className="projectsspccards">
             <Slider ref={sliderRef} className="" {...settings}>
               <div>
                 <div className="projectspecificationcard">
                   <div>
                     <img
                       className="projectspecicon"
-                      src="/images/project-detail/builind-icon-pink.svg"
+                      src="/images/project-detail/specifications/builind-icon-pink.svg"
                       alt=""
                     />
                   </div>
@@ -69,7 +164,7 @@ export default function ProjecSpecification() {
                   <div>
                     <img
                       className="projectspecicon"
-                      src="/images/project-detail/builind-icon-pink.svg"
+                      src="/images/project-detail/specifications/builind-icon-pink.svg"
                       alt=""
                     />
                   </div>
@@ -87,7 +182,7 @@ export default function ProjecSpecification() {
                   <div>
                     <img
                       className="projectspecicon"
-                      src="/images/project-detail/builind-icon-pink.svg"
+                      src="/images/project-detail/specifications/builind-icon-pink.svg"
                       alt=""
                     />
                   </div>
@@ -106,7 +201,34 @@ export default function ProjecSpecification() {
                 </div>
               </div>
             </Slider>
+          </div> */}
+
+          <div className="projectsspccards">
+            <Slider ref={sliderRef} {...settings}>
+              {projectSpecs.map((spec, index) => (
+                <div key={index}>
+                  <div className="projectspecificationcard">
+                    <div>
+                      <img className="projectspecicon" src={spec.icon} alt="" />
+                    </div>
+
+                    <p className="projectspecname">{spec.title}</p>
+
+                    <ul className="projectspeclist">
+                      {spec.list.map((item, i) => (
+                        <li
+                          key={i}
+                          dangerouslySetInnerHTML={{ __html: item }}
+                        />
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              ))}
+            </Slider>
           </div>
+
+          {/* </div> */}
 
           <div className="flex justify-center items-center gap-88 mt-6 curlatedLine">
             <div

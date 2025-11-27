@@ -4,6 +4,40 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export default function ProjectAminities() {
+  const amenities = [
+    {
+      img: "/images/project-detail/aminities/CCTV-survalance.jpg",
+      title: "CCTV Surveillance",
+    },
+    {
+      img: "/images/project-detail/aminities/Children’s-Play-Area.jpg",
+      title: "Children's Play Area",
+    },
+    {
+      img: "/images/project-detail/aminities/Entrance-lobby.jpg",
+      title: "Entrance Lobby",
+    },
+    { img: "/images/project-detail/aminities/gym.jpg", title: "gym" },
+    {
+      img: "/images/project-detail/aminities/Landscape.jpg",
+      title: "Landscape garden",
+    },
+    { img: "/images/project-detail/aminities/lift.jpg", title: "lift" },
+    {
+      img: "/images/project-detail/aminities/Multipurpose.jpg",
+      title: "Multipurpose Hall",
+    },
+    {
+      img: "/images/project-detail/aminities/Power-backup.jpg",
+      title: "Power Backup",
+    },
+    {
+      img: "/images/project-detail/aminities/Rain-water-harvesting.jpg",
+      title: "Rain water Harvesting",
+    },
+    { img: "/images/project-detail/aminities/solar-panel.jpg", title: "Solar Panels" },
+    { img: "/images/project-detail/aminities/Spacious-Covered-car-parking.jpg", title: "Car Parking" },
+  ];
   const sliderRef = useRef(null);
   const settings = {
     dots: false,
@@ -49,7 +83,7 @@ export default function ProjectAminities() {
             </div>
 
             <div className="mainprojectaminitesslider">
-              <div className="projectaminitesslider">
+              {/* <div className="projectaminitesslider">
                 <Slider ref={sliderRef} className="" {...settings}>
                   <div>
                     <div className="aminitessectionproject">
@@ -63,6 +97,19 @@ export default function ProjectAminities() {
                       <h3 className="contentaminities">Children's Play Area</h3>
                     </div>
                   </div>
+                </Slider>
+              </div> */}
+
+              <div className="projectaminitesslider">
+                <Slider ref={sliderRef} {...settings}>
+                  {amenities.map((item, index) => (
+                    <div key={index}>
+                      <div className="aminitessectionproject">
+                        <img src={item.img} alt={item.title} />
+                        <h3 className="contentaminities">{item.title}</h3>
+                      </div>
+                    </div>
+                  ))}
                 </Slider>
               </div>
             </div>

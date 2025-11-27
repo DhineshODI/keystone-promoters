@@ -76,18 +76,18 @@
   width: max-content;
   position: relative;
   /* transition: 0.6s ease-out; */
-      transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .oursignaturecontents ul .active-li::before {
-    content: "";
-    height: 2px;
-    width: 21%;
-    background-color: #874f79;
-    position: absolute;
-    right: -17%;
-    top: 50%;
-    transition: 0.6s ease-out;
+  content: "";
+  height: 2px;
+  width: 21%;
+  background-color: #874f79;
+  position: absolute;
+  right: -15%;
+  top: 50%;
+  transition: 0.6s ease-out;
 }
 
 .oursignatureflex {
@@ -99,28 +99,25 @@
 
 .side-text {
   position: absolute;
-  /* top: 10%;
-  left: 121%; */
   white-space: normal;
   width: 30%;
   /* transition: opacity 0.3s ease, transform 0.3s ease; */
   font-family: "Poppins", sans-serif;
   font-size: 21px;
   color: #1d1f22;
-  word-break: break-word;
   line-height: 1.1;
   font-weight: 500;
 }
 
 .active-li .side-text {
-    top: 6%;
-    top: 1%;
-    left: 118%;
-    transition: opacity 0.3s ease, transform 0.3s ease;
+  top: 6%;
+  top: 1%;
+  left: 116%;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 .active-li.hover-li .side-text {
   top: 1%;
-  left: 118%;
+  left: 116%;
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
@@ -272,7 +269,6 @@
 
 .testimonalSlidersSlide {
   width: 88% !important;
-
 }
 
 .testimonalContent .subHeadingText {
@@ -1087,11 +1083,11 @@
 }
 
 .HeaderMainSEC.is-sticky {
-    background: rgba(255, 255, 255, 1);
-    backdrop-filter: blur(0);
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
-    top: 0;
-    z-index: 10;
+  background: rgba(255, 255, 255, 1);
+  backdrop-filter: blur(0);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+  top: 0;
+  z-index: 1001;
 }
 
 .HeaderMainSEC .headerLogoImg {
@@ -2170,12 +2166,12 @@
 }
 
 .projectspeclist li {
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  line-height: 1;
-  font-weight: 400;
-  color: #575757;
-  margin-top: 9px;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #575757;
+    margin-top: 5px;
 }
 
 .projectspecifiationclass {
@@ -2484,12 +2480,13 @@
 }
 
 .locationcontentside ul li {
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  color: #515151;
-  line-height: 100%;
-  margin-top: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #515151;
+    line-height: 100%;
+    margin-top: 7px;
+    line-height: 1.4;
 }
 
 .distance {
@@ -2733,6 +2730,10 @@
   padding-left: 6%;
 }
 
+.secondpopupvaish {
+  background-image: url("/public/images/about-us/popupimage2.jpg");
+}
+
 .aboutuspopupstyles {
   width: 52%;
   height: 100%;
@@ -2946,7 +2947,7 @@
   width: 43%;
   text-align: center;
   line-height: 1.2;
-  margin-top: 80px;
+  margin-top: 65px;
 }
 
 .aboutuspagesection .firstbannerafterSectionMAIN {
@@ -3202,6 +3203,7 @@
 
 .founderflex2 {
   width: 33%;
+  margin-top: 50px;
 }
 
 .founderflexcontentpopup .foundernamepopup {
@@ -3632,14 +3634,14 @@
 }
 
 .menubarWrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: transparent;
-    z-index: 1001;
-    overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: transparent;
+  z-index: 10001;
+  overflow-y: auto;
 }
 
 .smoothMenu {
@@ -3648,9 +3650,9 @@
 }
 
 .onemenu {
-    width: 62%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.85);
+  width: 62%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
 }
 
 .twomenu {
@@ -3735,6 +3737,7 @@
   border-right: 0px solid #fff;
   animation: reveal 7s ease-in-out infinite;
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
+  -webkit-text-stroke: 1px #843d7d;
 }
 
 @keyframes reveal {
@@ -3780,6 +3783,7 @@
   border-right: 0px solid #fff;
   animation: reveal2 7s ease-in-out infinite;
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
+  -webkit-text-stroke: 1px #843d7d;
 }
 
 @keyframes reveal2 {
@@ -4041,25 +4045,21 @@
     font-size: 19px;
   }
 
-
-.oursignaturecontents ul li {
+  .oursignaturecontents ul li {
     font-size: 85px;
-}
+  }
 
-.side-text {
- 
+  .side-text {
     font-size: 17px;
+  }
 
-}
+  .oursignarurerightside {
+    width: 33%;
+  }
 
-.oursignarurerightside {
-      width: 33%;
-}
-
-.oursignatureflex {
-
+  .oursignatureflex {
     padding-top: 55px;
-}
+  }
 
   /* HomePage-Responsive */
 
@@ -4482,15 +4482,15 @@
   /* MenuBar-Css */
   .twomenu li {
     font-size: 30px;
-}
+  }
 
-.menubarcloseicon {
+  .menubarcloseicon {
     position: absolute;
     top: 6%;
     right: 8%;
     width: 50px;
     height: 67px;
-}
+  }
 
   /* MenuBar-Css */
 }
@@ -4769,58 +4769,50 @@
 
   .oursignaturecontents ul li {
     font-size: 80px;
-}
+  }
 
-.side-text {
- 
-     font-size: 15px;
+  .side-text {
+    font-size: 15px;
     width: 36%;
+  }
 
-}
+  .oursignarurerightside {
+    width: 33%;
+  }
 
-.oursignarurerightside {
-      width: 33%;
-}
-
-.oursignatureflex {
+  .oursignatureflex {
     padding-top: 55px;
     column-gap: 22%;
     align-items: center;
-}
+  }
 
-.oursignaturecontents ul .active-li::before {
-  
+  .oursignaturecontents ul .active-li::before {
     width: 17%;
 
     right: -10%;
+  }
 
-}
-
-.active-li .side-text {
-
+  .active-li .side-text {
     top: 19%;
+  }
 
-}
-
-.active-li.hover-li .side-text {
+  .active-li.hover-li .side-text {
     top: 19%;
-}
+  }
 
   /* MenuBar-Css */
   .twomenu li {
-     font-size: 27px;
-}
-.twomenu li {
-
+    font-size: 27px;
+  }
+  .twomenu li {
     width: 70%;
-
-}
-.menubarcloseicon {
+  }
+  .menubarcloseicon {
     top: 6%;
     right: 8%;
     width: 36px;
     height: 60px;
-}
+  }
 
   /* MenuBar-Css */
 
@@ -5668,66 +5660,56 @@
     margin-top: 20px;
   }
 
-    .oursignaturecontents ul li {
+  .oursignaturecontents ul li {
     font-size: 80px;
-}
+  }
 
-.side-text {
- 
-     font-size: 15px;
+  .side-text {
+    font-size: 15px;
     width: 36%;
+  }
 
-}
+  .oursignarurerightside {
+    width: 33%;
+  }
 
-.oursignarurerightside {
-      width: 33%;
-}
-
-.oursignatureflex {
+  .oursignatureflex {
     padding-top: 55px;
     column-gap: 22%;
     align-items: center;
-}
+  }
 
-.oursignaturecontents ul .active-li::before {
-  
+  .oursignaturecontents ul .active-li::before {
     width: 17%;
 
     right: -10%;
+  }
 
-}
-
-.active-li .side-text {
-
-    top: 19%;
-        left: 114%;
-
-}
-
-.active-li.hover-li .side-text {
+  .active-li .side-text {
     top: 19%;
     left: 114%;
-}
-.marquee-loop span {
+  }
 
+  .active-li.hover-li .side-text {
+    top: 19%;
+    left: 114%;
+  }
+  .marquee-loop span {
     font-size: 100px;
- 
-}
+  }
 
   /* MenuBar-Css */
   .twomenu li {
-        font-size: 25px;
+    font-size: 25px;
     width: 78%;
-}
+  }
 
-.menubarcloseicon {
-
+  .menubarcloseicon {
     top: 6%;
     right: 8%;
     width: 50px;
     height: 67px;
-}
-
+  }
 
   /* MenuBar-Css */
 
@@ -6741,81 +6723,69 @@
     margin-top: 20px;
   }
 
-      .oursignaturecontents ul li {
+  .oursignaturecontents ul li {
     font-size: 62px;
-}
+  }
 
-.side-text {
- 
+  .side-text {
     font-size: 13px;
     width: 40%;
+  }
 
-}
+  .oursignarurerightside {
+    width: 33%;
+  }
 
-.oursignarurerightside {
-      width: 33%;
-}
-
-.oursignatureflex {
+  .oursignatureflex {
     padding-top: 55px;
     column-gap: 22%;
     align-items: center;
-}
+  }
 
-.oursignaturecontents ul .active-li::before {
+  .oursignaturecontents ul .active-li::before {
     width: 17%;
     right: -11%;
+  }
 
-}
-
-.active-li .side-text {
-
-    top: 19%;
-        left: 114%;
-
-}
-
-.active-li.hover-li .side-text {
+  .active-li .side-text {
     top: 19%;
     left: 114%;
-}
-.marquee-loop span {
+  }
 
+  .active-li.hover-li .side-text {
+    top: 19%;
+    left: 114%;
+  }
+  .marquee-loop span {
     font-size: 100px;
- 
-}
+  }
 
   /* MenuBar-Css */
   .twomenu li {
-        font-size: 23px;
+    font-size: 23px;
     width: 78%;
-        padding-left: 35px;
-}
+    padding-left: 35px;
+  }
 
-.menubarcloseicon {
-
+  .menubarcloseicon {
     top: 6%;
     right: 8%;
     width: 50px;
     height: 67px;
-}
+  }
 
-.onemenu {
+  .onemenu {
     width: 58%;
-}
+  }
 
-.twomenu {
+  .twomenu {
     width: 42%;
+  }
 
-}
-
-
-
-.twomenu li:hover {
+  .twomenu li:hover {
     padding-left: 50px;
     /* color: #250521; */
-}
-
+  }
 
   /* MenuBar-Css */
 
@@ -7607,3 +7577,8 @@
 }
 
 /* TextImageSection.css - copy to same folder as component */
+
+
+.youtubeIcontestimonal {
+  display: none !important;
+}

@@ -40,12 +40,12 @@ export default function TestimonalSlider() {
             <h5
               className="secondHeadingText textTransform text-center"
               style={{ fontWeight: "600", textTransform: "uppercase" }}
-            
             >
               Stories from our Spaces
             </h5>
             <p className="subHeadingText text-center text-[#636465]">
-             Our Spaces come alive through the people who live there, their stories truly inspire everthying we build
+              Our Spaces come alive through the people who live there, their
+              stories truly inspire everthying we build
             </p>
           </div>
 
@@ -55,16 +55,16 @@ export default function TestimonalSlider() {
               <div className="testimonalSlidersSlide">
                 <div className="testimonalSliderborder">
                   <div className="testimonalSectionName">
-                    <h4>Mr.Dhinesh</h4>
+                    <h4>Mr.Pandian</h4>
                     <p>Chennai</p>
                   </div>
 
                   <div className="testimonalContent">
                     <p className="subHeadingText">
-                      Lorem Ipsum is simply dummy text of the printing and types
-                      etting industry. Lorem Ipsum has been the dustry's
-                      standard dummy text ever sinwhen an unknown printer took a
-                      galley of changed.
+                      Keystone Promoters delivered quality construction with
+                      excellent. finishing and reliable service. They met every
+                      requirement with care and professionalism-truly a wae
+                      investment
                     </p>
 
                     <div className="flex items-center justify-between  testimonalPersonImageContainer ">
@@ -94,10 +94,10 @@ export default function TestimonalSlider() {
 
                   <div className="testimonalContent">
                     <p className="subHeadingText">
-                      Lorem Ipsum is simply dummy text of the printing and types
-                      etting industry. Lorem Ipsum has been the dustry's
-                      standard dummy text ever sinwhen an unknown printer took a
-                      galley of changed.
+                       Keystone Promoters delivered quality construction with
+                      excellent. finishing and reliable service. They met every
+                      requirement with care and professionalism-truly a wae
+                      investment
                     </p>
 
                     <div className="flex items-center justify-between  testimonalPersonImageContainer ">
