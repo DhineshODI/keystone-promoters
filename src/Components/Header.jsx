@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Header({ menuOnlick }) {
   const [active, setActive] = useState("");
-  const handleActive = (name) => setActive(name);
+  // const handleActive = (name) => setActive(name);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,6 +19,20 @@ export default function Header({ menuOnlick }) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    const path = window.location.pathname;
+
+    if (path === "/aboutus") setActive("aboutus");
+    else if (path === "/ongoing-projects") setActive("ongoing-projects");
+    else if (path === "/project-detail") setActive("project-detail");
+    else if (path === "/completed") setActive("completed");
+    else if (path === "/contact") setActive("contact");
+  }, []);
+
+  const handleActive = (val) => {
+    setActive(val);
+  };
+
   return (
     <>
       <div>
@@ -31,13 +45,13 @@ export default function Header({ menuOnlick }) {
           </div>
         </div>
         <div className="HeaderMainSEC">
-          <Link to="/" onClick={() => handleActive("")}>
+          <a href="/" onClick={() => handleActive("")}>
             <img
               className="headerLogoImg"
               src="/images/keystone-detailpage-logo.jpg"
               alt=""
             />
-          </Link>
+          </a>
           <ul className="listHeaders">
             <li
               className={
@@ -45,7 +59,7 @@ export default function Header({ menuOnlick }) {
               }
               onClick={() => handleActive("aboutus")}
             >
-              <Link to="/aboutus">Brand</Link>
+              <a href="/aboutus">Brand</a>
             </li>
 
             <li
@@ -56,7 +70,7 @@ export default function Header({ menuOnlick }) {
               }
               onClick={() => handleActive("ongoing-projects")}
             >
-              <Link to="/ongoing-projects">Ongoing</Link>
+              <a href="/ongoing-projects">Ongoing</a>
             </li>
 
             <li
@@ -65,7 +79,7 @@ export default function Header({ menuOnlick }) {
               }
               onClick={() => handleActive("project-detail")}
             >
-              <Link to="/project-detail">Upcoming</Link>
+              <a href="/project-detail">Upcoming</a>
             </li>
 
             <li
@@ -74,7 +88,7 @@ export default function Header({ menuOnlick }) {
               }
               onClick={() => handleActive("completed")}
             >
-              <Link to="/completed">Completed</Link>
+              <a href="/completed">Completed</a>
             </li>
 
             <li
@@ -83,7 +97,7 @@ export default function Header({ menuOnlick }) {
               }
               onClick={() => handleActive("contact")}
             >
-              <Link to="/contact">Contact Us</Link>
+              <a href="/contact">Contact Us</a>
             </li>
 
             <div className="hamburgerflex cursor-pointer" onClick={menuOnlick}>

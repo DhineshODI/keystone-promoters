@@ -74,7 +74,9 @@ export default function LiveThoughtFul() {
             <div className="LiveThoughtFlexImg">
               <img src="/images/homepage/famil-Pic-Section.png" alt="" />
 
-              <button className="knowMoreButtonImage">Know More</button>
+              <a href="/aboutus">
+                <button className="knowMoreButtonImage cursor-pointer">Know More</button>{" "}
+              </a>
             </div>
 
             <div>

@@ -74,7 +74,7 @@ export default function AboutusFounder() {
                   }`}
                 >
                   <div className="founderdetails">
-                    <h4 className="secondHeadingText ">Dhinesh</h4>
+                    <h4 className="secondHeadingText ">Dinesh Sellappan</h4>
                     <h5 className="subHeadingText ">Director</h5>
                   </div>
 
@@ -91,7 +91,7 @@ export default function AboutusFounder() {
                   }`}
                 >
                   <div className="founderdetails">
-                    <h4 className="secondHeadingText ">Dhivya</h4>
+                    <h4 className="secondHeadingText ">Vaishnava Priya</h4>
                     <h5 className="subHeadingText ">Director</h5>
                   </div>
 
@@ -106,7 +106,7 @@ export default function AboutusFounder() {
               {activeIndex === 1 && (
                 <div className="founderflex2">
                   <div className="founderflexcontentpopup">
-                    <h5 className="foundernamepopup">Dhinesh</h5>
+                    <h5 className="foundernamepopup">Dinesh Sellappan</h5>
                     <p className="subHeadingText ">Director</p>
                   </div>
 
@@ -135,7 +135,7 @@ export default function AboutusFounder() {
               {activeIndex === 2 && (
                 <div className="founderflex2">
                   <div className="founderflexcontentpopup">
-                    <h5 className="foundernamepopup">Dhivya</h5>
+                    <h5 className="foundernamepopup">Vaishnava Priya</h5>
                     <p className="subHeadingText ">Director</p>
                   </div>
 
@@ -233,27 +233,28 @@ export default function AboutusFounder() {
 
                 <div className="aboutuspopupstyles">
                   <div>
-                    <h5 className="secondHeadingText ">Dhivya Sellappan</h5>
+                    <h5 className="secondHeadingText ">Vaishnava Priya</h5>
                     <h6 className="mainheadingText ">Director's Profile</h6>
 
                     <div className="insideppupsub">
                       <p className="subHeadingText ">
-                        Founder & Managing Director of Keystone Promoters Pvt
-                        Ltd holds a Bachelor’s degree in Civil engineering from
-                        Government College of Technology, Coimbatore & Masters
-                        degree in Construction Engineering and Management from
-                        University of Southern California, Los Angeles.
+                        As an architect and designer known for creating
+                        thoughtful, client-focused space, Vaishnava Priya’s work
+                        spans residential architecture, interior design and
+                        community-focused projects, with a strong emphasis on
+                        proportion, detailing and functionality. She integrates
+                        native materials with modern aesthetics to craft designs
+                        that are both contemporary and timeless.
                       </p>
                       <br />
                       <p className="subHeadingText ">
-                        He also holds a Masters degree in Real Estate Valuation.
-                        Started his professional career as a Project Engineer
-                        for Condominiums at Los Angeles & West Hollywood, after
-                        which he established Keystone in the year 2012. With
-                        vast knowledge in the field of Civil Engineering and
-                        with over a decade of experience in construction he is
-                        an integral part of Keystone which is primarily in
-                        development of Residential and Commercial Properties.
+                        She ensures that every project reflects the client’s
+                        needs while carefully evaluating the site and its
+                        surroundings. Her portfolio includes custom homes,
+                        apartments, interior renovations and small-scale
+                        community projects. Vaishnava’s design philosophy is
+                        rooted in simplicity, spatial clarity and human comfort,
+                        resulting in warm, lived-in spaces that remain timeless.
                       </p>
                     </div>
                   </div>

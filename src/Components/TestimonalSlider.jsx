@@ -88,16 +88,20 @@ export default function TestimonalSlider() {
               <div className="testimonalSlidersSlide">
                 <div className="testimonalSliderborder">
                   <div className="testimonalSectionName">
-                    <h4>Mr.Dhinesh</h4>
+                    <h4>Mrs.Devi</h4>
                     <p>Chennai</p>
                   </div>
 
                   <div className="testimonalContent">
                     <p className="subHeadingText">
-                       Keystone Promoters delivered quality construction with
+                      {/* Keystone Promoters delivered quality construction with
                       excellent. finishing and reliable service. They met every
                       requirement with care and professionalism-truly a wae
-                      investment
+                      investment */}
+                      Initially hesitant about Keystone, I was soon impressed by
+                      their detailed planning, thoughtful design, and highly
+                      professional execution that consistently exceeded my
+                      expectations.
                     </p>
 
                     <div className="flex items-center justify-between  testimonalPersonImageContainer ">

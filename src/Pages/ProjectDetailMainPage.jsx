@@ -23,7 +23,7 @@ export default function ProjectDetailMainPage() {
 
         <ProjectFloorPan />
 
-        <ProjectConstructionUpdates />
+        {/* <ProjectConstructionUpdates /> */}
       </div>
     </>
   );

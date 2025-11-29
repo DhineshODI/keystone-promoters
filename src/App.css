@@ -756,7 +756,7 @@
 
 .LiveThoughtsBg .secondHeadingText {
   text-transform: uppercase;
-  line-height: 0.8;
+  line-height: 0.9;
   color: #ffff98;
   color: #fff;
   position: relative;
@@ -824,6 +824,7 @@
 .architectureWidth {
   width: 26%;
   position: relative;
+  box-shadow: 0px 30px 45px -10px rgba(0, 0, 0, 0.45);
 }
 
 .architectureWidth img {
@@ -2166,12 +2167,12 @@
 }
 
 .projectspeclist li {
-    font-family: "Poppins", sans-serif;
-    font-size: 18px;
-    line-height: 1.4;
-    font-weight: 400;
-    color: #575757;
-    margin-top: 5px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #575757;
+  margin-top: 5px;
 }
 
 .projectspecifiationclass {
@@ -2480,13 +2481,13 @@
 }
 
 .locationcontentside ul li {
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    color: #515151;
-    line-height: 100%;
-    margin-top: 7px;
-    line-height: 1.4;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #515151;
+  line-height: 100%;
+  margin-top: 7px;
+  line-height: 1.4;
 }
 
 .distance {
@@ -3049,7 +3050,9 @@
 .shapeusflex img {
   width: 58%;
 }
-
+.shapeusflex video {
+  width: 58%;
+}
 .keystoneuniquesection {
   background-image: url("/public/images/about-us/keystone-unique.jpg");
   height: 1000px;
@@ -3194,7 +3197,7 @@
   display: flex;
   margin-top: 50px;
   justify-content: flex-start;
-  column-gap: 150px;
+  column-gap: 170px;
 }
 
 .founderflex1 {
@@ -4163,7 +4166,7 @@
   }
 
   .founderdetails .secondHeadingText {
-    font-size: 27px;
+      font-size: 22px;
   }
 
   .founderflex {
@@ -5855,11 +5858,12 @@
   }
 
   .founderdetails .secondHeadingText {
-    font-size: 27px;
+    font-size: 22px;
   }
 
   .founderflex {
     margin-top: 15px;
+    column-gap: 188px;
   }
 
   .founderflexcontentpopup .foundernamepopup {
@@ -6935,7 +6939,7 @@
   }
 
   .founderdetails .secondHeadingText {
-    font-size: 27px;
+     font-size: 21px;
   }
 
   .founderflex {
@@ -6965,7 +6969,7 @@
   }
 
   .foundersbanner {
-    height: 700px;
+    height: 552px;
     background-size: cover;
     background-position: center;
   }
@@ -6976,8 +6980,8 @@
   }
 
   .founderimagee {
-    width: 103px;
-    top: -22px;
+    width: 95px;
+    top: -13px;
   }
 
   /* AboutPage-Responsive */
@@ -7577,7 +7581,6 @@
 }
 
 /* TextImageSection.css - copy to same folder as component */
-
 
 .youtubeIcontestimonal {
   display: none !important;

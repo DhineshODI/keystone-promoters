@@ -98,7 +98,13 @@ export default function AboutUsPage() {
             <div className="shapeusconatiner">
               <div className="container max-w-7xl mx-auto px-4 ">
                 <div className="shapeusflex">
-                  <img src="/images/about-us/abboutus-shapingus.jpg" alt="" />
+                  <video
+                    autoPlay
+                    muted
+                    loop
+                    src="/images/homepage/bannerVideo.mp4"
+                  ></video>
+                  {/* <img src="/images/about-us/abboutus-shapingus.jpg" alt="" /> */}
                   <div className="shapeconatinerflex">
                     <p className="secondHeadingText">Shaping lifespaces</p>
                   </div>

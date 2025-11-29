@@ -38,13 +38,17 @@ export default function CurtedLivingSlider() {
       img: "/images/homepage/iStock-1990444472.png",
       lines: ["NATURE", "INTEGRATED", "DESIGNS"],
     },
-        {
+    {
       img: "/images/homepage/functional-comfort-layouts.jpg",
-     lines : ["FUNCTIONAL", "COMFORT", "LAYOUTS"]
+      lines: ["FUNCTIONAL", "COMFORT", "LAYOUTS"],
     },
-        {
+    {
       img: "/images/homepage/timeless-quality-aesthetics.jpg",
       lines: ["TIMELESS", "QUALITY", "AESTHETICS"],
+    },
+    {
+      img: "/images/homepage/balnced-craftmanship.jpg",
+      lines: ["BALANCED", "CLEVER ", "CRAFTMANSHIP"],
     },
   ];
 

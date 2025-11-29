@@ -12,7 +12,7 @@ export default function OngoingProjects() {
     arrows: false,
     speed: 600,
     autoplay: false,
-      swipe: false, 
+    swipe: false,
     autoplaySpeed: 3500,
     beforeChange: (_, next) => setActiveIndex(next),
     afterChange: (index) => {
@@ -24,21 +24,21 @@ export default function OngoingProjects() {
   const OnGoingProjectsData = [
     {
       id: 1,
-      ProjectTitle: "Spectras",
+      ProjectTitle: "Spectra",
       ProjectLocation: "Keelkattalai, Chennai",
       BHKStatus: "2 & 3",
       unitSize: "1159 - 1481",
       projectImage: "/images/ongoing-images/onGoingProjectsImage.jpg",
-      projectLink: "/project1",
+      projectLink: "/project-detail",
     },
     {
       id: 2,
-      ProjectTitle: "Spectras",
+      ProjectTitle: "Spectra",
       ProjectLocation: "Keelkattalai, Chennai",
       BHKStatus: "2 & 3",
       unitSize: "1159 - 1481",
       projectImage: "/images/ongoing-images/onGoingProjectsImage.jpg",
-      projectLink: "/project1",
+      projectLink: "/project-detail",
     },
     {
       id: 3,
@@ -47,7 +47,7 @@ export default function OngoingProjects() {
       BHKStatus: "2 & 3",
       unitSize: "1159 - 1481",
       projectImage: "/images/ongoing-images/onGoingProjectsImage.jpg",
-      projectLink: "/project1",
+      projectLink: "/project-detail",
     },
     {
       id: 4,
@@ -56,7 +56,7 @@ export default function OngoingProjects() {
       BHKStatus: "2 & 3",
       unitSize: "1159 - 1481",
       projectImage: "/images/ongoing-images/onGoingProjectsImage.jpg",
-      projectLink: "/project1",
+      projectLink: "/project-detail",
     },
     {
       id: 5,
@@ -65,7 +65,7 @@ export default function OngoingProjects() {
       BHKStatus: "2 & 3",
       unitSize: "1159 - 1481",
       projectImage: "/images/ongoing-images/onGoingProjectsImage.jpg",
-      projectLink: "/project1",
+      projectLink: "/project-detail",
     },
     {
       id: 6,
@@ -74,7 +74,7 @@ export default function OngoingProjects() {
       BHKStatus: "2 & 3",
       unitSize: "1159 - 1481",
       projectImage: "/images/ongoing-images/onGoingProjectsImage.jpg",
-      projectLink: "/project1",
+      projectLink: "/project-detail",
     },
   ];
 
@@ -121,7 +121,9 @@ export default function OngoingProjects() {
                           </h5>
                         </div>
 
-                        <div className="onGoingViewProject">view project</div>
+                        <div className="onGoingViewProject">
+                          <a href="/project-detail" className="cursor-pointer">view project</a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -148,8 +150,10 @@ export default function OngoingProjects() {
                 </p>
               </div>
 
-              <div className="viewallprojectsongoing">
-                <button>View All Projects</button>
+              <div className="viewallprojectsongoing cursor-pointer">
+                <a href="/project-detail">
+                  <button className="cursor-pointer">View All Projects</button>
+                </a>
               </div>
 
               {/* ===== SINGLE DOT CONTROL ===== */}

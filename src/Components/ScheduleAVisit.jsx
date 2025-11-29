@@ -24,7 +24,9 @@ export default function ScheduleAvisit() {
             </div>
 
             <div className="scheduleaVisitbutton">
-              <button>Enquire Now</button>
+              <a className="z-100 " href="/contact">
+                <button className="cursor-pointer">Enquire Now</button>
+              </a>
             </div>
 
             <div className="keystonesectionflexx">
