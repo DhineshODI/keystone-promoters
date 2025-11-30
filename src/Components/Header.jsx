@@ -109,6 +109,15 @@ export default function Header({ menuOnlick }) {
               <span>MENU</span>
             </div>
           </ul>
+
+          <ul className="mobileiconskey">
+            <li>
+              <img src="/images/icons/call-mobile.svg" alt="" />
+            </li>
+            <li onClick={menuOnlick}>
+              <img src="/images/icons/menu-mobile.svg" alt="" />
+            </li>
+          </ul>
         </div>
       </div>
     </>

@@ -10,7 +10,7 @@ export default function ScheduleAvisit() {
 
             <div className="sechondHeadingMain">
               <h5
-                className="secondHeadingText textTransform text-center"
+                className="secondHeadingText textTransform text-center mobdesigntext"
                 style={{ fontWeight: "600", textTransform: "uppercase" }}
               >
                 Your Dream home is just a visit away
@@ -18,7 +18,7 @@ export default function ScheduleAvisit() {
             </div>
 
             <div className="sechondHeadingMain">
-              <p className="subHeadingText text-center text-[#1d1f22]">
+              <p className="subHeadingText text-center text-[#1d1f22] ">
                 Come see where craftsmanship meets your vision of dream home.
               </p>
             </div>
