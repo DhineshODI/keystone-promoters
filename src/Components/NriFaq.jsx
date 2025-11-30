@@ -46,7 +46,9 @@ export default function NriFaq() {
                 </p>
 
                 <div className="NriPagebutton">
-                  <button>Enquire Now</button>
+                  <a href="/contact">
+                    <button className="cursor-pointer">Enquire Now</button>
+                  </a>
                 </div>
               </div>
 

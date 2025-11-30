@@ -82,7 +82,11 @@ export default function NriPage() {
                       </ul>
 
                       <div className="nrilistenquire">
-                        <button>Enquire Now</button>
+                        <a href="/contact">
+                          <button className="cursor-pointer">
+                            Enquire Now
+                          </button>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -153,7 +157,9 @@ export default function NriPage() {
                   </div>
 
                   <div className="NriPagebutton">
-                    <button>Enquire Now</button>
+                    <a href="/contact">
+                      <button className="cursor-pointer">Enquire Now</button>
+                    </a>
                   </div>
                 </div>
               </div>

@@ -11,7 +11,7 @@ export default function TestimonalSlider() {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     arrows: false,
     responsive: [
@@ -22,7 +22,19 @@ export default function TestimonalSlider() {
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1.1,
+        },
+      },
+      {
+        breakpoint: 400,
         settings: {
           slidesToShow: 1,
         },
@@ -43,15 +55,15 @@ export default function TestimonalSlider() {
             >
               Stories from our Spaces
             </h5>
-            <p className="subHeadingText text-center text-[#636465]">
+            <p className="subHeadingText text-center text-[#636465] ourspacingtextmob">
               Our Spaces come alive through the people who live there, their
               stories truly inspire everthying we build
             </p>
           </div>
 
+          {/* <div className="container max-w-7xl mx-auto px-4 testicardsconatinermob"> */}
           <div className="testimonalSliderContainer">
             <Slider ref={sliderRef} className="testimonalSliders" {...settings}>
-              {/* Example slides */}
               <div className="testimonalSlidersSlide">
                 <div className="testimonalSliderborder">
                   <div className="testimonalSectionName">
@@ -94,10 +106,6 @@ export default function TestimonalSlider() {
 
                   <div className="testimonalContent">
                     <p className="subHeadingText">
-                      {/* Keystone Promoters delivered quality construction with
-                      excellent. finishing and reliable service. They met every
-                      requirement with care and professionalism-truly a wae
-                      investment */}
                       Initially hesitant about Keystone, I was soon impressed by
                       their detailed planning, thoughtful design, and highly
                       professional execution that consistently exceeded my
@@ -122,17 +130,6 @@ export default function TestimonalSlider() {
                   </div>
                 </div>
               </div>
-
-              {/* <div>
-              <div className="bg-gray-200 p-8 rounded-lg text-center shadow">
-                <h3>Slide 3</h3>
-              </div>
-            </div>
-            <div>
-              <div className="bg-gray-200 p-8 rounded-lg text-center shadow">
-                <h3>Slide 4</h3>
-              </div>
-            </div> */}
             </Slider>
 
             <div className="flex justify-center items-center gap-7 mt-6">
@@ -160,6 +157,7 @@ export default function TestimonalSlider() {
             </div>
           </div>
         </div>
+        {/* </div> */}
       </div>
     </>
   );

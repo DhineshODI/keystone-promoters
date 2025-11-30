@@ -54,15 +54,15 @@ export default function ContactPage() {
                 <img src="/images/contactus-banner-icon.png" alt="" />
               </div>
               <div className="thirdbannerafterSectionMAIN">
-                <div style={{ marginTop: "15px" }}>
+                <div className="contactustextcontent" style={{ marginTop: "15px" }}>
                   <h4 className="gettknowHeading">Phone</h4>
                   <p className="contactPageAddress">+91 44 2817 2255</p>
                 </div>
-                <div style={{ marginTop: "15px" }}>
+                <div className="contactustextcontent" style={{ marginTop: "15px" }}>
                   <h4 className="gettknowHeading">MOBILE</h4>
                   <p className="contactPageAddress">+91 99400 08855</p>
                 </div>
-                <div style={{ marginTop: "15px" }}>
+                <div className="contactustextcontent" style={{ marginTop: "15px" }}>
                   <h4 className="gettknowHeading">Email</h4>
                   <p className="contactPageAddress">
                     info@keystonepromoters.com

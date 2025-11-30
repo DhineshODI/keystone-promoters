@@ -10,7 +10,7 @@ export default function CurtedLivingSlider() {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     arrows: false,
     responsive: [
@@ -21,9 +21,15 @@ export default function CurtedLivingSlider() {
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 767,
         settings: {
           slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1.2,
         },
       },
     ],

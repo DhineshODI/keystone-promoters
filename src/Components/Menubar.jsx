@@ -12,11 +12,11 @@ export default function Menubar({ menuOnlick }) {
             </li>
 
             <li onClick={menuOnlick}>
-              <a href="/projects">Projects</a>
+              <a href="/project-detail">Projects</a>
             </li>
 
             <li onClick={menuOnlick}>
-              <a href="/ongoing">Ongoing</a>
+              <a href="/ongoing-projects">Ongoing</a>
             </li>
 
             <li onClick={menuOnlick}>
@@ -24,7 +24,7 @@ export default function Menubar({ menuOnlick }) {
             </li>
 
             <li onClick={menuOnlick}>
-              <a href="/partners">Channel Partner</a>
+              <a href="/channel-partner">Channel Partner</a>
             </li>
 
             <li onClick={menuOnlick}>

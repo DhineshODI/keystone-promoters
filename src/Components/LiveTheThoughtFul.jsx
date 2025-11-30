@@ -79,7 +79,7 @@ export default function LiveThoughtFul() {
               </a>
             </div>
 
-            <div>
+            <div className="mobileliveflex">
               <div className="yearsScrollText">
                 <h6 className="secondHeadingText">{years}</h6>
                 <span>years & counting</span>

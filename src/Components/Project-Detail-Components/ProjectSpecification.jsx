@@ -115,7 +115,7 @@ export default function ProjecSpecification() {
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 767,
         settings: {
           slidesToShow: 1,
         },

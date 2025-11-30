@@ -98,7 +98,7 @@ export default function OngoingProjects() {
       <div className="ongoingBg">
         <div className="container max-w-7xl mx-auto px-4 ">
           <div className="onGoingMainSectionDiv">
-            <div style={{ width: "56%" }}>
+            <div style={{ width: "56%" }} className="widthnewseciton">
               <Slider ref={sliderTop} {...settings}>
                 {oddProjects.map((project) => (
                   <div>
@@ -122,7 +122,9 @@ export default function OngoingProjects() {
                         </div>
 
                         <div className="onGoingViewProject">
-                          <a href="/project-detail" className="cursor-pointer">view project</a>
+                          <a href="/project-detail" className="cursor-pointer">
+                            view project
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -170,7 +172,7 @@ export default function OngoingProjects() {
               </div>
             </div>
 
-            <div style={{ width: "56%" }}>
+            <div style={{ width: "56%" }} className="widthnewseciton formobilewidthsection">
               <Slider ref={sliderBottom} {...settings}>
                 {evenProjects.map((project) => (
                   <div>

@@ -68,15 +68,15 @@ export default function TestimonialPage() {
                 <div className="testimonalpagedisply">
                   <div class="testimonalSliderborder">
                     <div class="testimonalSectionName">
-                      <h4>Mr.Dhinesh</h4>
+                      <h4>Mr.Pandian</h4>
                       <p>Chennai</p>
                     </div>
                     <div class="testimonalContent">
                       <p class="subHeadingText">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        types etting industry. Lorem Ipsum has been the dustry's
-                        standard dummy text ever sinwhen an unknown printer took
-                        a galley of changed.
+                        Keystone Promoters delivered quality construction with
+                        excellent. finishing and reliable service. They met
+                        every requirement with care and professionalism-truly a
+                        wae investment
                       </p>
                       <div class="flex items-center justify-between  testimonalPersonImageContainer ">
                         <div class="testimonalPersonImagediv">
@@ -96,127 +96,15 @@ export default function TestimonialPage() {
                   </div>
                   <div class="testimonalSliderborder">
                     <div class="testimonalSectionName">
-                      <h4>Mr.Dhinesh</h4>
+                      <h4>Mrs.Devi</h4>
                       <p>Chennai</p>
                     </div>
                     <div class="testimonalContent">
                       <p class="subHeadingText">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        types etting industry. Lorem Ipsum has been the dustry's
-                        standard dummy text ever sinwhen an unknown printer took
-                        a galley of changed.
-                      </p>
-                      <div class="flex items-center justify-between  testimonalPersonImageContainer ">
-                        <div class="testimonalPersonImagediv">
-                          <img
-                            class="testimonalPersonImage"
-                            src="https://img.freepik.com/free-photo/young-beautiful-girl-posing-black-leather-jacket-park_1153-8104.jpg?semt=ais_hybrid&amp;w=740&amp;q=80"
-                            alt=""
-                          />
-                        </div>
-                        <img
-                          class="youtubeIcontestimonal"
-                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="testimonalSliderborder">
-                    <div class="testimonalSectionName">
-                      <h4>Mr.Dhinesh</h4>
-                      <p>Chennai</p>
-                    </div>
-                    <div class="testimonalContent">
-                      <p class="subHeadingText">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        types etting industry. Lorem Ipsum has been the dustry's
-                        standard dummy text ever sinwhen an unknown printer took
-                        a galley of changed.
-                      </p>
-                      <div class="flex items-center justify-between  testimonalPersonImageContainer ">
-                        <div class="testimonalPersonImagediv">
-                          <img
-                            class="testimonalPersonImage"
-                            src="https://img.freepik.com/free-photo/young-beautiful-girl-posing-black-leather-jacket-park_1153-8104.jpg?semt=ais_hybrid&amp;w=740&amp;q=80"
-                            alt=""
-                          />
-                        </div>
-                        <img
-                          class="youtubeIcontestimonal"
-                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="testimonalSliderborder">
-                    <div class="testimonalSectionName">
-                      <h4>Mr.Dhinesh</h4>
-                      <p>Chennai</p>
-                    </div>
-                    <div class="testimonalContent">
-                      <p class="subHeadingText">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        types etting industry. Lorem Ipsum has been the dustry's
-                        standard dummy text ever sinwhen an unknown printer took
-                        a galley of changed.
-                      </p>
-                      <div class="flex items-center justify-between  testimonalPersonImageContainer ">
-                        <div class="testimonalPersonImagediv">
-                          <img
-                            class="testimonalPersonImage"
-                            src="https://img.freepik.com/free-photo/young-beautiful-girl-posing-black-leather-jacket-park_1153-8104.jpg?semt=ais_hybrid&amp;w=740&amp;q=80"
-                            alt=""
-                          />
-                        </div>
-                        <img
-                          class="youtubeIcontestimonal"
-                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="testimonalSliderborder">
-                    <div class="testimonalSectionName">
-                      <h4>Mr.Dhinesh</h4>
-                      <p>Chennai</p>
-                    </div>
-                    <div class="testimonalContent">
-                      <p class="subHeadingText">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        types etting industry. Lorem Ipsum has been the dustry's
-                        standard dummy text ever sinwhen an unknown printer took
-                        a galley of changed.
-                      </p>
-                      <div class="flex items-center justify-between  testimonalPersonImageContainer ">
-                        <div class="testimonalPersonImagediv">
-                          <img
-                            class="testimonalPersonImage"
-                            src="https://img.freepik.com/free-photo/young-beautiful-girl-posing-black-leather-jacket-park_1153-8104.jpg?semt=ais_hybrid&amp;w=740&amp;q=80"
-                            alt=""
-                          />
-                        </div>
-                        <img
-                          class="youtubeIcontestimonal"
-                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="testimonalSliderborder">
-                    <div class="testimonalSectionName">
-                      <h4>Mr.Dhinesh</h4>
-                      <p>Chennai</p>
-                    </div>
-                    <div class="testimonalContent">
-                      <p class="subHeadingText">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        types etting industry. Lorem Ipsum has been the dustry's
-                        standard dummy text ever sinwhen an unknown printer took
-                        a galley of changed.
+                        Initially hesitant about Keystone, I was soon impressed
+                        by their detailed planning, thoughtful design, and
+                        highly professional execution that consistently exceeded
+                        my expectations.
                       </p>
                       <div class="flex items-center justify-between  testimonalPersonImageContainer ">
                         <div class="testimonalPersonImagediv">

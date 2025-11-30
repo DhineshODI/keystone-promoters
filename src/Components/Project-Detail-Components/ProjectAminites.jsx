@@ -56,7 +56,7 @@ export default function ProjectAminities() {
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 767,
         settings: {
           slidesToShow: 1,
         },

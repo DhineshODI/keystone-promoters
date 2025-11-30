@@ -108,7 +108,7 @@ export default function OngoingProjectsPage() {
                     </h5>
                   </div>
 
-                  <a href={project.projectLink}>
+                  <a href={project.projectLink} className="projectbuttonviewmore">
                     <div className="buttononGoingProjectsLists">
                       view project
                     </div>
