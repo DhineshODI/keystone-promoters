@@ -12149,7 +12149,7 @@ max-width: 320px;
 }
 .OurSignatureApproach {
   padding-top: 50px;
-  display: none;
+  /* display: none; */
 }
 
 .projectfloorflex {
