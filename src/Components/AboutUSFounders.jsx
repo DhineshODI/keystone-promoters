@@ -1,5 +1,6 @@
 import { React, useState, useEffect, useRef } from "react";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default function AboutusFounder() {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpen1, setIsOpen1] = useState(false);

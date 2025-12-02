@@ -1,6 +1,8 @@
 import AboutusFounder from "../Components/AboutUSFounders";
 import AboutusSlider from "../Components/AboutusSlider";
 import Header from "../Components/Header";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function AboutUsPage() {
   return (

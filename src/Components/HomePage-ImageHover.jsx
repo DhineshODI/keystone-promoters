@@ -141,6 +141,9 @@
 // }
 import { useState } from "react";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export default function HomepageImageHoverSection() {
   const images = {
     Listen: "/images/homepage/listen.jpg",
@@ -178,7 +181,7 @@ export default function HomepageImageHoverSection() {
       <div className="container max-w-7xl mx-auto px-4">
         <div className="lowconatinersectionafterbanner">
           <div>
-            <p className="subHeadingText">
+            <p className="subHeadingText" data-aos="fade-down" data-aos-delay="100">
               Our approach transforms every project into a journey of
               collaboration, creativity, and precision-delivering purposeful,
               lasting spaces.

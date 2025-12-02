@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 // import "../assets/costum.css"
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const defaultData = [
   {

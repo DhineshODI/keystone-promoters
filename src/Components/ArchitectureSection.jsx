@@ -1,9 +1,14 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default function ArchitectureSection() {
   return (
     <>
       <div className="archiBg">
         <div className="container max-w-7xl mx-auto px-4 ">
-          <div className="MainarchitectureWidth">
+          <div
+            className="MainarchitectureWidth"
+      
+          >
             <div className="architectureWidth">
               <img src="/images/homepage/iStock-1136288354.png" alt="" />
 

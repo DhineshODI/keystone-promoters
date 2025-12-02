@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default function ProjectConstructionUpdates() {
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);

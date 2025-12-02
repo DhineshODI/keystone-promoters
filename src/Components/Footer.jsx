@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default function Footer() {
   return (
     <>

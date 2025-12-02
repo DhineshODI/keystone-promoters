@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function LiveThoughtFul() {
   const [years, setYears] = useState(0);
@@ -49,22 +51,29 @@ export default function LiveThoughtFul() {
     };
   }, []);
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation speed
+      once: false, // run only once
+    });
+  }, []);
+
   return (
     <>
       <div className="LiveThoughtsBg reveal ">
         <div className="container max-w-7xl mx-auto px-4 ">
           <div className="liveThoughtsContents">
-            <h3 className="text-left mainheadingText textTransform text-[#fff]">
+            <h3 className="text-left mainheadingText textTransform text-[#fff]" data-aos="fade-up" >
               We are Keystone Promoters
             </h3>
 
-            <div className="LiveKeystonePromoters">
+            <div className="LiveKeystonePromoters" data-aos="fade-up" data-aos-delay="200">
               <h6 className="secondHeadingText">Live the Thoughtful</h6>
               <h6 className="secondHeadingText">Difference</h6>
             </div>
           </div>
 
-          <p className="subHeadingText">
+          <p className="subHeadingText" data-aos="fade-up" data-aos-delay="400">
             At Keystone Promoters, we craft spaces where design meets purpose.
             Every project reflects precision, trust, and innovation-creating
             sustainable environments that inspire modern living and long-term
@@ -75,7 +84,9 @@ export default function LiveThoughtFul() {
               <img src="/images/homepage/famil-Pic-Section.png" alt="" />
 
               <a href="/aboutus">
-                <button className="knowMoreButtonImage cursor-pointer">Know More</button>{" "}
+                <button className="knowMoreButtonImage cursor-pointer">
+                  Know More
+                </button>{" "}
               </a>
             </div>
 

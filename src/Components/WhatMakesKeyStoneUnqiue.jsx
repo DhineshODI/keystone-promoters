@@ -1,9 +1,11 @@
 import { gsap } from "gsap";
 import { useEffect, useRef } from "react";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function WhatMakesKeyStonesUnique() {
   const boxRef = useRef(null);
-
   useEffect(() => {
     gsap.fromTo(
       boxRef.current,
@@ -11,6 +13,14 @@ export default function WhatMakesKeyStonesUnique() {
       { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
     );
   }, []);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation speed
+      once: false, // run only once
+    });
+  }, []);
+
   return (
     <>
       <div className="whatsmakeSectionBG reveal " ref={boxRef}>
@@ -32,7 +42,10 @@ export default function WhatMakesKeyStonesUnique() {
 
           <div className="contentWhatMakesSection">
             <div className="FirstcontentWhatMakesSection">
-              <div className="FlexFirstcontentWhatMakesSection">
+              <div
+                className="FlexFirstcontentWhatMakesSection"
+                data-aos="fade-right"
+              >
                 <h5 className="secondHeadingText">Timely</h5>
                 <h5 className="secondHeadingText">Delivery</h5>
                 <p className="subHeadingText">
@@ -40,20 +53,29 @@ export default function WhatMakesKeyStonesUnique() {
                 </p>
               </div>
 
-              <div className="FlexFirstcontentWhatMakesSection">
+              <div
+                className="FlexFirstcontentWhatMakesSection"
+                data-aos="fade-left"
+              >
                 <h5 className="secondHeadingText">Design</h5>
                 <h5 className="secondHeadingText">Led</h5>
                 <p className="subHeadingText">Architecture with a soul</p>
               </div>
             </div>
             <div className="FirstcontentWhatMakesSection">
-              <div className="FlexFirstcontentWhatMakesSection">
+              <div
+                className="FlexFirstcontentWhatMakesSection"
+                data-aos="fade-right"
+              >
                 <h5 className="secondHeadingText">Investor</h5>
                 <h5 className="secondHeadingText">Friendly</h5>
                 <p className="subHeadingText">High appreciation value</p>
               </div>
 
-              <div className="FlexFirstcontentWhatMakesSection">
+              <div
+                className="FlexFirstcontentWhatMakesSection"
+                data-aos="fade-left"
+              >
                 <h5 className="secondHeadingText">100%</h5>
                 <h5 className="secondHeadingText">Complaint</h5>
                 <p className="subHeadingText">
@@ -62,7 +84,10 @@ export default function WhatMakesKeyStonesUnique() {
               </div>
             </div>
             <div className="FirstcontentWhatMakesSection lastSectionWhatMakes">
-              <div className="FlexFirstcontentWhatMakesSection">
+              <div
+                className="FlexFirstcontentWhatMakesSection"
+                data-aos="fade-up"
+              >
                 <h5 className="secondHeadingText">Solid</h5>
                 <h5 className="secondHeadingText">Foundations</h5>
                 <p className="subHeadingText">

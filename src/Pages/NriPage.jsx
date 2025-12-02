@@ -1,5 +1,7 @@
 import NriFaq from "../Components/NriFaq";
 import OngoingProjects from "../Components/OnGoingProjects";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function NriPage() {
   return (

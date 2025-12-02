@@ -2,6 +2,8 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function ProjectAminities() {
   const amenities = [
@@ -146,9 +148,9 @@ export default function ProjectAminities() {
 
         <div className="downloadbrocedhurebuttonflex">
           <div className="downloadbrocedhurebutton">
-            <div className="subHeadingText ">Download Brochure </div>{" "}
+            <div className="subHeadingText text-hover-underline ">Download Brochure </div>{" "}
             <div className="subHeadingText "> | </div>{" "}
-            <div className="subHeadingText "> enquire now</div>
+            <div className="subHeadingText text-hover-underline "> enquire now</div>
           </div>
         </div>
       </div>

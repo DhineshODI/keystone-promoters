@@ -1,6 +1,9 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default function ContactPage() {
   gsap.registerPlugin(ScrollTrigger);
 
