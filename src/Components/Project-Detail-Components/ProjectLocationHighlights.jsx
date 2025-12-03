@@ -100,7 +100,7 @@ export default function ProjectLocationHighlights() {
   };
   return (
     <>
-      <div className="projectlocationshighlights">
+      <div className="projectlocationshighlights andalso">
         <div className="widthprojectlocationshighlights">
           <div className="container max-w-7xl mx-auto px-4 ">
             <div>
