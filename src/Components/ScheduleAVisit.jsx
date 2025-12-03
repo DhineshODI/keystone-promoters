@@ -6,12 +6,12 @@ export default function ScheduleAvisit() {
       <div className="schudleVisitsection reveal">
         <div className="container max-w-7xl mx-auto px-4 scheduleAvisitrow ">
           <div className="schdeuleMainrowsection">
-            <h3 className="text-center mainheadingText textTransform text-bold">
+            <h3 className="text-center mainheadingText textTransform text-bold" data-aos="fade-down"  data-aos-duration="1200">
               Schedule A visit | Enquiry
             </h3>
 
-            <div className="sechondHeadingMain">
-              <h5
+            <div className="sechondHeadingMain" data-aos="fade-down"  data-aos-duration="1500">
+              <h5 
                 className="secondHeadingText textTransform text-center mobdesigntext"
                 style={{ fontWeight: "600", textTransform: "uppercase" }}
               >
@@ -19,7 +19,7 @@ export default function ScheduleAvisit() {
               </h5>
             </div>
 
-            <div className="sechondHeadingMain">
+            <div className="sechondHeadingMain" data-aos="fade-down"  data-aos-duration="1800">
               <p className="subHeadingText text-center text-[#1d1f22] ">
                 Come see where craftsmanship meets your vision of dream home.
               </p>

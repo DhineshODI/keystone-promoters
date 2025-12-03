@@ -1,8 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 export default function ProjectLocationHighlights() {
+
+    useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation speed
+      once: false, // run only once
+    });
+  }, []);
   const locationData = [
     {
       title: "Nearby Locations",
@@ -98,17 +105,17 @@ export default function ProjectLocationHighlights() {
           <div className="container max-w-7xl mx-auto px-4 ">
             <div>
               <div>
-                <h5 class="secondHeadingText textTransform text-center">
+                <h5 class="secondHeadingText textTransform text-center" data-aos="fade-up" data-aos-duration="800">
                   Location Highlights
                 </h5>
-                <p class="subHeadingText text-center text-[#636465]">
+                <p class="subHeadingText text-center text-[#636465]" data-aos="fade-up" data-aos-duration="1000">
                   Every Element is carefully selected to meet industry standards
                   and elevate your daily living experience
                 </p>
               </div>
 
               <div className="locationadvantageflex">
-                <div className="locationimageside">
+                <div className="locationimageside" data-aos="fade-left" data-aos-duration="1000">
                   <img
                     src="/images/project-detail/project-location-image.png"
                     alt=""

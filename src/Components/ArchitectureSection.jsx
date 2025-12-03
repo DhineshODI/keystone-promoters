@@ -5,11 +5,12 @@ export default function ArchitectureSection() {
     <>
       <div className="archiBg">
         <div className="container max-w-7xl mx-auto px-4 ">
-          <div
-            className="MainarchitectureWidth"
-      
-          >
-            <div className="architectureWidth">
+          <div className="MainarchitectureWidth">
+            <div
+              className="architectureWidth"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+            >
               <img src="/images/homepage/iStock-1136288354.png" alt="" />
 
               <div className="ArchitectureContent">
@@ -25,7 +26,11 @@ export default function ArchitectureSection() {
                 </div>
               </div>
             </div>
-            <div className="architectureWidth">
+            <div
+              className="architectureWidth"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+            >
               <img src="/images/homepage/iStock-1424381465.png" alt="" />
 
               <div className="ArchitectureContent">
@@ -41,7 +46,11 @@ export default function ArchitectureSection() {
                 </div>
               </div>
             </div>
-            <div className="architectureWidth">
+            <div
+              className="architectureWidth"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+            >
               <img src="/images/homepage/iStock-1441822490.png" alt="" />
 
               <div className="ArchitectureContent">

@@ -60,8 +60,8 @@ export default function AboutusFounder() {
         <div className="container max-w-7xl mx-auto px-4 ">
           <div className="lowconatinersection aboutusfounders">
             <div className="aboutusfoundermaincontent">
-              <h5 className="secondHeadingText ">Founders</h5>
-              <p className="subHeadingText ">
+              <h5 className="secondHeadingText" data-aos="fade-up" data-aos-duration="1500">Founders</h5>
+              <p className="subHeadingText" data-aos="fade-up" data-aos-duration="1200">
                 Empowering living through vision, purpose, and action.
               </p>
             </div>

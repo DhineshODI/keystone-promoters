@@ -1,15 +1,24 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useEffect } from "react";
 export default function ProjectDetailBanner() {
+
+    useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation speed
+      once: false, // run only once
+    });
+  }, []);
   return (
+    
     <>
       <div>
         {/* Banner */}
         <div>
           <div className="detailPageBanners spectraproject">
-            <h5 className="secondHeadingText">Spectra</h5>
+            <h5 className="secondHeadingText" data-aos="fade-up" data-aos-duration="500">Spectra</h5>
 
-            <div className="projectDetailFlexdiv">
+            <div className="projectDetailFlexdiv" data-aos="fade-up" data-aos-duration="800">
               <div className="projectDetailIconSection">
                 <img src="/images/project-detail/location-icon.svg" alt="" />
                 <span className="mainheadingText">Keelkattalai, Chennai</span>
@@ -24,7 +33,7 @@ export default function ProjectDetailBanner() {
               </div>
             </div>
 
-            <div className="BreadCrumSection">
+            <div className="BreadCrumSection" data-aos="fade-up" data-aos-duration="1000">
               <a href="/" className="subHeadingText  text-hover-underline">
                 Home
               </a>

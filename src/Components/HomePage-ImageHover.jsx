@@ -189,7 +189,7 @@ export default function HomepageImageHoverSection() {
           </div>
           <div className="oursignatureflex">
             {/* LEFT SIDE */}
-            <div className="oursignarureleftside">
+            <div className="oursignarureleftside"  data-aos="fade-right"   data-aos-duration="1000">
               <div className="oursignaturecontents">
                 <ul>
                   {list.map((item, index) => (
@@ -221,7 +221,7 @@ export default function HomepageImageHoverSection() {
             </div>
 
             {/* RIGHT SIDE IMAGE */}
-            <div className="oursignarurerightside">
+            <div className="oursignarurerightside"  data-aos="fade-left"  data-aos-duration="1500">
               <img className="active-image" src={activeImage} alt="" />
             </div>
           </div>

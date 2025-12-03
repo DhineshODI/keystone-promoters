@@ -64,7 +64,7 @@ export default function TestimonalSlider() {
           </div>
 
           {/* <div className="container max-w-7xl mx-auto px-4 testicardsconatinermob"> */}
-          <div className="testimonalSliderContainer">
+          <div className="testimonalSliderContainer" data-aos="fade-left"  data-aos-duration="1500">
             <Slider ref={sliderRef} className="testimonalSliders" {...settings}>
               <div className="testimonalSlidersSlide">
                 <div className="testimonalSliderborder">

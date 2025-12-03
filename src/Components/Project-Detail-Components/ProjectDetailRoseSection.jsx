@@ -10,7 +10,7 @@ export default function ProjectDetailRoseSection() {
           <div className="lowconatinersectionafterbanner">
             <div className="bannerafterSectionMAIN">
               <div className="firstbannerafterSectionMAIN">
-                <div>
+                <div data-aos="fade-left" data-aos-duration="1000">
                   <h4 className="gettknowHeading">Spectra</h4>
                   <h3 className="visitOurOFficetext">
                     SMART HOMES THE LIFESTYLE OF THE FUTURE IS ALREADY HERE.
@@ -21,7 +21,7 @@ export default function ProjectDetailRoseSection() {
                 {/* <div className="seondbannerafterSectionMAINrow"></div> */}
                 <img src="/images/project-detail/projectdetail-banner-icon.png" alt="" />
               </div>
-              <div className="thirdbannerafterSectionMAIN">
+              <div className="thirdbannerafterSectionMAIN" data-aos="fade-right" data-aos-duration="1000">
                 <div style={{ marginTop: "15px" }}>
                   <p className="contactPageAddress">
                     Happy Clients already invested our ongoing projects are your

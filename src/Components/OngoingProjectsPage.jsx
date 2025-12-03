@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function OngoingProjectsPage() {
   const OnGoingProjectsData = [
+    
     {
       id: 1,
       ProjectTitle: "Spectras",
@@ -15,15 +17,22 @@ export default function OngoingProjectsPage() {
     },
   ];
 
+    useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation speed
+      once: false, // run only once
+    });
+  }, []);
+
   return (
     <div className="ongoingProjectsPage">
       {/* Banner */}
       <div>
         <div className="detailPageBanners">
-          <h5 className="secondHeadingText">Live in</h5>
-          <h5 className="secondHeadingText">Progress</h5>
+          <h5 className="secondHeadingText" data-aos="fade-up" data-aos-duration="1000">Live in</h5>
+          <h5 className="secondHeadingText" data-aos="fade-up" data-aos-duration="1300">Progress</h5>
 
-          <div className="BreadCrumSection">
+          <div className="BreadCrumSection"data-aos="fade-up" data-aos-duration="1500">
             <a href="/" className="subHeadingText  text-hover-underline">
               Home
             </a>
@@ -42,7 +51,7 @@ export default function OngoingProjectsPage() {
         <div className="container max-w-7xl mx-auto px-4 ">
           <div className="lowconatinersectionafterbanner">
             <div className="bannerafterSectionMAIN">
-              <div className="firstbannerafterSectionMAIN">
+              <div className="firstbannerafterSectionMAIN" data-aos="fade-left" data-aos-duration="1000">
                 <div>
                   <h4 className="gettknowHeading">Ongoing Projects</h4>
                   <h3 className="visitOurOFficetext">
@@ -54,7 +63,7 @@ export default function OngoingProjectsPage() {
                 {/* <div className="seondbannerafterSectionMAINrow"></div> */}
                 <img src="/images/joint-venture-banner-icon.png" alt="" />
               </div>
-              <div className="thirdbannerafterSectionMAIN">
+              <div className="thirdbannerafterSectionMAIN" data-aos="fade-right" data-aos-duration="1800">
                 <div style={{ marginTop: "15px" }}>
                   <p className="contactPageAddress">
                     Happy Clients already invested our ongoing projects are your
@@ -69,7 +78,7 @@ export default function OngoingProjectsPage() {
 
       {/* After-Banner-Section */}
 
-      <div className="margintopafterlist">
+      <div className="margintopafterlist" data-aos="fade-up" data-aos-duration="1000">
         <div className="container max-w-7xl mx-auto px-4 ">
           <div className="ongoingslistflex">
             <ul className="ongoingprojectslist">
@@ -83,7 +92,7 @@ export default function OngoingProjectsPage() {
 
       {/* Ongoing Projects*/}
 
-      <div className="ongoingProjectsDiVMain">
+      <div className="ongoingProjectsDiVMain" data-aos="fade-up" data-aos-duration="1200">
         <div className="container max-w-7xl mx-auto px-4 ">
           <div className="FirstmainonGoingProjectsLists">
             {OnGoingProjectsData.map((project, index) => (

@@ -1,10 +1,17 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 export default function ProjecSpecification() {
+
+    useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation speed
+      once: false, // run only once
+    });
+  }, []);
   // const projectSpecs = [
   //   {
   //     icon: "/images/project-detail/specifications/builind-icon-pink.svg",
@@ -130,10 +137,10 @@ export default function ProjecSpecification() {
         <div className="container max-w-7xl mx-auto px-4 ">
           <div>
             <div>
-              <h5 className="secondHeadingText  textTransform text-center">
+              <h5 className="secondHeadingText  textTransform text-center" data-aos="fade-up" data-aos-duration="800">
                 specifications
               </h5>
-              <p className="subHeadingText text-center text-[#636465]">
+              <p className="subHeadingText text-center text-[#636465]" data-aos="fade-up" data-aos-duration="1000">
                 Every Element is carefully to meet industry standards and
                 elevate your daily living experience
               </p>

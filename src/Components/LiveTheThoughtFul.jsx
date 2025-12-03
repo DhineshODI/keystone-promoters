@@ -79,27 +79,27 @@ export default function LiveThoughtFul() {
             sustainable environments that inspire modern living and long-term
             value for our clients and communities.
           </p>
-          <div className="LiveThoughtFlex">
-            <div className="LiveThoughtFlexImg">
+          <div className="LiveThoughtFlex" >
+            <div className="LiveThoughtFlexImg" data-aos="fade-right"   data-aos-duration="1000">
               <img src="/images/homepage/famil-Pic-Section.png" alt="" />
 
               <a href="/aboutus">
-                <button className="knowMoreButtonImage cursor-pointer">
+                <button  data-aos="fade-up" data-aos-duration="1000" className="knowMoreButtonImage cursor-pointer">
                   Know More
                 </button>{" "}
               </a>
             </div>
 
             <div className="mobileliveflex">
-              <div className="yearsScrollText">
+              <div className="yearsScrollText" data-aos="fade-left" data-aos-duration="1000">
                 <h6 className="secondHeadingText">{years}</h6>
                 <span>years & counting</span>
               </div>
-              <div className="yearsScrollText projectsScroll">
+              <div className="yearsScrollText projectsScroll" data-aos="fade-left" data-aos-duration="800">
                 <h6 className="secondHeadingText">{projects}</h6>
                 <span>Sucessfull Projects</span>
               </div>
-              <div className="yearsScrollText projectsScroll">
+              <div className="yearsScrollText projectsScroll" data-aos="fade-left" data-aos-duration="500">
                 <h6 className="secondHeadingText">{family}K</h6>
                 <span>Families Trust</span>
               </div>

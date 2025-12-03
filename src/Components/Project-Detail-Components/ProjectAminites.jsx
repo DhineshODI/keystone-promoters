@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -6,6 +6,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 export default function ProjectAminities() {
+    useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation speed
+      once: false, // run only once
+    });
+  }, []);
   const amenities = [
     {
       img: "/images/project-detail/aminities/CCTV-survalance.jpg",
@@ -72,11 +78,11 @@ export default function ProjectAminities() {
           <div className="container max-w-7xl mx-auto px-4 ">
             <div>
               <div>
-                <p className="subHeadingText">AMINITIES</p>
-                <h5 className="secondHeadingText  textTransform text-center">
+                <p className="subHeadingText" data-aos="fade-left" data-aos-duration="500">AMINITIES</p>
+                <h5 className="secondHeadingText  textTransform text-center" data-aos="fade-left" data-aos-duration="800">
                   Designed for Comfort and Convenience
                 </h5>
-                <p className="subHeadingText">
+                <p className="subHeadingText" data-aos="fade-left" data-aos-duration="1000">
                   Enjoy thoughtfully curated amenities that enhance everyday
                   living with relaxation, recreation, wellness, and community
                   connection.

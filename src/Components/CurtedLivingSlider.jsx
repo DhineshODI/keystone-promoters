@@ -65,9 +65,9 @@ export default function CurtedLivingSlider() {
       <div className="curtedSectionMainRowBg reveal ">
         <div className="container max-w-7xl mx-auto px-4 ">
           <div className="curtsectionrow">
-            <div className="curtSliderLeftSection">
+            <div className="curtSliderLeftSection" data-aos="fade-up" data-aos-duration="2000">
               <h5 className="secondHeadingText">Curated Living Experiences</h5>
-              <h6 className="subHeadingText">
+              <h6 className="subHeadingText"  data-aos="fade-up" data-aos-duration="1000">
                 Discover living spaces designed to inspire modern lifestyles and
                 elevate everyday comfort. Each home reflects thoughtful design,
                 blending elegance, function, and connection to nature-crafted
@@ -133,7 +133,7 @@ export default function CurtedLivingSlider() {
                 </div>
               </div>
             </div> */}
-            <div className="curtLivingSlider">
+            <div className="curtLivingSlider" data-aos="fade-right">
               <Slider ref={sliderRef} {...settings}>
                 {curatedSlides.map((slide, index) => (
                   <div key={index}>

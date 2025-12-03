@@ -46,7 +46,10 @@ export default function Header({ menuOnlick }) {
             Call us now : <span>+91 7092879022</span>
           </div>
         </div>
-        <div className="HeaderMainSEC"  data-aos="fade-down" >
+        <div className="HeaderMainSEC" 
+        //  data-aos="fade-down" 
+         
+         >
           <a href="/" onClick={() => handleActive("")}>
             <img
               className="headerLogoImg"

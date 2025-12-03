@@ -1,9 +1,17 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useEffect } from "react";
 export default function ProjectDetailSectionContent() {
+
+    useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation speed
+      once: false, // run only once
+    });
+  }, []);
   return (
     <>
-      <div className="mainContainerDetailProject">
+      <div className="mainContainerDetailProject" data-aos="fade-up" data-aos-duration="1000">
         <div className="ProjectDetailSectionContentSection">
           <img
             className="projectDetailBannerIMageMain"

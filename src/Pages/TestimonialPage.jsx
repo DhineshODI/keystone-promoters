@@ -74,7 +74,7 @@ export default function TestimonialPage() {
                       <p>Chennai</p>
                     </div>
                     <div class="testimonalContent">
-                      <p class="subHeadingText">
+                      <p class="subHeadingText" >
                         Keystone Promoters delivered quality construction with
                         excellent. finishing and reliable service. They met
                         every requirement with care and professionalism-truly a

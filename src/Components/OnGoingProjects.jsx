@@ -104,7 +104,7 @@ export default function OngoingProjects() {
               <Slider ref={sliderTop} {...settings}>
                 {oddProjects.map((project) => (
                   <div>
-                    <div className="ongoingProjectSection">
+                    <div className="ongoingProjectSection" data-aos="fade-down" data-aos-duration="1500">
                       <img src={project.projectImage} alt="" />
 
                       <div className="projectsNameOnGoingmAINcONTAINER">
@@ -135,7 +135,7 @@ export default function OngoingProjects() {
               </Slider>
             </div>
 
-            <div className="onGoingRightSection">
+            <div className="onGoingRightSection" data-aos="fade-down" data-aos-duration="1500">
               <h5 className="mainheadingText">Ongoing Projects</h5>
               <div>
                 <h6 className="secondHeadingText">Crafted with Purpose</h6>
@@ -143,7 +143,7 @@ export default function OngoingProjects() {
             </div>
           </div>
           <div className="onGoingMainSectionDiv">
-            <div className="onGoingRightSection">
+            <div className="onGoingRightSection" data-aos="fade-down" data-aos-duration="1500">
               <h5 className="mainheadingText onGoingSecondTextContainer">
                 Designed <br /> for Today, Built for Tomorrow
               </h5>
@@ -178,7 +178,7 @@ export default function OngoingProjects() {
               <Slider ref={sliderBottom} {...settings}>
                 {evenProjects.map((project) => (
                   <div>
-                    <div className="ongoingProjectSection">
+                    <div className="ongoingProjectSection" data-aos="fade-down" data-aos-duration="1500">
                       <img src={project.projectImage} alt="" />
 
                       <div className="projectsNameOnGoingmAINcONTAINER">

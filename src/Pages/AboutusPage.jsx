@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import AboutusFounder from "../Components/AboutUSFounders";
 import AboutusSlider from "../Components/AboutusSlider";
 import Header from "../Components/Header";
@@ -5,6 +6,14 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 export default function AboutUsPage() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation speed
+      once: false, // run only once
+    });
+  }, []);
+  
   return (
     <>
       <div>
@@ -36,7 +45,7 @@ export default function AboutUsPage() {
             <div className="container max-w-7xl mx-auto px-4 ">
               <div className="lowconatinersectionafterbanner">
                 <div className="bannerafterSectionMAIN">
-                  <div className="firstbannerafterSectionMAIN">
+                  <div className="firstbannerafterSectionMAIN" data-aos="fade-up" data-aos-duration="1000">
                     <div>
                       <h4 className="gettknowHeading">
                         We are Keystone Promoters
@@ -47,11 +56,11 @@ export default function AboutUsPage() {
                       </h3>
                     </div>
                   </div>
-                  <div className="seondbannerafterSectionMAIN">
+                  <div className="seondbannerafterSectionMAIN" data-aos="fade-up" data-aos-duration="1000">
                     {/* <div className="seondbannerafterSectionMAINrow"></div> */}
                     <img src="/images/aboutus-banner-icon.png" alt="" />
                   </div>
-                  <div className="thirdbannerafterSectionMAIN">
+                  <div className="thirdbannerafterSectionMAIN" data-aos="fade-up" data-aos-duration="1000">
                     <div style={{ marginTop: "15px" }}>
                       <p className="contactPageAddress">
                         Built on 25 Years of Experience
@@ -65,7 +74,7 @@ export default function AboutUsPage() {
                 </div>
 
                 <div className="flexunderaboutsection">
-                  <div className="underaboutusection">
+                  <div className="underaboutusection" data-aos="fade-up" data-aos-duration="500">
                     <div className="firstunderaboutusection">
                       <p className="subHeadingText">
                         <span>100 + </span> Projects built with enduring quality
@@ -73,7 +82,7 @@ export default function AboutUsPage() {
                     </div>
                     <p className="subHeadingText numbertext">01</p>
                   </div>
-                  <div className="underaboutusection">
+                  <div className="underaboutusection"  data-aos="fade-up" data-aos-duration="800">
                     <div className="firstunderaboutusection">
                       <p className="subHeadingText">
                         <span>3k +</span> Families chose us with confidence
@@ -81,7 +90,7 @@ export default function AboutUsPage() {
                     </div>
                     <p className="subHeadingText numbertext">02</p>
                   </div>
-                  <div className="underaboutusection">
+                  <div className="underaboutusection"  data-aos="fade-up" data-aos-duration="1000">
                     <div className="firstunderaboutusection">
                       <p className="subHeadingText">
                         <span>5M + </span> Square feet built with care
@@ -120,8 +129,8 @@ export default function AboutUsPage() {
           <div className="keystoneuniquesection">
             <div className="container max-w-7xl mx-auto px-4 ">
               <div className="lowconatinersection">
-                <p className="mainheadingText ">We are Keystone Promoters</p>
-                <div className="unqiuesectionflex">
+                <p className="mainheadingText"  data-aos="fade-up" data-aos-duration="1000">We are Keystone Promoters</p>
+                <div className="unqiuesectionflex"  data-aos="fade-up" data-aos-duration="1000">
                   <h5 className="secondHeadingText ">
                     What Makes Keystone Unique?
                   </h5>
@@ -133,7 +142,7 @@ export default function AboutUsPage() {
                 </div>
 
                 <div className="unqiuecardsflexc">
-                  <div className="unquiecardsection">
+                  <div className="unquiecardsection" data-aos="flip-up" data-aos-duration="500">
                     <img
                       src="/images/about-us/icons/time-delivery.svg"
                       alt=""
@@ -143,26 +152,26 @@ export default function AboutUsPage() {
                       Every commitment met with precision
                     </p>
                   </div>
-                  <div className="unquiecardsection">
+                  <div className="unquiecardsection" data-aos="flip-up" data-aos-duration="500">
                     <img src="/images/about-us/icons/design-led.svg" alt="" />
                     <h3 className="timedelivery">Design Led </h3>
                     <p className="subHeadingText ">Architecture with a soul</p>
                   </div>
-                  <div className="unquiecardsection">
+                  <div className="unquiecardsection" data-aos="flip-up" data-aos-duration="800">
                     <img src="/images/about-us/icons/compliment.svg" alt="" />
                     <h3 className="timedelivery">100% Compliant</h3>
                     <p className="subHeadingText ">
                       Legal clarity, clear title
                     </p>
                   </div>
-                  <div className="unquiecardsection">
+                  <div className="unquiecardsection" data-aos="flip-up" data-aos-duration="800">
                     <img src="/images/about-us/icons/compliment.svg" alt="" />
                     <h3 className="timedelivery">Solid Foundations</h3>
                     <p className="subHeadingText ">
                       Structurally sound and aesthetically modern
                     </p>
                   </div>
-                  <div className="unquiecardsection">
+                  <div className="unquiecardsection" data-aos="flip-up" data-aos-duration="1000">
                     <img src="/images/about-us/icons/investor.svg" alt="" />
                     <h3 className="timedelivery">Investor Friendly</h3>
                     <p className="subHeadingText ">High appreciation value</p>
@@ -185,7 +194,7 @@ export default function AboutUsPage() {
                   VISION & MISSION
                 </h5>
 
-                <div className="leftsidecontentsectionabout">
+                <div className="leftsidecontentsectionabout" data-aos="fade-left" data-aos-duration="1300">
                   <p className="subHeadingText ">
                     To redefine urban living by creating thoughtfully designed
                     spaces that blend innovation, sustainability, and
@@ -198,7 +207,7 @@ export default function AboutUsPage() {
                   </div>
                 </div>
 
-                <div className="rightsidecontentsectionabout">
+                <div className="rightsidecontentsectionabout" data-aos="fade-right" data-aos-duration="1300">
                   <p className="subHeadingText ">
                     To deliver quality-driven developments through integrity,
                     precision, and customer trust, ensuring every project
