@@ -106,7 +106,7 @@
 /* Tablets: 600px to 899px */
 @media (max-width: 767px) and (min-width: 600px) {
   .container {
-    max-width: 500%;
+    max-width: 560px;
   }
 }
 

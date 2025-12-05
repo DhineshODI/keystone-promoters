@@ -1,17 +1,112 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 export default function ChannelPartnerComponent() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation speed
+      once: false, // run only once
+    });
+  }, []);
+
+  const [form, setForm] = useState({
+    companyName: "",
+    email: "",
+    city: "",
+    remarks: "",
+  });
+
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async () => {
+    // Validation
+    if (!form.companyName.trim()) {
+      alert("Please enter the company name.");
+      return;
+    }
+
+    if (!form.email.trim()) {
+      alert("Please enter the email address.");
+      return;
+    }
+
+    // Email format validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(form.email)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+
+    if (!form.city.trim()) {
+      alert("Please enter the city.");
+      return;
+    }
+
+    // Remarks is optional → no validation
+
+    // If validation passes → submit
+    try {
+      const res = await axios.post(
+        "http://localhost/keystone-api/apis/ChannelPartner.php",
+        form,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      console.log("Response:", res.data);
+
+      if (res.data.status === true) {
+        alert("Channel partner form submitted successfully!");
+
+        // Reset form
+        setForm({
+          companyName: "",
+          email: "",
+          city: "",
+          remarks: "",
+        });
+      } else {
+        alert("Error: " + res.data.message);
+        console.error("PHP Error:", res.data.error);
+      }
+    } catch (error) {
+      console.error("Request Error:", error);
+      alert("Something went wrong. Please try again.");
+    }
+  };
   return (
     <>
       <div className="channelPartnerMainSection">
         {/* Banner */}
         <div>
           <div className="detailPageBanners">
-            <h5 className="secondHeadingText">Empower Your</h5>
-            <h5 className="secondHeadingText">Growth</h5>
+            <h5
+              className="secondHeadingText"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              Empower Your
+            </h5>
+            <h5
+              className="secondHeadingText"
+              data-aos="fade-up"
+              data-aos-duration="1400"
+            >
+              Growth
+            </h5>
 
-            <div className="BreadCrumSection">
+            <div
+              className="BreadCrumSection"
+              data-aos="fade-up"
+              data-aos-duration="1600"
+            >
               <a href="/" className="subHeadingText  text-hover-underline">
                 Home
               </a>
@@ -30,7 +125,11 @@ export default function ChannelPartnerComponent() {
           <div className="container max-w-7xl mx-auto px-4 ">
             <div className="lowconatinersectionafterbanner">
               <div className="bannerafterSectionMAIN">
-                <div className="firstbannerafterSectionMAIN">
+                <div
+                  className="firstbannerafterSectionMAIN"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                >
                   <div>
                     <h4 className="gettknowHeading">Grow with us</h4>
                     <h3 className="visitOurOFficetext">
@@ -42,7 +141,11 @@ export default function ChannelPartnerComponent() {
                   {/* <div className="seondbannerafterSectionMAINrow"></div> */}
                   <img src="/images/channel-partner--banner-icon.png" alt="" />
                 </div>
-                <div className="thirdbannerafterSectionMAIN">
+                <div
+                  className="thirdbannerafterSectionMAIN"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                >
                   <div style={{ marginTop: "15px" }}>
                     <p className="contactPageAddress">
                       Join our trusted network of channel partners and earn more
@@ -64,8 +167,18 @@ export default function ChannelPartnerComponent() {
           <div className="container max-w-7xl mx-auto px-4 ">
             <div className="lowconatinersectionafterbanner">
               <div className="channelContentPartner">
-                <h5 className="secondHeadingText ">Channel Partners</h5>
-                <p className="subHeadingText">
+                <h5
+                  className="secondHeadingText "
+                  data-aos="fade-down"
+                  data-aos-duration="1400"
+                >
+                  Channel Partners
+                </h5>
+                <p
+                  className="subHeadingText"
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                >
                   Join Keystone Promoters to create sustainable, high-value real
                   estate projects built on trust quality, and innovation.
                 </p>
@@ -78,32 +191,40 @@ export default function ChannelPartnerComponent() {
                         Name of the Company <sup>*</sup>
                       </label>
                       <br />
-                      <input type="text" />
+                      <input
+                        name="companyName"
+                        onChange={handleChange}
+                        type="text"
+                      />
                     </div>
                     <div className="contactFormInputEach">
                       <label className="subHeadingText " htmlFor="">
                         Email <sup>*</sup>
                       </label>
                       <br />
-                      <input type="text" />
+                      <input name="email" onChange={handleChange} type="text" />
                     </div>
                     <div className="contactFormInputEach">
                       <label className="subHeadingText " htmlFor="">
                         City <sup>*</sup>
                       </label>
                       <br />
-                      <input type="text" />
+                      <input name="city" onChange={handleChange} type="text" />
                     </div>
                     <div className="contactFormInputEach">
                       <label className="subHeadingText " htmlFor="">
                         Remarks
                       </label>
                       <br />
-                      <input type="text" />
+                      <input
+                        name="remarks"
+                        onChange={handleChange}
+                        type="text"
+                      />
                     </div>
 
                     <div className="contactFormInputEach">
-                      <button>Submit</button>
+                      <button onClick={handleSubmit}>Submit</button>
                     </div>
                   </div>
                 </div>

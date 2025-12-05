@@ -1,6 +1,13 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useEffect } from "react";
 export default function TestimonialPage() {
+      useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation speed
+      once: false, // run only once
+    });
+  }, []);
   return (
     <>
       <div className="">
@@ -9,10 +16,10 @@ export default function TestimonialPage() {
             {/* Banner */}
             <div>
               <div className="detailPageBanners">
-                <h5 className="secondHeadingText">Stories that</h5>
-                <h5 className="secondHeadingText">Inspire Trust</h5>
+                <h5 className="secondHeadingText"  data-aos="fade-up" data-aos-duration="1000">Stories that</h5>
+                <h5 className="secondHeadingText" data-aos="fade-up" data-aos-duration="1300">Inspire Trust</h5>
 
-                <div className="BreadCrumSection">
+                <div className="BreadCrumSection" data-aos="fade-up" data-aos-duration="1500">
                   <a href="/" className="subHeadingText  text-hover-underline">
                     Home
                   </a>
@@ -31,7 +38,7 @@ export default function TestimonialPage() {
               <div className="container max-w-7xl mx-auto px-4 ">
                 <div className="lowconatinersectionafterbanner">
                   <div className="bannerafterSectionMAIN">
-                    <div className="firstbannerafterSectionMAIN">
+                    <div className="firstbannerafterSectionMAIN" data-aos="fade-left" data-aos-duration="1000">
                       <div>
                         <h4 className="gettknowHeading">
                           Client Testimonials Showcasing
@@ -47,7 +54,7 @@ export default function TestimonialPage() {
                       <img src="/images/testimonial-banner-icon.png" alt="" />
                     </div>
 
-                    <div className="thirdbannerafterSectionMAIN">
+                    <div className="thirdbannerafterSectionMAIN" data-aos="fade-right" data-aos-duration="1000">
                       <div style={{ marginTop: "15px" }}>
                         <p className="contactPageAddress">
                           Genuine client stories reflecting our commitment to
@@ -68,9 +75,9 @@ export default function TestimonialPage() {
             <div className="testimonialpagebgcars">
               <div className="container max-w-7xl mx-auto px-4">
                 <div className="testimonalpagedisply">
-                  <div class="testimonalSliderborder">
+                  <div class="testimonalSliderborder" data-aos="fade-up" data-aos-duration="1200">
                     <div class="testimonalSectionName">
-                      <h4>Mr.Pandian</h4>
+                      <h4>Mr. Pandian</h4>
                       <p>Chennai</p>
                     </div>
                     <div class="testimonalContent">
@@ -84,7 +91,7 @@ export default function TestimonialPage() {
                         <div class="testimonalPersonImagediv">
                           <img
                             class="testimonalPersonImage"
-                            src="https://img.freepik.com/free-photo/young-beautiful-girl-posing-black-leather-jacket-park_1153-8104.jpg?semt=ais_hybrid&amp;w=740&amp;q=80"
+                            src="/images/youtube-image.png"
                             alt=""
                           />
                         </div>
@@ -96,9 +103,9 @@ export default function TestimonialPage() {
                       </div>
                     </div>
                   </div>
-                  <div class="testimonalSliderborder">
+                  <div class="testimonalSliderborder" data-aos="fade-up" data-aos-duration="1500">
                     <div class="testimonalSectionName">
-                      <h4>Mrs.Devi</h4>
+                      <h4>Mrs. Devi</h4>
                       <p>Chennai</p>
                     </div>
                     <div class="testimonalContent">
@@ -112,7 +119,7 @@ export default function TestimonialPage() {
                         <div class="testimonalPersonImagediv">
                           <img
                             class="testimonalPersonImage"
-                            src="https://img.freepik.com/free-photo/young-beautiful-girl-posing-black-leather-jacket-park_1153-8104.jpg?semt=ais_hybrid&amp;w=740&amp;q=80"
+                            src="/images/youtube-image.png"
                             alt=""
                           />
                         </div>

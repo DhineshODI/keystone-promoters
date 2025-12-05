@@ -37,19 +37,26 @@ export default function Header({ menuOnlick }) {
 
   return (
     <>
-      <div >
+      <div>
         <div className="headerTop">
+          {/* <div className="mailHeadingText">
+            Email : <span>enquiry@keystonepromoters.com</span>
+          </div> */}
           <div className="mailHeadingText">
-            Email : <span>enqiry@keystonepromoters.com</span>
+            Email :{" "}
+            <a href="mailto:enquiry@keystonepromoters.com">
+              enquiry@keystonepromoters.com
+            </a>
           </div>
+
           <div className="mailHeadingText">
-            Call us now : <span>+91 7092879022</span>
+            Call us now : <a href="tel:+91442817225">+91 442817225</a>
           </div>
         </div>
-        <div className="HeaderMainSEC" 
-        //  data-aos="fade-down" 
-         
-         >
+        <div
+          className="HeaderMainSEC"
+          //  data-aos="fade-down"
+        >
           <a href="/" onClick={() => handleActive("")}>
             <img
               className="headerLogoImg"

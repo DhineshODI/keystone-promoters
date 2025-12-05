@@ -11,7 +11,7 @@ export default function ArchitectureSection() {
               data-aos="fade-up"
               data-aos-anchor-placement="top-bottom"
             >
-              <img src="/images/homepage/iStock-1136288354.png" alt="" />
+              <img src="/images/homepage/firstimage.png" alt="" />
 
               <div className="ArchitectureContent">
                 <h4 className="secondHeadingText">Architecture</h4>
@@ -22,7 +22,12 @@ export default function ArchitectureSection() {
                     and sustainability for timeless living environments.
                   </p>
 
-                  <button className="subHeadingText">Know More</button>
+                  <button
+                    onClick={() => (window.location.href = "/architecture")}
+                    className="subHeadingText knowmorearchibutton"
+                  >
+                    Know More
+                  </button>
                 </div>
               </div>
             </div>
@@ -31,10 +36,10 @@ export default function ArchitectureSection() {
               data-aos="fade-up"
               data-aos-anchor-placement="top-bottom"
             >
-              <img src="/images/homepage/iStock-1424381465.png" alt="" />
+              <img src="/images/homepage/secondmage.png" alt="" />
 
               <div className="ArchitectureContent">
-                <h4 className="secondHeadingText">Constructions</h4>
+                <h4 className="secondHeadingText">Apartments</h4>
 
                 <div className="archisecondHeadingText">
                   <p className="subHeadingText">
@@ -42,7 +47,12 @@ export default function ArchitectureSection() {
                     lasting, high-value developments.
                   </p>
 
-                  <button className="subHeadingText">Know More</button>
+                  <button
+                    onClick={() => (window.location.href = "/ongoing-projects")}
+                    className="subHeadingText knowmorearchibutton"
+                  >
+                    Know More
+                  </button>
                 </div>
               </div>
             </div>
@@ -51,7 +61,7 @@ export default function ArchitectureSection() {
               data-aos="fade-up"
               data-aos-anchor-placement="top-bottom"
             >
-              <img src="/images/homepage/iStock-1441822490.png" alt="" />
+              <img src="/images/homepage/thirdmage.png" alt="" />
 
               <div className="ArchitectureContent">
                 <h4 className="secondHeadingText">Interiors</h4>
@@ -62,7 +72,12 @@ export default function ArchitectureSection() {
                     functionality for inspired living spaces.
                   </p>
 
-                  <button className="subHeadingText">Know More</button>
+                  <button
+                    onClick={() => (window.location.href = "/interior")}
+                    className="subHeadingText knowmorearchibutton"
+                  >
+                    Know More
+                  </button>
                 </div>
               </div>
             </div>

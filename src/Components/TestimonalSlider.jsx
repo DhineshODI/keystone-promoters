@@ -9,13 +9,16 @@ export default function TestimonalSlider() {
   const sliderRef = useRef(null);
   const settings = {
     dots: false,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 2000,
     arrows: false,
+    swipe: true,
+    draggable: false,
+    touchMove: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -48,28 +51,42 @@ export default function TestimonalSlider() {
       <div className="testimonalFullSection reveal ">
         <div className="container max-w-7xl mx-auto px-4 testimonalRow">
           <div>
-            <h3 className="text-center mainheadingText textTransform ">
+            <h3
+              className="text-center mainheadingText textTransform "
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               Client Voice
             </h3>
             <h5
               className="secondHeadingText textTransform text-center"
               style={{ fontWeight: "600", textTransform: "uppercase" }}
+              data-aos="fade-up"
+              data-aos-duration="1250"
             >
               Stories from our Spaces
             </h5>
-            <p className="subHeadingText text-center text-[#636465] ourspacingtextmob">
+            <p
+              className="subHeadingText text-center text-[#636465] ourspacingtextmob"
+              data-aos="fade-up"
+              data-aos-duration="1450"
+            >
               Our Spaces come alive through the people who live there, their
               stories truly inspire everthying we build
             </p>
           </div>
 
           {/* <div className="container max-w-7xl mx-auto px-4 testicardsconatinermob"> */}
-          <div className="testimonalSliderContainer" data-aos="fade-left"  data-aos-duration="1500">
+          <div className="testimonalSliderContainer">
             <Slider ref={sliderRef} className="testimonalSliders" {...settings}>
-              <div className="testimonalSlidersSlide">
+              <div
+                className="testimonalSlidersSlide"
+                data-aos="fade-left"
+                data-aos-duration="1200"
+              >
                 <div className="testimonalSliderborder">
                   <div className="testimonalSectionName">
-                    <h4>Mr.Pandian</h4>
+                    <h4>Mr. Pandian</h4>
                     <p>Chennai</p>
                   </div>
 
@@ -85,7 +102,7 @@ export default function TestimonalSlider() {
                       <div className="testimonalPersonImagediv">
                         <img
                           className="testimonalPersonImage"
-                          src="https://img.freepik.com/free-photo/young-beautiful-girl-posing-black-leather-jacket-park_1153-8104.jpg?semt=ais_hybrid&w=740&q=80"
+                          src="/images/youtube-image.png"
                           alt=""
                         />
                       </div>
@@ -99,10 +116,14 @@ export default function TestimonalSlider() {
                   </div>
                 </div>
               </div>
-              <div className="testimonalSlidersSlide">
+              <div
+                className="testimonalSlidersSlide"
+                data-aos="fade-left"
+                data-aos-duration="1600"
+              >
                 <div className="testimonalSliderborder">
                   <div className="testimonalSectionName">
-                    <h4>Mrs.Devi</h4>
+                    <h4>Mrs. Devi</h4>
                     <p>Chennai</p>
                   </div>
 
@@ -118,7 +139,7 @@ export default function TestimonalSlider() {
                       <div className="testimonalPersonImagediv">
                         <img
                           className="testimonalPersonImage"
-                          src="https://img.freepik.com/free-photo/young-beautiful-girl-posing-black-leather-jacket-park_1153-8104.jpg?semt=ais_hybrid&w=740&q=80"
+                          src="/images/youtube-image.png"
                           alt=""
                         />
                       </div>
@@ -132,9 +153,10 @@ export default function TestimonalSlider() {
                   </div>
                 </div>
               </div>
+             
             </Slider>
 
-            <div className="flex justify-center items-center gap-7 mt-6">
+            <div className="flex justify-center items-center gap-7 mt-6 visibilityhidden">
               <div
                 className="custom-prev cursor-pointer"
                 onClick={() => sliderRef.current.slickPrev()}

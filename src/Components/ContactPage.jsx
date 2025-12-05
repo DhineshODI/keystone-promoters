@@ -1,23 +1,136 @@
-import { useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import axios from "axios";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useLocation } from "react-router-dom";
 export default function ContactPage() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation speed
+      once: false, // run only once
+    });
+  }, []);
+
   gsap.registerPlugin(ScrollTrigger);
 
   const heroRef = useRef(null);
+
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const id = hash.replace("#", "");
+      const el = document.getElementById(id);
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: "smooth" });
+        }, 500);
+      }
+    }
+  }, [hash]);
+
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async () => {
+    // Basic validation
+    if (!form.name.trim()) {
+      alert("Please enter your name.");
+      return;
+    }
+
+    if (!form.email.trim()) {
+      alert("Please enter your email.");
+      return;
+    }
+
+    // Email format validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(form.email)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+
+    if (!form.phone.trim()) {
+      alert("Please enter your phone number.");
+      return;
+    }
+
+    // Phone validation (only numbers & at least 10 digits)
+    const phoneRegex = /^[0-9]{10,}$/;
+    if (!phoneRegex.test(form.phone)) {
+      alert("Please enter a valid phone number (minimum 10 digits).");
+      return;
+    }
+
+    // If validation passes → submit
+    try {
+      const res = await axios.post(
+        "http://localhost/keystone-api/apis/ContactUs.php",
+        form,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      console.log("Response:", res.data);
+
+      if (res.data.status === true) {
+        alert("Message sent successfully!");
+
+        setForm({
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+      } else {
+        // alert(Error: ${res.data.message});
+        console.error("PHP Error:", res.data.error);
+      }
+    } catch (error) {
+      console.error("Request Error:", error);
+      alert("Something went wrong. Please try again later.");
+    }
+  };
 
   return (
     <>
       {/* Banner */}
       <div ref={heroRef}>
         <div className="detailPageBanners">
-          <h5 className="secondHeadingText">Connect &</h5>
-          <h5 className="secondHeadingText">Collaborate</h5>
+          <h5
+            className="secondHeadingText"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            Connect &
+          </h5>
+          <h5
+            className="secondHeadingText"
+            data-aos="fade-up"
+            data-aos-duration="1300"
+          >
+            Collaborate
+          </h5>
 
-          <div className="BreadCrumSection">
+          <div
+            className="BreadCrumSection"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <a href="/" className="subHeadingText  text-hover-underline">
               Home
             </a>
@@ -36,7 +149,11 @@ export default function ContactPage() {
         <div className="container max-w-7xl mx-auto px-4 ">
           <div className="lowconatinersectionafterbanner">
             <div className="bannerafterSectionMAIN">
-              <div className="firstbannerafterSectionMAIN">
+              <div
+                className="firstbannerafterSectionMAIN"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
                 <div>
                   <h4 className="gettknowHeading">Get to know us</h4>
                   <h3 className="visitOurOFficetext">
@@ -56,16 +173,29 @@ export default function ContactPage() {
                 {/* <div className="seondbannerafterSectionMAINrow"></div> */}
                 <img src="/images/contactus-banner-icon.png" alt="" />
               </div>
-              <div className="thirdbannerafterSectionMAIN">
-                <div className="contactustextcontent" style={{ marginTop: "15px" }}>
+              <div
+                className="thirdbannerafterSectionMAIN"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
+                <div
+                  className="contactustextcontent"
+                  style={{ marginTop: "15px" }}
+                >
                   <h4 className="gettknowHeading">Phone</h4>
                   <p className="contactPageAddress">+91 44 2817 2255</p>
                 </div>
-                <div className="contactustextcontent" style={{ marginTop: "15px" }}>
+                <div
+                  className="contactustextcontent"
+                  style={{ marginTop: "15px" }}
+                >
                   <h4 className="gettknowHeading">MOBILE</h4>
                   <p className="contactPageAddress">+91 99400 08855</p>
                 </div>
-                <div className="contactustextcontent" style={{ marginTop: "15px" }}>
+                <div
+                  className="contactustextcontent"
+                  style={{ marginTop: "15px" }}
+                >
                   <h4 className="gettknowHeading">Email</h4>
                   <p className="contactPageAddress">
                     info@keystonepromoters.com
@@ -81,8 +211,12 @@ export default function ContactPage() {
 
       <div className="contactPageBgPadding">
         <div className="contactUsBannerPageBg">
-          <div className="formContactUsSection">
-            <div className="formContactUsSectionFlex">
+          <div className="formContactUsSection" id="form_id">
+            <div
+              className="formContactUsSectionFlex"
+              data-aos="fade-up"
+              data-aos-duration="1100"
+            >
               <h5 className="secondHeadingText ">Begin Your Journey</h5>
               <p className="subHeadingText">
                 Contact us with your question we'll make sure your concerns are
@@ -95,32 +229,32 @@ export default function ContactPage() {
                     Name <sup>*</sup>
                   </label>
                   <br />
-                  <input type="text" />
+                  <input type="text" name="name" onChange={handleChange} />
                 </div>
                 <div className="contactFormInputEach">
                   <label className="subHeadingText " htmlFor="">
                     Email <sup>*</sup>
                   </label>
                   <br />
-                  <input type="text" />
+                  <input type="text" name="email" onChange={handleChange} />
                 </div>
                 <div className="contactFormInputEach">
                   <label className="subHeadingText " htmlFor="">
                     Phone Number <sup>*</sup>
                   </label>
                   <br />
-                  <input type="text" />
+                  <input name="phone" onChange={handleChange} type="text" />
                 </div>
                 <div className="contactFormInputEach">
                   <label className="subHeadingText " htmlFor="">
                     Message
                   </label>
                   <br />
-                  <input type="text" />
+                  <input type="text" name="message" onChange={handleChange} />
                 </div>
 
                 <div className="contactFormInputEach">
-                  <button>Submit</button>
+                  <button onClick={handleSubmit}>Submit</button>
                 </div>
               </div>
             </div>

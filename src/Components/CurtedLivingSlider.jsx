@@ -39,11 +39,11 @@ export default function CurtedLivingSlider() {
 
   const curatedSlides = [
     {
-      img: "/images/homepage/iStock-2160382418.png",
+      img: "/images/homepage/iStock-1990444472.png",
       lines: ["MODERN", "MINIMALIST", "SPACES"],
     },
     {
-      img: "/images/homepage/iStock-1990444472.png",
+      img: "/images/homepage/iStock-2160382418.png",
       lines: ["NATURE", "INTEGRATED", "DESIGNS"],
     },
     {

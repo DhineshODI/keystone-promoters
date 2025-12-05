@@ -41,68 +41,67 @@ export default function ProjecSpecification() {
     {
       icon: "/images/project-detail/specifications/Structure.svg",
       title: "Structure",
-      list: ["RCC framed structure (Stilt + 5 Floors)", "With brick work"],
+      list: ["RCC framed structure (Stilt + 5 Floors)", "With brick work."],
     },
     {
       icon: "/images/project-detail/specifications/Wall finish.svg",
       title: "Wall Finish",
       list: [
-        "<span class='projects-text-highlight'>Internal -</span> 2 coats of Putty, 1 coat of primer and 2 coats of interior emulsion",
-        "<span class='projects-text-highlight'>External -</span> 2 coats of Exterior emulsion paint over 1 coat of primer",
+        "<span class='projects-text-highlight'>Internal -</span> 2 coats of Putty, 1 coat of primer and 2 coats of interior emulsion.",
+        "<span class='projects-text-highlight'>External -</span> 2 coats of Exterior emulsion paint over 1 coat of primer.",
       ],
     },
     {
       icon: "/images/project-detail/specifications/Joineries.svg",
       title: "Joineries",
       list: [
-        "<span class='projects-text-highlight'>Main door -</span> Teak wood frame with door",
-        "<span class='projects-text-highlight'>Other doors -</span> Country wood frames & flush doors with laminate",
+        "<span class='projects-text-highlight'>Main door -</span> Teak wood frame with doo.r",
+        "<span class='projects-text-highlight'>Other doors -</span> Country wood frames & flush doors with laminate.",
       ],
     },
     {
       icon: "/images/project-detail/specifications/Windows.svg",
       title: "Windows",
-      list: ["UPVC windows with grills"],
+      list: ["UPVC windows with grills."],
     },
     {
       icon: "/images/project-detail/specifications/Flooring.svg",
       title: "Flooring",
-      list: ["Vitrified tiles for all rooms"],
+      list: ["Vitrified tiles for all rooms."],
     },
     {
       icon: "/images/project-detail/specifications/Kitchen.svg",
       title: "Kitchen",
       list: [
-        "Vitrified tile flooring",
-        "2’ high-glazed tile dado",
-        "Granite countertop",
-        "Stainless steel sink",
+        "Vitrified tile flooring.",
+        "2’ high-glazed tile dado.",
+        "Granite countertop.",
+        "Stainless steel sink.",
       ],
     },
     {
       icon: "/images/project-detail/specifications/Toilet.svg",
       title: "Toilet",
       list: [
-        "Ceramic tile flooring",
-        // "Glazed tile dado till roof height",
-        "Sanitary wares - Parryware / Hindware or equivalent",
-        "CP fittings - Jaquar or equivalent",
-        // "Geyser points will be provided in all toilets",
+        "Ceramic tile flooring.",
+        "<span class='projects-text-highlight'>Sanitary wares - </span>  Parryware / Hindware or equivalent.",
+        "<span class='projects-text-highlight'>CP fittings - </span> Jaquar or equivalent.",
+    
       ],
     },
     {
       icon: "/images/project-detail/specifications/Electrical.svg",
       title: "Electrical",
       list: [
-        "Wiring - Finolex / Polycab or equivalent",
-        "Switches - Honeywell / Crabtree or equivalent",
-        "MCB - Distribution board with 3-phase",
+        "<span class='projects-text-highlight'>Wiring - </span> Finolex / Polycab or equivalent.",
+        "<span class='projects-text-highlight'>Switches - </span> Honeywell / Crabtree or equivalent.",
+        "<span class='projects-text-highlight'>MCB - </span> Distribution board with 3-phase.",
       ],
     },
     {
       icon: "/images/project-detail/specifications/ac.svg",
       title: "Air Conditioner",
-      list: ["A/C provision will be provided in all bedrooms"],
+      list: ["A/C provision will be provided in all bedrooms."],
     },
   ];
 
@@ -137,10 +136,10 @@ export default function ProjecSpecification() {
         <div className="container max-w-7xl mx-auto px-4 ">
           <div>
             <div>
-              <h5 className="secondHeadingText  textTransform text-center" data-aos="fade-up" data-aos-duration="800">
+              <h5 className="secondHeadingText  textTransform text-center" data-aos="fade-up" data-aos-duration="1000">
                 specifications
               </h5>
-              <p className="subHeadingText text-center text-[#636465]" data-aos="fade-up" data-aos-duration="1000">
+              <p className="subHeadingText text-center text-[#636465]" data-aos="fade-up" data-aos-duration="1300">
                 Every Element is carefully to meet industry standards and
                 elevate your daily living experience
               </p>

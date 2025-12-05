@@ -34,7 +34,7 @@ export default function ProjectDetailSectionContent() {
 
               <div className="projectNameDetailPage projectdetailflex">
                 <img
-                  src="/images/project-detail/builind-icon-pink.svg"
+                  src="/images/project-detail/bed-icon-pink.svg"
                   alt=""
                 />
 

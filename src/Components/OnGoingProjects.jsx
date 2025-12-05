@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 export default function OngoingProjects() {
   const settings = {
@@ -29,7 +30,8 @@ export default function OngoingProjects() {
       ProjectTitle: "Spectra",
       ProjectLocation: "Keelkattalai, Chennai",
       BHKStatus: "2 & 3",
-      unitSize: "1159 - 1481",
+      noofunits: "41",
+      unitSize: "1069 - 1608",
       projectImage: "/images/ongoing-images/onGoingProjectsImage.jpg",
       projectLink: "/project-detail",
     },
@@ -38,6 +40,7 @@ export default function OngoingProjects() {
       ProjectTitle: "Spectra",
       ProjectLocation: "Keelkattalai, Chennai",
       BHKStatus: "2 & 3",
+      noofunits: "41",
       unitSize: "1159 - 1481",
       projectImage: "/images/ongoing-images/onGoingProjectsImage.jpg",
       projectLink: "/project-detail",
@@ -47,6 +50,7 @@ export default function OngoingProjects() {
       ProjectTitle: "Spectras",
       ProjectLocation: "Keelkattalai, Chennai",
       BHKStatus: "2 & 3",
+      noofunits: "41",
       unitSize: "1159 - 1481",
       projectImage: "/images/ongoing-images/onGoingProjectsImage.jpg",
       projectLink: "/project-detail",
@@ -56,6 +60,7 @@ export default function OngoingProjects() {
       ProjectTitle: "Spectras",
       ProjectLocation: "Keelkattalai, Chennai",
       BHKStatus: "2 & 3",
+      noofunits: "41",
       unitSize: "1159 - 1481",
       projectImage: "/images/ongoing-images/onGoingProjectsImage.jpg",
       projectLink: "/project-detail",
@@ -65,6 +70,7 @@ export default function OngoingProjects() {
       ProjectTitle: "Spectras",
       ProjectLocation: "Keelkattalai, Chennai",
       BHKStatus: "2 & 3",
+      noofunits: "41",
       unitSize: "1159 - 1481",
       projectImage: "/images/ongoing-images/onGoingProjectsImage.jpg",
       projectLink: "/project-detail",
@@ -74,6 +80,7 @@ export default function OngoingProjects() {
       ProjectTitle: "Spectras",
       ProjectLocation: "Keelkattalai, Chennai",
       BHKStatus: "2 & 3",
+      noofunits: "41",
       unitSize: "1159 - 1481",
       projectImage: "/images/ongoing-images/onGoingProjectsImage.jpg",
       projectLink: "/project-detail",
@@ -104,8 +111,18 @@ export default function OngoingProjects() {
               <Slider ref={sliderTop} {...settings}>
                 {oddProjects.map((project) => (
                   <div>
-                    <div className="ongoingProjectSection" data-aos="fade-down" data-aos-duration="1500">
-                      <img src={project.projectImage} alt="" />
+                    <div
+                      className="ongoingProjectSection"
+                      data-aos="fade-down"
+                      data-aos-duration="1500"
+                    >
+                      <img
+                        onClick={() =>
+                          (window.location.href = "/project-detail")
+                        }
+                        src={project.projectImage}
+                        alt=""
+                      />
 
                       <div className="projectsNameOnGoingmAINcONTAINER">
                         <div className="projectsNameOnGoing">
@@ -113,9 +130,14 @@ export default function OngoingProjects() {
                           <span>{project.ProjectLocation}</span>
                         </div>
                         <div className="projectsNameOnGoing">
-                          <h5>
-                            {project.BHKStatus} <span>BHK</span>
-                          </h5>
+                          <div className="newaddonprojectsss">
+                            <h5>
+                              {project.noofunits} <span>Units</span>
+                            </h5>
+                            <h5>
+                              {project.BHKStatus} <span>BHK</span>
+                            </h5>
+                          </div>
                         </div>
                         <div className="projectsNameOnGoing">
                           <h5>
@@ -135,15 +157,23 @@ export default function OngoingProjects() {
               </Slider>
             </div>
 
-            <div className="onGoingRightSection" data-aos="fade-down" data-aos-duration="1500">
+            <div
+              className="onGoingRightSection "
+              data-aos="fade-down"
+              data-aos-duration="1500"
+            >
               <h5 className="mainheadingText">Ongoing Projects</h5>
               <div>
                 <h6 className="secondHeadingText">Crafted with Purpose</h6>
               </div>
             </div>
           </div>
-          <div className="onGoingMainSectionDiv">
-            <div className="onGoingRightSection" data-aos="fade-down" data-aos-duration="1500">
+          <div className="onGoingMainSectionDiv ongoingnewseocndsection">
+            <div
+              className="onGoingRightSection"
+              data-aos="fade-down"
+              data-aos-duration="1500"
+            >
               <h5 className="mainheadingText onGoingSecondTextContainer">
                 Designed <br /> for Today, Built for Tomorrow
               </h5>
@@ -174,30 +204,30 @@ export default function OngoingProjects() {
               </div>
             </div>
 
-            <div style={{ width: "56%" }} className="widthnewseciton formobilewidthsection">
+            <div
+              style={{ width: "56%" }}
+              className="widthnewseciton formobilewidthsection"
+            >
               <Slider ref={sliderBottom} {...settings}>
                 {evenProjects.map((project) => (
                   <div>
-                    <div className="ongoingProjectSection" data-aos="fade-down" data-aos-duration="1500">
-                      <img src={project.projectImage} alt="" />
+                    <div
+                      className="ongoingProjectSection"
+                      data-aos="fade-down"
+                      data-aos-duration="1500"
+                    >
+                      <img
+                        src="/images/ongoing-images/projectsoon.jpg"
+                        alt=""
+                      />
 
                       <div className="projectsNameOnGoingmAINcONTAINER">
-                        <div className="projectsNameOnGoing">
-                          <h5>{project.ProjectTitle}</h5>
-                          <span>{project.ProjectLocation}</span>
+                        <div className="projectsNameOnGoing newaddonsecond">
+                          <div className="newaddonprojectsss ">
+                            <h5>Coming</h5>
+                            <h5>Soon</h5>
+                          </div>
                         </div>
-                        <div className="projectsNameOnGoing">
-                          <h5>
-                            {project.BHKStatus} <span>BHK</span>
-                          </h5>
-                        </div>
-                        <div className="projectsNameOnGoing">
-                          <h5>
-                            {project.unitSize} <span>UNIT SIZE</span>
-                          </h5>
-                        </div>
-
-                        <div className="onGoingViewProject">view project</div>
                       </div>
                     </div>
                   </div>

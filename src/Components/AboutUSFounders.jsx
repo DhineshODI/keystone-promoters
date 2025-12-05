@@ -60,8 +60,18 @@ export default function AboutusFounder() {
         <div className="container max-w-7xl mx-auto px-4 ">
           <div className="lowconatinersection aboutusfounders">
             <div className="aboutusfoundermaincontent">
-              <h5 className="secondHeadingText" data-aos="fade-up" data-aos-duration="1500">Founders</h5>
-              <p className="subHeadingText" data-aos="fade-up" data-aos-duration="1200">
+              <h5
+                className="secondHeadingText"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                Founders
+              </h5>
+              <p
+                className="subHeadingText"
+                data-aos="fade-up"
+                data-aos-duration="1200"
+              >
                 Empowering living through vision, purpose, and action.
               </p>
             </div>
@@ -143,8 +153,8 @@ export default function AboutusFounder() {
                   <hr />
 
                   <p className="subHeadingText founderwho">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
+                    As an architect and designer known for creating thoughtful,
+                    client-focused space
                   </p>
 
                   <hr />
@@ -186,7 +196,7 @@ export default function AboutusFounder() {
                 <div className="aboutuspopupstyles">
                   <div>
                     <h5 className="secondHeadingText ">Dinesh Sellappan</h5>
-                    <h6 className="mainheadingText ">Director's Profile</h6>
+                    <h6 className="mainheadingText ">Director</h6>
 
                     <div className="insideppupsub">
                       <p className="subHeadingText ">
@@ -235,7 +245,7 @@ export default function AboutusFounder() {
                 <div className="aboutuspopupstyles">
                   <div>
                     <h5 className="secondHeadingText ">Vaishnava Priya</h5>
-                    <h6 className="mainheadingText ">Director's Profile</h6>
+                    <h6 className="mainheadingText ">Director</h6>
 
                     <div className="insideppupsub">
                       <p className="subHeadingText ">

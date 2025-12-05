@@ -97,7 +97,7 @@ export default function LiveThoughtFul() {
               </div>
               <div className="yearsScrollText projectsScroll" data-aos="fade-left" data-aos-duration="800">
                 <h6 className="secondHeadingText">{projects}</h6>
-                <span>Sucessfull Projects</span>
+                <span>Successful Projects</span>
               </div>
               <div className="yearsScrollText projectsScroll" data-aos="fade-left" data-aos-duration="500">
                 <h6 className="secondHeadingText">{family}K</h6>

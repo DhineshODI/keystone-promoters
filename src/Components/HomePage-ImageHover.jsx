@@ -172,8 +172,8 @@ export default function HomepageImageHoverSection() {
     <div className="OurSignatureApproach">
       <div class="marquee-loop">
         <div class="track">
-          <span>Our Signature Approach</span>
-          <span>Our Signature Approach</span>
+          <span>Our Signature Approach - </span>
+          <span>Our Signature Approach - </span>
           {/* <span>YOUR TEXT — YOUR TEXT — YOUR TEXT — YOUR TEXT — </span> */}
         </div>
       </div>

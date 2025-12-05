@@ -22,15 +22,15 @@ export default function AboutUsPage() {
           {/* Banner */}
           <div>
             <div className="detailPageBanners">
-              <h5 className="secondHeadingText">Building Future</h5>
-              <h5 className="secondHeadingText">Forward</h5>
+              <h5 className="secondHeadingText" data-aos="fade-up" data-aos-duration="1000">Building Future</h5>
+              <h5 className="secondHeadingText" data-aos="fade-up" data-aos-duration="1300">Forward</h5>
 
               {/* <div className="BreadCrumSection">
                 <span className="subHeadingText">Home</span>
                 <span className="subHeadingText">-</span>
                 <span className="subHeadingText">Careers</span>
               </div> */}
-              <p className="subHeadingText">
+              <p className="subHeadingText" data-aos="fade-up" data-aos-duration="1500">
                 Every detail is designed with intention-Blending functionality,
                 beauty, and innovation to create homes that stand the test of
                 time
@@ -45,7 +45,7 @@ export default function AboutUsPage() {
             <div className="container max-w-7xl mx-auto px-4 ">
               <div className="lowconatinersectionafterbanner">
                 <div className="bannerafterSectionMAIN">
-                  <div className="firstbannerafterSectionMAIN" data-aos="fade-up" data-aos-duration="1000">
+                  <div className="firstbannerafterSectionMAIN" data-aos="fade-left" data-aos-duration="1000">
                     <div>
                       <h4 className="gettknowHeading">
                         We are Keystone Promoters
@@ -56,11 +56,11 @@ export default function AboutUsPage() {
                       </h3>
                     </div>
                   </div>
-                  <div className="seondbannerafterSectionMAIN" data-aos="fade-up" data-aos-duration="1000">
+                  <div className="seondbannerafterSectionMAIN">
                     {/* <div className="seondbannerafterSectionMAINrow"></div> */}
                     <img src="/images/aboutus-banner-icon.png" alt="" />
                   </div>
-                  <div className="thirdbannerafterSectionMAIN" data-aos="fade-up" data-aos-duration="1000">
+                  <div className="thirdbannerafterSectionMAIN" data-aos="fade-right" data-aos-duration="500">
                     <div style={{ marginTop: "15px" }}>
                       <p className="contactPageAddress">
                         Built on 25 Years of Experience
@@ -117,7 +117,7 @@ export default function AboutUsPage() {
                   ></video>
                   {/* <img src="/images/about-us/abboutus-shapingus.jpg" alt="" /> */}
                   <div className="shapeconatinerflex">
-                    <p className="secondHeadingText">Shaping lifespaces</p>
+                    <p className="secondHeadingText"  data-aos="fade-left"  data-aos-duration="1200">Shaping lifespaces</p>
                   </div>
                 </div>
               </div>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -30,6 +30,13 @@ export default function NriFaq() {
     },
   ];
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation speed
+      once: false, // run only once
+    });
+  }, []);
+
   return (
     <>
       <div className="nrifaq">
@@ -37,17 +44,35 @@ export default function NriFaq() {
           <div className="lowconatinersection">
             <div className="faqflexdiv">
               <div className="onefaqnriconatiner">
-                <p className="mainheadingText ">FAQs</p>
-                <h5 className="secondHeadingText ">
+                <p
+                  className="mainheadingText "
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                >
+                  FAQs
+                </p>
+                <h5
+                  className="secondHeadingText "
+                  data-aos="fade-left"
+                  data-aos-duration="1300"
+                >
                   Your Questions Answered With Clarity Here
                 </h5>
 
-                <p className="subHeadingText ">
+                <p
+                  className="subHeadingText "
+                  data-aos="fade-left"
+                  data-aos-duration="1600"
+                >
                   Find quick answers to common queries about our projects,
                   process, pricing and customer support
                 </p>
 
-                <div className="NriPagebutton">
+                <div
+                  className="NriPagebutton"
+                  data-aos="fade-left"
+                  data-aos-duration="1800"
+                >
                   <a href="/contact">
                     <button className="cursor-pointer">Enquire Now</button>
                   </a>

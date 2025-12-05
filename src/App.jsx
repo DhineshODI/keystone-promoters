@@ -22,6 +22,8 @@ import Header from "./Components/Header";
 import TestimonialPage from "./Pages/TestimonialPage";
 import NriPage from "./Pages/NriPage";
 import Menubar from "./Components/Menubar";
+import OngoingProjectsPage1 from "./Components/Ongoingprojects1";
+import OngoingProjectsPage2 from "./Components/OngoingProjects2";
 
 // gsap.registerPlugin(ScrollTrigger);
 
@@ -63,7 +65,6 @@ function App() {
       {/* <Router> */}
       <Routes>
         <Route path="/project-detail" element={<ProjectDetailMainPage />} />
-
         <Route path="/" element={<Homepage />} />
         <Route path="/aboutus" element={<AboutUsPage />} />
         <Route path="/ongoing-projects" element={<OngoingProjectsMainPage />} />
@@ -73,6 +74,9 @@ function App() {
         <Route path="/careers" element={<CareersPage />} />
         <Route path="/testimonial" element={<TestimonialPage />} />
         <Route path="/nri" element={<NriPage />} />
+
+        <Route path="/architecture" element={<OngoingProjectsPage1 />} />
+        <Route path="/interior" element={<OngoingProjectsPage2 />} />
       </Routes>
       {/* </Router> */}
 

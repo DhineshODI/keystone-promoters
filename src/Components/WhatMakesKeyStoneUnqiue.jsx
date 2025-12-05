@@ -79,7 +79,7 @@ export default function WhatMakesKeyStonesUnique() {
                 <h5 className="secondHeadingText">100%</h5>
                 <h5 className="secondHeadingText">Complaint</h5>
                 <p className="subHeadingText">
-                  Every commitment met with precision
+                  Precision in Delivery
                 </p>
               </div>
             </div>

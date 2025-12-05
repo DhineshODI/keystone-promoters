@@ -26,7 +26,7 @@ export default function ScheduleAvisit() {
             </div>
 
             <div className="scheduleaVisitbutton">
-              <a className="z-100 " href="/contact">
+              <a className="z-100 " href="/contact#form_id">
                 <button className="cursor-pointer">Enquire Now</button>
               </a>
             </div>

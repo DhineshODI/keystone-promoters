@@ -1,102 +1,109 @@
-// export default function ProjectFloorPan() {
-//   return (
-//     <>
-//       <div className="projectfloorflex">
-//         <div className="floorplanprojectdetail">
-//           <div className="fullwidthprojectdetail">
-//             <div className="floorplanleft">
-//               <h4>Floor Plan</h4>
-//               <p className="subHeadingText">
-//                 Efficiently designed for space and comfort
-//               </p>
-//             </div>
-
-//             <ul className="floorplanleftlist">
-//               <li>Stlit</li>
-//               <li >Block Plan</li>
-//               <li >Block A</li>
-//               <li className="activefloorstate">Block B</li>
-//               <li>Block C</li>
-//             </ul>
-//           </div>
-//         </div>
-//         <div>
-//           <div>
-//             <img src="/images/project-detail/project-floorplan1.jpg" alt="" />
-//           </div>
-//         </div>
-//       </div>
-//     </>
-//   );
-// }
 import { useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 export default function ProjectFloorPan() {
-  // All floor items with label + image
+  // const floorItems = [
+  //   {
+  //     label: "Block A & B",
+  //     img: "/images/project-detail/floor-plan/block-a&b.jpg",
+  //   },
+  //   {
+  //     label: "Block A & B - 1",
+  //     img: "/images/project-detail/floor-plan/block-a&b.jpg",
+  //   },
+  //   {
+  //     label: "Block A",
+  //     img: "/images/project-detail/floor-plan/block-a&b.jpg",
+  //   },
+  //   {
+  //     label: "Block B",
+  //     img: "/images/project-detail/floor-plan/block-a&b.jpg",
+  //   },
+  // ];
+
   const floorItems = [
     {
-      label: "block-a&b",
-      img: "/images/project-detail/floor-plan/block-a&b.jpg",
+      blockLabel: "Block A & B",
+      images: [
+        {
+          label: "Ground Floor",
+          img: "/images/project-detail/floor-plan/block-a&b.jpg",
+        },
+      ],
     },
     {
-      label: "block-a&b1",
-      img: "/images/project-detail/floor-plan/block-a&b1.jpg",
+      blockLabel: "Block A & B - 1",
+      images: [
+        {
+          label: "Ground Floor",
+          img: "/images/project-detail/floor-plan/block-a&b1.jpg",
+        },
+      ],
     },
     {
-      label: "block-a-a101-a501",
-      img: "/images/project-detail/floor-plan/block-a-a101-a501.jpg",
-    },
-    {
-      label: "block-a-a102-a502",
-      img: "/images/project-detail/floor-plan/block-a-a102-a502.jpg",
-    },
-    {
-      label: "block-a-a103-a503",
-      img: "/images/project-detail/floor-plan/block-a-a103-a503.jpg",
+      blockLabel: "Block A",
+      images: [
+        {
+          label: "A101-A501",
+          img: "/images/project-detail/floor-plan/block-a-a101-a501.jpg",
+        },
+        {
+          label: "A102-A502",
+          img: "/images/project-detail/floor-plan/block-a-a102-a502.jpg",
+        },
+        {
+          label: "A103-A503",
+          img: "/images/project-detail/floor-plan/block-a-a103-a503.jpg",
+        },
+        {
+          label: "A104-A504",
+          img: "/images/project-detail/floor-plan/block-a-a104-a504.jpg",
+        },
+        {
+          label: "A105-A505",
+          img: "/images/project-detail/floor-plan/block-a-a105-a505.jpg",
+        },
+        {
+          label: "Typical Floor Plan",
+          img: "/images/project-detail/floor-plan/block-a-typical-floor-plan.jpg",
+        },
+      ],
     },
 
     {
-      label: "block-a-a104-a504",
-      img: "/images/project-detail/floor-plan/block-a-a104-a504.jpg",
-    },
-    {
-      label: "block-a-a105-a505",
-      img: "/images/project-detail/floor-plan/block-a-a105-a505.jpg",
-    },
-    {
-      label: "block-a-typical-floor-plan",
-      img: "/images/project-detail/floor-plan/block-a-typical-floor-plan.jpg",
-    },
-    {
-      label: "block-b-b101-b401",
-      img: "/images/project-detail/floor-plan/block-b-b101-b401.jpg",
-    },
-    {
-      label: "block-b-b102-b402",
-      img: "/images/project-detail/floor-plan/block-b-b102-b402.jpg",
-    },
-    {
-      label: "block-b-b103-b403",
-      img: "/images/project-detail/floor-plan/block-b-b103-b403.jpg",
-    },
-    {
-      label: "block-b-b104-b404",
-      img: "/images/project-detail/floor-plan/block-b-b104-b404.jpg",
-    },
-    {
-      label: "block-b-fifth-floor-plan",
-      img: "/images/project-detail/floor-plan/block-b-fifth-floor-plan.jpg",
-    },
-    {
-      label: "block-b-typical-floor-plan",
-      img: "/images/project-detail/floor-plan/block-b-typical-floor-plan.jpg",
+      blockLabel: "Block B",
+      images: [
+        {
+          label: "B101-B401",
+          img: "/images/project-detail/floor-plan/block-b-b101-b401.jpg",
+        },
+        {
+          label: "B102-B402",
+          img: "/images/project-detail/floor-plan/block-b-b102-b402.jpg",
+        },
+        {
+          label: "B103-B403",
+          img: "/images/project-detail/floor-plan/block-b-b103-b403.jpg",
+        },
+        {
+          label: "B104-B404",
+          img: "/images/project-detail/floor-plan/block-b-b104-b404.jpg",
+        },
+        {
+          label: "Floor Plan",
+          img: "/images/project-detail/floor-plan/block-b-fifth-floor-plan.jpg",
+        },
+        {
+          label: "Typical Floor Plan",
+          img: "/images/project-detail/floor-plan/block-b-typical-floor-plan.jpg",
+        },
+      ],
     },
   ];
+  const [activeBlockIndex, setActiveBlockIndex] = useState(0);
 
-  // 👉 first li is active automatically
-  const [activeIndex, setActiveIndex] = useState(0);
+  const activeBlock = floorItems[activeBlockIndex];
 
   return (
     <div className="projectfloorflex">
@@ -110,13 +117,14 @@ export default function ProjectFloorPan() {
           </div>
 
           <ul className="floorplanleftlist">
-            {floorItems.map((item, index) => (
+            {floorItems.map((block, index) => (
               <li
                 key={index}
-                className={activeIndex === index ? "activefloorstate" : ""}
-                onClick={() => setActiveIndex(index)}
+                className={activeBlockIndex === index ? "activefloorstate" : ""}
+                onClick={() => setActiveBlockIndex(index)}
+                style={{ cursor: "pointer", marginBottom: "10px" }}
               >
-                {item.label}
+                {block.blockLabel}
               </li>
             ))}
           </ul>
@@ -124,11 +132,64 @@ export default function ProjectFloorPan() {
       </div>
 
       <div className="floorplanimagewrap">
-        <img
-          src={floorItems[activeIndex].img}
-          alt={floorItems[activeIndex].label}
-          className="floorplanimage"
-        />
+        <div className="floorplansrightsectionflex">
+          {/* {activeBlock.images.map((image, index) => (
+            <div key={index} className="indiviualcardfloorplan">
+              <span
+                className="subHeadingText textoftehfloor"
+                style={{
+                  marginTop: "8px",
+                  marginBottom: "12px",
+                  fontWeight: "500",
+                }}
+              >
+                {image.label}
+              </span>
+              <img
+              className="imagefloorplabimage"
+                src={image.img}
+                alt={image.label}
+                style={{ width: "100%", borderRadius: "8px" }}
+              />
+            </div>
+          ))} */}
+
+          {activeBlock.images.map((image, index) => (
+            <div key={index} className="indiviualcardfloorplan">
+              <span
+                className="subHeadingText textoftehfloor"
+                style={{
+                  marginTop: "8px",
+                  marginBottom: "12px",
+                  fontWeight: "500",
+                }}
+              >
+                {image.label}
+              </span>
+
+              {/* Wrap image in anchor pointing to lightbox */}
+              <a href={`#lightbox-${activeBlockIndex}-${index}`}>
+                <img
+                  className="imagefloorplabimage"
+                  src={image.img}
+                  alt={image.label}
+                  style={{ width: "100%", borderRadius: "8px" }}
+                />
+              </a>
+
+              {/* Lightbox overlay */}
+              <div
+                id={`lightbox-${activeBlockIndex}-${index}`}
+                className="lightbox-overlay"
+              >
+                <a href="#_" className="close-btn">
+                  &times;
+                </a>
+                <img src={image.img} alt={image.label} />
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
