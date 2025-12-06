@@ -165,7 +165,7 @@ export default function OngoingProjectsPage1() {
                 <img src="/images/ongoing-images/groove.jpg" alt="" />
               </div>
 
-              <p className="subHeadingText ">The Groove</p>
+              <p className="subHeadingText ">The Grove</p>
             </div>
             <div className="eachprojectcards">
               <div className="imagehoveranimationse">

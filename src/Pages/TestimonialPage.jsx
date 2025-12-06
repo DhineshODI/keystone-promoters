@@ -2,7 +2,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 export default function TestimonialPage() {
-      useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000, // animation speed
       once: false, // run only once
@@ -16,10 +16,26 @@ export default function TestimonialPage() {
             {/* Banner */}
             <div>
               <div className="detailPageBanners">
-                <h5 className="secondHeadingText"  data-aos="fade-up" data-aos-duration="1000">Stories that</h5>
-                <h5 className="secondHeadingText" data-aos="fade-up" data-aos-duration="1300">Inspire Trust</h5>
+                <h5
+                  className="secondHeadingText"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  Stories that
+                </h5>
+                <h5
+                  className="secondHeadingText"
+                  data-aos="fade-up"
+                  data-aos-duration="1300"
+                >
+                  Inspire Trust
+                </h5>
 
-                <div className="BreadCrumSection" data-aos="fade-up" data-aos-duration="1500">
+                <div
+                  className="BreadCrumSection"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                >
                   <a href="/" className="subHeadingText  text-hover-underline">
                     Home
                   </a>
@@ -38,7 +54,11 @@ export default function TestimonialPage() {
               <div className="container max-w-7xl mx-auto px-4 ">
                 <div className="lowconatinersectionafterbanner">
                   <div className="bannerafterSectionMAIN">
-                    <div className="firstbannerafterSectionMAIN" data-aos="fade-left" data-aos-duration="1000">
+                    <div
+                      className="firstbannerafterSectionMAIN"
+                      data-aos="fade-left"
+                      data-aos-duration="1000"
+                    >
                       <div>
                         <h4 className="gettknowHeading">
                           Client Testimonials Showcasing
@@ -54,7 +74,11 @@ export default function TestimonialPage() {
                       <img src="/images/testimonial-banner-icon.png" alt="" />
                     </div>
 
-                    <div className="thirdbannerafterSectionMAIN" data-aos="fade-right" data-aos-duration="1000">
+                    <div
+                      className="thirdbannerafterSectionMAIN"
+                      data-aos="fade-right"
+                      data-aos-duration="1000"
+                    >
                       <div style={{ marginTop: "15px" }}>
                         <p className="contactPageAddress">
                           Genuine client stories reflecting our commitment to
@@ -75,13 +99,17 @@ export default function TestimonialPage() {
             <div className="testimonialpagebgcars">
               <div className="container max-w-7xl mx-auto px-4">
                 <div className="testimonalpagedisply">
-                  <div class="testimonalSliderborder" data-aos="fade-up" data-aos-duration="1200">
+                  <div
+                    class="testimonalSliderborder"
+                    data-aos="fade-up"
+                    data-aos-duration="1200"
+                  >
                     <div class="testimonalSectionName">
                       <h4>Mr. Pandian</h4>
                       <p>Chennai</p>
                     </div>
                     <div class="testimonalContent">
-                      <p class="subHeadingText" >
+                      <p class="subHeadingText">
                         Keystone Promoters delivered quality construction with
                         excellent. finishing and reliable service. They met
                         every requirement with care and professionalism-truly a
@@ -103,7 +131,11 @@ export default function TestimonialPage() {
                       </div>
                     </div>
                   </div>
-                  <div class="testimonalSliderborder" data-aos="fade-up" data-aos-duration="1500">
+                  <div
+                    class="testimonalSliderborder"
+                    data-aos="fade-up"
+                    data-aos-duration="1500"
+                  >
                     <div class="testimonalSectionName">
                       <h4>Mrs. Devi</h4>
                       <p>Chennai</p>
@@ -114,6 +146,38 @@ export default function TestimonialPage() {
                         by their detailed planning, thoughtful design, and
                         highly professional execution that consistently exceeded
                         my expectations.
+                      </p>
+                      <div class="flex items-center justify-between  testimonalPersonImageContainer ">
+                        <div class="testimonalPersonImagediv">
+                          <img
+                            class="testimonalPersonImage"
+                            src="/images/youtube-image.png"
+                            alt=""
+                          />
+                        </div>
+                        <img
+                          class="youtubeIcontestimonal"
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="testimonalSliderborder"
+                    data-aos="fade-up"
+                    data-aos-duration="1500"
+                  >
+                    <div class="testimonalSectionName">
+                      <h4>M/s. KwaliteeFabs</h4>
+                      <p>Chennai</p>
+                    </div>
+                    <div class="testimonalContent">
+                      <p class="subHeadingText">
+                        An Architect/interior designer who creates wonders with
+                        style within budget. Vaishnavi’s professionalism and
+                        team spirit helped pick perfect colors, fixtures,
+                        carpeting, delivering significant quality service.
                       </p>
                       <div class="flex items-center justify-between  testimonalPersonImageContainer ">
                         <div class="testimonalPersonImagediv">

@@ -25,45 +25,87 @@ if (!$data) {
 $companyName = $data['companyName'] ?? '';
 $email = $data['email'] ?? '';
 $city = $data['city'] ?? '';
+$phone = $data['phone'] ?? '';
 $remarks = $data['remarks'] ?? '';
 
-// PHPMailer initialized
+// PHPMailer initialization
 $mail = new PHPMailer(true);
 
 try {
-    // SMTP CONFIG
+    // SMTP Configuration
     $mail->isSMTP();
-$mail->Host = 'smtp.gmail.com';
-$mail->SMTPAuth = true;
+    $mail->Host = 'smtp.gmail.com';
+    $mail->SMTPAuth = true;
 
-$mail->Username = "wordpress.odi@gmail.com"; 
-$mail->Password = "YOUR_APP_PASSWORD"; // 16-digit Gmail App Password
+    $mail->Username = "shivarex.c@gmail.com";
+    $mail->Password = "fzqn zxpq gpze hbla"; // Gmail App Password
 
-$mail->SMTPSecure = 'tls';
-$mail->Port = 587;
+    $mail->SMTPSecure = 'tls';
+    $mail->Port = 587;
 
-// sender & receiver same
-$mail->setFrom("wordpress.odi@gmail.com", "Website Contact");
-$mail->addAddress("wordpress.odi@gmail.com");
+    // ========== ADMIN EMAIL ==========
+    $mail->setFrom("shivarex.c@gmail.com", "Website Channel Partner Enquiry");
+    $mail->addAddress("shivarex.c@gmail.com");
 
-// reply to user
-$mail->addReplyTo($email, $companyName);
+    $mail->Subject = "New Channel Partner Enquiry Received from Website";
+    $mail->isHTML(true);
 
-    // Message
-    $mail->Subject = "New Channel Partner Form Submission";
     $mail->Body = "
-        Company Name: $companyName
-        Email: $email
-        City: $city
-        Remarks: $remarks
+        <p>A new Channel Partner enquiry has been submitted on the website.<br>
+        Please find the details below:</p>
+
+        <h3>Details:</h3>
+        <p>
+            <strong>Company Name:</strong> $companyName<br><br>
+            <strong>Email:</strong> $email<br><br>
+            <strong>Phone Number:</strong> $phone<br><br>
+            <strong>City:</strong> $city<br><br>
+            <strong>Remarks:</strong> $remarks
+        </p>
+
+        <br><hr>
+        <p style='font-size:12px;color:#888;'>This email was automatically generated from the Channel Partner form on the website.</p>
     ";
 
-    // Send email
+    $mail->send();
+
+    // ========== USER ACKNOWLEDGMENT EMAIL ==========
+    $mail->clearAddresses();
+    $mail->clearReplyTos();
+
+    $mail->addAddress($email);
+    $mail->setFrom("shivarex.c@gmail.com", "Keystone Promoters Pvt Ltd");
+
+    $mail->Subject = "Thank You for Your Channel Partner Enquiry";
+    $mail->isHTML(true);
+
+    $mail->Body = "
+        <p>Hi <strong>$companyName</strong>,</p>
+
+        <p>Thank you for your interest in partnering with us.  
+        We’ve received your Channel Partner enquiry and our team will contact you shortly with the next steps.</p>
+
+        <h3>Your Submitted Details:</h3>
+        <p>
+            <strong>Company Name:</strong> $companyName<br><br>
+            <strong>Email:</strong> $email<br><br>
+            <strong>Phone Number:</strong> $phone<br><br>
+            <strong>City:</strong> $city<br><br>
+            <strong>Remarks:</strong> $remarks
+        </p>
+
+        <p>We look forward to exploring an opportunity to work together.</p>
+
+        <br>
+        <p>Warm regards,<br>
+        <strong>Keystone Promoters Pvt Ltd.</strong></p>
+    ";
+
     $mail->send();
 
     echo json_encode([
         "status" => true,
-        "message" => "Channel partner form submitted and email sent!",
+        "message" => "Channel Partner form processed & emails sent successfully!",
         "data_received" => $data
     ]);
 

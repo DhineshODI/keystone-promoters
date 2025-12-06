@@ -19,9 +19,25 @@ export default function NriPage() {
             {/* Banner */}
             <div>
               <div className="detailPageBanners NRIbaner">
-                <h5 className="secondHeadingText" data-aos="fade-up" data-aos-duration="1000">Smart Choices</h5>
-                <h5 className="secondHeadingText" data-aos="fade-up" data-aos-duration="1250">For NRIS</h5>
-                <p className="subHeadingText" data-aos="fade-up" data-aos-duration="1450">
+                <h5
+                  className="secondHeadingText"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  Smart Choices
+                </h5>
+                <h5
+                  className="secondHeadingText"
+                  data-aos="fade-up"
+                  data-aos-duration="1250"
+                >
+                  For NRIS
+                </h5>
+                <p
+                  className="subHeadingText"
+                  data-aos="fade-up"
+                  data-aos-duration="1450"
+                >
                   Every detail is designed with intention-Blending
                   functionality, beauty, and innovation to create homes that
                   stand the test of time
@@ -34,34 +50,56 @@ export default function NriPage() {
               <div className="container max-w-7xl mx-auto px-4 ">
                 <div className="lowconatinersection">
                   <div>
-                    <p className="mainheadingText " data-aos="fade-right" data-aos-duration="1000">
+                    <p
+                      className="mainheadingText "
+                      data-aos="fade-right"
+                      data-aos-duration="1000"
+                    >
                       We are Keystone Promoters
                     </p>
 
-                    <h5 className="secondHeadingText " data-aos="fade-right" data-aos-duration="1300">
+                    <h5
+                      className="secondHeadingText "
+                      data-aos="fade-right"
+                      data-aos-duration="1300"
+                    >
                       Discover Why Real Estate Investment Is Your Smartest
                       Choice
                     </h5>
                   </div>
 
                   <div className="flexnriimage">
-                    <div className="oneflexnriimage" data-aos="fade-right" data-aos-duration="1300">
+                    <div
+                      className="oneflexnriimage"
+                      data-aos="fade-right"
+                      data-aos-duration="1300"
+                    >
                       <img src="/images/nri/nridiscoverimage.jpg" alt="" />
                     </div>
                     <div className="twoflexnriimage">
-                      <p className="maincontentnriimage" data-aos="fade-left" data-aos-duration="1000">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.
+                      <p
+                        className="maincontentnriimage"
+                        data-aos="fade-left"
+                        data-aos-duration="1000"
+                      >
+                        Building Trusted, Innovative, and Excellent Homes for
+                        Over 25 Years
                       </p>
 
-                      <p className="subHeadingText" data-aos="fade-left" data-aos-duration="1300">
-                        Lorem Ipsum has been the industry's standard dummy text
-                        ever since the 1500s, when an unknown printer took a
-                        galley of type and scrambled it to make...
+                      <p
+                        className="subHeadingText"
+                        data-aos="fade-left"
+                        data-aos-duration="1300"
+                      >
+                        Delivering thoughtfully planned communities with
+                        precision, reliability, and passion, every project
+                        embodies innovation, quality construction, lasting
+                        value, and exceptional experiences that make us a
+                        trusted name.
                       </p>
 
                       <ul className="nrilist">
-                        <li data-aos="fade-left" data-aos-duration="1300" >
+                        <li data-aos="fade-left" data-aos-duration="1300">
                           <div className="mainlistul">
                             <p className="firstulnri">
                               <strong> 100 +</strong> Projects built with
@@ -73,25 +111,28 @@ export default function NriPage() {
                         <li data-aos="fade-left" data-aos-duration="1600">
                           <div className="mainlistul">
                             <p className="firstulnri">
-                              <strong> 100 +</strong> Projects built with
-                              enduring quality
+                              <strong> 3k +</strong> Families chose us with
+                              confidence
                             </p>
-                            <p className="valuediv">01</p>
+                            <p className="valuediv">02</p>
                           </div>
                         </li>
                         <li data-aos="fade-left" data-aos-duration="1800">
                           <div className="mainlistul">
                             <p className="firstulnri">
-                              <strong> 100 +</strong> Projects built with
-                              enduring quality
+                              <strong> 5M +</strong> Square feet built with care
                             </p>
-                            <p className="valuediv">01</p>
+                            <p className="valuediv">03</p>
                           </div>
                         </li>
                       </ul>
 
-                      <div className="nrilistenquire" data-aos="fade-up" data-aos-duration="1000">
-                        <a href="/contact">
+                      <div
+                        className="nrilistenquire"
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                      >
+                        <a href="/contact#form_id">
                           <button className="cursor-pointer">
                             Enquire Now
                           </button>
@@ -106,9 +147,19 @@ export default function NriPage() {
             <div className="keystoneuniquesection">
               <div className="container max-w-7xl mx-auto px-4 ">
                 <div className="lowconatinersection">
-                  <p className="mainheadingText " data-aos="fade-up" data-aos-duration="1100">We are Keystone Promoters</p>
+                  <p
+                    className="mainheadingText "
+                    data-aos="fade-up"
+                    data-aos-duration="1100"
+                  >
+                    We are Keystone Promoters
+                  </p>
                   <div className="unqiuesectionflex">
-                    <h5 className="secondHeadingText " data-aos="fade-up" data-aos-duration="1400">
+                    <h5
+                      className="secondHeadingText "
+                      data-aos="fade-up"
+                      data-aos-duration="1400"
+                    >
                       What Makes Keystone Unique?
                     </h5>
                     <p className="subHeadingText ">
@@ -119,7 +170,11 @@ export default function NriPage() {
                   </div>
 
                   <div className="unqiuecardsflexc">
-                    <div className="unquiecardsection" data-aos="zoom-in" data-aos-duration="1100">
+                    <div
+                      className="unquiecardsection"
+                      data-aos="zoom-in"
+                      data-aos-duration="1100"
+                    >
                       <img
                         src="/images/about-us/icons/time-delivery.svg"
                         alt=""
@@ -129,28 +184,44 @@ export default function NriPage() {
                         Every commitment met with precision
                       </p>
                     </div>
-                    <div className="unquiecardsection" data-aos="zoom-in" data-aos-duration="1400">
+                    <div
+                      className="unquiecardsection"
+                      data-aos="zoom-in"
+                      data-aos-duration="1400"
+                    >
                       <img src="/images/about-us/icons/design-led.svg" alt="" />
                       <h3 className="timedelivery">Design Led </h3>
                       <p className="subHeadingText ">
                         Architecture with a soul
                       </p>
                     </div>
-                    <div className="unquiecardsection" data-aos="zoom-in" data-aos-duration="1800">
+                    <div
+                      className="unquiecardsection"
+                      data-aos="zoom-in"
+                      data-aos-duration="1800"
+                    >
                       <img src="/images/about-us/icons/compliment.svg" alt="" />
                       <h3 className="timedelivery">100% Compliant</h3>
                       <p className="subHeadingText ">
                         Legal clarity, clear title
                       </p>
                     </div>
-                    <div className="unquiecardsection" data-aos="zoom-in" data-aos-duration="1300">
+                    <div
+                      className="unquiecardsection"
+                      data-aos="zoom-in"
+                      data-aos-duration="1300"
+                    >
                       <img src="/images/about-us/icons/compliment.svg" alt="" />
                       <h3 className="timedelivery">Solid Foundations</h3>
                       <p className="subHeadingText ">
                         Structurally sound and aesthetically modern
                       </p>
                     </div>
-                    <div className="unquiecardsection" data-aos="zoom-in" data-aos-duration="1600">
+                    <div
+                      className="unquiecardsection"
+                      data-aos="zoom-in"
+                      data-aos-duration="1600"
+                    >
                       <img src="/images/about-us/icons/investor.svg" alt="" />
                       <h3 className="timedelivery">Investor Friendly</h3>
                       <p className="subHeadingText ">High appreciation value</p>
@@ -158,14 +229,22 @@ export default function NriPage() {
                   </div>
 
                   <div className="nricardscontent">
-                    <p className="subHeadingText " data-aos="fade-up" data-aos-duration="1100">
+                    <p
+                      className="subHeadingText "
+                      data-aos="fade-up"
+                      data-aos-duration="1100"
+                    >
                       What sets Keystone apart is our blend of thoughtful
                       planning, modern aesthetics, transparency, and a
                       customer-first approach to development.
                     </p>
                   </div>
 
-                  <div className="NriPagebutton"  data-aos="fade-up" data-aos-duration="1400">
+                  <div
+                    className="NriPagebutton"
+                    data-aos="fade-up"
+                    data-aos-duration="1400"
+                  >
                     <a href="/contact">
                       <button className="cursor-pointer">Enquire Now</button>
                     </a>

@@ -24,10 +24,10 @@ export default function Header({ menuOnlick }) {
   useEffect(() => {
     const path = window.location.pathname;
 
-    if (path === "/aboutus") setActive("aboutus");
+    if (path === "/brand") setActive("aboutus");
     else if (path === "/ongoing-projects") setActive("ongoing-projects");
-    else if (path === "/project-detail") setActive("project-detail");
-    else if (path === "/completed") setActive("completed");
+    else if (path === "/joint-venture") setActive("joint-venture");
+    else if (path === "/careers") setActive("careers");
     else if (path === "/contact") setActive("contact");
   }, []);
 
@@ -44,13 +44,14 @@ export default function Header({ menuOnlick }) {
           </div> */}
           <div className="mailHeadingText">
             Email :{" "}
-            <a href="mailto:enquiry@keystonepromoters.com">
-              enquiry@keystonepromoters.com
+            <a href="mailto:info@keystonepromoters.com">
+              info@keystonepromoters.com
             </a>
           </div>
 
           <div className="mailHeadingText">
-            Call us now : <a href="tel:+91442817225">+91 442817225</a>
+            Call us now : <a href="tel:+91442817225">+91 442817225 </a> &nbsp;|{" "}
+            <a href="tel:9940008855"> +91 99400 08855</a>
           </div>
         </div>
         <div
@@ -65,52 +66,60 @@ export default function Header({ menuOnlick }) {
             />
           </a>
           <ul className="listHeaders">
-            <li
-              className={
-                active === "aboutus" ? "active" : "text-hover-underline"
-              }
-              onClick={() => handleActive("aboutus")}
-            >
-              <a href="/aboutus">Brand</a>
-            </li>
+            <a href="/brand">
+              <li
+                className={
+                  active === "aboutus" ? "active" : "text-hover-underline"
+                }
+                onClick={() => handleActive("aboutus")}
+              >
+                Brand
+              </li>
+            </a>
+            <a href="/ongoing-projects">
+              <li
+                className={
+                  active === "ongoing-projects"
+                    ? "active"
+                    : "text-hover-underline"
+                }
+                onClick={() => handleActive("ongoing-projects")}
+              >
+                Ongoing
+              </li>
+            </a>
+            <a href="/joint-venture">
+              <li
+                className={
+                  active === "joint-venture" ? "active" : "text-hover-underline"
+                }
+                onClick={() => handleActive("joint-venture")}
+              >
+                Joint Venture
+              </li>
+            </a>
 
-            <li
-              className={
-                active === "ongoing-projects"
-                  ? "active"
-                  : "text-hover-underline"
-              }
-              onClick={() => handleActive("ongoing-projects")}
-            >
-              <a href="/ongoing-projects">Ongoing</a>
-            </li>
+            <a href="/careers">
+              <li
+                className={
+                  active === "careers" ? "active" : "text-hover-underline"
+                }
+                onClick={() => handleActive("careers")}
+              >
+                Careers
+              </li>
+            </a>
 
-            <li
-              className={
-                active === "project-detail" ? "active" : "text-hover-underline"
-              }
-              onClick={() => handleActive("project-detail")}
-            >
-              <a href="/project-detail">Upcoming</a>
-            </li>
-
-            <li
-              className={
-                active === "completed" ? "active" : "text-hover-underline"
-              }
-              onClick={() => handleActive("completed")}
-            >
-              <a href="/completed">Completed</a>
-            </li>
-
-            <li
-              className={
-                active === "contact" ? "active" : "text-hover-underline"
-              }
-              onClick={() => handleActive("contact")}
-            >
-              <a href="/contact">Contact Us</a>
-            </li>
+            <a href="/contact">
+              <li
+                className={
+                  active === "contact" ? "active" : "text-hover-underline"
+                }
+                onClick={() => handleActive("contact")}
+              >
+                Contact Us
+              </li>
+            </a>
 
             <div className="hamburgerflex cursor-pointer" onClick={menuOnlick}>
               <img
@@ -123,9 +132,11 @@ export default function Header({ menuOnlick }) {
           </ul>
 
           <ul className="mobileiconskey">
-            <li>
-              <img src="/images/icons/call-mobile.svg" alt="" />
-            </li>
+            <a href="tel:9940008855">
+              <li>
+                <img src="/images/icons/call-mobile.svg" alt="" />
+              </li>
+            </a>
             <li onClick={menuOnlick}>
               <img src="/images/icons/menu-mobile.svg" alt="" />
             </li>

@@ -66,11 +66,11 @@ function App() {
       <Routes>
         <Route path="/project-detail" element={<ProjectDetailMainPage />} />
         <Route path="/" element={<Homepage />} />
-        <Route path="/aboutus" element={<AboutUsPage />} />
+        <Route path="/brand" element={<AboutUsPage />} />
         <Route path="/ongoing-projects" element={<OngoingProjectsMainPage />} />
         <Route path="/contact" element={<ContactMainPage />} />
         <Route path="/joint-venture" element={<JointVentureMainPage />} />
-        <Route path="/channel-partner" element={<ChannelPartner />} />
+        <Route path="/channel-partners" element={<ChannelPartner />} />
         <Route path="/careers" element={<CareersPage />} />
         <Route path="/testimonial" element={<TestimonialPage />} />
         <Route path="/nri" element={<NriPage />} />

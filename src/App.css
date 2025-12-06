@@ -243,6 +243,7 @@ body,
   font-family: "Poppins", sans-serif;
   font-size: 22.5px;
   font-weight: bold;
+  font-weight: 600;
   color: #f5f5f3;
   line-height: 1;
 }
@@ -251,6 +252,7 @@ body,
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: bold;
+  font-weight: 600;
   color: #f5f5f3;
   line-height: 1;
   text-transform: uppercase;
@@ -262,7 +264,7 @@ body,
 }
 
 .testimonalSliderborder {
-  border: 1px solid #d4d4d4;
+  border: 1.5px solid #c1c1c1;
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
   width: 100%;
@@ -314,6 +316,11 @@ body,
   width: 68%;
   line-height: 0.9;
   margin-top: 10px;
+}
+
+.schdeuleMainrowsection .mainheadingText {
+  font-weight: 600;
+  letter-spacing: 7px;
 }
 
 .schudleVisitsection {
@@ -461,6 +468,7 @@ body,
   padding: 0px 8px;
   font-family: "Alexandria", sans-serif;
   font-weight: bold;
+  font-weight: 600;
   color: #ffffff;
   font-size: 24px;
   line-height: 1.5;
@@ -487,6 +495,7 @@ body,
 
 .curtSliderLeftSection .subHeadingText {
   width: 59%;
+  width: 75%;
   margin-top: 30px;
   color: #636465;
 }
@@ -840,6 +849,7 @@ body,
   align-items: center;
   column-gap: 6%;
   margin-top: 20px;
+  justify-content: flex-end;
 }
 
 .LiveThoughtsBg {
@@ -1445,7 +1455,7 @@ body,
   /* background: rgba(161, 105, 155, 0.75);
   background: rgba(98, 5, 88, 0.6); */
   background: rgba(0, 0, 0, 0.4);
-  /* padding-top: 150px; */
+  padding-top: 150px;
 }
 
 .videoBannermainContainer {
@@ -1527,13 +1537,36 @@ body,
   margin-top: 15px;
 }
 
-.contactUsBannerPageBg {
+/* .contactUsBannerPageBg {
   background-image: url("/public/images/contact-us-bg-fom.jpg");
   height: 560px;
   position: relative;
   background-position: center;
+    transition: background-size 0.5s ease;
+}
+.contactUsBannerPageBg:hover {
+  background-size: 110%;
+} */
+
+.contactUsBannerPageBg {
+  height: 560px;
+  position: relative;
+  /* overflow: hidden; */
 }
 
+.contactUsBannerPageBg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/public/images/contact-us-bg-fom.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.6s ease;
+}
+
+.contactUsBannerPageBg:hover::before {
+  transform: scale(1.03); /* zoom smoothly */
+}
 .formContactUsSection {
   display: flex;
   justify-content: center;
@@ -1592,6 +1625,14 @@ body,
   padding-left: 10px;
   font-size: 22px;
   font-family: "Poppins", sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  box-shadow: 0 0 0 4px #efefef;
+}
+
+.contactFormInputEach input:focus-visible {
+  outline: none;
 }
 
 .formMainStyleContactPage {
@@ -3010,7 +3051,7 @@ body,
   font-family: "Alexandria", sans-serif;
   font-size: 30px;
   line-height: 1;
-  line-height: 88%;
+  line-height: 100%;
   font-weight: 500;
   color: #fff;
   padding: 15px 0;
@@ -3023,6 +3064,12 @@ body,
   cursor: pointer;
   /* position: relative; */
   margin-bottom: 0 !important;
+}
+
+.smallname {
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: 300;
 }
 
 .floorplanleftlist .activefloorstate {
@@ -3067,7 +3114,7 @@ body,
 
 .activefloorstate {
   background-color: #7e006c;
-  width: max-content !important;
+  /* width: max-content !important; */
   margin: 10px 0;
   padding: 12px 24px !important;
   padding-right: 40px !important;
@@ -3100,11 +3147,11 @@ body,
 .floorplansrightsectionflex {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 4%;
+  column-gap: 3%;
   row-gap: 35px;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: max-content;
   padding: 50px 0;
 }
 
@@ -3112,7 +3159,15 @@ body,
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 25%;
+  width: 27%;
+}
+
+.newcardwidth {
+  width: 40%;
+}
+
+.newcardwidth .textoftehfloor {
+  font-size: 30px;
 }
 
 .imagefloorplabimage {
@@ -3166,6 +3221,8 @@ body,
 
 .floorplanimagewrap {
   width: 68%;
+  display: flex;
+  align-items: center;
 }
 .floorplanleft {
   width: 100%;
@@ -3175,24 +3232,24 @@ body,
 }
 
 .popupdownload .insidepopupclass {
-    width: 500px;
+  width: 500px;
 }
 
 .popupdownload .aboutuspopupstyles {
-    width: 92%;
-    padding-bottom: 43px;
+  width: 92%;
+  padding-bottom: 43px;
 }
 
 .popupdownload .contactFormInputEach {
-    width: 80%;
+  width: 80%;
 }
 .popupdownload .formMainStyleContactPage {
-    justify-content: center;
+  justify-content: center;
 }
 
 .popupdownload .popupclosebuttonabout {
-    right: 4%;
-    top: 3%;
+  right: 4%;
+  top: 3%;
 }
 /* Project Detail -CSS  */
 
@@ -3256,6 +3313,7 @@ body,
   text-transform: uppercase;
   font-size: 29px;
   line-height: 1;
+  padding-left: 10px;
 }
 
 .insideppupsub {
@@ -3421,8 +3479,8 @@ body,
 }
 
 .visiiontexttransperant .subHeadingText {
-  font-size: 70px;
-  line-height: 51px;
+  font-size: 76px;
+  line-height: 53px;
   text-transform: uppercase;
   font-weight: 800;
   color: #a1559a;
@@ -3443,6 +3501,7 @@ body,
 .aboutuspagesection .detailPageBanners .subHeadingText {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
+  font-size: 18px;
   text-transform: none;
   font-weight: 400;
   width: 43%;
@@ -3473,6 +3532,7 @@ body,
   font-size: 19px;
   margin-top: 15px;
   color: #eca7e6;
+  color: #fff;
   font-weight: 400;
 }
 
@@ -3588,6 +3648,7 @@ body,
 .lowconatinersection {
   margin: 0 10%;
   padding-top: 50px;
+  padding-top: 70px;
 }
 .lowconatinersectionafterbanner {
   margin: 0 7%;
@@ -3627,6 +3688,7 @@ body,
   text-transform: uppercase;
   color: #fff;
   font-weight: 700;
+  font-weight: 600;
 }
 
 .unquiecardsection .subHeadingText {
@@ -3660,7 +3722,7 @@ body,
   background-color: #ffffff;
   position: relative;
   width: 59%;
-  height: 110px;
+  height: 120px;
   transition: background-color 0.7s ease, transform 0.3s ease;
 }
 
@@ -3674,16 +3736,16 @@ body,
   justify-content: center;
   align-items: flex-start;
   height: 100%;
-  padding-left: 41%;
+  padding-left: 42%;
   margin-top: 50px;
   cursor: pointer;
 }
 
 .founderimagee {
   position: absolute;
-  width: 137px;
+  width: 145px;
   top: -42px;
-  left: -1px;
+  left: 0px;
 }
 
 .founderdetails .secondHeadingText {
@@ -3801,6 +3863,11 @@ body,
 
 .aboutusfounders .subHeadingText {
   width: 100%;
+}
+
+.aboutusfounders .directorname {
+  font-size: 14px;
+  padding-left: 4px;
 }
 
 .popupaboutusfounders ul {
@@ -4297,7 +4364,7 @@ body,
   -webkit-text-stroke: 1px #843d7d;
 }
 
-@keyframes reveal {
+/* @keyframes reveal {
   0% {
     width: 0%;
   }
@@ -4310,7 +4377,7 @@ body,
   100% {
     width: 0%;
   }
-}
+} */
 
 .line2 {
   font-family: "Alexandra", sans-serif;
@@ -4343,7 +4410,7 @@ body,
   -webkit-text-stroke: 1px #843d7d;
 }
 
-@keyframes reveal2 {
+/* @keyframes reveal2 {
   0% {
     width: 0%;
   }
@@ -4356,7 +4423,7 @@ body,
   100% {
     width: 0%;
   }
-}
+} */
 
 .keystonesectionflexx .secondHeadingText {
   font-size: 150px;
@@ -4393,7 +4460,7 @@ body,
 }
 
 .visibilityhidden {
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
 /* resposive start */
@@ -4532,6 +4599,7 @@ body,
     padding: 50px 0;
     background-repeat: no-repeat;
     padding-bottom: 100px;
+    padding-top: 30px;
   }
 
   .curtsectionrow {
@@ -5248,6 +5316,10 @@ body,
     margin-left: 0%;
   }
 
+  .testimonalSliderborder {
+    min-height: 413px;
+  }
+
   .testimonalFullSection {
     height: auto;
     background-size: cover;
@@ -5258,8 +5330,8 @@ body,
   }
 
   .testimonalPersonImage {
-    width: 58px;
-    height: 58px;
+    width: 47px;
+    height: 47px;
   }
 
   .testimonalPersonImagediv::before {
@@ -5282,6 +5354,8 @@ body,
     padding: 50px 0;
     background-repeat: no-repeat;
     padding-bottom: 100px;
+    margin-top: -15px;
+    padding-top: 0;
   }
 
   .curtsectionrow {
@@ -5981,6 +6055,18 @@ body,
   /* ProjectDetail Page  */
 }
 
+@media (min-width: 1250px) {
+  .ongoingProjectSection img {
+    transition: transform 0.4s ease;
+    overflow: hidden;
+  }
+
+  .ongoingProjectSection img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+}
+
 @media (max-width: 1250px) and (min-width: 1100px) {
   /* HomePage-Responsive */
 
@@ -6504,6 +6590,8 @@ body,
     padding-left: 45%;
   }
 
+
+
   .foundersbanner {
     height: 700px;
     background-size: cover;
@@ -6517,8 +6605,30 @@ body,
 
   .founderimagee {
     width: 119px;
-    top: -23px;
+    top: -25px;
   }
+  .rectangleone {
+    height: 108px;
+}
+
+.insidepopupclasscontent {
+    width: 88%;
+    height: 71vh;
+    background: #fff;
+    box-shadow: none;
+    background-image: url(/public/images/about-us/popupimage1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 6%;
+    background-position: right;
+}
+
+.insidepopupclass {
+    justify-content: center;
+}
+.secondpopupvaish {
+    background-image: url(/public/images/about-us/popupimage2.jpg);
+}
 
   /* AboutPage-Responsive */
 
@@ -6692,6 +6802,7 @@ body,
 
   .testimonalpagedisply .testimonalSliderborder {
     width: 28%;
+    width: 30%;
   }
 
   /* testimonial page */
@@ -7611,6 +7722,22 @@ body,
     height: 93px;
   }
 
+  .insidepopupclasscontent {
+    width: 87%;
+    height: auto;
+    background-size: cover;
+}
+
+.insidepopupclass {
+    justify-content: center;
+}
+
+.aboutuspopupstyles .mainheadingText {
+    font-size: 25px;
+    padding-left: 5px;
+}
+
+
   .aboutuspagesection .detailPageBanners {
     background-position: center;
   }
@@ -7923,6 +8050,7 @@ body,
 
   .faqnriconatiner {
     padding: 16px;
+    width: 80%;
   }
 
   .NriPagebutton button {
@@ -8860,6 +8988,19 @@ body,
     font-size: 16px;
   }
 
+  .insidepopupclasscontent {
+    width: 92%;
+    height: auto;
+    background-size: cover;
+}
+
+.aboutuspopupstyles .mainheadingText {
+    font-size: 24px;
+    padding-left: 5px;
+}
+.insidepopupclass {
+    justify-content: center;
+}
   .foundersbanner .lowconatinersection {
     margin-right: 0;
     padding-top: 40px;
@@ -8938,6 +9079,7 @@ body,
 
   .onGoingProjectsLists span {
     font-size: 15px;
+    padding-left: 5px;
   }
 
   .FirstonGoingProjectsLists,
@@ -8988,6 +9130,10 @@ body,
     width: 95%;
     margin-bottom: 1px;
   }
+
+  .FirstmainonGoingProjectsLists {
+    row-gap: 30px;
+}
   /* Ongoing Page */
 
   /* ContactUs */
@@ -9041,6 +9187,10 @@ body,
     font-size: 16px;
     margin-top: 13px;
     height: 45px;
+  }
+
+  .JointVenturePage .mainSectionFormWithUs {
+    width: 69%;
   }
 
   /* joint-venture-Page */
@@ -9146,7 +9296,7 @@ body,
   }
 
   .testimonalpagedisply .testimonalSliderborder {
-    width: 38%;
+    width: 40%;
   }
 
   .testimonialpagebgcars {
@@ -10148,13 +10298,25 @@ body,
   }
 
   .shapeusconatiner {
-    height: 350px;
+    height: auto;
+    padding: 50px 0;
   }
+.shapeusflex video {
+    width: 70%;
+}
 
+.shapeconatinerflex {
+    width: 53%;
+}
   .shapeconatinerflex .secondHeadingText {
     font-size: 33px;
     line-height: 0.9;
+    padding: 0 14px;
   }
+
+  .unqiuesectionflex {
+    align-items: flex-start;
+}
   .lowconatinersection {
     margin: 0;
     padding-top: 75px;
@@ -10200,9 +10362,9 @@ body,
   }
 
   .vissionmisiontext.secondHeadingText {
-    font-size: 60px;
+    font-size: 50px;
     top: 25px;
-    line-height: 60px;
+    line-height: 50px;
   }
 
   .leftsidecontentsectionabout .subHeadingText {
@@ -10219,17 +10381,21 @@ body,
   }
 
   .leftsidecontentsectionabout {
-    left: 1%;
+    left: -4%;
     width: 38%;
     padding: 26px 18px;
     padding-bottom: 0;
+    width: 250px;
+    top: 260px;
   }
 
   .rightsidecontentsectionabout {
-    right: -1%;
+    right: -4%;
     width: 37%;
     padding: 26px 18px;
     padding-bottom: 0;
+        width: 250px;
+            top: 260px;
   }
 
   .contactustextcontent {
@@ -10245,6 +10411,7 @@ body,
   }
   .visionmissonrow {
     padding: 75px 0;
+    height: 600px;
   }
   .aboutusfoundermaincontent .secondHeadingText {
     font-size: 60px;
@@ -10260,12 +10427,23 @@ body,
   }
 
   .aboutusfoundermaincontent .subHeadingText {
-    width: 32%;
+    width: 50%;
   }
 
   .founderflex {
     margin-top: 15px;
+    /* flex-direction: column; */
   }
+
+  .founderflex {
+    justify-content: center;
+    column-gap: 0;
+}
+
+.founderflex2 {
+    width: 50%;
+
+}
 
   .founderflexcontentpopup .foundernamepopup {
     font-size: 30px;
@@ -10276,7 +10454,7 @@ body,
   }
 
   .rectangleone {
-    width: 70%;
+    width: 85%;
     height: 80px;
   }
 
@@ -10291,10 +10469,36 @@ body,
   }
 
   .foundersbanner {
-    height: 500px;
-    background-size: cover;
-    background-position: center;
+    height: 800px;
+    background-size: contain;
+    background-position: bottom;
+    background-image: url("/public/images/about-us/mobaoutusfoundersbanner.jpg");
+    background-color: #f0f0f0;
   }
+
+  .insidepopupclasscontent {
+    width: 94%;
+    height: auto;
+    background: #fff;
+}
+.aboutuspopupstyles {
+    width: 100%;
+    height: 100%;
+}
+  .foundersbanner.active {
+
+ background-image: url("/public/images/about-us/mobaoutusfoundersbanner2.jpg");
+   }
+
+   .insidepopupclass {
+    justify-content: center;
+}
+.aboutuspopupstyles .mainheadingText {
+    padding-left: 3px;
+    margin-top: 5px;
+    font-size: 18px;
+}
+     
 
   .founderflex1 {
     width: 56%;
@@ -10303,7 +10507,7 @@ body,
 
   .founderimagee {
     width: 88px;
-    top: -23px;
+    top: -19px;
   }
 
   /* AboutPage-Responsive */
@@ -10332,6 +10536,7 @@ body,
 
   .onGoingProjectsLists span {
     font-size: 15px;
+    padding-left: 3px;
   }
 
   .FirstonGoingProjectsLists,
@@ -10348,6 +10553,7 @@ body,
 
   .mainRowonGoingProjectsLists .onGoingProjectsLists {
     padding-left: 20px;
+    padding: 20px 0 20px 10px;
   }
   .ongoingProjectsDiVMain {
     margin-top: 60px;
@@ -10382,6 +10588,12 @@ body,
     width: 95%;
     margin-bottom: 1px;
   }
+
+  .FirstmainonGoingProjectsLists {
+    row-gap: 30px;
+}
+
+
   /* Ongoing Page */
 
   /* ContactUs */
@@ -10411,6 +10623,7 @@ body,
   .worthwithUsSection {
     background-position: center;
     height: 600px;
+    background: none;
   }
 
   .JointVenturePage .formContactUsSectionFlex {
@@ -10430,6 +10643,10 @@ body,
     row-gap: 19px;
   }
 
+  .JointVenturePage .mainSectionFormWithUs {
+    width: 90%;
+  }
+
   .contactFormInputEach button {
     padding: 7px 4px;
     font-size: 16px;
@@ -10444,6 +10661,8 @@ body,
   .channelPartnerFormSection {
     column-gap: 40px;
     align-items: center;
+    flex-direction: column-reverse;
+    row-gap: 40px;
   }
   .channelPartnerFormSection .contactFormInputEach input {
     margin-top: 5px;
@@ -10452,7 +10671,7 @@ body,
   }
 
   .channelPartnerMainSection .formContactUsSectionFlex {
-    width: 35%;
+    width: 60%;
   }
 
   .channelPartnerFormSection .formChannelPartnerImage {
@@ -10467,6 +10686,7 @@ body,
     height: auto;
     padding-top: 70px;
     padding-bottom: 60px;
+    background: #f1f1f1;
   }
 
   .mainSectionFormWithUs {
@@ -10541,6 +10761,15 @@ body,
 
   .testimonalpagedisply .testimonalSliderborder {
     width: 38%;
+    width: 48%;
+  }
+
+  .testimonalpagedisply .testimonalSectionName h4 {
+    font-size: 16.5px;
+  }
+
+  .testimonalpagedisply .testimonalSectionName p {
+    font-size: 14px;
   }
 
   .testimonialpagebgcars {
@@ -10578,7 +10807,7 @@ body,
   }
 
   .twoflexnriimage {
-    width: 46%;
+    width: 80%;
   }
 
   .nrilistenquire {
@@ -10608,14 +10837,24 @@ body,
   }
   .flexnriimage {
     column-gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 26px;
   }
   .oneflexnriimage {
-    width: 68%;
+    width: 80%;
   }
   .nrifaq {
-    height: 590px;
+    height: auto;
+    padding: 50px 0;
+  }
+  .onefaqnriconatiner {
+    width: 80%;
   }
 
+  .twofaqnriconatiner {
+    width: 80%;
+  }
   .faqnriconatiner.active h4 {
     font-size: 20px;
   }
@@ -10645,6 +10884,9 @@ body,
 
   .faqflexdiv {
     column-gap: 29px;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
   }
 
   .faqnriconatiner.active {
@@ -10957,7 +11199,7 @@ body,
     height: 100%;
     margin-top: 0;
     justify-content: end;
-    padding-bottom: 20%;
+    padding-bottom: 30%;
   }
   .hamburgerflex {
     column-gap: 4px;
@@ -12006,7 +12248,8 @@ max-width: 320px;
   }
 
   .onGoingProjectsLists span {
-    font-size: 17px;
+     font-size: 17px;
+    padding-left: 8px;
   }
   .FirstonGoingProjectsLists:first-child span {
     padding-left: 20px;
@@ -12113,6 +12356,11 @@ max-width: 320px;
     flex-direction: column;
   }
 
+  .ongoingProjectsPage  .mainRowonGoingProjectsLists {
+
+        max-width: 360px;
+    }
+
   .mainRowonGoingProjectsLists img {
     width: 100%;
   }
@@ -12139,6 +12387,17 @@ max-width: 320px;
     width: 100%;
   }
 
+  .channelPartnerMainSection .channelPartnerFormSection {
+    max-width: 350px;
+  }
+
+     .channelPartnerFormFirst  .lowconatinersectionafterbanner {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
   .formContactUsSectionFlex .subHeadingText {
     margin-top: 10px;
   }
@@ -12155,6 +12414,20 @@ max-width: 320px;
     padding: 50px 0;
     padding-bottom: 50px;
     background-size: cover;
+  }
+
+  .JointVenturePage .worthwithUsSection {
+    /* max-width: 350px; */
+    display: flex;
+    justify-content: center;
+  }
+
+  .JointVenturePage .mainSectionFormWithUs {
+    display: flex;
+    justify-content: center;
+  }
+  .JointVenturePage .formContactUsSectionFlex {
+    max-width: 330px;
   }
 
   .JointVenturePage .formContactUsSectionFlex {
@@ -12291,6 +12564,12 @@ max-width: 320px;
   .CarrePageMainSection .formContactUsSectionFlex {
     padding-left: 0;
     padding-right: 0;
+    max-width: 340px;
+  }
+
+  .CarrePageMainSection .mainSectionFormWithUs {
+    display: flex;
+    justify-content: center;
   }
 
   .CarrePageMainSection .contactFormInputEach input {
@@ -12314,6 +12593,7 @@ max-width: 320px;
 
   .testimonalpagedisply .testimonalSliderborder {
     width: 90%;
+    width: 80%;
   }
 
   .testimonialpagebgcars {
@@ -12493,6 +12773,7 @@ max-width: 320px;
 
   .NriPage .keystoneuniquesection {
     height: 1234px;
+    background-position: center;
   }
 
   .nricardscontent .subHeadingText {
@@ -12507,9 +12788,7 @@ max-width: 320px;
   /* ProjectDetail Page  */
   .downloadbrocedhurebuttonflex {
     top: -32px;
-}
-
-
+  }
 
   .spectraproject .secondHeadingText {
     font-size: 35px;
@@ -12913,6 +13192,10 @@ max-width: 320px;
   .HeaderMainSEC {
     display: none;
   } */
+
+  .OurSignatureApproach {
+    display: none;
+  }
 }
 
 /* resposive start */
@@ -13017,3 +13300,46 @@ max-width: 320px;
 .testimonalFullSection  {
   display: none;
 } */
+
+/* Testimonal Slider Hieght */
+
+.testimonalSliders .slick-slide {
+  height: auto !important;
+}
+
+.testimonalSliders .slick-list {
+  display: flex !important;
+}
+
+.testimonalSliders .slick-track {
+  display: flex !important;
+}
+
+.testimonalSlidersSlide {
+  height: 100% !important;
+  display: flex !important;
+}
+
+.testimonalSliderborder {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonalSliders .slick-slide {
+  display: flex !important;
+  height: auto !important;
+}
+
+.testimonalSlidersSlide {
+  height: 100%;
+  display: flex;
+}
+
+.testimonalSliderborder {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Testimonal Slider Hieght */

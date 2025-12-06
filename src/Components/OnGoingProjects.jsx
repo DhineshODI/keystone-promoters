@@ -132,7 +132,7 @@ export default function OngoingProjects() {
                         <div className="projectsNameOnGoing">
                           <div className="newaddonprojectsss">
                             <h5>
-                              {project.noofunits} <span>Units</span>
+                              {project.noofunits} <span>UNITS</span>
                             </h5>
                             <h5>
                               {project.BHKStatus} <span>BHK</span>

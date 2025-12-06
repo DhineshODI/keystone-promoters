@@ -8,23 +8,23 @@ export default function Menubar({ menuOnlick }) {
         <ul className="twomenu">
           <div>
             <li onClick={menuOnlick}>
-              <a href="/aboutus">Brand</a>
+              <a href="/brand">Brand</a>
             </li>
 
-            <li onClick={menuOnlick}>
+            {/* <li onClick={menuOnlick}>
               <a href="/project-detail">Projects</a>
-            </li>
+            </li> */}
 
             <li onClick={menuOnlick}>
               <a href="/ongoing-projects">Ongoing</a>
             </li>
 
-            <li onClick={menuOnlick}>
+            {/* <li onClick={menuOnlick}>
               <a href="/completed">Completed</a>
-            </li>
+            </li> */}
 
             <li onClick={menuOnlick}>
-              <a href="/channel-partner">Channel Partner</a>
+              <a href="/channel-partners">Channel Partners</a>
             </li>
 
             <li onClick={menuOnlick}>

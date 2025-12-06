@@ -17,7 +17,7 @@ export default function TestimonalSlider() {
     autoplaySpeed: 2000,
     arrows: false,
     swipe: true,
-    draggable: false,
+    draggable: true,
     touchMove: true,
     responsive: [
       {
@@ -87,7 +87,7 @@ export default function TestimonalSlider() {
                 <div className="testimonalSliderborder">
                   <div className="testimonalSectionName">
                     <h4>Mr. Pandian</h4>
-                    <p>Chennai</p>
+                    <p>NorthPoint, Chennai</p>
                   </div>
 
                   <div className="testimonalContent">
@@ -131,8 +131,8 @@ export default function TestimonalSlider() {
                     <p className="subHeadingText">
                       Initially hesitant about Keystone, I was soon impressed by
                       their detailed planning, thoughtful design, and highly
-                      professional execution that consistently exceeded my
-                      expectations.
+                      professional execution that consistently and truly
+                      exceeded my expectations.
                     </p>
 
                     <div className="flex items-center justify-between  testimonalPersonImageContainer ">
@@ -153,7 +153,43 @@ export default function TestimonalSlider() {
                   </div>
                 </div>
               </div>
-             
+              <div
+                className="testimonalSlidersSlide"
+                data-aos="fade-left"
+                data-aos-duration="1600"
+              >
+                <div className="testimonalSliderborder">
+                  <div className="testimonalSectionName">
+                    <h4>M/s. KwaliteeFabs </h4>
+                    <p>Karur</p>
+                  </div>
+
+                  <div className="testimonalContent">
+                    <p className="subHeadingText">
+                      An Architect/interior designer who creates wonders with
+                      style within budget. Vaishnavi’s professionalism and team
+                      spirit helped pick perfect colors, fixtures, carpeting,
+                      delivering significant quality service.
+                    </p>
+
+                    <div className="flex items-center justify-between  testimonalPersonImageContainer ">
+                      <div className="testimonalPersonImagediv">
+                        <img
+                          className="testimonalPersonImage"
+                          src="/images/youtube-image.png"
+                          alt=""
+                        />
+                      </div>
+
+                      <img
+                        className="youtubeIcontestimonal"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </Slider>
 
             <div className="flex justify-center items-center gap-7 mt-6 visibilityhidden">

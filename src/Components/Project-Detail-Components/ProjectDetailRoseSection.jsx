@@ -19,13 +19,22 @@ export default function ProjectDetailRoseSection() {
               </div>
               <div className="seondbannerafterSectionMAIN">
                 {/* <div className="seondbannerafterSectionMAINrow"></div> */}
-                <img src="/images/project-detail/projectdetail-banner-icon.png" alt="" />
+                <img
+                  src="/images/project-detail/projectdetail-banner-icon.png"
+                  alt=""
+                />
               </div>
-              <div className="thirdbannerafterSectionMAIN" data-aos="fade-right" data-aos-duration="1100">
+              <div
+                className="thirdbannerafterSectionMAIN"
+                data-aos="fade-right"
+                data-aos-duration="1100"
+              >
                 <div style={{ marginTop: "15px" }}>
                   <p className="contactPageAddress">
-                    Happy Clients already invested our ongoing projects are your
-                    next great oppurtunity.
+                    {/* Happy Clients already invested our ongoing projects are your
+                    next great oppurtunity. */}
+                    Built to meet everyday needs with smart design and quality
+                    construction.
                   </p>
                 </div>
               </div>

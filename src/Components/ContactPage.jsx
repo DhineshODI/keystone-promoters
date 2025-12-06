@@ -183,23 +183,38 @@ export default function ContactPage() {
                   style={{ marginTop: "15px" }}
                 >
                   <h4 className="gettknowHeading">Phone</h4>
-                  <p className="contactPageAddress">+91 44 2817 2255</p>
+                  {/* <p className="contactPageAddress">+91 44 2817 2255</p> */}
+                  <a
+                    href="tel:+914428172255"
+                    className="contactPageAddress text-hover-underline"
+                  >
+                    +91 44 2817 2255
+                  </a>
                 </div>
                 <div
                   className="contactustextcontent"
                   style={{ marginTop: "15px" }}
                 >
                   <h4 className="gettknowHeading">MOBILE</h4>
-                  <p className="contactPageAddress">+91 99400 08855</p>
+                  {/* <p className="contactPageAddress">+91 99400 08855</p> */}
+                  <a
+                    href="tel:+919940008855"
+                    className="contactPageAddress text-hover-underline"
+                  >
+                    +91 99400 08855
+                  </a>
                 </div>
                 <div
                   className="contactustextcontent"
                   style={{ marginTop: "15px" }}
                 >
                   <h4 className="gettknowHeading">Email</h4>
-                  <p className="contactPageAddress">
+                  <a
+                    href="mailto:info@keystonepromoters.com"
+                    className="contactPageAddress text-hover-underline"
+                  >
                     info@keystonepromoters.com
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -210,8 +225,13 @@ export default function ContactPage() {
       {/* After-Banner-Section */}
 
       <div className="contactPageBgPadding">
-        <div className="contactUsBannerPageBg">
-          <div className="formContactUsSection" id="form_id">
+        <div
+          className="contactUsBannerPageBg cursor-pointer"
+          onClick={() =>
+            window.open("https://maps.app.goo.gl/3B7V1YFCsvFGBWN26", "_blank")
+          }
+        >
+          <div className="formContactUsSection" id="form_id"  onClick={(e) => e.stopPropagation()}>
             <div
               className="formContactUsSectionFlex"
               data-aos="fade-up"

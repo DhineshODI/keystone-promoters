@@ -85,8 +85,8 @@ export default function AboutusFounder() {
                   }`}
                 >
                   <div className="founderdetails">
-                    <h4 className="secondHeadingText ">Dinesh Sellappan</h4>
-                    <h5 className="subHeadingText ">Director</h5>
+                    <h4 className="secondHeadingText">Dinesh Sellappan</h4>
+                    <h5 className="subHeadingText directorname">Director</h5>
                   </div>
 
                   <img
@@ -103,7 +103,7 @@ export default function AboutusFounder() {
                 >
                   <div className="founderdetails">
                     <h4 className="secondHeadingText ">Vaishnava Priya</h4>
-                    <h5 className="subHeadingText ">Director</h5>
+                    <h5 className="subHeadingText  directorname">Director</h5>
                   </div>
 
                   <img

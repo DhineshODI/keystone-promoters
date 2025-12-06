@@ -12,7 +12,7 @@ export default function Footer() {
 
               <ul className="footerListsul">
                 <div>
-                  <a href="/aboutus">
+                  <a href="/brand">
                     <li className="subHeadingText text-hover-underline">
                       About us
                     </li>
@@ -54,7 +54,7 @@ export default function Footer() {
                     </li>
                   </a> */}
 
-                  <a href="/channel-partner">
+                  <a href="/channel-partners">
                     <li className="subHeadingText text-hover-underline">
                       Channel Partner
                     </li>
@@ -87,17 +87,7 @@ export default function Footer() {
                 <div>
                   <a href="/architecture">
                     <li className="subHeadingText  text-hover-underline">
-                      The Scape - S.Kolathur, Chennai
-                    </li>
-                  </a>
-                  <a href="/architecture">
-                    <li className="subHeadingText  text-hover-underline">
-                      North Point - Chennai
-                    </li>
-                  </a>
-                  <a href="/architecture">
-                    <li className="subHeadingText  text-hover-underline">
-                      The Grove - Pallikaranai, Chennai.
+                      The Spectra - Keelkattalai, Chennai
                     </li>
                   </a>
                 </div>
@@ -110,7 +100,7 @@ export default function Footer() {
                 <div>
                   <a href="/architecture">
                     <li className="subHeadingText  text-hover-underline">
-                      The Scape - S.Kolathur, Chennai
+                      The Scape - Keelkattalai, Chennai
                     </li>
                   </a>
 
@@ -158,10 +148,7 @@ export default function Footer() {
                 <ul className="footerListsul">
                   <div className="iconsFooters">
                     <div className="iconsMainDivFooter">
-                      <a
-                        href="#"
-                        target="_blank"
-                      >
+                      <a href="#" target="_blank">
                         <img src="/images/icons/linkedin.svg" alt="" />
                       </a>
                     </div>
@@ -194,10 +181,7 @@ export default function Footer() {
                     </div>
 
                     <div className="iconsMainDivFooter">
-                      <a
-                        href="#"
-                        target="_blank"
-                      >
+                      <a href="#" target="_blank">
                         <img src="/images/icons/twitter-x.svg" alt="" />
                       </a>
                     </div>
@@ -209,8 +193,8 @@ export default function Footer() {
 
           <div className="footercopyRight">
             <div className="subHeadingText copyrightstextcontent ">
-              Copyright © Keystone Promotors Pvt Ltd | Terms of Use | Privacy
-              Policy
+              Copyright © Keystone promoters Pvt Ltd
+              {/* | Terms of Use | Privacy Policy */}
             </div>
 
             <Link to="https://www.opendesignsin.com/" target="_blank">

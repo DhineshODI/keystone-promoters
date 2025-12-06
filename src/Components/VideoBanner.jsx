@@ -133,10 +133,18 @@ export default function VideoBanner() {
   return (
     <div className="videoBannermainContainer">
       <div className="videoBannerVideoFILE">
+        {/* <video
+          autoPlay
+          muted
+          loop
+          src="/images/homepage/bannerVideo.mp4"
+        ></video> */}
         <video
           autoPlay
           muted
           loop
+          playsInline
+          webkit-playsinline="true"
           src="/images/homepage/bannerVideo.mp4"
         ></video>
 

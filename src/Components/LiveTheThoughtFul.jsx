@@ -83,7 +83,7 @@ export default function LiveThoughtFul() {
             <div className="LiveThoughtFlexImg" data-aos="fade-right"   data-aos-duration="1000">
               <img src="/images/homepage/famil-Pic-Section.png" alt="" />
 
-              <a href="/aboutus">
+              <a href="/brand">
                 <button  data-aos="fade-up" data-aos-duration="1000" className="knowMoreButtonImage cursor-pointer">
                   Know More
                 </button>{" "}

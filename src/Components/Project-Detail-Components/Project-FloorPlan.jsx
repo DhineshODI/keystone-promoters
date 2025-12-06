@@ -3,28 +3,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 export default function ProjectFloorPan() {
-  // const floorItems = [
-  //   {
-  //     label: "Block A & B",
-  //     img: "/images/project-detail/floor-plan/block-a&b.jpg",
-  //   },
-  //   {
-  //     label: "Block A & B - 1",
-  //     img: "/images/project-detail/floor-plan/block-a&b.jpg",
-  //   },
-  //   {
-  //     label: "Block A",
-  //     img: "/images/project-detail/floor-plan/block-a&b.jpg",
-  //   },
-  //   {
-  //     label: "Block B",
-  //     img: "/images/project-detail/floor-plan/block-a&b.jpg",
-  //   },
-  // ];
-
   const floorItems = [
     {
-      blockLabel: "Block A & B",
+      blockLabel: "Car Parking",
+      smallname: "",
       images: [
         {
           label: "Ground Floor",
@@ -33,7 +15,8 @@ export default function ProjectFloorPan() {
       ],
     },
     {
-      blockLabel: "Block A & B - 1",
+      blockLabel: "Block Plan",
+      smallname: "",
       images: [
         {
           label: "Ground Floor",
@@ -42,7 +25,19 @@ export default function ProjectFloorPan() {
       ],
     },
     {
-      blockLabel: "Block A",
+      blockLabel: "Typical Plan",
+      smallname: "( Block A - 1st to 5th )",
+      images: [
+        {
+          label: "Typical Floor Plan",
+          img: "/images/project-detail/floor-plan/block-a-typical-floor-plan.jpg",
+        },
+      ],
+    },
+
+    {
+      blockLabel: "Unit Plan",
+      smallname: "( Block A )",
       images: [
         {
           label: "A101-A501",
@@ -64,15 +59,11 @@ export default function ProjectFloorPan() {
           label: "A105-A505",
           img: "/images/project-detail/floor-plan/block-a-a105-a505.jpg",
         },
-        {
-          label: "Typical Floor Plan",
-          img: "/images/project-detail/floor-plan/block-a-typical-floor-plan.jpg",
-        },
       ],
     },
-
     {
-      blockLabel: "Block B",
+      blockLabel: "Unit Plan",
+      smallname: "( Block - B )",
       images: [
         {
           label: "B101-B401",
@@ -90,13 +81,25 @@ export default function ProjectFloorPan() {
           label: "B104-B404",
           img: "/images/project-detail/floor-plan/block-b-b104-b404.jpg",
         },
-        {
-          label: "Floor Plan",
-          img: "/images/project-detail/floor-plan/block-b-fifth-floor-plan.jpg",
-        },
+      ],
+    },
+    {
+      blockLabel: "Typical Plan",
+      smallname: "( Block B - 1st to 4th )",
+      images: [
         {
           label: "Typical Floor Plan",
           img: "/images/project-detail/floor-plan/block-b-typical-floor-plan.jpg",
+        },
+      ],
+    },
+    {
+      blockLabel: "Gym & Multipurpose Hall Plan",
+      smallname: "( Block B - 5th Floor )",
+      images: [
+        {
+          label: "Floor Plan",
+          img: "/images/project-detail/floor-plan/block-b-fifth-floor-plan.jpg",
         },
       ],
     },
@@ -124,7 +127,8 @@ export default function ProjectFloorPan() {
                 onClick={() => setActiveBlockIndex(index)}
                 style={{ cursor: "pointer", marginBottom: "10px" }}
               >
-                {block.blockLabel}
+                {block.blockLabel} <br />
+                <span className="smallname">{block.smallname}</span>
               </li>
             ))}
           </ul>
@@ -133,29 +137,14 @@ export default function ProjectFloorPan() {
 
       <div className="floorplanimagewrap">
         <div className="floorplansrightsectionflex">
-          {/* {activeBlock.images.map((image, index) => (
-            <div key={index} className="indiviualcardfloorplan">
-              <span
-                className="subHeadingText textoftehfloor"
-                style={{
-                  marginTop: "8px",
-                  marginBottom: "12px",
-                  fontWeight: "500",
-                }}
-              >
-                {image.label}
-              </span>
-              <img
-              className="imagefloorplabimage"
-                src={image.img}
-                alt={image.label}
-                style={{ width: "100%", borderRadius: "8px" }}
-              />
-            </div>
-          ))} */}
-
           {activeBlock.images.map((image, index) => (
-            <div key={index} className="indiviualcardfloorplan">
+            <div
+              key={index}
+              // className="indiviualcardfloorplan"
+              className={`indiviualcardfloorplan  ${
+                activeBlock.images.length < 2 ? "newcardwidth" : ""
+              }`}
+            >
               <span
                 className="subHeadingText textoftehfloor"
                 style={{

@@ -2,8 +2,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 export default function ProjectDetailSectionContent() {
-
-    useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000, // animation speed
       once: false, // run only once
@@ -11,7 +10,11 @@ export default function ProjectDetailSectionContent() {
   }, []);
   return (
     <>
-      <div className="mainContainerDetailProject" data-aos="fade-up" data-aos-duration="1000">
+      <div
+        className="mainContainerDetailProject"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <div className="ProjectDetailSectionContentSection">
           <img
             className="projectDetailBannerIMageMain"
@@ -33,16 +36,12 @@ export default function ProjectDetailSectionContent() {
               </div>
 
               <div className="projectNameDetailPage projectdetailflex">
-                <img
-                  src="/images/project-detail/bed-icon-pink.svg"
-                  alt=""
-                />
+                <img src="/images/project-detail/bed-icon-pink.svg" alt="" />
 
                 <div className="flex items-end gap-2">
-                <h5>2 & 3</h5>
-                <p>BHK Apartment</p>
+                  <h5>2 & 3</h5>
+                  <p>BHK</p>
                 </div>
-
               </div>
             </div>
 
@@ -55,7 +54,7 @@ export default function ProjectDetailSectionContent() {
                   Land Extent :<span> 22,058 Sq.ft.</span>{" "}
                 </p>
                 <p className="nooffloors">
-                  Total :<span> Units 41</span>{" "}
+                  Total Units :<span> 41 </span>{" "}
                 </p>
                 <p className="nooffloors">
                   3 BHK :<span> 1481 - 1608 Sq.ft.</span>{" "}

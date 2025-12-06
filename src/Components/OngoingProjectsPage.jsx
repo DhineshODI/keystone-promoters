@@ -155,7 +155,7 @@ export default function OngoingProjectsPage() {
                       <div className="ongoingpageproject unitsectiondiv">
                         <h5 className="indivuaial">
                           {project.units}
-                          <span>Units</span>
+                          <span>UNITS</span>
                         </h5>
                         <h5>
                           {project.BHKStatus}
