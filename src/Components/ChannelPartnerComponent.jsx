@@ -2,6 +2,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 
 export default function ChannelPartnerComponent() {
   useEffect(() => {
@@ -11,75 +13,98 @@ export default function ChannelPartnerComponent() {
     });
   }, []);
 
+  const [isLoading, setIsLoading] = useState(false);
+  const [showSnackbar, setShowSnackbar] = useState(false);
+
   const [form, setForm] = useState({
     companyName: "",
     email: "",
     city: "",
+    phone: "",
     remarks: "",
   });
 
+  const [errors, setErrors] = useState({
+    companyName: "",
+    email: "",
+    city: "",
+    phone: "",
+  });
+
   const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+
+    // if (name === "phone") {
+    //   if (!/^[6-9]*$/.test(value)) return; // only numbers
+    // }
+
+    setForm({ ...form, [name]: value });
+    setErrors({ ...errors, [name]: "" }); // clear error while typing
   };
 
   const handleSubmit = async () => {
-    // Validation
+    let newErrors = {};
+
     if (!form.companyName.trim()) {
-      alert("Please enter the company name.");
-      return;
+      newErrors.companyName = "Company name is required";
     }
 
     if (!form.email.trim()) {
-      alert("Please enter the email address.");
-      return;
-    }
-
-    // Email format validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(form.email)) {
-      alert("Please enter a valid email address.");
-      return;
+      newErrors.email = "Email is required";
+    } else {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(form.email)) {
+        newErrors.email = "Enter a valid email";
+      }
     }
 
     if (!form.city.trim()) {
-      alert("Please enter the city.");
-      return;
+      newErrors.city = "City is required";
     }
 
-    // Remarks is optional → no validation
+    if (!form.phone.trim()) {
+      newErrors.phone = "Phone number is required";
+    }
+    // else if (form.phone.replace(/\D/g, "").length < 10) {
+    //   newErrors.phone = "Phone must be at least 10 digits";
+    // }
 
-    // If validation passes → submit
+    setErrors(newErrors);
+
+    // STOP if validation fails
+    if (Object.keys(newErrors).length > 0) return;
+
+    // Start loader
+    setIsLoading(true);
+
     try {
       const res = await axios.post(
-        "http://localhost/keystone-api/apis/ChannelPartner.php",
+        "https://dev.opendesignsin.com/keystonepromotersdemo/keystone-api/keystone-api/apis/ChannelPartner.php",
         form,
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
+        { headers: { "Content-Type": "application/json" } }
       );
 
-      console.log("Response:", res.data);
-
       if (res.data.status === true) {
-        alert("Channel partner form submitted successfully!");
-
-        // Reset form
         setForm({
           companyName: "",
           email: "",
           city: "",
+          phone: "",
           remarks: "",
         });
-      } else {
-        alert("Error: " + res.data.message);
-        console.error("PHP Error:", res.data.error);
+
+        setErrors({});
+
+        // show snackbar
+        setShowSnackbar(true);
+        setTimeout(() => setShowSnackbar(false), 3000);
       }
     } catch (error) {
       console.error("Request Error:", error);
-      alert("Something went wrong. Please try again.");
     }
+
+    // Stop loader
+    setIsLoading(false);
   };
   return (
     <>
@@ -163,7 +188,7 @@ export default function ChannelPartnerComponent() {
 
         {/* Channel-Partner-Form-Section */}
 
-        <div className="channelPartnerFormFirst">
+        {/* <div className="channelPartnerFormFirst">
           <div className="container max-w-7xl mx-auto px-4 ">
             <div className="lowconatinersectionafterbanner">
               <div className="channelContentPartner">
@@ -236,10 +261,137 @@ export default function ChannelPartnerComponent() {
               </div>
             </div>
           </div>
+        </div> */}
+
+        <div className="channelPartnerFormFirst">
+          <div className="container max-w-7xl mx-auto px-4 ">
+            <div className="lowconatinersectionafterbanner">
+              <div className="channelContentPartner">
+                <h5
+                  className="secondHeadingText "
+                  data-aos="fade-down"
+                  data-aos-duration="1400"
+                >
+                  Channel Partners
+                </h5>
+                <p
+                  className="subHeadingText"
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                >
+                  Join Keystone Promoters to create sustainable, high-value real
+                  estate projects built on trust quality, and innovation.
+                </p>
+              </div>
+              <div className="channelPartnerFormSection">
+                <div className="formContactUsSectionFlex">
+                  <div className="formMainStyleContactPage">
+                    <div className="contactFormInputEach">
+                      <label className="subHeadingText">
+                        Name of the Company <sup>*</sup>
+                      </label>
+                      <input
+                        name="companyName"
+                        type="text"
+                        value={form.companyName}
+                        onChange={handleChange}
+                        className={errors.companyName ? "inputError" : ""}
+                      />
+                      {errors.companyName && (
+                        <p className="errorText">{errors.companyName}</p>
+                      )}
+                    </div>
+
+                    <div className="contactFormInputEach">
+                      <label className="subHeadingText">
+                        Email <sup>*</sup>
+                      </label>
+                      <input
+                        name="email"
+                        type="text"
+                        value={form.email}
+                        onChange={handleChange}
+                        className={errors.email ? "inputError" : ""}
+                      />
+                      {errors.email && (
+                        <p className="errorText">{errors.email}</p>
+                      )}
+                    </div>
+
+                    <div className="contactFormInputEach">
+                      <label className="subHeadingText">
+                        City <sup>*</sup>
+                      </label>
+                      <input
+                        name="city"
+                        type="text"
+                        value={form.city}
+                        onChange={handleChange}
+                        className={errors.city ? "inputError" : ""}
+                      />
+                      {errors.city && (
+                        <p className="errorText">{errors.city}</p>
+                      )}
+                    </div>
+
+                    <div className="contactFormInputEach">
+                      <label className="subHeadingText">
+                        Phone <sup>*</sup>
+                      </label>
+
+                      <PhoneInput
+                        country={"in"} // Default India
+                        value={form.phone}
+                        onChange={(value) => {
+                          setForm({ ...form, phone: value });
+                          setErrors({ ...errors, phone: "" });
+                        }}
+                        inputClass={errors.phone ? "inputError" : ""}
+                        containerClass="phoneContainer"
+                        buttonClass="phoneDropdown"
+                      />
+
+                      {errors.phone && (
+                        <p className="errorText">{errors.phone}</p>
+                      )}
+                    </div>
+
+                    <div className="contactFormInputEach">
+                      <label className="subHeadingText " htmlFor="">
+                        Remarks
+                      </label>
+                      <br />
+                      <input
+                        name="remarks"
+                        type="text"
+                        value={form.remarks}
+                        onChange={handleChange}
+                      />
+                    </div>
+
+                    <div className="contactFormInputEach">
+                      <button onClick={handleSubmit} disabled={isLoading}>
+                        {isLoading ? "Submitting..." : "Submit"}
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  className="formChannelPartnerImage"
+                  src="/images/channel-partner-form-img.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       {/* Channel-Partner-Form-Section */}
+
+      {showSnackbar && (
+        <div className="snackbar">Submitted Successfully! Thank you.</div>
+      )}
     </>
   );
 }

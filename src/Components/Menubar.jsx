@@ -19,9 +19,9 @@ export default function Menubar({ menuOnlick }) {
               <a href="/ongoing-projects">Ongoing</a>
             </li>
 
-            {/* <li onClick={menuOnlick}>
+            <li onClick={menuOnlick}>
               <a href="/completed">Completed</a>
-            </li> */}
+            </li>
 
             <li onClick={menuOnlick}>
               <a href="/channel-partners">Channel Partners</a>
@@ -36,7 +36,7 @@ export default function Menubar({ menuOnlick }) {
             </li>
 
             <li onClick={menuOnlick}>
-              <a href="/testimonial">Testimonial</a>
+              <a href="/testimonials">Testimonial</a>
             </li>
 
             <li onClick={menuOnlick}>

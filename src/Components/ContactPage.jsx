@@ -5,6 +5,9 @@ import axios from "axios";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useLocation } from "react-router-dom";
+
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 export default function ContactPage() {
   useEffect(() => {
     AOS.init({
@@ -38,72 +41,91 @@ export default function ContactPage() {
     message: "",
   });
 
+  const [errors, setErrors] = useState({
+    name: "",
+    email: "",
+    phone: "",
+  });
+
+  const [isLoading, setIsLoading] = useState(false);
+  const [showSnackbar, setShowSnackbar] = useState(false);
+
   const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+
+    // Validation rules
+    if (name === "name") {
+      // Allow only letters & spaces
+      if (!/^[A-Za-z\s]*$/.test(value)) return;
+    }
+
+    if (name === "phone") {
+      // Allow only numbers
+      if (!/^[6-9]*$/.test(value)) return;
+    }
+
+    setForm({ ...form, [name]: value });
+
+    // Remove error while typing
+    setErrors({ ...errors, [name]: "" });
   };
 
   const handleSubmit = async () => {
-    // Basic validation
+    let newErrors = {};
+
     if (!form.name.trim()) {
-      alert("Please enter your name.");
-      return;
+      newErrors.name = "Name is required";
     }
 
     if (!form.email.trim()) {
-      alert("Please enter your email.");
-      return;
-    }
-
-    // Email format validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(form.email)) {
-      alert("Please enter a valid email address.");
-      return;
+      newErrors.email = "Email is required";
+    } else {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(form.email)) {
+        newErrors.email = "Enter a valid email address";
+      }
     }
 
     if (!form.phone.trim()) {
-      alert("Please enter your phone number.");
-      return;
+      newErrors.phone = "Phone number is required";
+    } else if (form.phone.replace(/\D/g, "").length < 5) {
+      newErrors.phone = "Phone number must be at least 10 digits";
     }
 
-    // Phone validation (only numbers & at least 10 digits)
-    const phoneRegex = /^[0-9]{10,}$/;
-    if (!phoneRegex.test(form.phone)) {
-      alert("Please enter a valid phone number (minimum 10 digits).");
-      return;
-    }
+    setErrors(newErrors);
 
-    // If validation passes → submit
+    // STOP if validation fails
+    if (Object.keys(newErrors).length > 0) return;
+
+    // Start loader
+    setIsLoading(true);
+
     try {
       const res = await axios.post(
-        "http://localhost/keystone-api/apis/ContactUs.php",
+        "https://dev.opendesignsin.com/keystonepromotersdemo/keystone-api/keystone-api/apis/ContactUs.php",
         form,
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
+        { headers: { "Content-Type": "application/json" } }
       );
 
-      console.log("Response:", res.data);
-
       if (res.data.status === true) {
-        alert("Message sent successfully!");
+        // Show snackbar
+        setShowSnackbar(true);
+        setTimeout(() => setShowSnackbar(false), 3000);
 
+        // Clear form
         setForm({
           name: "",
           email: "",
           phone: "",
           message: "",
         });
-      } else {
-        // alert(Error: ${res.data.message});
-        console.error("PHP Error:", res.data.error);
       }
     } catch (error) {
       console.error("Request Error:", error);
-      alert("Something went wrong. Please try again later.");
     }
+
+    // Stop loader
+    setIsLoading(false);
   };
 
   return (
@@ -231,8 +253,12 @@ export default function ContactPage() {
             window.open("https://maps.app.goo.gl/3B7V1YFCsvFGBWN26", "_blank")
           }
         >
-          <div className="formContactUsSection" id="form_id"  onClick={(e) => e.stopPropagation()}>
-            <div
+          <div
+            className="formContactUsSection"
+            id="form_id"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* <div
               className="formContactUsSectionFlex"
               data-aos="fade-up"
               data-aos-duration="1100"
@@ -277,10 +303,93 @@ export default function ContactPage() {
                   <button onClick={handleSubmit}>Submit</button>
                 </div>
               </div>
+            </div> */}
+
+            <div
+              className="formContactUsSectionFlex"
+              data-aos="fade-up"
+              data-aos-duration="1100"
+            >
+              <h5 className="secondHeadingText ">Begin Your Journey</h5>
+              <p className="subHeadingText">
+                Contact us with your question we'll make sure your concerns are
+                addressed quickly and efficiently
+              </p>
+
+              <div className="formMainStyleContactPage">
+                <div className="contactFormInputEach">
+                  <label className="subHeadingText">
+                    Name <sup>*</sup>
+                  </label>
+                  <input
+                    className={errors.name ? "inputError" : ""}
+                    type="text"
+                    name="name"
+                    value={form.name}
+                    onChange={handleChange}
+                  />
+                  {errors.name && <p className="errorText">{errors.name}</p>}
+                </div>
+
+                <div className="contactFormInputEach">
+                  <label className="subHeadingText">
+                    Email <sup>*</sup>
+                  </label>
+                  <input
+                    className={errors.email ? "inputError" : ""}
+                    type="text"
+                    name="email"
+                    value={form.email}
+                    onChange={handleChange}
+                  />
+                  {errors.email && <p className="errorText">{errors.email}</p>}
+                </div>
+
+                <div className="contactFormInputEach">
+                  <label className="subHeadingText">
+                    Phone Number <sup>*</sup>
+                  </label>
+
+                  <PhoneInput
+                    country={"in"}
+                    value={form.phone}
+                    onChange={(value) => {
+                      setForm({ ...form, phone: value });
+                      setErrors({ ...errors, phone: "" });
+                    }}
+                    inputClass={errors.phone ? "inputError" : ""}
+                    containerClass="phoneContainer"
+                    buttonClass="phoneDropdown"
+                  />
+
+                  {errors.phone && <p className="errorText">{errors.phone}</p>}
+                </div>
+
+                <div className="contactFormInputEach">
+                  <label className="subHeadingText">Message</label>
+                  <input
+                    //className={form.message ? "inputSuccess" : ""}
+                    type="text"
+                    name="message"
+                    value={form.message}
+                    onChange={handleChange}
+                  />
+                </div>
+
+                <div className="contactFormInputEach">
+                  <button onClick={handleSubmit} disabled={isLoading}>
+                    {isLoading ? "Submitting..." : "Submit"}
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      {showSnackbar && (
+        <div className="snackbar">Message sent successfully!</div>
+      )}
     </>
   );
 }

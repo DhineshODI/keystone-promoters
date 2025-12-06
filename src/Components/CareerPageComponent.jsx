@@ -1,7 +1,10 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
+
 export default function CareerPageFunction() {
   useEffect(() => {
     AOS.init({
@@ -20,89 +23,105 @@ export default function CareerPageFunction() {
   });
 
   const [resume, setResume] = useState(null);
+  const [errors, setErrors] = useState({});
+  const [isLoading, setIsLoading] = useState(false);
+  const [showSnackbar, setShowSnackbar] = useState(false);
+  const [snackMsg, setSnackMsg] = useState("");
 
+  const [fileName, setFileName] = useState("No file chosen");
+
+  // ----------- INPUT VALIDATIONS WHILE TYPING ----------
   const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+
+    if (name === "name" && !/^[A-Za-z\s]*$/.test(value)) return; // letters only
+
+    setForm({ ...form, [name]: value });
+    setErrors({ ...errors, [name]: "" });
   };
 
+  // ----------- RESUME UPLOAD VALIDATION -----------
   const handleResumeUpload = (e) => {
-    setResume(e.target.files[0]);
+    const file = e.target.files[0];
+    if (!file) return;
+
+    const allowedTypes = [
+      "application/pdf",
+      "application/msword",
+      "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    ];
+
+    if (!allowedTypes.includes(file.type)) {
+      setSnackMsg("Only PDF, DOC, DOCX formats are allowed");
+      setShowSnackbar(true);
+      setTimeout(() => setShowSnackbar(false), 3000);
+      return;
+    }
+
+    if (file.size > 2 * 1024 * 1024) {
+      setSnackMsg("File size must be less than 2 MB");
+      setShowSnackbar(true);
+      
+      setTimeout(() => setShowSnackbar(false), 3000);
+      return;
+    }
+
+    setResume(file);
+    setFileName(file.name); // ✅ Update filename here
+    setErrors({ ...errors, resume: "" });
   };
 
+  // ----------- SUBMIT -----------
   const handleSubmit = async () => {
-    // ------- VALIDATION -------
+    let newErrors = {};
 
-    if (!form.name.trim()) {
-      alert("Please enter your name.");
-      return;
-    }
+    if (!form.name.trim()) newErrors.name = "Name is required";
+    if (!form.email.trim()) newErrors.email = "Email is required";
 
-    if (!form.email.trim()) {
-      alert("Please enter your email.");
-      return;
-    }
-
-    // Email format validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(form.email)) {
-      alert("Please enter a valid email address.");
+    if (form.email && !emailRegex.test(form.email))
+      newErrors.email = "Enter a valid email";
+
+    if (!form.phone.trim()) newErrors.phone = "Phone number is required";
+    if (form.phone.replace(/\D/g, "").length < 5)
+      newErrors.phone = "Minimum 10 digits required";
+
+    if (!form.qualification.trim())
+      newErrors.qualification = "Qualification is required";
+
+    if (!form.applyFor.trim()) newErrors.applyFor = "Apply For is required";
+
+    if (!resume) newErrors.resume = "Resume upload is required";
+
+    setErrors(newErrors);
+
+    if (Object.keys(newErrors).length > 0) {
+      setSnackMsg("Please fix the highlighted errors");
+      setShowSnackbar(true);
+      setTimeout(() => setShowSnackbar(false), 3000);
       return;
     }
 
-    if (!form.phone.trim()) {
-      alert("Please enter your phone number.");
-      return;
-    }
-
-    // Phone validation: only numbers, minimum 10 digits
-    const phoneRegex = /^[0-9]{10,}$/;
-    if (!phoneRegex.test(form.phone)) {
-      alert("Please enter a valid phone number (minimum 10 digits).");
-      return;
-    }
-
-    if (!form.qualification.trim()) {
-      alert("Please enter your qualification.");
-      return;
-    }
-
-    if (!form.applyFor.trim()) {
-      alert("Please specify the position you are applying for.");
-      return;
-    }
-
-    if (!resume) {
-      alert("Please upload your resume.");
-      return;
-    }
-
-    // message is optional → no validation
-
-    // ------- SUBMISSION -------
+    setIsLoading(true);
 
     const formData = new FormData();
-
-    // append form values
-    Object.entries(form).forEach(([key, value]) => formData.append(key, value));
-
-    // append resume
+    Object.entries(form).forEach(([k, v]) => formData.append(k, v));
     formData.append("resume", resume);
+
+    // https://dev.opendesignsin.com/keystonepromotersdemo/keystone-api/keystone-api
 
     try {
       const res = await axios.post(
-        "http://localhost/keystone-api/apis/CareerForm.php",
+        "https://dev.opendesignsin.com/keystonepromotersdemo/keystone-api/keystone-api/apis/CareerForm.php",
         formData,
-        {
-          headers: { "Content-Type": "multipart/form-data" },
-        }
+        { headers: { "Content-Type": "multipart/form-data" } }
       );
 
-      console.log("Response:", res.data);
-
       if (res.data.status === true) {
-        alert("Career form submitted successfully!");
+        setSnackMsg("Form Submitted Successfully!");
+        setShowSnackbar(true);
+        setTimeout(() => setShowSnackbar(false), 3000);
 
-        // Reset form
         setForm({
           name: "",
           email: "",
@@ -112,14 +131,15 @@ export default function CareerPageFunction() {
           message: "",
         });
         setResume(null);
-      } else {
-        alert("Error: " + res.data.message);
-        console.error("PHP Error:", res.data.error);
+        setErrors({});
       }
-    } catch (error) {
-      console.error("Request Error:", error);
-      alert("Something went wrong. Please try again.");
+    } catch (err) {
+      setSnackMsg("Something went wrong. Try again.");
+      setShowSnackbar(true);
+      setTimeout(() => setShowSnackbar(false), 3000);
     }
+
+    setIsLoading(false);
   };
 
   return (
@@ -277,7 +297,7 @@ export default function CareerPageFunction() {
 
         {/* Work With Us Section*/}
 
-        <div className="worthwithUsSection">
+        {/* <div className="worthwithUsSection">
           <div className="container max-w-7xl mx-auto px-4 ">
             <div className="mainSectionFormWithUs">
               <div className="formContactUsSectionFlex">
@@ -363,10 +383,177 @@ export default function CareerPageFunction() {
               </div>
             </div>
           </div>
+        </div> */}
+
+        <div className="worthwithUsSection">
+          <div className="container max-w-7xl mx-auto px-4 ">
+            <div className="mainSectionFormWithUs">
+              <div className="formContactUsSectionFlex">
+                <h5
+                  className="secondHeadingText "
+                  data-aos="fade-down"
+                  data-aos-duration="1500"
+                >
+                  Work with Us
+                </h5>
+                <p
+                  className="subHeadingText"
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                >
+                  We Value your skills and passion. Share your profile to
+                  explore exciting roles at Key Stone Promoters
+                </p>
+
+                <div className="formMainStyleContactPage">
+                  <div className="contactFormInputEach">
+                    <label className="subHeadingText">
+                      Name <sup>*</sup>
+                    </label>
+                    <input
+                      name="name"
+                      value={form.name}
+                      onChange={handleChange}
+                      className={errors.name ? "inputError" : ""}
+                    />
+                    {errors.name && <p className="errorText">{errors.name}</p>}
+                  </div>
+                  <div className="contactFormInputEach">
+                    <label className="subHeadingText">
+                      Email <sup>*</sup>
+                    </label>
+                    <input
+                      name="email"
+                      value={form.email}
+                      onChange={handleChange}
+                      className={errors.email ? "inputError" : ""}
+                    />
+                    {errors.email && (
+                      <p className="errorText">{errors.email}</p>
+                    )}
+                  </div>
+
+                  <div className="contactFormInputEach">
+                    <label className="subHeadingText">
+                      Phone Number <sup>*</sup>
+                    </label>
+                    <PhoneInput
+                      country="in"
+                      value={form.phone}
+                      onChange={(v) => {
+                        setForm({ ...form, phone: v });
+                        setErrors({ ...errors, phone: "" });
+                      }}
+                      inputClass={errors.phone ? "inputError" : ""}
+                    />
+                    {errors.phone && (
+                      <p className="errorText">{errors.phone}</p>
+                    )}
+                  </div>
+                  <div className="contactFormInputEach">
+                    <label className="subHeadingText">
+                      Qualification <sup>*</sup>
+                    </label>
+                    <input
+                      name="qualification"
+                      value={form.qualification}
+                      onChange={handleChange}
+                      type="text"
+                      className={errors.qualification ? "inputError" : ""}
+                    />
+                    {errors.qualification && (
+                      <p className="errorText">{errors.qualification}</p>
+                    )}
+                  </div>
+
+                  <div className="contactFormInputEach">
+                    <label className="subHeadingText">
+                      Apply For <sup>*</sup>
+                    </label>
+                    <input
+                      name="applyFor"
+                      value={form.applyFor}
+                      onChange={handleChange}
+                      type="text"
+                      className={errors.applyFor ? "inputError" : ""}
+                    />
+                    {errors.applyFor && (
+                      <p className="errorText">{errors.applyFor}</p>
+                    )}
+                  </div>
+
+                  <div className="contactFormInputEach">
+                    <label className="subHeadingText">
+                      Upload Resume <sup>*</sup>
+                    </label>
+
+                    {/* <div className="uploadIconWrapper">
+                      <input
+                        type="file"
+                        onChange={handleResumeUpload}
+                        accept=".pdf,.doc,.docx"
+                      />
+                      <img
+                        src="/images/icons/file-upload-svgrepo-com-new.svg"
+                        className="uploadIcon"
+                        alt="upload"
+                      />
+                    </div> */}
+
+                    {/* <input
+                        type="file"
+                        onChange={handleResumeUpload}
+                        accept=".pdf,.doc,.docx"
+                      /> */}
+                    {/* <img
+                        src="/images/icons/file-upload-svgrepo-com-new.svg"
+                        className="uploadIcon"
+                        alt="upload"
+                      /> */}
+
+                    <div className="customFileWrapper">
+                      <label htmlFor="fileInput" className="customFileButton">
+                        Choose File
+                      </label>
+
+                      <span className="customFileName">{fileName}</span>
+
+                      <input
+                        type="file"
+                        id="fileInput"
+                        className="hiddenFileInput"
+                        onChange={handleResumeUpload}
+                        accept=".pdf,.doc,.docx"
+                      />
+                    </div>
+
+                    {errors.resume && (
+                      <p className="errorText">{errors.resume}</p>
+                    )}
+                  </div>
+                  <div className="contactFormInputEach">
+                    <label className="subHeadingText " htmlFor="">
+                      Message
+                    </label>
+                    <br />
+                    <input name="message" onChange={handleChange} type="text" />
+                  </div>
+
+                  <div className="contactFormInputEach">
+                    <button onClick={handleSubmit} disabled={isLoading}>
+                      {isLoading ? "Submitting..." : "Submit"}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Work With Us Section*/}
       </div>
+
+      {showSnackbar && <div className="snackbar">{snackMsg}</div>}
     </>
   );
 }

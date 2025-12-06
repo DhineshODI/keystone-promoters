@@ -2,6 +2,48 @@ import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 export default function Footer() {
+  // const projects = [
+  //   { name: "The Scape - Keelkattalai, Chennai", link: "/architecture" },
+  //   { name: "North Point - Chennai", link: "/architecture" },
+  //   { name: "The Grove - Pallikaranai, Chennai.", link: "/architecture" },
+  //   { name: "Muthu Palace - Karur., Chennai", link: "/architecture" },
+  //   { name: "Standard Golden Terrace - Karur.", link: "/architecture" },
+  //   { name: "Ambal Residency - Arur.", link: "/architecture" },
+  // ];
+
+  const projects = [
+    // --- OLD LIST ---
+    // { name: "Spectra", link: "/architecture" },
+    { name: "The Scape", link: "/architecture" },
+    { name: "Random Box", link: "/architecture" },
+    { name: "The Grove", link: "/architecture" },
+    { name: "Mannat", link: "/architecture" },
+    { name: "North Point at Chennai", link: "/architecture" },
+    { name: "Edge – Commercial", link: "/architecture" },
+    { name: "Childrens Park", link: "/architecture" },
+    { name: "Club House – Commercial", link: "/architecture" },
+    { name: "Trapezoid – Commercial", link: "/architecture" },
+    { name: "Sabari Garden Housing", link: "/architecture" },
+    { name: "Library – Institutional", link: "/architecture" },
+    { name: "Haritham – Residence", link: "/architecture" },
+    { name: "Yoga Institute Entrance", link: "/architecture" },
+    { name: "The President’s Park", link: "/architecture" },
+    { name: "Dwaraka – Residence", link: "/architecture" },
+    { name: "Nilaya – Residence", link: "/architecture" },
+    { name: "Sri Chaitanya School – Karur", link: "/architecture" },
+
+    // --- NEW LIST ---
+    { name: "Oasis – Residential", link: "/architecture" },
+    { name: "Globus – Commerical", link: "/architecture" },
+    { name: "Keystone – Commerical", link: "/architecture" },
+    { name: "Kwalitee Showroom", link: "/architecture" },
+    { name: "Aum – Residence", link: "/architecture" },
+    { name: "Aalaya – Residence", link: "/architecture" },
+    { name: "Dwaraka", link: "/architecture" },
+    { name: "Jairams – Institutional", link: "/architecture" },
+    { name: "Kwalitee Office – Commercial", link: "/architecture" },
+  ];
+
   return (
     <>
       <div className="FooterMainDiv reveal ">
@@ -18,7 +60,7 @@ export default function Footer() {
                     </li>
                   </a>
 
-                  <a href="/testimonial">
+                  <a href="/testimonials">
                     <li className="subHeadingText text-hover-underline">
                       Testimonials
                     </li>
@@ -85,7 +127,7 @@ export default function Footer() {
 
               <ul className="footerListsul">
                 <div>
-                  <a href="/architecture">
+                  <a href="/project-detail">
                     <li className="subHeadingText  text-hover-underline">
                       The Spectra - Keelkattalai, Chennai
                     </li>
@@ -96,7 +138,7 @@ export default function Footer() {
             <div className="FooterInnerDiv">
               <h5 className="subHeadingText  ">Completed Projects</h5>
 
-              <ul className="footerListsul">
+              {/* <ul className="footerListsul">
                 <div>
                   <a href="/architecture">
                     <li className="subHeadingText  text-hover-underline">
@@ -132,6 +174,18 @@ export default function Footer() {
                       Ambal Residency - arur.
                     </li>
                   </a>
+                </div>
+              </ul> */}
+              <ul className="footerListsul">
+                <div className="projectslistfooter">
+                  {projects.map((item, index) => (
+                    <li
+                      key={index}
+                      className="subHeadingText text-hover-underline"
+                    >
+                      <a href={item.link}>{item.name}</a>
+                    </li>
+                  ))}
                 </div>
               </ul>
             </div>

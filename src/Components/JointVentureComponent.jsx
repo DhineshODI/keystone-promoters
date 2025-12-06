@@ -1,7 +1,10 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect , useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
+
 export default function JointVentureComponent() {
   useEffect(() => {
     AOS.init({
@@ -19,66 +22,64 @@ export default function JointVentureComponent() {
     remarks: "",
   });
 
+  const [errors, setErrors] = useState({
+    companyName: "",
+    email: "",
+    phone: "",
+    location: "",
+    extent: "",
+  });
+
+  const [isLoading, setIsLoading] = useState(false);
+  const [showSnackbar, setShowSnackbar] = useState(false);
+
   const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+    setErrors({ ...errors, [name]: "" });
   };
 
   const handleSubmit = async () => {
-    // -------- VALIDATION --------
+    let newErrors = {};
 
-    if (!form.companyName.trim()) {
-      alert("Please enter the company name.");
-      return;
-    }
-
+    if (!form.companyName.trim())
+      newErrors.companyName = "Company name is required";
     if (!form.email.trim()) {
-      alert("Please enter the email address.");
-      return;
-    }
-
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(form.email)) {
-      alert("Please enter a valid email address.");
-      return;
+      newErrors.email = "Email is required";
+    } else {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(form.email)) newErrors.email = "Enter a valid email";
     }
 
     if (!form.phone.trim()) {
-      alert("Please enter the phone number.");
-      return;
+      newErrors.phone = "Phone number is required";
+    } 
+    else if (form.phone.replace(/\D/g, "").length < 5) {
+      newErrors.phone = "Phone must be at least 5 digits";
     }
 
-    // Phone should be numbers & minimum 10 digits
-    const phoneRegex = /^[0-9]{10,}$/;
-    if (!phoneRegex.test(form.phone)) {
-      alert("Please enter a valid phone number (minimum 10 digits).");
-      return;
-    }
+    if (!form.location.trim()) newErrors.location = "Location is required";
+    if (!form.extent.trim()) newErrors.extent = "Extent is required";
 
-    if (!form.location.trim()) {
-      alert("Please enter the location of the property.");
-      return;
-    }
+    setErrors(newErrors);
 
-    if (!form.extent.trim()) {
-      alert("Please enter the land extent.");
-      return;
-    }
+    // Stop if errors found
+    if (Object.keys(newErrors).length > 0) return;
 
-    // remarks is optional → no validation needed
+    // Start loader
+    setIsLoading(true);
 
-    // -------- SUBMIT REQUEST --------
     try {
       const res = await axios.post(
-        "http://localhost/keystone-api/apis/JointVenture.php",
+        "https://dev.opendesignsin.com/keystonepromotersdemo/keystone-api/keystone-api/apis/JointVenture.php",
         form,
         { headers: { "Content-Type": "application/json" } }
       );
 
-      console.log("Response:", res.data);
-
       if (res.data.status === true) {
-        alert("Joint Venture form submitted successfully!");
+        // Show success snackbar
+        setShowSnackbar(true);
+        setTimeout(() => setShowSnackbar(false), 3000);
 
         // Clear form
         setForm({
@@ -89,14 +90,15 @@ export default function JointVentureComponent() {
           extent: "",
           remarks: "",
         });
-      } else {
-        alert("Error: " + res.data.message);
-        console.error("PHP Error:", res.data.error);
+
+        setErrors({});
       }
-    } catch (err) {
-      console.error("Request Error:", err);
-      alert("Something went wrong. Please try again.");
+    } catch (error) {
+      console.error("Error:", error);
     }
+
+    // Stop loader
+    setIsLoading(false);
   };
 
   return (
@@ -181,7 +183,7 @@ export default function JointVentureComponent() {
 
         {/* Work With Us Section*/}
 
-        <div className="worthwithUsSection">
+        {/* <div className="worthwithUsSection">
           <div className="container max-w-7xl mx-auto px-4 ">
             <div className="mainSectionFormWithUs">
               <div className="formContactUsSectionFlex">
@@ -261,10 +263,145 @@ export default function JointVentureComponent() {
               </div>
             </div>
           </div>
+        </div> */}
+
+        <div className="worthwithUsSection">
+          <div className="container max-w-7xl mx-auto px-4 ">
+            <div className="mainSectionFormWithUs">
+              <div className="formContactUsSectionFlex">
+                <h5
+                  className="secondHeadingText "
+                  data-aos="fade-down"
+                  data-aos-duration="1500"
+                >
+                  Joint Venture
+                </h5>
+                <p
+                  className="subHeadingText"
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                >
+                  Partner with Keystone Promoters to create valuable,
+                  high-quality developments that redefine urban living and
+                  inspire mutual growth.
+                </p>
+
+                <div className="formMainStyleContactPage">
+                  <div className="contactFormInputEach">
+                    <label className="subHeadingText " htmlFor="">
+                      Name of the Company <sup>*</sup>
+                    </label>
+                    <br />
+                    <input
+                      name="companyName"
+                      value={form.companyName}
+                      onChange={handleChange}
+                      type="text"
+                      className={errors.companyName ? "inputError" : ""}
+                    />
+                    {errors.companyName && (
+                      <p className="errorText">{errors.companyName}</p>
+                    )}
+                  </div>
+                  <div className="contactFormInputEach">
+                    <label className="subHeadingText " htmlFor="">
+                      Email <sup>*</sup>
+                    </label>
+                    <br />
+                    <input
+                      name="email"
+                      value={form.email}
+                      onChange={handleChange}
+                      type="email"
+                      className={errors.email ? "inputError" : ""}
+                    />
+                    {errors.email && (
+                      <p className="errorText">{errors.email}</p>
+                    )}
+                  </div>
+                  <div className="contactFormInputEach">
+                    <label className="subHeadingText">
+                      Phone Number <sup>*</sup>
+                    </label>
+
+                    <PhoneInput
+                      country={"in"}
+                      value={form.phone}
+                      onChange={(value) => {
+                        setForm({ ...form, phone: value });
+                        setErrors({ ...errors, phone: "" });
+                      }}
+                      inputClass={errors.phone ? "inputError" : ""}
+                      containerClass="phoneContainer"
+                    />
+
+                    {errors.phone && (
+                      <p className="errorText">{errors.phone}</p>
+                    )}
+                  </div>
+
+                  <div className="contactFormInputEach">
+                    <label className="subHeadingText " htmlFor="">
+                      Location of the Property <sup>*</sup>
+                    </label>
+                    <br />
+                    <input
+                      name="location"
+                      value={form.location}
+                      onChange={handleChange}
+                      type="text"
+                      className={errors.location ? "inputError" : ""}
+                    />
+                    {errors.location && (
+                      <p className="errorText">{errors.location}</p>
+                    )}
+                  </div>
+                  <div className="contactFormInputEach">
+                    <label className="subHeadingText " htmlFor="">
+                      Land Extent <sup>*</sup>
+                    </label>
+                    <br />
+                    <input
+                      name="extent"
+                      value={form.extent}
+                      onChange={handleChange}
+                      type="text"
+                      className={errors.extent ? "inputError" : ""}
+                    />
+                    {errors.extent && (
+                      <p className="errorText">{errors.extent}</p>
+                    )}
+                  </div>
+                  <div className="contactFormInputEach">
+                    <label className="subHeadingText " htmlFor="">
+                      Remarks
+                    </label>
+                    <br />
+                    <input
+                      name="remarks"
+                      value={form.remarks}
+                      onChange={handleChange}
+                      type="text"
+                    />
+                  </div>
+
+                  <div className="contactFormInputEach">
+                    <button onClick={handleSubmit} disabled={isLoading}>
+                      {isLoading ? "Submitting..." : "Submit"}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Work With Us Section*/}
       </div>
+
+      {showSnackbar && (
+        <div className="snackbar">Submitted Successfully! Thank you.</div>
+      )}
     </>
   );
 }

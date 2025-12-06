@@ -44,6 +44,8 @@ try {
     // Send to company
     $mail->setFrom("shivarex.c@gmail.com", "Website Contact");
     $mail->addAddress("shivarex.c@gmail.com");
+    $mail->addAddress("dhineshkodi2024@gmail.com");
+    $mail->addAddress("vaishuswety2107@gmail.com");    
     $mail->addReplyTo($email, $name);
 
     $mail->isHTML(true);

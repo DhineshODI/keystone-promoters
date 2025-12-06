@@ -7,7 +7,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SVGAnimation from "./Components/SvgAnimation";
 import TextFillAnimation from "./Components/TextFillAnimation";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import ContactMainPage from "./Pages/ContactMainPage";
 import Footer from "./Components/Footer";
 import TestimonalSlider from "./Components/TestimonalSlider";
@@ -33,6 +38,8 @@ function App() {
   const menuOnlick = () => {
     setMenuFunction((olddata) => !olddata);
   };
+
+  const location = useLocation();
 
   useEffect(() => {
     if (menufunction) {
@@ -72,17 +79,29 @@ function App() {
         <Route path="/joint-venture" element={<JointVentureMainPage />} />
         <Route path="/channel-partners" element={<ChannelPartner />} />
         <Route path="/careers" element={<CareersPage />} />
-        <Route path="/testimonial" element={<TestimonialPage />} />
+        <Route path="/testimonials" element={<TestimonialPage />} />
         <Route path="/nri" element={<NriPage />} />
 
         <Route path="/architecture" element={<OngoingProjectsPage1 />} />
+        <Route path="/completed" element={<OngoingProjectsPage1 />} />
         <Route path="/interior" element={<OngoingProjectsPage2 />} />
       </Routes>
       {/* </Router> */}
 
-      <TestimonalSlider />
+      {location.pathname !== "/testimonials" && <TestimonalSlider />}
+
+      {/* {location.pathname !== "/testimonials" && <TestimonalSlider />} */}
       <ScheduleAvisit />
       <Footer />
+
+      <div className="whatsaicon">
+        <a
+          href="https://api.whatsapp.com/send?phone=919940008855&text=Enquiry%20For%20Keystone%20Promotors%20in%20Chennai"
+          target="_blank"
+        >
+          <img src="/images/icons/whatsapp.svg" alt="" />
+        </a>
+      </div>
     </>
   );
 }

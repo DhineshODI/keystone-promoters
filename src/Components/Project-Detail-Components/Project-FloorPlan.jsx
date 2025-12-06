@@ -9,7 +9,7 @@ export default function ProjectFloorPan() {
       smallname: "",
       images: [
         {
-          label: "Ground Floor",
+          label: "Car Parking",
           img: "/images/project-detail/floor-plan/block-a&b.jpg",
         },
       ],

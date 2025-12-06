@@ -25,7 +25,7 @@ export default function OngoingProjectsPage2() {
   }, []);
 
   return (
-    <div className="ongoingProjectsPage">
+    <div className="ongoingProjectsPage ongoingnewpage">
       {/* Banner */}
       <div>
         <div className="detailPageBanners">
@@ -110,9 +110,9 @@ export default function OngoingProjectsPage2() {
         <div className="container max-w-7xl mx-auto px-4 ">
           <div className="ongoingslistflex">
             <ul className="ongoingprojectslist">
-              <li onClick={() => (window.location.href = "/ongoing-projects")}>
+              {/* <li onClick={() => (window.location.href = "/ongoing-projects")}>
                 Apartments
-              </li>
+              </li> */}
               <li onClick={() => (window.location.href = "/architecture")}>
                 Architecture
               </li>
@@ -139,12 +139,36 @@ export default function OngoingProjectsPage2() {
             <div className="eachprojectcards">
               <div className="imagehoveranimationse">
                 <img
-                  src="/images/ongoing-images/dwaraka-main-image.jpg"
+                  src="/images/ongoing-images/oasis-residential-main-img.jpg"
                   alt=""
                 />
               </div>
 
-              <p className="subHeadingText ">Dwaraka</p>
+              <p className="subHeadingText ">Oasis – Residential</p>
+            </div>
+            <div className="eachprojectcards">
+              <div className="imagehoveranimationse">
+                <img src="/images/ongoing-images/globus-main.png" alt="" />
+              </div>
+
+              <p className="subHeadingText ">Globus – Commerical</p>
+            </div>
+            <div className="eachprojectcards">
+              <div className="imagehoveranimationse">
+                <img
+                  src="/images/ongoing-images/keystone-commercial-main.png"
+                  alt=""
+                />
+              </div>
+
+              <p className="subHeadingText ">Keystone – Commerical</p>
+            </div>
+            <div className="eachprojectcards">
+              <div className="imagehoveranimationse">
+                <img src="/images/ongoing-images/kwalitee-main.png" alt="" />
+              </div>
+
+              <p className="subHeadingText ">Kwalitee Showroom</p>
             </div>
             <div className="eachprojectcards">
               <div className="imagehoveranimationse">
@@ -158,37 +182,43 @@ export default function OngoingProjectsPage2() {
             </div>
             <div className="eachprojectcards">
               <div className="imagehoveranimationse">
-                <img src="/images/ongoing-images/kwalitee-main.png" alt="" />
+                <img
+                  src="/images/ongoing-images/aalaya-residence-mainimg.jpg"
+                  alt=""
+                />
               </div>
 
-              <p className="subHeadingText ">Kwalitee Showroom</p>
+              <p className="subHeadingText ">Aalaya – Residence</p>
             </div>
-            <div className="eachprojectcards">
-              <div className="imagehoveranimationse">
-                <img src="/images/ongoing-images/globus-main.png" alt="" />
-              </div>
 
-              <p className="subHeadingText ">Globus</p>
-            </div>
             <div className="eachprojectcards">
               <div className="imagehoveranimationse">
                 <img
-                  src="/images/ongoing-images/keystone-commercial-main.png"
+                  src="/images/ongoing-images/dwaraka-main-image.jpg"
                   alt=""
                 />
+              </div>
+
+              <p className="subHeadingText ">Dwaraka</p>
+            </div>
+
+            <div className="eachprojectcards">
+              <div className="imagehoveranimationse">
+                <img
+                  src="/images/ongoing-images/jairams-institutional-mainimg.jpg"
+                  alt=""
+                />
+              </div>
+
+              <p className="subHeadingText ">Jairams – Institutional</p>
+            </div>
+
+            <div className="eachprojectcards">
+              <div className="imagehoveranimationse">
+                <img src="/images/ongoing-images/kwalitee-office-main-img.jpg" alt="" />
               </div>
 
               <p className="subHeadingText ">Kwalitee Office – Commercial</p>
-            </div>
-            <div className="eachprojectcards">
-              <div className="imagehoveranimationse">
-                <img
-                  src="/images/ongoing-images/oasis-residential-main-img.jpg"
-                  alt=""
-                />
-              </div>
-
-              <p className="subHeadingText ">Oasis</p>
             </div>
           </div>
         </div>

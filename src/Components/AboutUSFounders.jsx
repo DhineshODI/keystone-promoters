@@ -8,9 +8,19 @@ export default function AboutusFounder() {
 
   const [activeIndex, setActiveIndex] = useState(1);
 
+  // const handleToggle = (index) => {
+  //   setActiveIndex(activeIndex === index ? null : index);
+  // };
+
   const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index);
-  };
+  // Only change if clicking different button
+  if (activeIndex !== index) {
+    setActiveIndex(index);
+  }
+};
+
+
+
   useEffect(() => {
     if (isOpen) {
       // 1️⃣ Disable body scroll

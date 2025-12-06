@@ -126,11 +126,15 @@ export default function ProjectLocationHighlights() {
 
                   <div className="overlayimageprojectdetail">
                     <div className="seocndoverlayimageprojectdetail">
-                      <button className="subHeadingText text-hover-underline">
+
+                      {/* https://maps.app.goo.gl/jSYSvQLT2MUSttHbA */}
+
+                      {/* https://maps.app.goo.gl/zxGwZz7XhDHzP3Et7 */}
+                      <button className="subHeadingText">
                         Location Map View
                       </button>
                       <div className="subHeadingText"> | </div>
-                      <button className="subHeadingText text-hover-underline">
+                      <button className="subHeadingText">
                         Google Map View
                       </button>
                     </div>

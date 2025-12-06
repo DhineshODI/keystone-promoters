@@ -25,7 +25,7 @@ export default function OngoingProjectsPage1() {
   }, []);
 
   return (
-    <div className="ongoingProjectsPage">
+    <div className="ongoingProjectsPage ongoingnewpage">
       {/* Banner */}
       <div>
         <div className="detailPageBanners">
@@ -34,14 +34,14 @@ export default function OngoingProjectsPage1() {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            Live in
+            Crafted to
           </h5>
           <h5
             className="secondHeadingText"
             data-aos="fade-up"
             data-aos-duration="1300"
           >
-            Progress
+            Completion
           </h5>
 
           <div
@@ -54,7 +54,7 @@ export default function OngoingProjectsPage1() {
             </a>
             <span className="subHeadingText">-</span>
             <span className="subHeadingText text-hover-underline">
-              Ongoing Projects
+              COMPLETED PROJECTS
             </span>
           </div>
         </div>
@@ -75,7 +75,8 @@ export default function OngoingProjectsPage1() {
                 <div>
                   <h4 className="gettknowHeading">Ongoing Projects</h4>
                   <h3 className="visitOurOFficetext">
-                    Currently Developing your Future Homes
+                    {/* Currently Developing your Future Homes */}
+                    BUILDING LANDMARKS THAT STAND THE TEST OF TIME
                   </h3>
                 </div>
               </div>
@@ -90,8 +91,12 @@ export default function OngoingProjectsPage1() {
               >
                 <div style={{ marginTop: "15px" }}>
                   <p className="contactPageAddress">
-                    Happy Clients already invested our ongoing projects are your
-                    next great oppurtunity.
+                    {/* Happy Clients already invested our ongoing projects are your
+                    next great oppurtunity. */}
+                    Our completed projects reflect the quality, planning, and
+                    craftsmanship Keystone is known for.These successful
+                    developments are now cherished spaces for the families and
+                    communities who call them home.
                   </p>
                 </div>
               </div>
@@ -110,19 +115,16 @@ export default function OngoingProjectsPage1() {
         <div className="container max-w-7xl mx-auto px-4 ">
           <div className="ongoingslistflex">
             <ul className="ongoingprojectslist">
-              <li onClick={() => (window.location.href = "/ongoing-projects")}>
+              {/* <li onClick={() => (window.location.href = "/ongoing-projects")}>
                 Apartments
-              </li>
+              </li> */}
               <li
                 onClick={() => (window.location.href = "/architecture")}
                 className="activestatus"
               >
                 Architecture
               </li>
-              <li 
-              onClick={() => (window.location.href = "/interior")}
-              
-              >
+              <li onClick={() => (window.location.href = "/interior")}>
                 Interior
               </li>
             </ul>
@@ -183,6 +185,123 @@ export default function OngoingProjectsPage1() {
               </div>
 
               <p className="subHeadingText ">North Point at Chennai</p>
+            </div>
+            <div className="eachprojectcards">
+              <div className="imagehoveranimationse">
+                <img src="/images/ongoing-images/edge.jpg" alt="" />
+              </div>
+
+              <p className="subHeadingText ">Edge – Commercial</p>
+            </div>
+            <div className="eachprojectcards">
+              <div className="imagehoveranimationse">
+                <img
+                  src="/images/ongoing-images/child-park-mainimg-768x538.jpg"
+                  alt=""
+                />
+              </div>
+
+              <p className="subHeadingText ">Childrens Park</p>
+            </div>
+            <div className="eachprojectcards">
+              <div className="imagehoveranimationse">
+                <img
+                  src="/images/ongoing-images/club-house-mainimg-768x538.jpg"
+                  alt=""
+                />
+              </div>
+
+              <p className="subHeadingText ">Club House – Commercial</p>
+            </div>
+            <div className="eachprojectcards">
+              <div className="imagehoveranimationse">
+                <img
+                  src="/images/ongoing-images/trapezoid-commercial-mainimg-768x538.jpg"
+                  alt=""
+                />
+              </div>
+
+              <p className="subHeadingText ">Trapezoid – Commercial</p>
+            </div>
+            <div className="eachprojectcards">
+              <div className="imagehoveranimationse">
+                <img
+                  src="/images/ongoing-images/sabari-garden-mainimg-768x538.jpg"
+                  alt=""
+                />
+              </div>
+
+              <p className="subHeadingText ">Sabari Garden Housing</p>
+            </div>
+            <div className="eachprojectcards">
+              <div className="imagehoveranimationse">
+                <img
+                  src="/images/ongoing-images/library-main-img-768x538.jpg"
+                  alt=""
+                />
+              </div>
+
+              <p className="subHeadingText ">Library – Institutional</p>
+            </div>
+            <div className="eachprojectcards">
+              <div className="imagehoveranimationse">
+                <img
+                  src="/images/ongoing-images/haritham-residence-mainimg-768x538.jpg"
+                  alt=""
+                />
+              </div>
+
+              <p className="subHeadingText ">Haritham – Residence</p>
+            </div>
+            <div className="eachprojectcards">
+              <div className="imagehoveranimationse">
+                <img src="/images/ongoing-images/yoga-768x538.jpg" alt="" />
+              </div>
+
+              <p className="subHeadingText ">Yoga Institute Entrance</p>
+            </div>
+            <div className="eachprojectcards">
+              <div className="imagehoveranimationse">
+                <img
+                  src="/images/ongoing-images/president-park-mainimg-768x538.jpg"
+                  alt=""
+                />
+              </div>
+
+              <p className="subHeadingText ">The President’s Park</p>
+            </div>
+
+            <div className="eachprojectcards">
+              <div className="imagehoveranimationse">
+                <img
+                  src="/images/ongoing-images/dwaraka-residence-main-768x538.jpg"
+                  alt=""
+                />
+              </div>
+
+              <p className="subHeadingText ">Dwaraka – Residence</p>
+            </div>
+
+            <div className="eachprojectcards">
+              <div className="imagehoveranimationse">
+                <img
+                  src="/images/ongoing-images/nilaya-residence-main-img-768x538.jpg"
+                  alt=""
+                />
+              </div>
+
+              <p className="subHeadingText ">Nilaya – Residence</p>
+            </div>
+
+            <div className="eachprojectcards">
+              <div className="imagehoveranimationse">
+                <img
+                  src="/images/ongoing-images/sri-chaitanya-school-main-img-768x538.jpg"
+                  alt=""
+                />
+              </div>
+
+              <p className="subHeadingText ">Sri Chaitanya School – Karur</p>
             </div>
           </div>
         </div>

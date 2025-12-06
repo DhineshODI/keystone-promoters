@@ -5,8 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 export default function ProjecSpecification() {
-
-    useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000, // animation speed
       once: false, // run only once
@@ -84,9 +83,10 @@ export default function ProjecSpecification() {
       title: "Toilet",
       list: [
         "Ceramic tile flooring.",
+        "Glazed tile dado till roof height",
         "<span class='projects-text-highlight'>Sanitary wares - </span>  Parryware / Hindware or equivalent.",
         "<span class='projects-text-highlight'>CP fittings - </span> Jaquar or equivalent.",
-    
+        "Geyser points will be provided in all toilets",
       ],
     },
     {
@@ -136,10 +136,18 @@ export default function ProjecSpecification() {
         <div className="container max-w-7xl mx-auto px-4 ">
           <div>
             <div>
-              <h5 className="secondHeadingText  textTransform text-center" data-aos="fade-up" data-aos-duration="1000">
+              <h5
+                className="secondHeadingText  textTransform text-center"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 specifications
               </h5>
-              <p className="subHeadingText text-center text-[#636465]" data-aos="fade-up" data-aos-duration="1300">
+              <p
+                className="subHeadingText text-center text-[#636465]"
+                data-aos="fade-up"
+                data-aos-duration="1300"
+              >
                 Every Element is carefully to meet industry standards and
                 elevate your daily living experience
               </p>

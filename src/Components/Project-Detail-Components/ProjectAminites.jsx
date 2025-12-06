@@ -1,14 +1,24 @@
+// import React, { useEffect, useRef, useState } from "react";
+// import Slider from "react-slick";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
+
 import React, { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import axios from "axios";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 
 export default function ProjectAminities() {
   const [isOpen, setIsOpen] = useState(false);
-  const modalRef = useRef(null);
   const [isOpen1, setIsOpen1] = useState(false);
+  const modalRef = useRef(null);
 
   const [form, setForm] = useState({
     name: "",
@@ -17,57 +27,75 @@ export default function ProjectAminities() {
     message: "",
   });
 
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+  const [errors, setErrors] = useState({});
+  const [isLoading, setIsLoading] = useState(false);
+  const [showSnackbar, setShowSnackbar] = useState(false);
+
+  const resetFormState = () => {
+    setForm({
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+    });
+    setErrors({});
+    setIsLoading(false);
+    setShowSnackbar(false);
   };
 
+  // ----- Block numbers in name -----
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    if (name === "name" && !/^[A-Za-z\s]*$/.test(value)) return;
+
+    setForm({ ...form, [name]: value });
+    setErrors({ ...errors, [name]: "" });
+  };
+
+  // ----- PDF Download -----
+  const downloadEmptyPDF = () => {
+    const blob = new Blob([" "], { type: "application/pdf" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = "/brochure.pdf";
+    a.download = "brochure.pdf";
+    a.click();
+    URL.revokeObjectURL(url);
+  };
+
+  // ----- SUBMIT -----
   const handleSubmit = async () => {
-    // Basic validation
-    if (!form.name.trim()) {
-      alert("Please enter your name.");
-      return;
-    }
+    let newErrors = {};
 
-    if (!form.email.trim()) {
-      alert("Please enter your email.");
-      return;
-    }
+    if (!form.name.trim()) newErrors.name = "Name is required";
+    if (!form.email.trim()) newErrors.email = "Email is required";
 
-    // Email format validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(form.email)) {
-      alert("Please enter a valid email address.");
-      return;
-    }
+    if (form.email && !emailRegex.test(form.email))
+      newErrors.email = "Enter a valid email";
 
-    if (!form.phone.trim()) {
-      alert("Please enter your phone number.");
-      return;
-    }
+    if (!form.phone.trim()) newErrors.phone = "Phone number is required";
+    if (form.phone.replace(/\D/g, "").length < 5)
+      newErrors.phone = "Minimum 10 digits required";
 
-    // Phone validation (only numbers & at least 10 digits)
-    const phoneRegex = /^[0-9]{10,}$/;
-    if (!phoneRegex.test(form.phone)) {
-      alert("Please enter a valid phone number (minimum 10 digits).");
-      return;
-    }
+    setErrors(newErrors);
 
-    // If validation passes → submit
+    if (Object.keys(newErrors).length > 0) return;
+
+    setIsLoading(true);
+
     try {
+      const payload = isOpen1 ? { ...form, isBrochure: true } : form;
       const res = await axios.post(
-        "http://localhost/keystone-api/apis/ContactUs.php",
-        form,
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
+        "https://dev.opendesignsin.com/keystonepromotersdemo/keystone-api/keystone-api/apis/ContactUs.php",
+        JSON.stringify(payload),
+        { headers: { "Content-Type": "application/json" } }
       );
 
-      console.log("Response:", res.data);
-
       if (res.data.status === true) {
-        alert("Message sent successfully!");
+        setShowSnackbar(true);
+        setTimeout(() => setShowSnackbar(false), 3000);
 
         setForm({
           name: "",
@@ -75,15 +103,38 @@ export default function ProjectAminities() {
           phone: "",
           message: "",
         });
-      } else {
-        // alert(Error: ${res.data.message});
-        console.error("PHP Error:", res.data.error);
+
+        if (isOpen1) downloadEmptyPDF();
+
+        setIsOpen(false);
+        setIsOpen1(false);
       }
-    } catch (error) {
-      console.error("Request Error:", error);
-      alert("Something went wrong. Please try again later.");
+    } catch (err) {
+      console.error(err);
     }
+
+    setIsLoading(false);
   };
+
+  // ----- Modal – Prevent outside click -----
+  useEffect(() => {
+    if (isOpen || isOpen1) {
+      document.body.style.overflow = "hidden";
+
+      const handleClickOutside = (e) => {
+        if (modalRef.current && !modalRef.current.contains(e.target)) {
+          e.stopPropagation();
+        }
+      };
+
+      document.addEventListener("mousedown", handleClickOutside);
+
+      return () => {
+        document.body.style.overflow = "auto";
+        document.removeEventListener("mousedown", handleClickOutside);
+      };
+    }
+  }, [isOpen, isOpen1]);
 
   useEffect(() => {
     AOS.init({
@@ -337,7 +388,7 @@ export default function ProjectAminities() {
                 </button>
 
                 <div className="aboutuspopupstyles">
-                  <div className="formMainStyleContactPage">
+                  {/* <div className="formMainStyleContactPage">
                     <div className="contactFormInputEach">
                       <label className="subHeadingText " htmlFor="">
                         Name <sup>*</sup>
@@ -373,6 +424,78 @@ export default function ProjectAminities() {
 
                     <div className="contactFormInputEach">
                       <button onClick={handleSubmit}>Submit</button>
+                    </div>
+                  </div> */}
+
+                  <div className="formMainStyleContactPage">
+                    {/* NAME */}
+
+                    <h5
+                      style={{ color: "#000" }}
+                      className="visitOurOFficetext textTransform text-center"
+                    >
+                      Enquire Now
+                    </h5>
+                    <div className="contactFormInputEach">
+                      <label className="subHeadingText">Name *</label>
+                      <input
+                        name="name"
+                        value={form.name}
+                        onChange={handleChange}
+                        className={errors.name ? "inputError" : ""}
+                      />
+                      {errors.name && (
+                        <p className="errorText">{errors.name}</p>
+                      )}
+                    </div>
+
+                    {/* EMAIL */}
+                    <div className="contactFormInputEach">
+                      <label className="subHeadingText">Email *</label>
+                      <input
+                        name="email"
+                        value={form.email}
+                        onChange={handleChange}
+                        className={errors.email ? "inputError" : ""}
+                      />
+                      {errors.email && (
+                        <p className="errorText">{errors.email}</p>
+                      )}
+                    </div>
+
+                    {/* PHONE */}
+                    <div className="contactFormInputEach">
+                      <label className="subHeadingText">Phone *</label>
+
+                      <PhoneInput
+                        country="in"
+                        value={form.phone}
+                        onChange={(v) => {
+                          setForm({ ...form, phone: v });
+                          setErrors({ ...errors, phone: "" });
+                        }}
+                        inputClass={errors.phone ? "inputError" : ""}
+                      />
+                      {errors.phone && (
+                        <p className="errorText">{errors.phone}</p>
+                      )}
+                    </div>
+
+                    {/* MESSAGE */}
+                    <div className="contactFormInputEach">
+                      <label className="subHeadingText">Message</label>
+                      <input
+                        name="message"
+                        value={form.message}
+                        onChange={handleChange}
+                      />
+                    </div>
+
+                    {/* SUBMIT BUTTON */}
+                    <div className="contactFormInputEach">
+                      <button onClick={handleSubmit} disabled={isLoading}>
+                        {isLoading ? "Submitting..." : "Submit"}
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -399,7 +522,7 @@ export default function ProjectAminities() {
                 </button>
 
                 <div className="aboutuspopupstyles">
-                  <div className="formMainStyleContactPage">
+                  {/* <div className="formMainStyleContactPage">
                     <div className="contactFormInputEach">
                       <label className="subHeadingText " htmlFor="">
                         Name <sup>*</sup>
@@ -436,6 +559,77 @@ export default function ProjectAminities() {
                     <div className="contactFormInputEach">
                       <button onClick={handleSubmit}>Submit</button>
                     </div>
+                  </div> */}
+                  <div className="formMainStyleContactPage">
+                    {/* NAME */}
+
+                    <h5
+                      style={{ color: "#000" }}
+                      className="visitOurOFficetext textTransform text-center"
+                    >
+                      Download Brochure
+                    </h5>
+                    <div className="contactFormInputEach">
+                      <label className="subHeadingText">Name *</label>
+                      <input
+                        name="name"
+                        value={form.name}
+                        onChange={handleChange}
+                        className={errors.name ? "inputError" : ""}
+                      />
+                      {errors.name && (
+                        <p className="errorText">{errors.name}</p>
+                      )}
+                    </div>
+
+                    {/* EMAIL */}
+                    <div className="contactFormInputEach">
+                      <label className="subHeadingText">Email *</label>
+                      <input
+                        name="email"
+                        value={form.email}
+                        onChange={handleChange}
+                        className={errors.email ? "inputError" : ""}
+                      />
+                      {errors.email && (
+                        <p className="errorText">{errors.email}</p>
+                      )}
+                    </div>
+
+                    {/* PHONE */}
+                    <div className="contactFormInputEach">
+                      <label className="subHeadingText">Phone *</label>
+
+                      <PhoneInput
+                        country="in"
+                        value={form.phone}
+                        onChange={(v) => {
+                          setForm({ ...form, phone: v });
+                          setErrors({ ...errors, phone: "" });
+                        }}
+                        inputClass={errors.phone ? "inputError" : ""}
+                      />
+                      {errors.phone && (
+                        <p className="errorText">{errors.phone}</p>
+                      )}
+                    </div>
+
+                    {/* MESSAGE */}
+                    <div className="contactFormInputEach">
+                      <label className="subHeadingText">Message</label>
+                      <input
+                        name="message"
+                        value={form.message}
+                        onChange={handleChange}
+                      />
+                    </div>
+
+                    {/* SUBMIT BUTTON */}
+                    <div className="contactFormInputEach">
+                      <button onClick={handleSubmit} disabled={isLoading}>
+                        {isLoading ? "Submitting..." : "Submit"}
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -444,6 +638,8 @@ export default function ProjectAminities() {
         )}
       </div>
       {/* popups */}
+
+      {showSnackbar && <div className="snackbar">Submitted Successfully!</div>}
     </>
   );
 }

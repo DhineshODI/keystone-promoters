@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 
 export default function TestimonalSlider() {
   const sliderRef = useRef(null);
+  const [current, setCurrent] = useState(0);
   const settings = {
     dots: false,
     infinite: false,
@@ -19,6 +20,7 @@ export default function TestimonalSlider() {
     swipe: true,
     draggable: true,
     touchMove: true,
+    beforeChange: (oldIndex, newIndex) => setCurrent(newIndex),
     responsive: [
       {
         breakpoint: 1024,
@@ -46,6 +48,7 @@ export default function TestimonalSlider() {
       },
     ],
   };
+  const totalSlides = 2;
   return (
     <>
       <div className="testimonalFullSection reveal ">
@@ -192,7 +195,7 @@ export default function TestimonalSlider() {
               </div>
             </Slider>
 
-            <div className="flex justify-center items-center gap-7 mt-6 visibilityhidden">
+            {/* <div className="flex justify-center items-center gap-7 mt-6 visibilityhidden">
               <div
                 className="custom-prev cursor-pointer"
                 onClick={() => sliderRef.current.slickPrev()}
@@ -206,6 +209,39 @@ export default function TestimonalSlider() {
 
               <div
                 className="custom-next cursor-pointer"
+                onClick={() => sliderRef.current.slickNext()}
+              >
+                <img
+                  src="/images/icons/right-arrow-testimonal.svg"
+                  alt="Next"
+                  className="w-7 h-7 hover:scale-110 transition-transform"
+                />
+              </div>
+            </div> */}
+            <div className="flex justify-center items-center gap-7 mt-6">
+              {/* LEFT ARROW */}
+              <div
+                className={`custom-prev cursor-pointer transition-opacity ${
+                  current === 0
+                    ? "opacity-20 pointer-events-none"
+                    : "opacity-100"
+                }`}
+                onClick={() => sliderRef.current.slickPrev()}
+              >
+                <img
+                  src="/images/icons/left-arrow-testimonal.svg"
+                  alt="Previous"
+                  className="w-7 h-7 hover:scale-110 transition-transform"
+                />
+              </div>
+
+              {/* RIGHT ARROW */}
+              <div
+                className={`custom-next cursor-pointer transition-opacity ${
+                  current === totalSlides - 1
+                    ? "opacity-20 pointer-events-none"
+                    : "opacity-100"
+                }`}
                 onClick={() => sliderRef.current.slickNext()}
               >
                 <img

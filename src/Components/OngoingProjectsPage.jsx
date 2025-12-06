@@ -116,12 +116,12 @@ export default function OngoingProjectsPage() {
               >
                 Apartments
               </li>
-              <li onClick={() => (window.location.href = "/architecture")}>
+              {/* <li onClick={() => (window.location.href = "/architecture")}>
                 Architecture
               </li>
               <li onClick={() => (window.location.href = "/interior")}>
                 Interior
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

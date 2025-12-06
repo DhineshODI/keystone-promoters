@@ -245,7 +245,7 @@ export default function NriPage() {
                     data-aos="fade-up"
                     data-aos-duration="1400"
                   >
-                    <a href="/contact">
+                    <a href="/contact#form_id">
                       <button className="cursor-pointer">Enquire Now</button>
                     </a>
                   </div>

@@ -48,6 +48,8 @@ try {
     // ============================
     $mail->setFrom("shivarex.c@gmail.com", "Website JV Enquiry");
     $mail->addAddress("shivarex.c@gmail.com");
+    $mail->addAddress("dhineshkodi2024@gmail.com");
+    $mail->addAddress("vaishuswety2107@gmail.com");    
 
     $mail->Subject = "New Joint Venture Enquiry Received from Website";
 
