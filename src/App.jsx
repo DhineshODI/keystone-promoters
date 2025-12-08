@@ -29,6 +29,7 @@ import NriPage from "./Pages/NriPage";
 import Menubar from "./Components/Menubar";
 import OngoingProjectsPage1 from "./Components/Ongoingprojects1";
 import OngoingProjectsPage2 from "./Components/OngoingProjects2";
+import Thankyoupage from "./Pages/Thankyou";
 
 // gsap.registerPlugin(ScrollTrigger);
 
@@ -81,6 +82,7 @@ function App() {
         <Route path="/careers" element={<CareersPage />} />
         <Route path="/testimonials" element={<TestimonialPage />} />
         <Route path="/nri" element={<NriPage />} />
+        <Route path="/thankyou" element={<Thankyoupage />} />
 
         <Route path="/architecture" element={<OngoingProjectsPage1 />} />
         <Route path="/completed" element={<OngoingProjectsPage1 />} />
@@ -90,8 +92,8 @@ function App() {
 
       {location.pathname !== "/testimonials" && <TestimonalSlider />}
 
-      {/* {location.pathname !== "/testimonials" && <TestimonalSlider />} */}
-      <ScheduleAvisit />
+      {location.pathname !== "/thankyou" && <ScheduleAvisit />}
+
       <Footer />
 
       <div className="whatsaicon">

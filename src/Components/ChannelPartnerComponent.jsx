@@ -98,6 +98,7 @@ export default function ChannelPartnerComponent() {
         // show snackbar
         setShowSnackbar(true);
         setTimeout(() => setShowSnackbar(false), 3000);
+            window.location.href = "/thankyou";
       }
     } catch (error) {
       console.error("Request Error:", error);

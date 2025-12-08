@@ -134,9 +134,14 @@ export default function ProjectLocationHighlights() {
                         Location Map View
                       </button>
                       <div className="subHeadingText"> | </div>
-                      <button className="subHeadingText">
+
+                      
+
+                      <a className="text-hover-underline cursor-pointer" href="https://maps.app.goo.gl/iHUEUGN4q9uwfLMMA" target="_blank">
+                      <button  className="subHeadingText cursor-pointer">
                         Google Map View
                       </button>
+                      </a>
                     </div>
                   </div>
                 </div>

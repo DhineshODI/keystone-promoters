@@ -126,6 +126,7 @@ export default function ContactPage() {
 
     // Stop loader
     setIsLoading(false);
+        window.location.href = "/thankyou";
   };
 
   return (

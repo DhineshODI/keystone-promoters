@@ -143,8 +143,11 @@ import { useState } from "react";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function HomepageImageHoverSection() {
+  const isMobile = typeof window !== "undefined" && window.innerWidth <= 768;
+
   const images = {
     Listen: "/images/homepage/listen.jpg",
     Design: "/images/homepage/design.jpg",
@@ -174,22 +177,29 @@ export default function HomepageImageHoverSection() {
         <div class="track">
           <span>Our Signature Approach - </span>
           <span>Our Signature Approach - </span>
-          {/* <span>YOUR TEXT — YOUR TEXT — YOUR TEXT — YOUR TEXT — </span> */}
         </div>
       </div>
 
       <div className="container max-w-7xl mx-auto px-4">
         <div className="lowconatinersectionafterbanner">
           <div>
-            <p className="subHeadingText" data-aos="fade-down" data-aos-delay="100">
+            <p
+              className="subHeadingText newtextsection1"
+              data-aos="fade-down"
+              data-aos-delay="100"
+            >
               Our approach transforms every project into a journey of
               collaboration, creativity, and precision-delivering purposeful,
               lasting spaces.
             </p>
           </div>
-          <div className="oursignatureflex">
+          <div className="oursignatureflex fordesktophoversection">
             {/* LEFT SIDE */}
-            <div className="oursignarureleftside"  data-aos="fade-right"   data-aos-duration="1000">
+            <div
+              className="oursignarureleftside"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
               <div className="oursignaturecontents">
                 <ul>
                   {list.map((item, index) => (
@@ -221,10 +231,66 @@ export default function HomepageImageHoverSection() {
             </div>
 
             {/* RIGHT SIDE IMAGE */}
-            <div className="oursignarurerightside"  data-aos="fade-left"  data-aos-duration="1500">
+            <div
+              className="oursignarurerightside"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+            >
               <img className="active-image" src={activeImage} alt="" />
             </div>
           </div>
+
+          <div className="formobilehoversection">
+      <ul>
+        {list.map((item, index) => (
+          <li
+            key={index}
+            className={`mobile-accordion-item ${
+              activeItem === item ? "active" : ""
+            }`}
+          >
+            <div
+              className="mobile-accordion-header"
+              onClick={() =>
+                setActiveItem(activeItem === item ? null : item)
+              }
+            >
+              <span
+                className={`main-text secondHeadingText ${
+                  activeItem === item ? "active-color" : ""
+                }`}
+                data-text={item}
+              >
+                {item}
+              </span>
+
+              <span className="plusminus">
+                {activeItem === item ? "−" : "+"}
+              </span>
+            </div>
+
+            <AnimatePresence initial={false}>
+              {activeItem === item && (
+                <motion.div
+                  className="mobile-accordion-body"
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: "auto", opacity: 1 }}
+                  exit={{ height: 0, opacity: 0 }}
+                  transition={{ duration: 0.4, ease: "easeInOut" }}
+                >
+                  <p className="subHeadingText">{texts[item]}</p>
+                  <img
+                    src={images[item]}
+                    alt={item}
+                    className="mobile-accordion-img"
+                  />
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </li>
+        ))}
+      </ul>
+    </div>
         </div>
       </div>
     </div>

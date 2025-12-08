@@ -92,6 +92,7 @@ export default function JointVentureComponent() {
         });
 
         setErrors({});
+            window.location.href = "/thankyou";
       }
     } catch (error) {
       console.error("Error:", error);

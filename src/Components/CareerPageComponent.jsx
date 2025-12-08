@@ -29,6 +29,7 @@ export default function CareerPageFunction() {
   const [snackMsg, setSnackMsg] = useState("");
 
   const [fileName, setFileName] = useState("No file chosen");
+  const [fileName1, setFileName1] = useState("Choose File");
 
   // ----------- INPUT VALIDATIONS WHILE TYPING ----------
   const handleChange = (e) => {
@@ -61,13 +62,15 @@ export default function CareerPageFunction() {
     if (file.size > 2 * 1024 * 1024) {
       setSnackMsg("File size must be less than 2 MB");
       setShowSnackbar(true);
-      
+
       setTimeout(() => setShowSnackbar(false), 3000);
       return;
     }
 
     setResume(file);
     setFileName(file.name); // ✅ Update filename here
+
+    setFileName1("Uploaded file");
     setErrors({ ...errors, resume: "" });
   };
 
@@ -140,6 +143,7 @@ export default function CareerPageFunction() {
     }
 
     setIsLoading(false);
+    window.location.href = "/thankyou";
   };
 
   return (
@@ -513,7 +517,9 @@ export default function CareerPageFunction() {
 
                     <div className="customFileWrapper">
                       <label htmlFor="fileInput" className="customFileButton">
-                        Choose File
+                        {/* Choose File */}
+
+                        {fileName1}
                       </label>
 
                       <span className="customFileName">{fileName}</span>

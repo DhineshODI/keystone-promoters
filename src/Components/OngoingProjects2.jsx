@@ -28,7 +28,7 @@ export default function OngoingProjectsPage2() {
     <div className="ongoingProjectsPage ongoingnewpage">
       {/* Banner */}
       <div>
-        <div className="detailPageBanners">
+        {/* <div className="detailPageBanners">
           <h5
             className="secondHeadingText"
             data-aos="fade-up"
@@ -57,6 +57,36 @@ export default function OngoingProjectsPage2() {
               Ongoing Projects
             </span>
           </div>
+        </div> */}
+        <div className="detailPageBanners">
+          <h5
+            className="secondHeadingText"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            Crafted to
+          </h5>
+          <h5
+            className="secondHeadingText"
+            data-aos="fade-up"
+            data-aos-duration="1300"
+          >
+            Completion
+          </h5>
+
+          <div
+            className="BreadCrumSection"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <a href="/" className="subHeadingText  text-hover-underline">
+              Home
+            </a>
+            <span className="subHeadingText">-</span>
+            <span className="subHeadingText text-hover-underline">
+              COMPLETED PROJECTS
+            </span>
+          </div>
         </div>
       </div>
       {/* Banner */}
@@ -73,9 +103,10 @@ export default function OngoingProjectsPage2() {
                 data-aos-duration="1000"
               >
                 <div>
-                  <h4 className="gettknowHeading">Ongoing Projects</h4>
+                  <h4 className="gettknowHeading">COMPLETED PROJECTS</h4>
                   <h3 className="visitOurOFficetext">
-                    Currently Developing your Future Homes
+                    {/* Currently Developing your Future Homes */}
+                    BUILDING LANDMARKS THAT STAND THE TEST OF TIME
                   </h3>
                 </div>
               </div>
@@ -90,8 +121,10 @@ export default function OngoingProjectsPage2() {
               >
                 <div style={{ marginTop: "15px" }}>
                   <p className="contactPageAddress">
-                    Happy Clients already invested our ongoing projects are your
-                    next great oppurtunity.
+                    Our completed projects reflect the quality, planning, and
+                    craftsmanship Keystone is known for.These successful
+                    developments are now cherished spaces for the families and
+                    communities who call them home.
                   </p>
                 </div>
               </div>
@@ -215,7 +248,10 @@ export default function OngoingProjectsPage2() {
 
             <div className="eachprojectcards">
               <div className="imagehoveranimationse">
-                <img src="/images/ongoing-images/kwalitee-office-main-img.jpg" alt="" />
+                <img
+                  src="/images/ongoing-images/kwalitee-office-main-img.jpg"
+                  alt=""
+                />
               </div>
 
               <p className="subHeadingText ">Kwalitee Office – Commercial</p>

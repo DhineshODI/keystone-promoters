@@ -38,9 +38,13 @@ export default function NriPage() {
                   data-aos="fade-up"
                   data-aos-duration="1450"
                 >
-                  Every detail is designed with intention-Blending
+                  {/* Every detail is designed with intention-Blending
                   functionality, beauty, and innovation to create homes that
-                  stand the test of time
+                  stand the test of time */}
+                  Find the right investment with expert assistance, verified
+                  information, and dependable service that ensures every NRI
+                  enjoys a safe, simple, and rewarding property-buying
+                  experience.
                 </p>
               </div>
             </div>

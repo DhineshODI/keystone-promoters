@@ -129,7 +129,7 @@ export default function Footer() {
                 <div>
                   <a href="/project-detail">
                     <li className="subHeadingText  text-hover-underline">
-                      The Spectra - Keelkattalai, Chennai
+                      Spectra - Keelkattalai, Chennai
                     </li>
                   </a>
                 </div>
@@ -234,11 +234,11 @@ export default function Footer() {
                       </a>
                     </div>
 
-                    <div className="iconsMainDivFooter">
+                    {/* <div className="iconsMainDivFooter">
                       <a href="#" target="_blank">
                         <img src="/images/icons/twitter-x.svg" alt="" />
                       </a>
-                    </div>
+                    </div> */}
                   </div>
                 </ul>
               </div>

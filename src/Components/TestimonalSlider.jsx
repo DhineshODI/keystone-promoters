@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -8,6 +8,9 @@ import "aos/dist/aos.css";
 export default function TestimonalSlider() {
   const sliderRef = useRef(null);
   const [current, setCurrent] = useState(0);
+  // const totalSlides = 3;
+
+  const [totalSlides, setTotalSlides] = useState(2); // default desktop
   const settings = {
     dots: false,
     infinite: false,
@@ -48,7 +51,22 @@ export default function TestimonalSlider() {
       },
     ],
   };
-  const totalSlides = 2;
+
+  useEffect(() => {
+  const updateSlides = () => {
+    if (window.innerWidth <= 768) {
+      setTotalSlides(3); // mobile
+    } else {
+      setTotalSlides(2); // desktop
+    }
+  };
+
+  updateSlides(); // run on mount
+  window.addEventListener("resize", updateSlides);
+
+  return () => window.removeEventListener("resize", updateSlides);
+}, []);
+
   return (
     <>
       <div className="testimonalFullSection reveal ">

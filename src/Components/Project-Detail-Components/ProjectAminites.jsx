@@ -14,6 +14,7 @@ import "aos/dist/aos.css";
 import axios from "axios";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+import { useNavigate } from "react-router-dom";
 
 export default function ProjectAminities() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,6 +27,8 @@ export default function ProjectAminities() {
     phone: "",
     message: "",
   });
+
+    const navigate = useNavigate();
 
   const [errors, setErrors] = useState({});
   const [isLoading, setIsLoading] = useState(false);
@@ -108,6 +111,10 @@ export default function ProjectAminities() {
 
         setIsOpen(false);
         setIsOpen1(false);
+
+        window.location.href = "/thankyou";
+
+
       }
     } catch (err) {
       console.error(err);
@@ -248,6 +255,7 @@ export default function ProjectAminities() {
         breakpoint: 767,
         settings: {
           slidesToShow: 1,
+          slidesToScroll: 1,
         },
       },
     ],

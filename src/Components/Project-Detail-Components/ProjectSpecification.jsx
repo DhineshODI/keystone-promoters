@@ -54,7 +54,7 @@ export default function ProjecSpecification() {
       icon: "/images/project-detail/specifications/Joineries.svg",
       title: "Joineries",
       list: [
-        "<span class='projects-text-highlight'>Main door -</span> Teak wood frame with doo.r",
+        "<span class='projects-text-highlight'>Main door -</span> Teak wood frame with door",
         "<span class='projects-text-highlight'>Other doors -</span> Country wood frames & flush doors with laminate.",
       ],
     },

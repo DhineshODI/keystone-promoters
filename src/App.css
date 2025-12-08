@@ -812,14 +812,14 @@ body,
   position: relative;
 }
 .yearsScrollText::before {
-  content: "";
-  position: absolute;
-  bottom: -27px;
-  left: -88px;
-  width: 113%;
-  height: 2px;
-  height: 1px;
-  background-color: #b77faa;
+    content: "";
+    position: absolute;
+    bottom: -27px;
+    left: -83px;
+    width: 113%;
+    height: 2px;
+    height: 1px;
+    background-color: #b77faa;
 }
 
 .yearsScrollText:last-child:before {
@@ -2655,6 +2655,18 @@ body,
   z-index: 1;
 }
 
+.projectspecname::after {
+    content: "";
+    width: 69%;
+    height: 1px;
+    background-color: #d2cde1;
+    position: absolute;
+    bottom: -12px;
+    right: -63%;
+}
+
+
+
 .projectspeclist {
     position: relative;
     padding-top: 25px;
@@ -2668,12 +2680,12 @@ body,
 }
 
 .projectspeclist::before {
-  content: "";
+  /* content: "";
   width: 90%;
   height: 1px;
   background-color: #d2cde1;
   position: absolute;
-  top: 11px;
+  top: 11px; */
 }
 
 .projectspeclist li {
@@ -4352,6 +4364,10 @@ body,
   background-image: url("/public/images/nri/nribannerbg.jpg");
 }
 
+.thannkyoupage .detailPageBanners {
+  background-image: url("/public/images/thankyou-banner.jpg");
+}
+
 /* NRI-Page */
 
 /* menubar */
@@ -4599,7 +4615,23 @@ body,
 }
 
 /* resposive start */
+
+
+@media (max-width:1900px) and (min-width:1600px) {
+  .insidepopupclasscontent {
+    width: 1200px;
+}
+}
 @media (max-width: 1600px) and (min-width: 1400px) {
+
+  .projectspecname::after {
+    width: 88%;
+    bottom: -13px;
+    right: -76%;
+}
+
+
+
   /* HomePage-Responsive */
   .secondHeadingText {
     font-size: 54px;
@@ -4609,6 +4641,29 @@ body,
     font-size: 15px;
   }
 
+    .insidepopupclasscontent {
+    width: 926px;
+    height: auto;
+    background-size: contain;
+    padding-left: 6%;
+    background-position: right;
+    background-color: white;
+}
+.insidepopupclass {
+    justify-content: center;
+}
+
+.aboutuspopupstyles .secondHeadingText {
+    font-size: 40px;
+}
+
+.aboutuspopupstyles .subHeadingText {
+    font-size: 14px;
+}
+.aboutuspopupstyles .mainheadingText {
+    font-size: 20px;
+    padding-left: 8px;
+}
   .contentHeadingBanner .secondHeadingText {
     font-size: 120px;
   }
@@ -4629,6 +4684,8 @@ body,
 
   .whatsmakeSectionBG {
     height: 900px;
+    background-size: cover;
+    background-position: center;
   }
 
   .FirstcontentWhatMakesSection.lastSectionWhatMakes {
@@ -4728,13 +4785,21 @@ body,
   }
 
   .curtedSectionMainRowBg {
-    height: auto;
+    /* height: auto;
     background-position: center;
     background-size: contain;
     padding: 50px 0;
     background-repeat: no-repeat;
     padding-bottom: 100px;
-    padding-top: 30px;
+    padding-top: 30px; */
+
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+    padding-top: 0px;
   }
 
   .curtsectionrow {
@@ -4804,7 +4869,7 @@ body,
   }
 
   .yearsScrollText::before {
-    left: -48px;
+    left: -46px;
   }
 
   .yearsScrollText.projectsScroll span {
@@ -4958,6 +5023,7 @@ body,
 
   .rectangleone {
     width: 54%;
+    width: 60%;
   }
 
   .founderdetails {
@@ -5294,6 +5360,13 @@ body,
 }
 
 @media (max-width: 1400px) and (min-width: 1250px) {
+
+
+  .projectspecname::after {
+    width: 69%;
+    bottom: -13px;
+    right: -54%;
+}
   /* HomePage-Responsive */
 
   .LiveThoughtFlex .secondHeadingText::before {
@@ -5314,6 +5387,36 @@ body,
   .subHeadingText {
     font-size: 15px;
   }
+
+
+  .insidepopupclasscontent {
+    width: 940px;
+    height: auto;
+    background-size: contain;
+    padding-left: 6%;
+    background-color: white;
+    background-position: right;
+}
+
+.aboutuspopupstyles .secondHeadingText {
+    font-size: 39px;
+}
+
+.popupclosebuttonabout {
+    font-size: 30px;
+}
+
+.aboutuspopupstyles .subHeadingText {
+    font-size: 15px;
+}
+
+.aboutuspopupstyles .mainheadingText {
+    font-size: 20px;
+    padding-left: 10px;
+}
+.insidepopupclass {
+    justify-content: center;
+}
 
   .contentHeadingBanner .secondHeadingText {
     font-size: 100px;
@@ -5359,6 +5462,8 @@ body,
 
   .whatsmakeSectionBG {
     height: 850px;
+    background-size: cover;
+    background-position: center;
   }
 
   .FirstcontentWhatMakesSection.lastSectionWhatMakes {
@@ -5486,10 +5591,11 @@ body,
     height: auto;
     background-position: center;
     background-size: contain;
+    background-size: cover;
     padding: 50px 0;
     background-repeat: no-repeat;
     padding-bottom: 100px;
-    margin-top: -15px;
+    margin-top: 0;
     padding-top: 0;
   }
 
@@ -5569,6 +5675,7 @@ body,
 
   .lastSectionWhatMakes .FlexFirstcontentWhatMakesSection {
     margin-top: 20px;
+    margin-top: 35px;
   }
 
   .oursignaturecontents ul li {
@@ -5640,6 +5747,8 @@ body,
   .lowconatinersectionafterbanner {
     margin: 0%;
   }
+
+
 
   .visitOurOFficetext {
     font-size: 33px;
@@ -5769,7 +5878,7 @@ body,
   }
 
   .rectangleone {
-    width: 59%;
+    width: 65%;
   }
 
   .founderdetails {
@@ -5803,6 +5912,8 @@ body,
   .margintopafterlist {
     margin-top: -390px;
   }
+
+
   .onGoingProjectsLists h5 {
     font-size: 36px;
   }
@@ -6203,14 +6314,15 @@ body,
 
   .projectspeclist {
     position: relative;
-    padding-top: 25px;
-    max-height: 179px;
+    padding-top: 0;
+    max-height: 150px;
     overflow-y: auto;
     padding-right: 10px;
     scrollbar-width: thin;
     scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
     background: white;
     z-index: 0;
+    margin-top: 25px;
 }
 
 .LiveThoughtFlex {
@@ -6223,6 +6335,22 @@ body,
 }
 
 @media (max-width: 1250px) and (min-width: 1100px) {
+
+  .projectspecname::after {
+    width: 69%;
+    bottom: -12.8px;
+    right: -37%;
+    z-index: 1;
+}
+
+  .curlatedLine {
+    position: relative;
+    gap: 155px;
+}
+
+.curlatedLine::before {
+    width: 27%;
+}
   /* HomePage-Responsive */
 
   .LiveThoughtFlex .secondHeadingText::before {
@@ -6287,6 +6415,8 @@ body,
 
   .whatsmakeSectionBG {
     height: 750px;
+    background-size: cover;
+    background-position: center;
   }
 
   .FirstcontentWhatMakesSection.lastSectionWhatMakes {
@@ -6410,10 +6540,16 @@ body,
     height: auto;
     background-position: center;
     background-size: contain;
+    background-size: cover;
     padding: 50px 0;
     background-repeat: no-repeat;
     padding-bottom: 100px;
   }
+
+  .curlatedArrow img {
+    width: 40px;
+    height: 40px;
+}
 
   .curtsectionrow {
     padding-top: 37px;
@@ -6523,6 +6659,7 @@ body,
 
   .lastSectionWhatMakes .FlexFirstcontentWhatMakesSection {
     margin-top: 20px;
+    margin-top: 52px;
   }
 
   .oursignaturecontents ul li {
@@ -6805,6 +6942,21 @@ body,
   .margintopafterlist {
     margin-top: -315px;
   }
+
+  .eachprojectcards .subHeadingText {
+    font-size: 24px;
+    line-height: 1;
+    margin-top: 15px;
+}
+
+.eachprojectcards {
+    width: 30%;
+}
+
+.ongoingnewstyke {
+    gap: 38px;
+}
+
   .onGoingProjectsLists h5 {
     font-size: 30px;
   }
@@ -7161,6 +7313,7 @@ body,
   .projectspecname::before {
     height: 5px;
     top: 34px;
+    z-index: 100;
   }
 
   .projectspecificationcard {
@@ -7264,7 +7417,7 @@ body,
 
   .floorplanleftlist li {
     font-size: 20px;
-    width: 58%;
+    width: 85%;
   }
 
   .floorplanleft .subHeadingText {
@@ -7291,7 +7444,10 @@ body,
 
 @media (max-width: 1100px) and (min-width: 900px) {
   /* HomePage-Responsive */
-
+  .curlatedArrow img {
+    width: 40px;
+    height: 40px;
+}
   .LiveThoughtFlex .secondHeadingText::before {
     top: -17px;
     right: -8px;
@@ -7358,9 +7514,13 @@ body,
   }
 
   .whatsmakeSectionBG {
-    height: 550px;
+    /* height: 550px;
     height: 650px;
+    background-size: contain; */
+    height: 589px;
     background-size: contain;
+    background-size: cover;
+    background-position: center;
   }
   .whatMakesHeadingMainRow {
     padding-top: 40px;
@@ -7633,7 +7793,7 @@ body,
   }
 
   .yearsScrollText::before {
-    left: -36px;
+    left: -33px;
     width: 93%;
   }
 
@@ -7643,6 +7803,7 @@ body,
 
   .lastSectionWhatMakes .FlexFirstcontentWhatMakesSection {
     margin-top: 20px;
+    margin-top: 60px;
   }
 
   .oursignaturecontents ul li {
@@ -7936,11 +8097,25 @@ body,
   }
 
   .margintopafterlist {
-    margin-top: -315px;
+    margin-top: -240px;
   }
+
+  .eachprojectcards .subHeadingText {
+    font-size: 23px;
+    line-height: 1;
+    margin-top: 15px;
+}
   .onGoingProjectsLists h5 {
     font-size: 28px;
   }
+
+  .eachprojectcards {
+    width: 30%;
+}
+
+.ongoingnewstyke {
+    gap: 38px;
+}
 
   .onGoingProjectsLists span {
     font-size: 20px;
@@ -8450,6 +8625,50 @@ body,
   .projectDetailPage .curlatedLine {
     margin-top: 0px;
   }
+
+    .floorplanleft h4 {
+    font-size: 35px;
+    width: 100%;
+    padding-right: 16px;
+   
+}
+
+.floorplanleft .subHeadingText {
+    width: 70%;
+    line-height: 111%;
+    padding-right: 17px;
+    font-size: 13px;
+}
+
+.floorplanleftlist li {
+    font-size: 19px;
+    padding: 15px 0;
+    padding-right: 16px;
+    width: 100%;
+    padding-right: 16px;
+    cursor: pointer;
+}
+
+.fullwidthprojectdetail {
+    padding: 29px 0px;
+    padding-bottom: 0;
+}
+
+.newcardwidth {
+    width: 73%;
+}
+
+.newcardwidth .textoftehfloor {
+    font-size: 35px;
+}
+
+.floorplanleftlist .activefloorstate {
+  /* width: max-content; */
+}
+
+.floorplanleftlist {
+    margin-top: 10px;
+}
   /* ProjectDetail Page  */
 }
 
@@ -9226,7 +9445,7 @@ body,
   }
 
   .margintopafterlist {
-    margin-top: -400px;
+      margin-top: -310px;
   }
   .onGoingProjectsLists h5 {
     font-size: 24px;
@@ -9288,6 +9507,16 @@ body,
 
   .FirstmainonGoingProjectsLists {
     row-gap: 30px;
+}
+
+.eachprojectcards .subHeadingText {
+    font-size: 24px;
+    line-height: 1;
+    margin-top: 15px;
+}
+
+.eachprojectcards {
+    width: 46%;
 }
   /* Ongoing Page */
 
@@ -9811,6 +10040,67 @@ body,
   .projectDetailPage .curlatedLine {
     margin-top: 0px;
   }
+
+
+  .projectfloorflex {
+    flex-direction: column;
+}
+
+.floorplanprojectdetail {
+    width: 100%;
+    height: auto;
+    background-color: #b26dac;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.floorplanleftlist li {
+    font-size: 19px;
+    width: max-content;
+    flex-shrink: 0;
+    text-align: center;
+    padding: 10px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    justify-content: center;
+    border-right: 1px solid #9c5d96;
+}
+.floorplanleftlist {
+    flex-direction: row;
+    overflow-x: scroll;
+    padding-left: 5%;
+}
+.floorplanleftlist .activefloorstate {
+    padding: 15px !important;
+}
+
+.smallname {
+    font-size: 10px;
+}
+
+.floorplanleft {
+    align-items: center;
+}
+
+.floorplanleft h4 {
+  
+    font-size: 45px;
+    text-align: center;
+    padding-right: 0px;
+}
+
+.floorplanleft .subHeadingText {
+    width: 100%;
+    text-align: center;
+    margin-top: 17px;
+    padding-right: 0;
+    font-size: 14px;
+}
+.floorplanimagewrap {
+    width: 100%;
+}
   /* ProjectDetail Page  */
 }
 
@@ -9820,12 +10110,25 @@ body,
   }
 
   .headerTop {
-    /* display: none; */
+    display: none;
   }
+
+  .fordesktophoversection {
+    display: none;
+  }
+    .HeaderMainSEC {
+        top: 32px;
+        top: 0 !important;
+    }
+
 }
 
 @media (min-width: 769px) {
   .mobileiconskey {
+    display: none;
+  }
+
+  .formobilehoversection {
     display: none;
   }
 }
@@ -9871,6 +10174,7 @@ body,
 
   .HeaderMainSEC {
     top: 33px !important;
+    top: 0px !important;
   }
 
   .HeaderMainSEC.is-sticky {
@@ -9963,15 +10267,15 @@ body,
   .ArchitectureContent .secondHeadingText {
     font-size: 18px;
     width: 285px;
-    top: 46%;
+    top: 43%;
     left: -52%;
     text-align: center;
   }
 
   .archisecondHeadingText {
-    width: 63%;
-    left: 26%;
-    top: 19%;
+    width: 69%;
+    left: 22%;
+    top: 8%;
   }
 
   .onGoingRightSection .mainheadingText {
@@ -10684,6 +10988,7 @@ body,
 
   .margintopafterlist {
     margin-top: -400px;
+    margin-top: -260px;
   }
   .onGoingProjectsLists h5 {
     font-size: 24px;
@@ -10736,8 +11041,17 @@ body,
   }
 
   .ongoingprojectslist {
-    padding: 14px 35px;
+    /* padding: 14px 35px; */
+        padding: 10px 12px;
   }
+
+.ongoingprojectslist {
+    column-gap: 20px;
+}
+
+.ongoingprojectslist li::before {
+    right: -8px;
+}
 
   .mainRowonGoingProjectsLists {
     width: 95%;
@@ -10748,6 +11062,18 @@ body,
     row-gap: 30px;
 }
 
+.eachprojectcards .subHeadingText {
+    font-size: 20px;
+    line-height: 1;
+    margin-top: 15px;
+}
+
+.eachprojectcards {
+    width: 46%;
+}
+.ongoingnewstyke {
+    gap: 35px;
+}
 
   /* Ongoing Page */
 
@@ -11298,13 +11624,255 @@ body,
     margin-top: 0px;
   }
   /* ProjectDetail Page  */
+
+
+    .formobilehoversection {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+     .formobilehoversection ul {
+    max-width: 450px;
+    min-width: 450px;
+     }
+
+  .mobile-accordion-item.active {
+    border-bottom: none;
+    margin-bottom: 10px;
+  }
+
+  .OurSignatureApproach {
+    padding-bottom: 50px;
+}
+
+.OurSignatureApproach .newtextsection1 {
+    margin-left: 10%;
+    width: 80%;
+}
+
+/* Default stroke-only text */
+.formobilehoversection .secondHeadingText {
+    font-family: "Alexandra", sans-serif;
+    position: relative;
+    font-size: 34px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1;
+    -webkit-text-stroke: 1px #a762a1;
+    color: transparent !important;
+}
+
+/* Before (animation reveal layer) */
+.formobilehoversection .secondHeadingText::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-transform: uppercase;   /* ⭐ ADD THIS */
+  width: 0%;
+  height: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: reveal2 7s ease-in-out infinite;
+
+  color: #b070ad;
+  -webkit-text-stroke: 0px transparent;
+}
+
+/* ⭐ ACTIVE ITEM = FULL COLOR ⭐ */
+.formobilehoversection .secondHeadingText.active-color {
+  text-transform: uppercase;   /* ⭐ ADD THIS */
+  color: #843d7d !important;
+  -webkit-text-stroke: 0px !important;
+}
+
+.mobile-accordion-item  {
+    margin: 0 12px;
+    border-bottom: 1px solid #dadada;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.mobile-accordion-item:last-child {
+  border-bottom: none;
+}
+
+
+.mobile-accordion-body .subHeadingText{ 
+    width: 68%;
+    line-height: 100%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.mobile-accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+ 
+}
+
+.mobile-accordion-header .plusminus {
+    font-size: 35px;
+    line-height: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: 200;
+    color: #a762a1;
+}
+
+.formobilehoversection .secondHeadingText.active-color::before {
+  width: 100% !important;
+  animation: none !important;
+}
+
+
+.mobile-accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: 
+    max-height 0.4s ease,
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* When active */
+.mobile-accordion-item.active .mobile-accordion-body {
+  max-height: 500px; /* large enough value */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+  .projectfloorflex {
+    flex-direction: column;
+}
+
+.floorplanprojectdetail {
+    width: 100%;
+    height: auto;
+    background-color: #b26dac;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.floorplanleftlist li {
+    font-size: 17px;
+    width: max-content;
+    flex-shrink: 0;
+    text-align: center;
+    padding: 10px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    justify-content: center;
+    border-right: 1px solid #9c5d96;
+}
+
+.newcardwidth .textoftehfloor {
+    font-size: 38px;
+}
+.floorplanleftlist {
+    flex-direction: row;
+    overflow-x: scroll;
+    padding-left: 5%;
+}
+.floorplanleftlist .activefloorstate {
+    padding: 15px !important;
+}
+
+.smallname {
+    font-size: 10px;
+}
+
+.floorplanleft {
+    align-items: center;
+}
+
+.floorplanleft h4 {
+  
+    font-size: 45px;
+    text-align: center;
+    padding-right: 0px;
+}
+
+.floorplanleft .subHeadingText {
+    width: 100%;
+    text-align: center;
+    margin-top: 17px;
+    padding-right: 0;
+    font-size: 14px;
+}
+.floorplanimagewrap {
+    width: 100%;
+}
+
+
+
 }
 @media (max-width: 600px) {
+
+  /* Popup Style */
+
+  .popupdownload .aboutuspopupstyles {
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.contactFormInputEach input:not([type="file"]) {
+    height: 45px;
+}
+
+  /* Popup Style */
 
   .whatsaicon img {
     width: 65px;
     height: 65px;
 }
+
+.popupdownload .contactFormInputEach {
+    width: 85%;
+}
+
+    .popupdownload  .visitOurOFficetext {
+    font-size: 30px;
+    margin-bottom: 10px;
+    }
+
+
+        .popupdownload .formMainStyleContactPage {
+    margin-top: 0px;
+}
+
+.contactFormInputEach .form-control {
+    height: 45px !important;
+}
+
+.popupdownload .insidepopupclass {
+    width: 90%;
+}
+
+.react-tel-input .country-list {
+    width: 250px !important;
+
+}
+
+.popupdownload .animate-modalPopup {
+    padding: 28px 10px;
+}
+
+.projectaminitessection .curlatedLine::before {
+ display: none;
+}
+
+.projectDetailPage .curlatedLine::before {
+ display: none;
+}
+
   /* HomePage-Responsive */
 
   .LiveThoughtFlex .secondHeadingText::before {
@@ -11359,7 +11927,7 @@ body,
     height: 100%;
     margin-top: 0;
     justify-content: end;
-    padding-bottom: 30%;
+    padding-bottom: 35%;
   }
   .hamburgerflex {
     column-gap: 4px;
@@ -12029,6 +12597,118 @@ max-width: 320px;
     display: flex;
     justify-content: center;
   }
+
+  .formobilehoversection {
+    margin-top: 20px;
+  }
+
+  .mobile-accordion-item.active {
+    border-bottom: none;
+    margin-bottom: 10px;
+  }
+
+  .OurSignatureApproach {
+    padding-bottom: 50px;
+}
+
+/* Default stroke-only text */
+.formobilehoversection .secondHeadingText {
+    font-family: "Alexandra", sans-serif;
+    position: relative;
+    font-size: 34px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1;
+    -webkit-text-stroke: 1px #a762a1;
+    color: transparent !important;
+}
+
+/* Before (animation reveal layer) */
+.formobilehoversection .secondHeadingText::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-transform: uppercase;   /* ⭐ ADD THIS */
+  width: 0%;
+  height: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: reveal2 7s ease-in-out infinite;
+
+  color: #b070ad;
+  -webkit-text-stroke: 0px transparent;
+}
+
+/* ⭐ ACTIVE ITEM = FULL COLOR ⭐ */
+.formobilehoversection .secondHeadingText.active-color {
+  text-transform: uppercase;   /* ⭐ ADD THIS */
+  color: #843d7d !important;
+  -webkit-text-stroke: 0px !important;
+}
+
+.mobile-accordion-item  {
+    margin: 0 12px;
+    border-bottom: 1px solid #dadada;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.mobile-accordion-item:last-child {
+  border-bottom: none;
+}
+
+
+.mobile-accordion-body .subHeadingText{ 
+    width: 68%;
+    line-height: 100%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.mobile-accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+ 
+}
+
+.mobile-accordion-header .plusminus {
+    font-size: 35px;
+    line-height: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: 200;
+    color: #a762a1;
+}
+
+.formobilehoversection .secondHeadingText.active-color::before {
+  width: 100% !important;
+  animation: none !important;
+}
+
+
+.mobile-accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: 
+    max-height 0.4s ease,
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* When active */
+.mobile-accordion-item.active .mobile-accordion-body {
+  max-height: 500px; /* large enough value */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
 
   .menubarcloseicon {
     top: 6%;
@@ -13154,7 +13834,8 @@ max-width: 320px;
 
   .projectlocationshighlights {
     height: auto;
-    background-position: bottom;
+    background-position: top;
+    background: white;
   }
   .locationimageside {
     width: 100%;
@@ -13320,6 +14001,10 @@ max-width: 320px;
     border-top: none;
     border-bottom: none;
     text-align: center;
+    height: 49px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .activefloorstate {
@@ -13359,9 +14044,9 @@ max-width: 320px;
     display: none;
   } */
 
-  .OurSignatureApproach {
+  /* .OurSignatureApproach {
     display: none;
-  }
+  } */
 }
 
 /* resposive start */
@@ -13597,3 +14282,5 @@ max-width: 320px;
 
 
 /* shiva style */
+
+

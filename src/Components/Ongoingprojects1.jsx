@@ -73,7 +73,7 @@ export default function OngoingProjectsPage1() {
                 data-aos-duration="1000"
               >
                 <div>
-                  <h4 className="gettknowHeading">Ongoing Projects</h4>
+                  <h4 className="gettknowHeading">COMPLETED PROJECTS</h4>
                   <h3 className="visitOurOFficetext">
                     {/* Currently Developing your Future Homes */}
                     BUILDING LANDMARKS THAT STAND THE TEST OF TIME
@@ -141,13 +141,13 @@ export default function OngoingProjectsPage1() {
       >
         <div className="container max-w-7xl mx-auto px-4 ">
           <div className="ongoingnewstyke">
-            <div className="eachprojectcards">
+            {/* <div className="eachprojectcards">
               <div className="imagehoveranimationse">
                 <img src="/images/ongoing-images/Spectra-image.png" alt="" />
               </div>
 
               <p className="subHeadingText ">Spectra</p>
-            </div>
+            </div> */}
             <div className="eachprojectcards">
               <div className="imagehoveranimationse">
                 <img src="/images/ongoing-images/scape-main.png" alt="" />
