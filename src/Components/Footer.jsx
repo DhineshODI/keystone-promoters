@@ -202,7 +202,7 @@ export default function Footer() {
                 <ul className="footerListsul">
                   <div className="iconsFooters">
                     <div className="iconsMainDivFooter">
-                      <a href="#" target="_blank">
+                      <a href=" https://in.linkedin.com/company/keystone-promoters-pvt-ltd---india" target="_blank">
                         <img src="/images/icons/linkedin.svg" alt="" />
                       </a>
                     </div>
