@@ -27,7 +27,7 @@ export default function Header({ menuOnlick }) {
     if (path === "/brand") setActive("aboutus");
     else if (path === "/ongoing-projects") setActive("ongoing-projects");
     else if (path === "/completed") setActive("completed");
-    else if (path === "/careers") setActive("careers");
+    else if (path === "/joint-venture") setActive("joint-venture");
     else if (path === "/contact") setActive("contact");
   }, []);
 
@@ -88,16 +88,6 @@ export default function Header({ menuOnlick }) {
                 Ongoing
               </li>
             </a>
-            {/* <a href="/joint-venture">
-              <li
-                className={
-                  active === "joint-venture" ? "active" : "text-hover-underline"
-                }
-                onClick={() => handleActive("joint-venture")}
-              >
-                Joint Venture
-              </li>
-            </a> */}
 
             <a href="/completed">
               <li
@@ -110,7 +100,18 @@ export default function Header({ menuOnlick }) {
               </li>
             </a>
 
-            <a href="/careers">
+            <a href="/joint-venture">
+              <li
+                className={
+                  active === "joint-venture" ? "active" : "text-hover-underline"
+                }
+                onClick={() => handleActive("joint-venture")}
+              >
+                Joint Venture
+              </li>
+            </a>
+
+            {/* <a href="/careers">
               <li
                 className={
                   active === "careers" ? "active" : "text-hover-underline"
@@ -119,7 +120,7 @@ export default function Header({ menuOnlick }) {
               >
                 Careers
               </li>
-            </a>
+            </a> */}
 
             <a href="/contact">
               <li

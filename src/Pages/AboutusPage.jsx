@@ -104,7 +104,7 @@ export default function AboutUsPage() {
                   >
                     <div className="firstunderaboutusection">
                       <p className="subHeadingText">
-                        <span>100 + </span> Projects built with enduring quality
+                        <span>50 + </span> Projects built with enduring quality
                       </p>
                     </div>
                     <p className="subHeadingText numbertext">01</p>
@@ -116,7 +116,7 @@ export default function AboutUsPage() {
                   >
                     <div className="firstunderaboutusection">
                       <p className="subHeadingText">
-                        <span>3k +</span> Families chose us with confidence
+                        <span>2k +</span> Families chose us with confidence
                       </p>
                     </div>
                     <p className="subHeadingText numbertext">02</p>
@@ -128,7 +128,7 @@ export default function AboutUsPage() {
                   >
                     <div className="firstunderaboutusection">
                       <p className="subHeadingText">
-                        <span>5M + </span> Square feet built with care
+                        <span>1M + </span> Square feet built with care
                       </p>
                     </div>
                     <p className="subHeadingText numbertext">03</p>

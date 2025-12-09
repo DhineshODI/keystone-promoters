@@ -114,14 +114,14 @@ export default function OngoingProjectsPage1() {
       >
         <div className="container max-w-7xl mx-auto px-4 ">
           <div className="ongoingslistflex">
-            <ul className="ongoingprojectslist">
-              {/* <li onClick={() => (window.location.href = "/ongoing-projects")}>
-                Apartments
-              </li> */}
+             <ul className="ongoingprojectslist">
               <li
-                onClick={() => (window.location.href = "/architecture")}
-                className="activestatus"
+                onClick={() => (window.location.href = "/apartments")}
+                
               >
+                Apartments
+              </li>
+              <li className="activestatus" onClick={() => (window.location.href = "/architecture")}>
                 Architecture
               </li>
               <li onClick={() => (window.location.href = "/interior")}>
@@ -148,13 +148,7 @@ export default function OngoingProjectsPage1() {
 
               <p className="subHeadingText ">Spectra</p>
             </div> */}
-            <div className="eachprojectcards">
-              <div className="imagehoveranimationse">
-                <img src="/images/ongoing-images/scape-main.png" alt="" />
-              </div>
 
-              <p className="subHeadingText ">The Scape</p>
-            </div>
             <div className="eachprojectcards">
               <div className="imagehoveranimationse">
                 <img src="/images/ongoing-images/random-box-main.png" alt="" />
@@ -162,13 +156,15 @@ export default function OngoingProjectsPage1() {
 
               <p className="subHeadingText ">Random Box</p>
             </div>
+
             <div className="eachprojectcards">
               <div className="imagehoveranimationse">
-                <img src="/images/ongoing-images/groove.jpg" alt="" />
+                <img src="/images/ongoing-images/edge-new.jpg" alt="" />
               </div>
 
-              <p className="subHeadingText ">The Grove</p>
+              <p className="subHeadingText ">Edge</p>
             </div>
+
             <div className="eachprojectcards">
               <div className="imagehoveranimationse">
                 <img src="/images/ongoing-images/mannat-main.png" alt="" />
@@ -176,43 +172,23 @@ export default function OngoingProjectsPage1() {
 
               <p className="subHeadingText ">Mannat</p>
             </div>
+
             <div className="eachprojectcards">
               <div className="imagehoveranimationse">
-                <img
-                  src="/images/ongoing-images/north-point-mainimg.jpg"
-                  alt=""
-                />
+                <img src="/images/ongoing-images/clay.jpg" alt="" />
               </div>
 
-              <p className="subHeadingText ">North Point at Chennai</p>
+              <p className="subHeadingText ">Clay</p>
             </div>
+
             <div className="eachprojectcards">
               <div className="imagehoveranimationse">
-                <img src="/images/ongoing-images/edge.jpg" alt="" />
+                <img src="/images/ongoing-images/hub.jpg" alt="" />
               </div>
 
-              <p className="subHeadingText ">Edge – Commercial</p>
+              <p className="subHeadingText ">The hub</p>
             </div>
-            <div className="eachprojectcards">
-              <div className="imagehoveranimationse">
-                <img
-                  src="/images/ongoing-images/child-park-mainimg-768x538.jpg"
-                  alt=""
-                />
-              </div>
 
-              <p className="subHeadingText ">Childrens Park</p>
-            </div>
-            <div className="eachprojectcards">
-              <div className="imagehoveranimationse">
-                <img
-                  src="/images/ongoing-images/club-house-mainimg-768x538.jpg"
-                  alt=""
-                />
-              </div>
-
-              <p className="subHeadingText ">Club House – Commercial</p>
-            </div>
             <div className="eachprojectcards">
               <div className="imagehoveranimationse">
                 <img
@@ -221,8 +197,9 @@ export default function OngoingProjectsPage1() {
                 />
               </div>
 
-              <p className="subHeadingText ">Trapezoid – Commercial</p>
+              <p className="subHeadingText ">Trapezoid</p>
             </div>
+
             <div className="eachprojectcards">
               <div className="imagehoveranimationse">
                 <img
@@ -233,6 +210,15 @@ export default function OngoingProjectsPage1() {
 
               <p className="subHeadingText ">Sabari Garden Housing</p>
             </div>
+
+            <div className="eachprojectcards">
+              <div className="imagehoveranimationse">
+                <img src="/images/ongoing-images/yoga-768x538.jpg" alt="" />
+              </div>
+
+              <p className="subHeadingText ">Yoga Institute</p>
+            </div>
+
             <div className="eachprojectcards">
               <div className="imagehoveranimationse">
                 <img
@@ -241,8 +227,9 @@ export default function OngoingProjectsPage1() {
                 />
               </div>
 
-              <p className="subHeadingText ">Library – Institutional</p>
+              <p className="subHeadingText ">Library</p>
             </div>
+
             <div className="eachprojectcards">
               <div className="imagehoveranimationse">
                 <img
@@ -251,57 +238,7 @@ export default function OngoingProjectsPage1() {
                 />
               </div>
 
-              <p className="subHeadingText ">Haritham – Residence</p>
-            </div>
-            <div className="eachprojectcards">
-              <div className="imagehoveranimationse">
-                <img src="/images/ongoing-images/yoga-768x538.jpg" alt="" />
-              </div>
-
-              <p className="subHeadingText ">Yoga Institute Entrance</p>
-            </div>
-            <div className="eachprojectcards">
-              <div className="imagehoveranimationse">
-                <img
-                  src="/images/ongoing-images/president-park-mainimg-768x538.jpg"
-                  alt=""
-                />
-              </div>
-
-              <p className="subHeadingText ">The President’s Park</p>
-            </div>
-
-            <div className="eachprojectcards">
-              <div className="imagehoveranimationse">
-                <img
-                  src="/images/ongoing-images/dwaraka-residence-main-768x538.jpg"
-                  alt=""
-                />
-              </div>
-
-              <p className="subHeadingText ">Dwaraka – Residence</p>
-            </div>
-
-            <div className="eachprojectcards">
-              <div className="imagehoveranimationse">
-                <img
-                  src="/images/ongoing-images/nilaya-residence-main-img-768x538.jpg"
-                  alt=""
-                />
-              </div>
-
-              <p className="subHeadingText ">Nilaya – Residence</p>
-            </div>
-
-            <div className="eachprojectcards">
-              <div className="imagehoveranimationse">
-                <img
-                  src="/images/ongoing-images/sri-chaitanya-school-main-img-768x538.jpg"
-                  alt=""
-                />
-              </div>
-
-              <p className="subHeadingText ">Sri Chaitanya School – Karur</p>
+              <p className="subHeadingText ">Haritham</p>
             </div>
           </div>
         </div>

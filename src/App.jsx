@@ -30,6 +30,7 @@ import Menubar from "./Components/Menubar";
 import OngoingProjectsPage1 from "./Components/Ongoingprojects1";
 import OngoingProjectsPage2 from "./Components/OngoingProjects2";
 import Thankyoupage from "./Pages/Thankyou";
+import AppartmentsPage from "./Components/ArchitecturePage";
 
 // gsap.registerPlugin(ScrollTrigger);
 
@@ -87,6 +88,8 @@ function App() {
         <Route path="/architecture" element={<OngoingProjectsPage1 />} />
         <Route path="/completed" element={<OngoingProjectsPage1 />} />
         <Route path="/interior" element={<OngoingProjectsPage2 />} />
+
+        <Route path="/apartments" element={<AppartmentsPage />} />
       </Routes>
       {/* </Router> */}
 

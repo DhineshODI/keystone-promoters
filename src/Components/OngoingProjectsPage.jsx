@@ -148,8 +148,17 @@ export default function OngoingProjectsPage() {
 
                   <div className="onGoingProjectsLists">
                     <div className="FirstonGoingProjectsLists">
-                      <h5>{project.ProjectTitle}</h5>
-                      <span>{project.ProjectLocation}</span>
+                      <div className="flex ongoingimageaddd">
+                        {/* <h5>{project.ProjectTitle}</h5>{" "} */}
+                        <img
+                          className="ongoingspectralogo"
+                          src="/images/project-detail/spectra-logo.png"
+                          alt=""
+                        />
+                      </div>
+                      <span className="projectspanname">
+                        {project.ProjectLocation}
+                      </span>
                     </div>
                     <div className="secondonGoingProjectsLists">
                       <div className="ongoingpageproject unitsectiondiv">
@@ -192,9 +201,12 @@ export default function OngoingProjectsPage() {
 
                   <div className="onGoingProjectsLists ongoiingprojectssecond">
                     <div className="secondonGoingProjectsLists">
-                      <h5>
-                        Coming <br /> Soon
-                      </h5>
+                      <h5>Coming Soon</h5>
+
+                      <p className="subHeadingText text-[#636465] ongoingsecondnewadd ">
+                        A new chapter begins soon with thoughtfully planned,
+                        quality-driven homes for modern living.
+                      </p>
                     </div>
                   </div>
                 </div>

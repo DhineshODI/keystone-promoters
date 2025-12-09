@@ -1881,6 +1881,23 @@ body,
   color: #bc5d9a;
 }
 
+
+.ongoingimageaddd {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.mainRowonGoingProjectsLists  .ongoingspectralogo{
+  width: 100px;
+  width: 55%;
+}
+
+.projectspanname {
+  padding-left: 0 !important;
+}
+
 .ongoingpageproject {
   display: flex;
   column-gap: 30px;
@@ -1905,7 +1922,19 @@ body,
   padding-left: 0 !important;
 }
 .ongoiingprojectssecond .secondonGoingProjectsLists {
-  width: 100%;
+  /* width: 100%; */
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ongoingsecondnewadd {
+    width: 60%;
+    text-align: center;
+    margin-top: 12px;
 }
 
 .oneongoiingprojectssecond img {
@@ -2105,11 +2134,12 @@ body,
 }
 
 .eachprojectcards .subHeadingText {
-  color: #b070ad;
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 1.1;
-  margin-top: 20px;
+    color: #b070ad;
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-top: 20px;
+    padding-left: 3px;
 }
 .imagehoveranimationse {
   overflow: hidden;
@@ -5061,6 +5091,10 @@ body,
     font-size: 26px;
   }
 
+  .mainRowonGoingProjectsLists .ongoingspectralogo {
+    width: 40%;
+}
+
   .buttononGoingProjectsLists {
     font-size: 15px;
   }
@@ -5921,6 +5955,10 @@ body,
   .onGoingProjectsLists span {
     font-size: 23px;
   }
+
+    .mainRowonGoingProjectsLists .ongoingspectralogo {
+    width: 40%;
+}
 
   .buttononGoingProjectsLists {
     font-size: 13px;
@@ -6964,6 +7002,10 @@ body,
   .onGoingProjectsLists span {
     font-size: 20px;
   }
+
+    .mainRowonGoingProjectsLists .ongoingspectralogo {
+    width: 36%;
+}
 
   .buttononGoingProjectsLists {
     font-size: 10px;
@@ -8121,11 +8163,23 @@ body,
     font-size: 20px;
   }
 
+      .mainRowonGoingProjectsLists .ongoingspectralogo {
+    width: 36%;
+}
+
   .FirstonGoingProjectsLists,
   .secondonGoingProjectsLists,
   .thirdonGoingProjectsLists {
-    margin-bottom: 28px;
+    margin-bottom: 18px;
   }
+
+  .FirstonGoingProjectsLists::before {
+    bottom: -7px;
+}
+
+.secondonGoingProjectsLists::before {
+    bottom: -13px;
+}
 
   .buttononGoingProjectsLists {
     font-size: 10px;
@@ -9455,6 +9509,10 @@ body,
     font-size: 15px;
     padding-left: 5px;
   }
+.mainRowonGoingProjectsLists .ongoingspectralogo {
+    width: 30%;
+}
+
 
   .FirstonGoingProjectsLists,
   .secondonGoingProjectsLists,
@@ -13092,8 +13150,22 @@ max-width: 320px;
     padding-left: 8px;
   }
   .FirstonGoingProjectsLists:first-child span {
-    padding-left: 20px;
+    padding-left: 20px !important;
   }
+  .mainRowonGoingProjectsLists .ongoingspectralogo {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.secondonGoingProjectsLists h5 {
+    font-size: 35px;
+    padding-left: 0;
+}
+
+.ongoingsecondnewadd {
+    width: 90%;
+    margin-top: 10px;
+}
 
   .FirstonGoingProjectsLists,
   .secondonGoingProjectsLists,

@@ -21,7 +21,7 @@ export default function LiveThoughtFul() {
 
     // PROJECTS counter (1 → 100)
     let projectsStart = 0;
-    const projectsEnd = 100;
+    const projectsEnd = 50;
     const projectsDuration = 1500;
     const projectsStep = projectsDuration / projectsEnd;
 
@@ -33,7 +33,7 @@ export default function LiveThoughtFul() {
 
     // FAMILY counter (1 → 50) — example
     let familyStart = 0;
-    const familyEnd = 3;
+    const familyEnd = 2;
     const familyDuration = 1500;
     const familyStep = familyDuration / familyEnd;
 
