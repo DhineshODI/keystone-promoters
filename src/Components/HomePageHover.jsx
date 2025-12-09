@@ -41,7 +41,7 @@ export default function TextImageSection({ items = defaultData }) {
           <div className="texthoverimagetitle">
             <p>
               Our approach transforms every project into a purney ot
-              collaboration, creativity, and <br></br>precision-deitverng
+              collaboration, creativity and <br></br>precision-deitverng
               purposeful, lasting spaces.
             </p>
           </div>

@@ -90,8 +90,8 @@ export default function OngoingProjectsPage() {
               >
                 <div style={{ marginTop: "15px" }}>
                   <p className="contactPageAddress">
-                    Happy Clients already invested our ongoing projects are your
-                    next great oppurtunity.
+                    Your future begins here. Explore thoughtfully designed homes
+                    where comfort, convenience and community come together.
                   </p>
                 </div>
               </div>

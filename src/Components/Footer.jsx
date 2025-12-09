@@ -14,34 +14,29 @@ export default function Footer() {
   const projects = [
     // --- OLD LIST ---
     // { name: "Spectra", link: "/architecture" },
-    { name: "The Scape", link: "/architecture" },
+    { name: "North point", link: "/apartments" },
+    { name: "The Grove", link: "/apartments" },
+    { name: "The Scape", link: "/apartments" },
     { name: "Random Box", link: "/architecture" },
-    { name: "The Grove", link: "/architecture" },
+    { name: "Edge", link: "/architecture" },
     { name: "Mannat", link: "/architecture" },
-    { name: "North Point at Chennai", link: "/architecture" },
-    { name: "Edge – Commercial", link: "/architecture" },
-    { name: "Childrens Park", link: "/architecture" },
-    { name: "Club House – Commercial", link: "/architecture" },
-    { name: "Trapezoid – Commercial", link: "/architecture" },
+    { name: "Clay", link: "/architecture" },
+    { name: "The hub", link: "/architecture" },
+    { name: "Trapezoid", link: "/architecture" },
     { name: "Sabari Garden Housing", link: "/architecture" },
-    { name: "Library – Institutional", link: "/architecture" },
-    { name: "Haritham – Residence", link: "/architecture" },
-    { name: "Yoga Institute Entrance", link: "/architecture" },
-    { name: "The President’s Park", link: "/architecture" },
-    { name: "Dwaraka – Residence", link: "/architecture" },
-    { name: "Nilaya – Residence", link: "/architecture" },
-    { name: "Sri Chaitanya School – Karur", link: "/architecture" },
+    { name: "Yoga Institute", link: "/architecture" },
+    { name: "Library", link: "/architecture" },
+    { name: "Haritham", link: "/architecture" },
+    { name: "Keystone office", link: "/interior" },
+    { name: "Globus", link: "/interior" },
+    { name: "Oasis", link: "/interior" },
+    { name: "Shub", link: "/interior" },
+    { name: "Varnam", link: "/interior" },
+    { name: "AUM", link: "/interior" },
+    { name: "Kwalitee", link: "/interior" },
+    { name: "Random box", link: "/interior" },
 
-    // --- NEW LIST ---
-    { name: "Oasis – Residential", link: "/architecture" },
-    { name: "Globus – Commerical", link: "/architecture" },
-    { name: "Keystone – Commerical", link: "/architecture" },
-    { name: "Kwalitee Showroom", link: "/architecture" },
-    { name: "Aum – Residence", link: "/architecture" },
-    { name: "Aalaya – Residence", link: "/architecture" },
-    { name: "Dwaraka", link: "/architecture" },
-    { name: "Jairams – Institutional", link: "/architecture" },
-    { name: "Kwalitee Office – Commercial", link: "/architecture" },
+
   ];
 
   return (
@@ -202,7 +197,10 @@ export default function Footer() {
                 <ul className="footerListsul">
                   <div className="iconsFooters">
                     <div className="iconsMainDivFooter">
-                      <a href=" https://in.linkedin.com/company/keystone-promoters-pvt-ltd---india" target="_blank">
+                      <a
+                        href=" https://in.linkedin.com/company/keystone-promoters-pvt-ltd---india"
+                        target="_blank"
+                      >
                         <img src="/images/icons/linkedin.svg" alt="" />
                       </a>
                     </div>

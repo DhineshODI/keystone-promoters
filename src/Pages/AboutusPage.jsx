@@ -46,7 +46,7 @@ export default function AboutUsPage() {
                 data-aos="fade-up"
                 data-aos-duration="1500"
               >
-                Building homes and communities with excellence, integrity, and
+                Building homes and communities with excellence, integrity and
                 vision—transforming spaces into lasting value while shaping
                 tomorrow’s living experiences.
               </p>
@@ -89,7 +89,7 @@ export default function AboutUsPage() {
                         Built on 25 Years of Experience
                       </p>
                       <p className="subHeadingText aboutustextcontent">
-                        Building quality spaces with trust, innovation, and
+                        Building quality spaces with trust, innovation and
                         timeless craftsmanship across generations.
                       </p>
                     </div>
@@ -187,7 +187,7 @@ export default function AboutUsPage() {
                   </h5>
                   <p className="subHeadingText ">
                     What sets Keystone apart is our blend of thoughtful
-                    planning, modern aesthetics, transparency, and a
+                    planning, modern aesthetics, transparency and a
                     customer-first approach to development.
                   </p>
                 </div>
@@ -272,7 +272,7 @@ export default function AboutUsPage() {
                 >
                   <p className="subHeadingText ">
                     To redefine urban living by creating thoughtfully designed
-                    spaces that blend innovation, sustainability, and
+                    spaces that blend innovation, sustainability and
                     elegance—enhancing life styles and building lasting
                     community value.
                   </p>
@@ -289,7 +289,7 @@ export default function AboutUsPage() {
                 >
                   <p className="subHeadingText ">
                     To deliver quality-driven developments through integrity,
-                    precision, and customer trust, ensuring every project
+                    precision and customer trust, ensuring every project
                     reflects excellence in design and craftsmanship.
                   </p>
 

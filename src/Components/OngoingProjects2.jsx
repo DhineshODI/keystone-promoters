@@ -121,7 +121,7 @@ export default function OngoingProjectsPage2() {
               >
                 <div style={{ marginTop: "15px" }}>
                   <p className="contactPageAddress">
-                    Our completed projects reflect the quality, planning, and
+                    Our completed projects reflect the quality, planning and
                     craftsmanship Keystone is known for.These successful
                     developments are now cherished spaces for the families and
                     communities who call them home.
@@ -177,7 +177,7 @@ export default function OngoingProjectsPage2() {
                 />
               </div>
 
-              <p className="subHeadingText ">Keystone Office</p>
+              <p className="subHeadingText text-hover-underline">Keystone Office</p>
             </div>
 
             <div className="eachprojectcards">
@@ -185,7 +185,7 @@ export default function OngoingProjectsPage2() {
                 <img src="/images/ongoing-images/globus-main.png" alt="" />
               </div>
 
-              <p className="subHeadingText ">Globus</p>
+              <p className="subHeadingText text-hover-underline ">Globus</p>
             </div>
             <div className="eachprojectcards">
               <div className="imagehoveranimationse">
@@ -195,7 +195,7 @@ export default function OngoingProjectsPage2() {
                 />
               </div>
 
-              <p className="subHeadingText ">Oasis</p>
+              <p className="subHeadingText text-hover-underline">Oasis</p>
             </div>
 
             <div className="eachprojectcards">
@@ -203,7 +203,7 @@ export default function OngoingProjectsPage2() {
                 <img src="/images/ongoing-images/shub.jpg" alt="" />
               </div>
 
-              <p className="subHeadingText ">Shub</p>
+              <p className="subHeadingText text-hover-underline">Shub</p>
             </div>
 
             <div className="eachprojectcards">
@@ -211,7 +211,7 @@ export default function OngoingProjectsPage2() {
                 <img src="/images/ongoing-images/varnam.jpg" alt="" />
               </div>
 
-              <p className="subHeadingText ">Varnam</p>
+              <p className="subHeadingText text-hover-underline">Varnam</p>
             </div>
             <div className="eachprojectcards">
               <div className="imagehoveranimationse">
@@ -221,21 +221,21 @@ export default function OngoingProjectsPage2() {
                 />
               </div>
 
-              <p className="subHeadingText ">Aum</p>
+              <p className="subHeadingText text-hover-underline">Aum</p>
             </div>
             <div className="eachprojectcards">
               <div className="imagehoveranimationse">
                 <img src="/images/ongoing-images/kwalitee-main.png" alt="" />
               </div>
 
-              <p className="subHeadingText ">Kwalitee</p>
+              <p className="subHeadingText text-hover-underline">Kwalitee</p>
             </div>
             <div className="eachprojectcards">
               <div className="imagehoveranimationse">
                 <img src="/images/ongoing-images/random-box-main.png" alt="" />
               </div>
 
-              <p className="subHeadingText ">Random box</p>
+              <p className="subHeadingText text-hover-underline">Random box</p>
             </div>
           </div>
         </div>

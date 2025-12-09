@@ -75,7 +75,7 @@ export default function LiveThoughtFul() {
 
           <p className="subHeadingText" data-aos="fade-up" data-aos-delay="400">
             At Keystone Promoters, we craft spaces where design meets purpose.
-            Every project reflects precision, trust, and innovation-creating
+            Every project reflects precision, trust and innovation-creating
             sustainable environments that inspire modern living and long-term
             value for our clients and communities.
           </p>

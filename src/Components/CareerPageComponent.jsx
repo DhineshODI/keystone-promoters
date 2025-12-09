@@ -215,7 +215,7 @@ export default function CareerPageFunction() {
                 >
                   <div style={{ marginTop: "15px" }}>
                     <p className="contactPageAddress">
-                      Explore exciting roles, innovative thinking, and dynamic
+                      Explore exciting roles, innovative thinking and dynamic
                       opportunities In a company that values your passion and
                       fresh perspective
                     </p>
@@ -236,7 +236,7 @@ export default function CareerPageFunction() {
               <div>
                 <h6 className="secondHeadingText "> Current Openings</h6>
                 <p className="subHeadingText  text-center text-[#636465] ">
-                  Discover exciting roles that match your skills, passion, and
+                  Discover exciting roles that match your skills, passion and
                   vision for a meaningful career journey
                 </p>
               </div>

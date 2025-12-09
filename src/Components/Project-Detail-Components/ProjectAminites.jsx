@@ -288,7 +288,7 @@ export default function ProjectAminities() {
                     data-aos-duration="1900"
                   >
                     Enjoy thoughtfully curated amenities that enhance everyday
-                    living with relaxation, recreation, wellness, and community
+                    living with relaxation, recreation, wellness and community
                     connection.
                   </p>
                 </div>

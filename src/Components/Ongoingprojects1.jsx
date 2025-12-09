@@ -93,7 +93,7 @@ export default function OngoingProjectsPage1() {
                   <p className="contactPageAddress">
                     {/* Happy Clients already invested our ongoing projects are your
                     next great oppurtunity. */}
-                    Our completed projects reflect the quality, planning, and
+                    Our completed projects reflect the quality, planning and
                     craftsmanship Keystone is known for.These successful
                     developments are now cherished spaces for the families and
                     communities who call them home.
@@ -154,7 +154,7 @@ export default function OngoingProjectsPage1() {
                 <img src="/images/ongoing-images/random-box-main.png" alt="" />
               </div>
 
-              <p className="subHeadingText ">Random Box</p>
+              <p className="subHeadingText text-hover-underline">Random Box</p>
             </div>
 
             <div className="eachprojectcards">
@@ -162,7 +162,7 @@ export default function OngoingProjectsPage1() {
                 <img src="/images/ongoing-images/edge-new.jpg" alt="" />
               </div>
 
-              <p className="subHeadingText ">Edge</p>
+              <p className="subHeadingText text-hover-underline">Edge</p>
             </div>
 
             <div className="eachprojectcards">
@@ -170,7 +170,7 @@ export default function OngoingProjectsPage1() {
                 <img src="/images/ongoing-images/mannat-main.png" alt="" />
               </div>
 
-              <p className="subHeadingText ">Mannat</p>
+              <p className="subHeadingText text-hover-underline">Mannat</p>
             </div>
 
             <div className="eachprojectcards">
@@ -178,7 +178,7 @@ export default function OngoingProjectsPage1() {
                 <img src="/images/ongoing-images/clay.jpg" alt="" />
               </div>
 
-              <p className="subHeadingText ">Clay</p>
+              <p className="subHeadingText text-hover-underline">Clay</p>
             </div>
 
             <div className="eachprojectcards">
@@ -186,7 +186,7 @@ export default function OngoingProjectsPage1() {
                 <img src="/images/ongoing-images/hub.jpg" alt="" />
               </div>
 
-              <p className="subHeadingText ">The hub</p>
+              <p className="subHeadingText text-hover-underline ">The hub</p>
             </div>
 
             <div className="eachprojectcards">
@@ -197,7 +197,7 @@ export default function OngoingProjectsPage1() {
                 />
               </div>
 
-              <p className="subHeadingText ">Trapezoid</p>
+              <p className="subHeadingText text-hover-underline">Trapezoid</p>
             </div>
 
             <div className="eachprojectcards">
@@ -208,7 +208,7 @@ export default function OngoingProjectsPage1() {
                 />
               </div>
 
-              <p className="subHeadingText ">Sabari Garden Housing</p>
+              <p className="subHeadingText text-hover-underline ">Sabari Garden Housing</p>
             </div>
 
             <div className="eachprojectcards">
@@ -216,7 +216,7 @@ export default function OngoingProjectsPage1() {
                 <img src="/images/ongoing-images/yoga-768x538.jpg" alt="" />
               </div>
 
-              <p className="subHeadingText ">Yoga Institute</p>
+              <p className="subHeadingText text-hover-underline">Yoga Institute</p>
             </div>
 
             <div className="eachprojectcards">
@@ -227,7 +227,7 @@ export default function OngoingProjectsPage1() {
                 />
               </div>
 
-              <p className="subHeadingText ">Library</p>
+              <p className="subHeadingText text-hover-underline">Library</p>
             </div>
 
             <div className="eachprojectcards">
@@ -238,7 +238,7 @@ export default function OngoingProjectsPage1() {
                 />
               </div>
 
-              <p className="subHeadingText ">Haritham</p>
+              <p className="subHeadingText text-hover-underline">Haritham</p>
             </div>
           </div>
         </div>

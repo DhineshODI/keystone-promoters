@@ -19,7 +19,7 @@ export default function AboutusSlider() {
               <p className="subHeadingText ">
                 Our commitment to quality and innovation has earned us
                 prestigious industry awards, reflecting our excellence across
-                design, delivery, and trust.
+                design, delivery and trust.
               </p>
 
               <div>

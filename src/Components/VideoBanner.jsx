@@ -65,7 +65,7 @@
 //             </h5>
 //             <p ref={paraRef} className="subHeadingText">
 //               Every detail is designed with intention-Blending functionality,
-//               beauty, and innovation to create hom ffthat stand the test of time
+//               beauty and innovation to create hom ffthat stand the test of time
 //             </p>
 //           </div>
 //         </div>
@@ -161,7 +161,7 @@ export default function VideoBanner() {
 
           <p ref={paraRef} className="subHeadingText">
             Every detail is designed with intention — blending functionality,
-            beauty, and innovation to create homes that stand the test of time.
+            beauty and innovation to create homes that stand the test of time.
           </p>
         </div>
       </div>

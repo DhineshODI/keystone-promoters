@@ -70,7 +70,7 @@ export default function CurtedLivingSlider() {
               <h6 className="subHeadingText"  data-aos="fade-up" data-aos-duration="1000">
                 Discover living spaces designed to inspire modern lifestyles and
                 elevate everyday comfort. Each home reflects thoughtful design,
-                blending elegance, function, and connection to nature-crafted
+                blending elegance, function and connection to nature-crafted
                 for those who value quality living and timeless appeal.
               </h6>
 

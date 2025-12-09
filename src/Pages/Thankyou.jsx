@@ -38,7 +38,7 @@ export default function Thankyoupage() {
                     data-aos-duration="1450"
                   >
                     {/* Every detail is designed with intention-Blending
-                    functionality, beauty, and innovation to create homes that
+                    functionality, beauty and innovation to create homes that
                     stand the test of time */}
                     Your submission has been received successfully. Our team
                     will connect with you shortly to provide guidance, support,

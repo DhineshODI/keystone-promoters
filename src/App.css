@@ -2140,7 +2140,22 @@ body,
     line-height: 1.1;
     margin-top: 20px;
     padding-left: 3px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
+.eachprojectcards .subHeadingText::after {
+  background-color: #b070ad;
+    left: 5px;
+    bottom: -3px;
+    height: 3px;
+    transition: width 0.3s ease;
+}
+
+.eachprojectcards .subHeadingText:hover::after {
+    width: 99%;
+}
+
+
 .imagehoveranimationse {
   overflow: hidden;
   -webkit-transform: translate3d(0, 0, 0);

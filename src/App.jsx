@@ -86,7 +86,10 @@ function App() {
         <Route path="/thankyou" element={<Thankyoupage />} />
 
         <Route path="/architecture" element={<OngoingProjectsPage1 />} />
-        <Route path="/completed" element={<OngoingProjectsPage1 />} />
+        {/* <Route path="/completed" element={<OngoingProjectsPage1 />} /> */}
+        <Route path="/completed" element={<AppartmentsPage />} />
+
+        
         <Route path="/interior" element={<OngoingProjectsPage2 />} />
 
         <Route path="/apartments" element={<AppartmentsPage />} />

@@ -21,7 +21,7 @@ export default function NriFaq() {
     {
       title: "What amenities are included in the community?",
       content:
-        "The project includes a clubhouse, swimming pool, gym, children's play area, landscaped gardens, walking tracks, CCTV surveillance, and 24x7 security.",
+        "The project includes a clubhouse, swimming pool, gym, children's play area, landscaped gardens, walking tracks, CCTV surveillance and 24x7 security.",
     },
     {
       title: "Is covered car parking available?",

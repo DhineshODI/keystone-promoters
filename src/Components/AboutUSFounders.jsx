@@ -82,7 +82,7 @@ export default function AboutusFounder() {
                 data-aos="fade-up"
                 data-aos-duration="1200"
               >
-                Empowering living through vision, purpose, and action.
+                Empowering living through vision, purpose and action.
               </p>
             </div>
 
@@ -134,7 +134,7 @@ export default function AboutusFounder() {
                   <hr />
 
                   <p className="subHeadingText founderwho">
-                    Leading with vision, integrity, and commitment to excellence
+                    Leading with vision, integrity and commitment to excellence
                     in construction
                   </p>
 

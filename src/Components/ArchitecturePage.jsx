@@ -93,7 +93,7 @@ export default function AppartmentsPage() {
                   <p className="contactPageAddress">
                     {/* Happy Clients already invested our ongoing projects are your
                     next great oppurtunity. */}
-                    Our completed projects reflect the quality, planning, and
+                    Our completed projects reflect the quality, planning and
                     craftsmanship Keystone is known for.These successful
                     developments are now cherished spaces for the families and
                     communities who call them home.
@@ -157,7 +157,7 @@ export default function AppartmentsPage() {
                 />
               </div>
 
-              <p className="subHeadingText ">North Point at Chennai</p>
+              <p className="subHeadingText text-hover-underline ">North Point</p>
             </div>
 
             <div className="eachprojectcards">
@@ -165,7 +165,7 @@ export default function AppartmentsPage() {
                 <img src="/images/ongoing-images/groove.jpg" alt="" />
               </div>
 
-              <p className="subHeadingText ">The Grove</p>
+              <p className="subHeadingText text-hover-underline">The Grove</p>
             </div>
 
             <div className="eachprojectcards">
@@ -173,7 +173,7 @@ export default function AppartmentsPage() {
                 <img src="/images/ongoing-images/scape-main.png" alt="" />
               </div>
 
-              <p className="subHeadingText ">The Scape</p>
+              <p className="subHeadingText text-hover-underline">The Scape</p>
             </div>
           </div>
         </div>

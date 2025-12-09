@@ -176,7 +176,7 @@ export default function ChannelPartnerComponent() {
                     <p className="contactPageAddress">
                       Join our trusted network of channel partners and earn more
                       by promoting premium homes backed by transparency,
-                      quality, and support
+                      quality and support
                     </p>
                   </div>
                 </div>
@@ -206,7 +206,7 @@ export default function ChannelPartnerComponent() {
                   data-aos-duration="1000"
                 >
                   Join Keystone Promoters to create sustainable, high-value real
-                  estate projects built on trust quality, and innovation.
+                  estate projects built on trust quality and innovation.
                 </p>
               </div>
               <div className="channelPartnerFormSection">
@@ -281,7 +281,7 @@ export default function ChannelPartnerComponent() {
                   data-aos-duration="1000"
                 >
                   Join Keystone Promoters to create sustainable, high-value real
-                  estate projects built on trust quality, and innovation.
+                  estate projects built on trust quality and innovation.
                 </p>
               </div>
               <div className="channelPartnerFormSection">

@@ -27,6 +27,11 @@ export default function Header({ menuOnlick }) {
     if (path === "/brand") setActive("aboutus");
     else if (path === "/ongoing-projects") setActive("ongoing-projects");
     else if (path === "/completed") setActive("completed");
+    else if (path === "/architecture") setActive("completed");
+    else if (path === "/interior") setActive("completed");
+    else if (path === "/apartments") setActive("completed");
+
+    
     else if (path === "/joint-venture") setActive("joint-venture");
     else if (path === "/contact") setActive("contact");
   }, []);

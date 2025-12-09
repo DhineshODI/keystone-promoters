@@ -151,7 +151,7 @@ export default function TestimonalSlider() {
                   <div className="testimonalContent">
                     <p className="subHeadingText">
                       Initially hesitant about Keystone, I was soon impressed by
-                      their detailed planning, thoughtful design, and highly
+                      their detailed planning, thoughtful design and highly
                       professional execution that consistently and truly
                       exceeded my expectations.
                     </p>

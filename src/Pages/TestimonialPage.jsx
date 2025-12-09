@@ -143,7 +143,7 @@ export default function TestimonialPage() {
                     <div class="testimonalContent">
                       <p class="subHeadingText">
                         Initially hesitant about Keystone, I was soon impressed
-                        by their detailed planning, thoughtful design, and
+                        by their detailed planning, thoughtful design and
                         highly professional execution that consistently exceeded
                         my expectations.
                       </p>

@@ -39,11 +39,11 @@ export default function NriPage() {
                   data-aos-duration="1450"
                 >
                   {/* Every detail is designed with intention-Blending
-                  functionality, beauty, and innovation to create homes that
+                  functionality, beauty and innovation to create homes that
                   stand the test of time */}
                   Find the right investment with expert assistance, verified
-                  information, and dependable service that ensures every NRI
-                  enjoys a safe, simple, and rewarding property-buying
+                  information and dependable service that ensures every NRI
+                  enjoys a safe, simple and rewarding property-buying
                   experience.
                 </p>
               </div>
@@ -86,7 +86,7 @@ export default function NriPage() {
                         data-aos="fade-left"
                         data-aos-duration="1000"
                       >
-                        Building Trusted, Innovative, and Excellent Homes for
+                        Building Trusted, Innovative and Excellent Homes for
                         Over 25 Years
                       </p>
 
@@ -96,9 +96,9 @@ export default function NriPage() {
                         data-aos-duration="1300"
                       >
                         Delivering thoughtfully planned communities with
-                        precision, reliability, and passion, every project
+                        precision, reliability and passion, every project
                         embodies innovation, quality construction, lasting
-                        value, and exceptional experiences that make us a
+                        value and exceptional experiences that make us a
                         trusted name.
                       </p>
 
@@ -106,7 +106,7 @@ export default function NriPage() {
                         <li data-aos="fade-left" data-aos-duration="1300">
                           <div className="mainlistul">
                             <p className="firstulnri">
-                              <strong> 100 +</strong> Projects built with
+                              <strong> 50 +</strong> Projects built with
                               enduring quality
                             </p>
                             <p className="valuediv">01</p>
@@ -115,7 +115,7 @@ export default function NriPage() {
                         <li data-aos="fade-left" data-aos-duration="1600">
                           <div className="mainlistul">
                             <p className="firstulnri">
-                              <strong> 3k +</strong> Families chose us with
+                              <strong> 2k +</strong> Families chose us with
                               confidence
                             </p>
                             <p className="valuediv">02</p>
@@ -124,7 +124,7 @@ export default function NriPage() {
                         <li data-aos="fade-left" data-aos-duration="1800">
                           <div className="mainlistul">
                             <p className="firstulnri">
-                              <strong> 5M +</strong> Square feet built with care
+                              <strong> 1M +</strong> Square feet built with care
                             </p>
                             <p className="valuediv">03</p>
                           </div>
@@ -239,7 +239,7 @@ export default function NriPage() {
                       data-aos-duration="1100"
                     >
                       What sets Keystone apart is our blend of thoughtful
-                      planning, modern aesthetics, transparency, and a
+                      planning, modern aesthetics, transparency and a
                       customer-first approach to development.
                     </p>
                   </div>

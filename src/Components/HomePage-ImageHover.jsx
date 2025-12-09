@@ -189,7 +189,7 @@ export default function HomepageImageHoverSection() {
               data-aos-delay="100"
             >
               Our approach transforms every project into a journey of
-              collaboration, creativity, and precision-delivering purposeful,
+              collaboration, creativity and precision-delivering purposeful,
               lasting spaces.
             </p>
           </div>
