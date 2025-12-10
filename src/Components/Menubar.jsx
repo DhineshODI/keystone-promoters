@@ -36,7 +36,7 @@ export default function Menubar({ menuOnlick }) {
             </li>
 
             <li onClick={menuOnlick}>
-              <a href="/testimonials">Testimonial</a>
+              <a href="/testimonials">Testimonials</a>
             </li>
 
             <li onClick={menuOnlick}>

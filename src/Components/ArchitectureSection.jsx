@@ -43,7 +43,7 @@ export default function ArchitectureSection() {
 
                 <div className="archisecondHeadingText">
                   <p className="subHeadingText">
-                    Innovative architecture blending functionality, aesthetics,
+                    Innovative architecture blending functionality, aesthetics 
                     and sustainability for timeless living environments.
                   </p>
 

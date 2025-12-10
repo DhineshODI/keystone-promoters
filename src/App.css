@@ -531,7 +531,7 @@ body,
     overflow-y: scroll;
     padding-bottom: 20px;
     scrollbar-width: thin;
- scrollbar-color: white transparent;
+ /* scrollbar-color: white transparent; */
     padding-right: 20px;
     padding-top: 0px;
 }
@@ -1629,18 +1629,20 @@ body,
 }
 
 .contactFormInputEach input:not([type="file"]) {
-  height: 58px;
-  width: 100%;
-  border: 2px solid #dfdfdf;
-  border-radius: 10px;
-  margin-top: 10px;
-  padding-left: 10px;
-  font-size: 17px;
-  font-family: "Poppins", sans-serif;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    height: 58px;
+    width: 100%;
+    border: 2px solid #dfdfdf;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  box-shadow: 0 0 0 4px #efefef;
+    box-shadow: 0 0 0 4px #e5e5e5;
+    box-shadow: 0 0 0 4px #e9e9e9;
+    background: transparent;
 }
 
 /* Hide original file input */
@@ -1929,6 +1931,7 @@ body,
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0;
 }
 
 .ongoingsecondnewadd {
@@ -2422,6 +2425,8 @@ body,
   height: 890px;
   display: flex;
   align-items: center;
+  /* padding-bottom: 100px; */
+  padding: 100px 0;
 }
 
 .channelPartnerFormFirst .contactFormInputEach label {
@@ -4661,6 +4666,15 @@ body,
 
 /* resposive start */
 
+@media (min-width:1601px) {
+  .channelPartnerFormFirst {
+    height: auto;
+    padding: 100px 0;
+    background: #efefef;
+    padding-bottom: 150px;
+}
+}
+
 
 @media (max-width:1900px) and (min-width:1600px) {
   .insidepopupclasscontent {
@@ -5097,6 +5111,7 @@ body,
 
   .margintopafterlist {
     margin-top: -370px;
+    margin-top: -248px;
   }
   .onGoingProjectsLists h5 {
     font-size: 45px;
@@ -11889,6 +11904,10 @@ body,
 }
 @media (max-width: 600px) {
 
+  .projectslistfooter {
+    max-height: max-content;
+}
+
   /* Popup Style */
 
   .popupdownload .aboutuspopupstyles {
@@ -12199,6 +12218,7 @@ body,
   .eachprojectcards .subHeadingText {
     font-size: 24px;
     margin-top: 15px;
+    letter-spacing: 0px;
   }
 
   .FirstmainonGoingProjectsLists {
@@ -12282,7 +12302,7 @@ body,
     height: 100%;
     width: 1px;
     background-color: #e1bbd3;
-    right: -25%;
+    right: -18%;
     position: absolute;
     top: 3px;
   }
@@ -12812,6 +12832,7 @@ max-width: 320px;
 
   .detailPageBanners {
     margin-top: 15px;
+    margin-top: 60px;
     background-position: center;
     height: 400px;
   }
@@ -13202,6 +13223,7 @@ max-width: 320px;
     padding-left: 0px;
     width: 100%;
     padding-top: 20px;
+    padding-bottom: 20px;
   }
   .ongoingProjectsDiVMain {
     margin-top: 60px;
@@ -13212,6 +13234,10 @@ max-width: 320px;
     padding: 50px 0;
     height: max-content;
     padding-bottom: 100px;
+  }
+
+  .unitsectiondiv {
+    padding-left: 20px;
   }
 
   .contactPageAddress {

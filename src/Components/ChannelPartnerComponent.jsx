@@ -176,7 +176,7 @@ export default function ChannelPartnerComponent() {
                     <p className="contactPageAddress">
                       Join our trusted network of channel partners and earn more
                       by promoting premium homes backed by transparency,
-                      quality and support
+                      quality and support.
                     </p>
                   </div>
                 </div>

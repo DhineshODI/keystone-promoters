@@ -215,7 +215,7 @@ export default function NriPage() {
                       data-aos="zoom-in"
                       data-aos-duration="1300"
                     >
-                      <img src="/images/about-us/icons/compliment.svg" alt="" />
+                      <img src="/images/about-us/icons/solid-foundation1.svg" alt="" />
                       <h3 className="timedelivery">Solid Foundations</h3>
                       <p className="subHeadingText ">
                         Structurally sound and aesthetically modern

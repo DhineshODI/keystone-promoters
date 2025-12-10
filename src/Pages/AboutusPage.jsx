@@ -71,7 +71,7 @@ export default function AboutUsPage() {
                       </h4>
                       <h3 className="visitOurOFficetext">
                         Beautifully built spaces that inspire, function
-                        seamlessly, & reflect timeless quality.
+                        seamlessly & reflect timeless quality.
                       </h3>
                     </div>
                   </div>
@@ -232,7 +232,7 @@ export default function AboutUsPage() {
                     data-aos="flip-up"
                     data-aos-duration="800"
                   >
-                    <img src="/images/about-us/icons/compliment.svg" alt="" />
+                    <img src="/images/about-us/icons/solid-foundation1.svg" alt="" />
                     <h3 className="timedelivery">Solid Foundations</h3>
                     <p className="subHeadingText ">
                       Structurally sound and aesthetically modern

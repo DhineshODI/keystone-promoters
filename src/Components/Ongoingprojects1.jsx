@@ -94,7 +94,7 @@ export default function OngoingProjectsPage1() {
                     {/* Happy Clients already invested our ongoing projects are your
                     next great oppurtunity. */}
                     Our completed projects reflect the quality, planning and
-                    craftsmanship Keystone is known for.These successful
+                    craftsmanship Keystone is known for. These successful
                     developments are now cherished spaces for the families and
                     communities who call them home.
                   </p>
@@ -192,7 +192,7 @@ export default function OngoingProjectsPage1() {
             <div className="eachprojectcards">
               <div className="imagehoveranimationse">
                 <img
-                  src="/images/ongoing-images/trapezoid-commercial-mainimg-768x538.jpg"
+                  src="/images/ongoing-images/trapezoid-1.jpg"
                   alt=""
                 />
               </div>

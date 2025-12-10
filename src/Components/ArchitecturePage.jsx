@@ -94,7 +94,7 @@ export default function AppartmentsPage() {
                     {/* Happy Clients already invested our ongoing projects are your
                     next great oppurtunity. */}
                     Our completed projects reflect the quality, planning and
-                    craftsmanship Keystone is known for.These successful
+                    craftsmanship Keystone is known for. These successful
                     developments are now cherished spaces for the families and
                     communities who call them home.
                   </p>

@@ -122,7 +122,7 @@ export default function OngoingProjectsPage2() {
                 <div style={{ marginTop: "15px" }}>
                   <p className="contactPageAddress">
                     Our completed projects reflect the quality, planning and
-                    craftsmanship Keystone is known for.These successful
+                    craftsmanship Keystone is known for. These successful
                     developments are now cherished spaces for the families and
                     communities who call them home.
                   </p>

@@ -171,7 +171,7 @@ export default function JointVentureComponent() {
                     <p className="contactPageAddress">
                       Partner with Keystone Spaces to unlock profitable
                       development opportunities, shared growth and long-term
-                      value through trusted, transparent collaborations
+                      value through trusted, transparent collaborations.
                     </p>
                   </div>
                 </div>
