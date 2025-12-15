@@ -91,7 +91,7 @@ export default function ProjectAminities() {
     try {
       const payload = isOpen1 ? { ...form, isBrochure: true } : form;
       const res = await axios.post(
-        "https://dev.opendesignsin.com/keystonepromotersdemo/keystone-api/keystone-api/apis/ContactUs.php",
+        "https://keystonepromoters.com/keystone-api/keystone-api/apis/ContactUs.php",
         JSON.stringify(payload),
         { headers: { "Content-Type": "application/json" } }
       );

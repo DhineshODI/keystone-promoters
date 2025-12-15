@@ -79,7 +79,7 @@ export default function ChannelPartnerComponent() {
 
     try {
       const res = await axios.post(
-        "https://dev.opendesignsin.com/keystonepromotersdemo/keystone-api/keystone-api/apis/ChannelPartner.php",
+        "https://keystonepromoters.com/keystone-api/keystone-api/apis/ChannelPartner.php",
         form,
         { headers: { "Content-Type": "application/json" } }
       );

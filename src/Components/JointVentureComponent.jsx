@@ -71,7 +71,7 @@ export default function JointVentureComponent() {
 
     try {
       const res = await axios.post(
-        "https://dev.opendesignsin.com/keystonepromotersdemo/keystone-api/keystone-api/apis/JointVenture.php",
+        "https://keystonepromoters.com/keystone-api/keystone-api/apis/JointVenture.php",
         form,
         { headers: { "Content-Type": "application/json" } }
       );

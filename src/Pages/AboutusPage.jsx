@@ -144,13 +144,29 @@ export default function AboutUsPage() {
             <div className="shapeusconatiner">
               <div className="container max-w-7xl mx-auto px-4 ">
                 <div className="shapeusflex">
+                  {/* <video
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="auto"
+                    src="/images/homepage/bannerVideo.mp4"
+                    type="video/mp4"
+                  ></video> */}
+
                   <video
                     autoPlay
                     muted
                     loop
-                    src="/images/homepage/bannerVideo.mp4"
-                  ></video>
-                  {/* <img src="/images/about-us/abboutus-shapingus.jpg" alt="" /> */}
+                    playsInline
+                    webkit-playsinline="true"
+                  >
+                    <source
+                      src="/images/homepage/bannerVideo.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+
                   <div className="shapeconatinerflex">
                     <p
                       className="secondHeadingText"
@@ -232,7 +248,10 @@ export default function AboutUsPage() {
                     data-aos="flip-up"
                     data-aos-duration="800"
                   >
-                    <img src="/images/about-us/icons/solid-foundation1.svg" alt="" />
+                    <img
+                      src="/images/about-us/icons/solid-foundation1.svg"
+                      alt=""
+                    />
                     <h3 className="timedelivery">Solid Foundations</h3>
                     <p className="subHeadingText ">
                       Structurally sound and aesthetically modern

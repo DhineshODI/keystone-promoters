@@ -102,7 +102,7 @@ export default function ContactPage() {
 
     try {
       const res = await axios.post(
-        "https://dev.opendesignsin.com/keystonepromotersdemo/keystone-api/keystone-api/apis/ContactUs.php",
+        "https://keystonepromoters.com/keystone-api/keystone-api/apis/ContactUs.php",
         form,
         { headers: { "Content-Type": "application/json" } }
       );

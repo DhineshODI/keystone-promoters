@@ -137,16 +137,14 @@ export default function VideoBanner() {
           autoPlay
           muted
           loop
-          src="/images/homepage/bannerVideo.mp4"
-        ></video> */}
-        <video
-          autoPlay
-          muted
-          loop
           playsInline
           webkit-playsinline="true"
           src="/images/homepage/bannerVideo.mp4"
-        ></video>
+        ></video> */}
+
+        <video autoPlay muted loop playsInline webkit-playsinline="true">
+          <source src="/images/homepage/bannerVideo.mp4" type="video/mp4" />
+        </video>
 
         <div className="contentHeadingBanner">
           <h5 ref={addToRefs} className="secondHeadingText">

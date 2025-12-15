@@ -95,7 +95,7 @@ export default function ProjectLocationHighlights() {
         <div className="widthprojectlocationshighlights">
           <div className="container max-w-7xl mx-auto px-4 ">
             <div>
-              <div>
+              <div className="locationnewchange">
                 <h5
                   class="secondHeadingText textTransform text-center"
                   data-aos="fade-up"

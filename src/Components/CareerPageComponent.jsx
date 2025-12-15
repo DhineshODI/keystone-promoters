@@ -112,10 +112,11 @@ export default function CareerPageFunction() {
     formData.append("resume", resume);
 
     // https://dev.opendesignsin.com/keystonepromotersdemo/keystone-api/keystone-api
+    // https://keystonepromoters.com/
 
     try {
       const res = await axios.post(
-        "https://dev.opendesignsin.com/keystonepromotersdemo/keystone-api/keystone-api/apis/CareerForm.php",
+        "https://keystonepromoters.com/keystone-api/keystone-api/apis/CareerForm.php",
         formData,
         { headers: { "Content-Type": "multipart/form-data" } }
       );
