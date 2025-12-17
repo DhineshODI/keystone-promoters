@@ -4797,7 +4797,9 @@ body,
     width: 45px;
     height: 66px;
 }
-
+.yearsScrollText h6 {
+    font-size: 160px;
+}
 }
 
 @media (max-width: 1900px) and (min-width: 1600px) {
