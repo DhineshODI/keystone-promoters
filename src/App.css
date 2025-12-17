@@ -4724,7 +4724,7 @@ body,
 
 }
 
-@media (max-width:1800px) and (min-width:1700px) {
+@media (max-width:1800px) and (min-width:1600px) {
   .contentHeadingBanner .secondHeadingText {
     font-size: 130px;
 }
