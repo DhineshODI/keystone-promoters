@@ -37,17 +37,18 @@ try {
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
 
-    $mail->Username = "shivarex.c@gmail.com";
-    $mail->Password = "fzqn zxpq gpze hbla"; // Gmail App Password
+    $mail->Username = "noreplykeystonepromoters@gmail.com";
+    $mail->Password = "lpfl hysk mjyc bnnh"; // Gmail App Password
 
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
 
     // ========== ADMIN EMAIL ==========
-    $mail->setFrom("shivarex.c@gmail.com", "Website Channel Partner Enquiry");
-    $mail->addAddress("shivarex.c@gmail.com");
+    $mail->setFrom("noreplykeystonepromoters@gmail.com", "Website Channel Partner Enquiry");
+
     $mail->addAddress("dhineshkodi2024@gmail.com");
-      $mail->addAddress("vaishuswety2107@gmail.com");  
+    $mail->addAddress("vaishuswety2107@gmail.com");  
+    $mail->addAddress("noreplykeystonepromoters@gmail.com");
     $mail->Subject = "New Channel Partner Enquiry Received from Website";
     $mail->isHTML(true);
 
@@ -75,7 +76,7 @@ try {
     $mail->clearReplyTos();
 
     $mail->addAddress($email);
-    $mail->setFrom("shivarex.c@gmail.com", "Keystone Promoters Pvt Ltd");
+    $mail->setFrom("noreplykeystonepromoters@gmail.com", "Keystone Promoters Pvt Ltd");
 
     $mail->Subject = "Thank You for Your Channel Partner Enquiry";
     $mail->isHTML(true);

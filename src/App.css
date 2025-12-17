@@ -869,6 +869,8 @@ body,
   padding: 100px 0;
   background-image: url("/public/images/homepage/livethroughBg.jpg");
   background-image: url("/public/images/ongoing-images/onGoingProjectsBg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .yearsScrollText.projectsScroll span {
@@ -4719,6 +4721,82 @@ body,
     padding-bottom: 150px;
   }
 
+
+}
+
+@media (max-width:1800px) and (min-width:1700px) {
+  .contentHeadingBanner .secondHeadingText {
+    font-size: 130px;
+}
+
+.withTextContent {
+    font-size: 85px;
+}
+
+.contentHeadingBanner {
+    padding-top: 100px;
+}
+
+.whatsmakeSectionBG {
+    background-size: cover;
+    background-position: center;
+    height: 1060px;
+}
+
+.secondHeadingText {
+    font-size: 55px;
+    line-height: 1;
+}
+
+.oursignaturecontents ul li {
+    font-size: 90px;
+}
+
+.side-text {
+    font-size: 17px;
+}
+.aboutuspagesection .detailPageBanners .secondHeadingText {
+    font-size: 100px;
+}
+
+.aboutuspagesection .detailPageBanners .subHeadingText {
+    font-size: 16px;
+    margin-top: 22px;
+}
+
+.visitOurOFficetext {
+    font-size: 38px;
+}
+
+.detailPageBanners h5 {
+    font-size: 100px;
+}
+.detailPageBanners .subHeadingText {
+    font-size: 18px;
+}
+
+.onGoingProjectsLists h5 {
+    font-size: 40px;
+}
+
+.contactPageAddress {
+    font-size: 17px;
+
+}
+
+.eachprojectcards .subHeadingText {
+    font-size: 24px;
+}
+
+.twomenu li {
+    font-size: 34px;
+}
+
+.menubarcloseicon {
+    top: 5%;
+    width: 45px;
+    height: 66px;
+}
 
 }
 

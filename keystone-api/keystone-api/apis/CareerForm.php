@@ -42,8 +42,8 @@ try {
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
 
-    $mail->Username = "shivarex.c@gmail.com";
-    $mail->Password = "fzqn zxpq gpze hbla"; // Gmail App Password
+    $mail->Username = "noreplykeystonepromoters@gmail.com";
+    $mail->Password = "lpfl hysk mjyc bnnh"; // Gmail App Password
 
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
@@ -51,10 +51,10 @@ try {
     // ============================================
     // 1. SEND EMAIL TO KEYSTONE TEAM (ADMIN EMAIL)
     // ============================================
-    $mail->setFrom("shivarex.c@gmail.com", "Keystone Careers Portal");
-    $mail->addAddress("shivarex.c@gmail.com");
+    $mail->setFrom("noreplykeystonepromoters@gmail.com", "Keystone Careers Portal");
     $mail->addAddress("dhineshkodi2024@gmail.com");
-    $mail->addAddress("vaishuswety2107@gmail.com");
+    $mail->addAddress("noreplykeystonepromoters@gmail.com");
+    $mail->addAddress("noreplykeystonepromoters@gmail.com");
 
 
     $mail->Subject = "New Career Application Received – $applyFor";
@@ -95,7 +95,7 @@ try {
     $mail->clearAttachments();
 
     $mail->addAddress($email, $name);
-    $mail->setFrom("shivarex.c@gmail.com", "Keystone Promoters – HR Team");
+    $mail->setFrom("noreplykeystonepromoters@gmail.com", "Keystone Promoters – HR Team");
 
     $mail->Subject = "Thank You for Applying – Keystone Promoters";
     $mail->isHTML(true);
