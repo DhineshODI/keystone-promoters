@@ -122,7 +122,7 @@ export default function Footer() {
 
               <ul className="footerListsul">
                 <div>
-                  <a href="/project-detail">
+                  <a href="/ongoing-projects/spectra">
                     <li className="subHeadingText  text-hover-underline">
                       Spectra - Keelkattalai, Chennai
                     </li>

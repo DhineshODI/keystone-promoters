@@ -13,7 +13,7 @@ export default function OngoingProjectsPage2() {
       units: "41",
       unitSize: "1069 - 1608",
       projectImage: "/images/ongoing-images/project-Iisting-projects-image.jpg",
-      projectLink: "/project-detail",
+      projectLink: "/ongoing-projects/spectra",
     },
   ];
 

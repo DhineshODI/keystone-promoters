@@ -33,7 +33,7 @@ export default function OngoingProjects() {
       noofunits: "41",
       unitSize: "1069 - 1608",
       projectImage: "/images/ongoing-images/onGoingProjectsImage.jpg",
-      projectLink: "/project-detail",
+      projectLink: "/ongoing-projects/spectra",
     },
     {
       id: 2,
@@ -43,7 +43,7 @@ export default function OngoingProjects() {
       noofunits: "41",
       unitSize: "1159 - 1481",
       projectImage: "/images/ongoing-images/onGoingProjectsImage.jpg",
-      projectLink: "/project-detail",
+      projectLink: "/ongoing-projects/spectra",
     },
     {
       id: 3,
@@ -53,7 +53,7 @@ export default function OngoingProjects() {
       noofunits: "41",
       unitSize: "1159 - 1481",
       projectImage: "/images/ongoing-images/onGoingProjectsImage.jpg",
-      projectLink: "/project-detail",
+      projectLink: "/ongoing-projects/spectra",
     },
     {
       id: 4,
@@ -63,7 +63,7 @@ export default function OngoingProjects() {
       noofunits: "41",
       unitSize: "1159 - 1481",
       projectImage: "/images/ongoing-images/onGoingProjectsImage.jpg",
-      projectLink: "/project-detail",
+      projectLink: "/ongoing-projects/spectra",
     },
     {
       id: 5,
@@ -73,7 +73,7 @@ export default function OngoingProjects() {
       noofunits: "41",
       unitSize: "1159 - 1481",
       projectImage: "/images/ongoing-images/onGoingProjectsImage.jpg",
-      projectLink: "/project-detail",
+      projectLink: "/ongoing-projects/spectra",
     },
     {
       id: 6,
@@ -83,7 +83,7 @@ export default function OngoingProjects() {
       noofunits: "41",
       unitSize: "1159 - 1481",
       projectImage: "/images/ongoing-images/onGoingProjectsImage.jpg",
-      projectLink: "/project-detail",
+      projectLink: "/ongoing-projects/spectra",
     },
   ];
 
@@ -118,7 +118,7 @@ export default function OngoingProjects() {
                     >
                       <img
                         onClick={() =>
-                          (window.location.href = "/project-detail")
+                          (window.location.href = "/ongoing-projects/spectra")
                         }
                         src={project.projectImage}
                         alt=""
@@ -146,7 +146,7 @@ export default function OngoingProjects() {
                         </div>
 
                         <div className="onGoingViewProject">
-                          <a href="/project-detail" className="cursor-pointer">
+                          <a href="/ongoing-projects/spectra" className="cursor-pointer">
                             view project
                           </a>
                         </div>
@@ -185,7 +185,7 @@ export default function OngoingProjects() {
               </div>
 
               <div className="viewallprojectsongoing cursor-pointer">
-                <a href="/project-detail">
+                <a href="/ongoing-projects/spectra">
                   <button className="cursor-pointer">View All Projects</button>
                 </a>
               </div>

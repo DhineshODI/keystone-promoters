@@ -12,6 +12,7 @@ import {
   Routes,
   Route,
   useLocation,
+  Navigate,
 } from "react-router-dom";
 import ContactMainPage from "./Pages/ContactMainPage";
 import Footer from "./Components/Footer";
@@ -73,7 +74,8 @@ function App() {
       <Header menuOnlick={menuOnlick} />
       {/* <Router> */}
       <Routes>
-        <Route path="/project-detail" element={<ProjectDetailMainPage />} />
+        <Route path="*" element={<Navigate to="/" />} />
+        <Route path="/ongoing-projects/spectra" element={<ProjectDetailMainPage />} />
         <Route path="/" element={<Homepage />} />
         <Route path="/brand" element={<AboutUsPage />} />
         <Route path="/ongoing-projects" element={<OngoingProjectsMainPage />} />
@@ -89,7 +91,6 @@ function App() {
         {/* <Route path="/completed" element={<OngoingProjectsPage1 />} /> */}
         <Route path="/completed" element={<AppartmentsPage />} />
 
-        
         <Route path="/interior" element={<OngoingProjectsPage2 />} />
 
         <Route path="/apartments" element={<AppartmentsPage />} />

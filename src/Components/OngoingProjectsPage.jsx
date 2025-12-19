@@ -13,7 +13,7 @@ export default function OngoingProjectsPage() {
       units: "41",
       unitSize: "1069 - 1608",
       projectImage: "/images/ongoing-images/project-Iisting-projects-image.jpg",
-      projectLink: "/project-detail",
+      projectLink: "/ongoing-projects/spectra",
     },
   ];
 
@@ -141,7 +141,7 @@ export default function OngoingProjectsPage() {
                 <div className="mainRowonGoingProjectsLists" key={index}>
                   <img
                     className="cursor-pointer"
-                    onClick={() => (window.location.href = "/project-detail")}
+                    onClick={() => (window.location.href = "/ongoing-projects/spectra")}
                     src={project.projectImage}
                     alt=""
                   />

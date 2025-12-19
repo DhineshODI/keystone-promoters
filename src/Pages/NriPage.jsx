@@ -3,6 +3,7 @@ import NriFaq from "../Components/NriFaq";
 import OngoingProjects from "../Components/OnGoingProjects";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Helmet } from "react-helmet-async";
 
 export default function NriPage() {
   useEffect(() => {
@@ -13,6 +14,51 @@ export default function NriPage() {
   }, []);
   return (
     <>
+      <Helmet>
+        {/* Page Title */}
+        <title>Spectra Apartments in Chennai | Keystone Promoters</title>
+
+        {/* Meta Description */}
+        <meta
+          name="description"
+          content="Spectra by Keystone Promoters offers premium residential apartments in Chennai with modern amenities, excellent connectivity, and prime location."
+        />
+
+        {/* Canonical URL */}
+        <link
+          rel="canonical"
+          href="https://keystonepromoters.com/ongoing-projects/spectra"
+        />
+
+        {/* Schema Markup */}
+        <script type="application/ld+json">
+          {`
+                {
+                  "@context": "https://schema.org",
+                  "@type": "RealEstateAgent",
+                  "name": "NRI",
+                  "image": "https://keystonepromoters.com/images/keystone-detailpage-logo.jpg",
+                  "@id": "",
+                  "url": "https://keystonepromoters.com/nri",
+                  "telephone": "99400 08855",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Door No.1, GF-A, Amace Ganga Sarojini Street, Mahalingapuram, Nungambakkam,",
+                    "addressLocality": "Chennai",
+                    "postalCode": "600034",
+                    "addressCountry": "IN"
+                  } ,
+                  "sameAs": [
+                    "https://www.facebook.com/keystonechennai/",
+                    "https://www.instagram.com/keystone_promoters/",
+                    "https://www.youtube.com/@KeystonePromoters",
+                    "https://www.linkedin.com/company/keystone-promoters-pvt-ltd---india?originalSubdomain=in"
+                  ] 
+                }
+              `}
+        </script>
+      </Helmet>
+
       <div className="">
         <div>
           <div className="NriPage">
@@ -97,9 +143,8 @@ export default function NriPage() {
                       >
                         Delivering thoughtfully planned communities with
                         precision, reliability and passion, every project
-                        embodies innovation, quality construction, lasting
-                        value and exceptional experiences that make us a
-                        trusted name.
+                        embodies innovation, quality construction, lasting value
+                        and exceptional experiences that make us a trusted name.
                       </p>
 
                       <ul className="nrilist">
@@ -215,7 +260,10 @@ export default function NriPage() {
                       data-aos="zoom-in"
                       data-aos-duration="1300"
                     >
-                      <img src="/images/about-us/icons/solid-foundation1.svg" alt="" />
+                      <img
+                        src="/images/about-us/icons/solid-foundation1.svg"
+                        alt=""
+                      />
                       <h3 className="timedelivery">Solid Foundations</h3>
                       <p className="subHeadingText ">
                         Structurally sound and aesthetically modern
