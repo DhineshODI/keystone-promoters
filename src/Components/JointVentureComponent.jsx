@@ -169,7 +169,7 @@ export default function JointVentureComponent() {
                 >
                   <div style={{ marginTop: "15px" }}>
                     <p className="contactPageAddress">
-                      Partner with Keystone Spaces to unlock profitable
+                      Partner with Keystone Promoters to unlock profitable
                       development opportunities, shared growth and long-term
                       value through trusted, transparent collaborations.
                     </p>

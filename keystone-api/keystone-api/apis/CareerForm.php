@@ -52,7 +52,7 @@ try {
     // 1. SEND EMAIL TO KEYSTONE TEAM (ADMIN EMAIL)
     // ============================================
     $mail->setFrom("noreplykeystonepromoters@gmail.com", "Keystone Careers Portal");
-    $mail->addAddress("dhineshkodi2024@gmail.com");
+    // $mail->addAddress("dhineshkodi2024@gmail.com");
     $mail->addAddress("noreplykeystonepromoters@gmail.com");
     $mail->addAddress("noreplykeystonepromoters@gmail.com");
 

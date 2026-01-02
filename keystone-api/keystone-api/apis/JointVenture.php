@@ -47,8 +47,8 @@ try {
     // ADMIN EMAIL
     // ============================
     $mail->setFrom("noreplykeystonepromoters@gmail.com", "Website JV Enquiry");
-    $mail->addAddress("dhineshkodi2024@gmail.com");
-    $mail->addAddress("vaishuswety2107@gmail.com");    
+    // $mail->addAddress("dhineshkodi2024@gmail.com");
+    // $mail->addAddress("vaishuswety2107@gmail.com");    
     $mail->addAddress("noreplykeystonepromoters@gmail.com");
 
     $mail->Subject = "New Joint Venture Enquiry Received from Website";
