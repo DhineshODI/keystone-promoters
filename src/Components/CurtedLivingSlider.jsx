@@ -41,22 +41,27 @@ export default function CurtedLivingSlider() {
     {
       img: "/images/homepage/iStock-1990444472.png",
       lines: ["MODERN", "MINIMALIST", "SPACES"],
+      altText: "best real estate in chennai",
     },
     {
       img: "/images/homepage/iStock-2160382418.png",
       lines: ["NATURE", "INTEGRATED", "DESIGNS"],
+      altText: "top real estate company in chennai",
     },
     {
       img: "/images/homepage/functional-comfort-layouts.jpg",
       lines: ["FUNCTIONAL", "COMFORT", "LAYOUTS"],
+      altText: "top builders in chennai list",
     },
     {
       img: "/images/homepage/timeless-quality-aesthetics.jpg",
       lines: ["TIMELESS", "QUALITY", "AESTHETICS"],
+      altText: "top 10 builders in chennai",
     },
     {
       img: "/images/homepage/balnced-craftmanship.jpg",
       lines: ["BALANCED", "CLEVER ", "CRAFTMANSHIP"],
+      altText: "builders in nugambakkam",
     },
   ];
 
@@ -65,13 +70,21 @@ export default function CurtedLivingSlider() {
       <div className="curtedSectionMainRowBg reveal ">
         <div className="container max-w-7xl mx-auto px-4 ">
           <div className="curtsectionrow">
-            <div className="curtSliderLeftSection" data-aos="fade-up" data-aos-duration="2000">
+            <div
+              className="curtSliderLeftSection"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
               <h5 className="secondHeadingText">Curated Living Experiences</h5>
-              <h6 className="subHeadingText"  data-aos="fade-up" data-aos-duration="1000">
+              <h6
+                className="subHeadingText"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 Discover living spaces designed to inspire modern lifestyles and
                 elevate everyday comfort. Each home reflects thoughtful design,
-                blending elegance, function and connection to nature-crafted
-                for those who value quality living and timeless appeal.
+                blending elegance, function and connection to nature-crafted for
+                those who value quality living and timeless appeal.
               </h6>
 
               {/* <h6 className="subHeadingText">
@@ -138,7 +151,7 @@ export default function CurtedLivingSlider() {
                 {curatedSlides.map((slide, index) => (
                   <div key={index}>
                     <div className="curatedSliderContainer">
-                      <img src={slide.img} alt={`Slide ${index}`} />
+                      <img src={slide.img} alt={slide.altText} />
 
                       {slide.lines.map((text, i) => (
                         <h4 key={i} className="natureIntergreated">

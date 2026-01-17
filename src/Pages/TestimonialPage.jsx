@@ -89,7 +89,7 @@ export default function TestimonialPage() {
                     </div>
                     <div className="seondbannerafterSectionMAIN">
                       {/* <div className="seondbannerafterSectionMAINrow"></div> */}
-                      <img src="/images/testimonial-banner-icon.png" alt="" />
+                      <img src="/images/testimonial-banner-icon.png" alt="Customer Testimonial" />
                     </div>
 
                     <div

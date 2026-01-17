@@ -118,7 +118,7 @@ export default function CareerPageFunction() {
       const res = await axios.post(
         "https://keystonepromoters.com/keystone-api/keystone-api/apis/CareerForm.php",
         formData,
-        { headers: { "Content-Type": "multipart/form-data" } }
+        { headers: { "Content-Type": "multipart/form-data" } },
       );
 
       if (res.data.status === true) {
@@ -207,7 +207,10 @@ export default function CareerPageFunction() {
                 </div>
                 <div className="seondbannerafterSectionMAIN">
                   {/* <div className="seondbannerafterSectionMAINrow"></div> */}
-                  <img src="/images/careers-banner-icon.png" alt="" />
+                  <img
+                    src="/images/careers-banner-icon.png"
+                    alt="Real Estate Jobs"
+                  />
                 </div>
                 <div
                   className="thirdbannerafterSectionMAIN"

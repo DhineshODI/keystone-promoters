@@ -97,7 +97,10 @@ export default function NriPage() {
                       data-aos="fade-right"
                       data-aos-duration="1300"
                     >
-                      <img src="/images/nri/nridiscoverimage.jpg" alt="" />
+                      <img
+                        src="/images/nri/nridiscoverimage.jpg"
+                        alt="NRI Home Buyers"
+                      />
                     </div>
                     <div className="twoflexnriimage">
                       <p

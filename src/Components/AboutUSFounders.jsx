@@ -102,7 +102,7 @@ export default function AboutusFounder() {
                   <img
                     className="founderimagee"
                     src="/images/about-us/founder1.png"
-                    alt=""
+                    alt="Dinesh sellappan"
                   />
                 </div>
                 <div
@@ -119,7 +119,7 @@ export default function AboutusFounder() {
                   <img
                     className="founderimagee"
                     src="/images/about-us/founder2.png"
-                    alt=""
+                    alt="vaishnava priya"
                   />
                 </div>
               </div>

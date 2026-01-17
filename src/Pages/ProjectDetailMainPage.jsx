@@ -14,9 +14,7 @@ export default function ProjectDetailMainPage() {
     <>
       <Helmet>
         {/* Page Title */}
-        <title>
-          2 flats & 3 BHK flats in keelkattalai | Keystone Promoters
-        </title>
+        <title>2 & 3 BHK flats in keelkattalai | Keystone Promoters</title>
 
         {/* Meta Description */}
         <meta

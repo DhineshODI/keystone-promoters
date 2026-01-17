@@ -81,7 +81,7 @@ export default function ChannelPartnerComponent() {
       const res = await axios.post(
         "https://keystonepromoters.com/keystone-api/keystone-api/apis/ChannelPartner.php",
         form,
-        { headers: { "Content-Type": "application/json" } }
+        { headers: { "Content-Type": "application/json" } },
       );
 
       if (res.data.status === true) {
@@ -98,7 +98,7 @@ export default function ChannelPartnerComponent() {
         // show snackbar
         setShowSnackbar(true);
         setTimeout(() => setShowSnackbar(false), 3000);
-            window.location.href = "/thankyou";
+        window.location.href = "/thankyou";
       }
     } catch (error) {
       console.error("Request Error:", error);
@@ -165,7 +165,10 @@ export default function ChannelPartnerComponent() {
                 </div>
                 <div className="seondbannerafterSectionMAIN">
                   {/* <div className="seondbannerafterSectionMAINrow"></div> */}
-                  <img src="/images/channel-partner--banner-icon.png" alt="" />
+                  <img
+                    src="/images/channel-partner--banner-icon.png"
+                    alt="best joint venture builders in chennai"
+                  />
                 </div>
                 <div
                   className="thirdbannerafterSectionMAIN"
@@ -175,8 +178,8 @@ export default function ChannelPartnerComponent() {
                   <div style={{ marginTop: "15px" }}>
                     <p className="contactPageAddress">
                       Join our trusted network of channel partners and earn more
-                      by promoting premium homes backed by transparency,
-                      quality and support.
+                      by promoting premium homes backed by transparency, quality
+                      and support.
                     </p>
                   </div>
                 </div>
@@ -380,7 +383,7 @@ export default function ChannelPartnerComponent() {
                 <img
                   className="formChannelPartnerImage"
                   src="/images/channel-partner-form-img.png"
-                  alt=""
+                  alt="builders for joint ventures in chennai"
                 />
               </div>
             </div>

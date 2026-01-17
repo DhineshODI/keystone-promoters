@@ -34,9 +34,7 @@ export default function AboutUsPage() {
         {/* Schema Markup */}
       </Helmet>
 
-           <h1 style={{ display: "none"}}>builders in chennai</h1>
-
-
+      <h1 style={{ display: "none" }}>builders in chennai</h1>
 
       <div>
         {/* <Header /> */}
@@ -100,7 +98,10 @@ export default function AboutUsPage() {
                   </div>
                   <div className="seondbannerafterSectionMAIN">
                     {/* <div className="seondbannerafterSectionMAINrow"></div> */}
-                    <img src="/images/aboutus-banner-icon.png" alt="" />
+                    <img
+                      src="/images/aboutus-banner-icon.png"
+                      alt="new flats in keelkattalai"
+                    />
                   </div>
                   <div
                     className="thirdbannerafterSectionMAIN"
@@ -298,7 +299,10 @@ export default function AboutUsPage() {
             <div className=" container max-w-7xl mx-auto px-4 ">
               <div className="vissionmissionaboutrow">
                 <div className="aboutusvissionmission">
-                  <img src="/images/about-us/vissionmissonimage.jpg" alt="" />
+                  <img
+                    src="/images/about-us/vissionmissonimage.jpg"
+                    alt="25 years"
+                  />
                 </div>
                 <h5
                   data-text="VISION & MISSION"

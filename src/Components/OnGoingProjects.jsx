@@ -121,7 +121,7 @@ export default function OngoingProjects() {
                           (window.location.href = "/ongoing-projects/spectra")
                         }
                         src={project.projectImage}
-                        alt=""
+                        alt="flats for sale in keelkattalai"
                       />
 
                       <div className="projectsNameOnGoingmAINcONTAINER">
@@ -218,7 +218,7 @@ export default function OngoingProjects() {
                     >
                       <img
                         src="/images/ongoing-images/projectsoon.jpg"
-                        alt=""
+                        alt="developers in chennai"
                       />
 
                       <div className="projectsNameOnGoingmAINcONTAINER">

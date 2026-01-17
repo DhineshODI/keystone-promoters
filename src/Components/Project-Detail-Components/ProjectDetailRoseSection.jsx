@@ -21,7 +21,7 @@ export default function ProjectDetailRoseSection() {
                 {/* <div className="seondbannerafterSectionMAINrow"></div> */}
                 <img
                   src="/images/project-detail/projectdetail-banner-icon.png"
-                  alt=""
+                  alt="new flats in keelkattalai"
                 />
               </div>
               <div

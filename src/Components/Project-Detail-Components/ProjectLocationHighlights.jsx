@@ -121,7 +121,7 @@ export default function ProjectLocationHighlights() {
                 >
                   <img
                     src="/images/project-detail/project-location-image.png"
-                    alt=""
+                    alt="flats for sale in keelkattalai"
                   />
 
                   <div className="overlayimageprojectdetail">

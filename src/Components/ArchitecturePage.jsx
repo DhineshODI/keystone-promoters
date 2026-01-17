@@ -199,7 +199,7 @@ export default function AppartmentsPage() {
                 <div className="imagehoveranimationse">
                   <img
                     src="/images/ongoing-images/north-point-mainimg.jpg"
-                    alt=""
+                    alt="apartments near madipakkam"
                   />
                 </div>
 
@@ -210,7 +210,10 @@ export default function AppartmentsPage() {
 
               <div className="eachprojectcards">
                 <div className="imagehoveranimationse">
-                  <img src="/images/ongoing-images/groove.jpg" alt="" />
+                  <img
+                    src="/images/ongoing-images/groove.jpg"
+                    alt="flats near madipakkam"
+                  />
                 </div>
 
                 <p className="subHeadingText text-hover-underline">The Grove</p>
@@ -218,7 +221,10 @@ export default function AppartmentsPage() {
 
               <div className="eachprojectcards">
                 <div className="imagehoveranimationse">
-                  <img src="/images/ongoing-images/scape-main.png" alt="" />
+                  <img
+                    src="/images/ongoing-images/scape-main.png"
+                    alt="apartments near kovilambakkam"
+                  />
                 </div>
 
                 <p className="subHeadingText text-hover-underline">The Scape</p>

@@ -11,6 +11,7 @@ export default function ProjectFloorPan() {
         {
           label: "Car Parking",
           img: "/images/project-detail/floor-plan/block-a&b.jpg",
+          altText: "3 bhk flats in keelkattalai",
         },
       ],
     },
@@ -21,6 +22,7 @@ export default function ProjectFloorPan() {
         {
           label: "Block Plan",
           img: "/images/project-detail/floor-plan/block-a&b1.jpg",
+          altText: "",
         },
       ],
     },
@@ -31,6 +33,7 @@ export default function ProjectFloorPan() {
         {
           label: "Typical Floor Plan",
           img: "/images/project-detail/floor-plan/block-a-typical-floor-plan.jpg",
+          altText: "",
         },
       ],
     },
@@ -42,22 +45,27 @@ export default function ProjectFloorPan() {
         {
           label: "A101-A501",
           img: "/images/project-detail/floor-plan/block-a-a101-a501.jpg",
+          altText: "",
         },
         {
           label: "A102-A502",
           img: "/images/project-detail/floor-plan/block-a-a102-a502.jpg",
+          altText: "",
         },
         {
           label: "A103-A503",
           img: "/images/project-detail/floor-plan/block-a-a103-a503.jpg",
+          altText: "",
         },
         {
           label: "A104-A504",
           img: "/images/project-detail/floor-plan/block-a-a104-a504.jpg",
+          altText: "",
         },
         {
           label: "A105-A505",
           img: "/images/project-detail/floor-plan/block-a-a105-a505.jpg",
+          altText: "",
         },
       ],
     },
@@ -68,18 +76,22 @@ export default function ProjectFloorPan() {
         {
           label: "B101-B401",
           img: "/images/project-detail/floor-plan/block-b-b101-b401.jpg",
+          altText: "",
         },
         {
           label: "B102-B402",
           img: "/images/project-detail/floor-plan/block-b-b102-b402.jpg",
+          altText: "",
         },
         {
           label: "B103-B403",
           img: "/images/project-detail/floor-plan/block-b-b103-b403.jpg",
+          altText: "",
         },
         {
           label: "B104-B404",
           img: "/images/project-detail/floor-plan/block-b-b104-b404.jpg",
+          altText: "",
         },
       ],
     },
@@ -90,6 +102,7 @@ export default function ProjectFloorPan() {
         {
           label: "Typical Floor Plan",
           img: "/images/project-detail/floor-plan/block-b-typical-floor-plan.jpg",
+          altText: "",
         },
       ],
     },
@@ -100,6 +113,7 @@ export default function ProjectFloorPan() {
         {
           label: "Floor Plan",
           img: "/images/project-detail/floor-plan/block-b-fifth-floor-plan.jpg",
+          altText: "",
         },
       ],
     },
@@ -161,7 +175,7 @@ export default function ProjectFloorPan() {
                 <img
                   className="imagefloorplabimage"
                   src={image.img}
-                  alt={image.label}
+                  alt={image.altText}
                   style={{ width: "100%", borderRadius: "8px" }}
                 />
               </a>
@@ -174,7 +188,7 @@ export default function ProjectFloorPan() {
                 <a href="#_" className="close-btn">
                   &times;
                 </a>
-                <img src={image.img} alt={image.label} />
+                <img src={image.img} alt={image.altText} />
               </div>
             </div>
           ))}

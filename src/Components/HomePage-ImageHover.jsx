@@ -236,7 +236,7 @@ export default function HomepageImageHoverSection() {
               data-aos="fade-left"
               data-aos-duration="1500"
             >
-              <img className="active-image" src={activeImage} alt="" />
+              <img className="active-image" src={activeImage} alt="top 10 construction companies in chennai" />
             </div>
           </div>
 
@@ -281,7 +281,7 @@ export default function HomepageImageHoverSection() {
                   <p className="subHeadingText">{texts[item]}</p>
                   <img
                     src={images[item]}
-                    alt={item}
+                    alt="top 10 construction companies in chennai"
                     className="mobile-accordion-img"
                   />
                 </motion.div>

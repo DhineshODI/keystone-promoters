@@ -193,7 +193,7 @@ export default function OngoingProjectsPage2() {
                 <div className="imagehoveranimationse">
                   <img
                     src="/images/ongoing-images/keystone-commercial-main.png"
-                    alt=""
+                    alt="home interior designer near me"
                   />
                 </div>
 
@@ -204,7 +204,10 @@ export default function OngoingProjectsPage2() {
 
               <div className="eachprojectcards">
                 <div className="imagehoveranimationse">
-                  <img src="/images/ongoing-images/globus-main.png" alt="" />
+                  <img
+                    src="/images/ongoing-images/globus-main.png"
+                    alt="modern interior design"
+                  />
                 </div>
 
                 <p className="subHeadingText text-hover-underline ">Globus</p>
@@ -213,7 +216,7 @@ export default function OngoingProjectsPage2() {
                 <div className="imagehoveranimationse">
                   <img
                     src="/images/ongoing-images/oasis-residential-main-img.jpg"
-                    alt=""
+                    alt="living room interior design"
                   />
                 </div>
 
@@ -222,7 +225,10 @@ export default function OngoingProjectsPage2() {
 
               <div className="eachprojectcards">
                 <div className="imagehoveranimationse">
-                  <img src="/images/ongoing-images/shub.jpg" alt="" />
+                  <img
+                    src="/images/ongoing-images/shub.jpg"
+                    alt="interior design services"
+                  />
                 </div>
 
                 <p className="subHeadingText text-hover-underline">Shub</p>
@@ -230,7 +236,10 @@ export default function OngoingProjectsPage2() {
 
               <div className="eachprojectcards">
                 <div className="imagehoveranimationse">
-                  <img src="/images/ongoing-images/varnam.jpg" alt="" />
+                  <img
+                    src="/images/ongoing-images/varnam.jpg"
+                    alt="interiors in chennai"
+                  />
                 </div>
 
                 <p className="subHeadingText text-hover-underline">Varnam</p>
@@ -239,7 +248,7 @@ export default function OngoingProjectsPage2() {
                 <div className="imagehoveranimationse">
                   <img
                     src="/images/ongoing-images/aum-residence-mainimg.jpg"
-                    alt=""
+                    alt="interior designers near me"
                   />
                 </div>
 
@@ -247,7 +256,10 @@ export default function OngoingProjectsPage2() {
               </div>
               <div className="eachprojectcards">
                 <div className="imagehoveranimationse">
-                  <img src="/images/ongoing-images/kwalitee-main.png" alt="" />
+                  <img
+                    src="/images/ongoing-images/kwalitee-main.png"
+                    alt="interior design in chennai"
+                  />
                 </div>
 
                 <p className="subHeadingText text-hover-underline">Kwalitee</p>
@@ -256,7 +268,7 @@ export default function OngoingProjectsPage2() {
                 <div className="imagehoveranimationse">
                   <img
                     src="/images/ongoing-images/random-box-main.png"
-                    alt=""
+                    alt="top 10 architects in chennai"
                   />
                 </div>
 

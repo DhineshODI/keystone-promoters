@@ -11,7 +11,7 @@ export default function ArchitectureSection() {
               data-aos="fade-up"
               data-aos-anchor-placement="top-bottom"
             >
-              <img src="/images/homepage/secondmage.png" alt="" />
+              <img src="/images/homepage/secondmage.png" alt="chennai construction" />
 
               <div className="ArchitectureContent">
                 <h4 className="secondHeadingText">Apartments</h4>
@@ -36,7 +36,7 @@ export default function ArchitectureSection() {
               data-aos="fade-up"
               data-aos-anchor-placement="top-bottom"
             >
-              <img src="/images/homepage/firstimage.png" alt="" />
+              <img src="/images/homepage/firstimage.png" alt="best builders in chennai" />
 
               <div className="ArchitectureContent">
                 <h4 className="secondHeadingText">Architecture</h4>
@@ -61,7 +61,7 @@ export default function ArchitectureSection() {
               data-aos="fade-up"
               data-aos-anchor-placement="top-bottom"
             >
-              <img src="/images/homepage/thirdmage.png" alt="" />
+              <img src="/images/homepage/thirdmage.png" alt="best property developers in chennai" />
 
               <div className="ArchitectureContent">
                 <h4 className="secondHeadingText">Interiors</h4>

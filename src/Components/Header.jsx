@@ -30,8 +30,6 @@ export default function Header({ menuOnlick }) {
     else if (path === "/architecture") setActive("completed");
     else if (path === "/interior") setActive("completed");
     else if (path === "/apartments") setActive("completed");
-
-    
     else if (path === "/joint-venture") setActive("joint-venture");
     else if (path === "/contact") setActive("contact");
   }, []);
@@ -67,7 +65,7 @@ export default function Header({ menuOnlick }) {
             <img
               className="headerLogoImg"
               src="/images/keystone-detailpage-logo.jpg"
-              alt=""
+              alt="keystone promoters"
             />
           </a>
           <ul className="listHeaders">

@@ -28,7 +28,7 @@ export default function ProjectAminities() {
     message: "",
   });
 
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const [errors, setErrors] = useState({});
   const [isLoading, setIsLoading] = useState(false);
@@ -93,7 +93,7 @@ export default function ProjectAminities() {
       const res = await axios.post(
         "https://keystonepromoters.com/keystone-api/keystone-api/apis/ContactUs.php",
         JSON.stringify(payload),
-        { headers: { "Content-Type": "application/json" } }
+        { headers: { "Content-Type": "application/json" } },
       );
 
       if (res.data.status === true) {
@@ -113,8 +113,6 @@ export default function ProjectAminities() {
         setIsOpen1(false);
 
         window.location.href = "/thankyou";
-
-
       }
     } catch (err) {
       console.error(err);
@@ -198,40 +196,57 @@ export default function ProjectAminities() {
     {
       img: "/images/project-detail/aminities/CCTV-survalance.jpg",
       title: "CCTV Surveillance",
+      altText: "",
     },
     {
       img: "/images/project-detail/aminities/Children’s-Play-Area.jpg",
       title: "Children's Play Area",
+      altText: "3 bhk flats in keelkattalai",
     },
     {
       img: "/images/project-detail/aminities/Entrance-lobby.jpg",
       title: "Entrance Lobby",
+      altText: "flats in keelkattalai",
     },
-    { img: "/images/project-detail/aminities/gym.jpg", title: "gym" },
+    {
+      img: "/images/project-detail/aminities/gym.jpg",
+      title: "gym",
+      altText: "2 bhk flat for sale in keelkattalai",
+    },
     {
       img: "/images/project-detail/aminities/Landscape.jpg",
       title: "Landscape garden",
+      altText: "new flats for sale in keelkattalai",
     },
-    { img: "/images/project-detail/aminities/lift.jpg", title: "lift" },
+    {
+      img: "/images/project-detail/aminities/lift.jpg",
+      title: "lift",
+      altText: "apartments near keelkattalai",
+    },
     {
       img: "/images/project-detail/aminities/Multipurpose.jpg",
       title: "Multipurpose Hall",
+      altText: "flats for sale in keelkattalai",
     },
     {
       img: "/images/project-detail/aminities/Power-backup.jpg",
       title: "Power Backup",
+      altText: "apartment for sale in keelkattalai",
     },
     {
       img: "/images/project-detail/aminities/Rain-water-harvesting.jpg",
       title: "Rain water Harvesting",
+      altText: "3 bhk flats in keelkattalai",
     },
     {
       img: "/images/project-detail/aminities/solar-panel.jpg",
       title: "Solar Panels",
+      altText: "2 bhk flats in keelkattalai",
     },
     {
       img: "/images/project-detail/aminities/Spacious-Covered-car-parking.jpg",
       title: "Car Parking",
+      altText: "2 bhk flat for sale in keelkattalai",
     },
   ];
   const sliderRef = useRef(null);
@@ -317,7 +332,7 @@ export default function ProjectAminities() {
                     {amenities.map((item, index) => (
                       <div key={index}>
                         <div className="aminitessectionproject">
-                          <img src={item.img} alt={item.title} />
+                          <img src={item.img} alt={item.altText} />
                           <h3 className="contentaminities">{item.title}</h3>
                         </div>
                       </div>

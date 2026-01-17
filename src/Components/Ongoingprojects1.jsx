@@ -101,7 +101,10 @@ export default function OngoingProjectsPage1() {
                 </div>
                 <div className="seondbannerafterSectionMAIN">
                   {/* <div className="seondbannerafterSectionMAINrow"></div> */}
-                  <img src="/images/joint-venture-banner-icon.png" alt="" />
+                  <img
+                    src="/images/joint-venture-banner-icon.png"
+                    alt="apartment for sale in keelkattalai"
+                  />
                 </div>
                 <div
                   className="thirdbannerafterSectionMAIN"
@@ -172,7 +175,7 @@ export default function OngoingProjectsPage1() {
                 <div className="imagehoveranimationse">
                   <img
                     src="/images/ongoing-images/random-box-main.png"
-                    alt=""
+                    alt="top 10 architects in chennai"
                   />
                 </div>
 
@@ -183,7 +186,10 @@ export default function OngoingProjectsPage1() {
 
               <div className="eachprojectcards">
                 <div className="imagehoveranimationse">
-                  <img src="/images/ongoing-images/edge-new.jpg" alt="" />
+                  <img
+                    src="/images/ongoing-images/edge-new.jpg"
+                    alt="top architects in chennai"
+                  />
                 </div>
 
                 <p className="subHeadingText text-hover-underline">Edge</p>
@@ -191,7 +197,10 @@ export default function OngoingProjectsPage1() {
 
               <div className="eachprojectcards">
                 <div className="imagehoveranimationse">
-                  <img src="/images/ongoing-images/mannat-main.png" alt="" />
+                  <img
+                    src="/images/ongoing-images/mannat-main.png"
+                    alt="best house architects"
+                  />
                 </div>
 
                 <p className="subHeadingText text-hover-underline">Mannat</p>
@@ -199,7 +208,10 @@ export default function OngoingProjectsPage1() {
 
               <div className="eachprojectcards">
                 <div className="imagehoveranimationse">
-                  <img src="/images/ongoing-images/clay.jpg" alt="" />
+                  <img
+                    src="/images/ongoing-images/clay.jpg"
+                    alt="best architecture firms in chennai"
+                  />
                 </div>
 
                 <p className="subHeadingText text-hover-underline">Clay</p>
@@ -207,7 +219,10 @@ export default function OngoingProjectsPage1() {
 
               <div className="eachprojectcards">
                 <div className="imagehoveranimationse">
-                  <img src="/images/ongoing-images/hub.jpg" alt="" />
+                  <img
+                    src="/images/ongoing-images/hub.jpg"
+                    alt="architect construction"
+                  />
                 </div>
 
                 <p className="subHeadingText text-hover-underline ">The hub</p>
@@ -215,7 +230,10 @@ export default function OngoingProjectsPage1() {
 
               <div className="eachprojectcards">
                 <div className="imagehoveranimationse">
-                  <img src="/images/ongoing-images/trapezoid-1.jpg" alt="" />
+                  <img
+                    src="/images/ongoing-images/trapezoid-1.jpg"
+                    alt="architect and construction"
+                  />
                 </div>
 
                 <p className="subHeadingText text-hover-underline">Trapezoid</p>
@@ -225,7 +243,7 @@ export default function OngoingProjectsPage1() {
                 <div className="imagehoveranimationse">
                   <img
                     src="/images/ongoing-images/sabari-garden-mainimg-768x538.jpg"
-                    alt=""
+                    alt="architecture firms in chennai"
                   />
                 </div>
 
@@ -236,7 +254,10 @@ export default function OngoingProjectsPage1() {
 
               <div className="eachprojectcards">
                 <div className="imagehoveranimationse">
-                  <img src="/images/ongoing-images/yoga-768x538.jpg" alt="" />
+                  <img
+                    src="/images/ongoing-images/yoga-768x538.jpg"
+                    alt="best architects in chennai"
+                  />
                 </div>
 
                 <p className="subHeadingText text-hover-underline">
@@ -248,7 +269,7 @@ export default function OngoingProjectsPage1() {
                 <div className="imagehoveranimationse">
                   <img
                     src="/images/ongoing-images/library-main-img-768x538.jpg"
-                    alt=""
+                    alt="building architect near me"
                   />
                 </div>
 
@@ -259,7 +280,7 @@ export default function OngoingProjectsPage1() {
                 <div className="imagehoveranimationse">
                   <img
                     src="/images/ongoing-images/haritham-residence-mainimg-768x538.jpg"
-                    alt=""
+                    alt="architectural rendering services"
                   />
                 </div>
 

@@ -153,7 +153,7 @@ export default function OngoingProjectsPage() {
                         <img
                           className="ongoingspectralogo"
                           src="/images/project-detail/spectra-logo.png"
-                          alt=""
+                          alt="flats for sale in keelkattalai"
                         />
                       </div>
                       <span className="projectspanname">
@@ -196,7 +196,7 @@ export default function OngoingProjectsPage() {
                 >
                   <img
                     src="/images/ongoing-images/ongoingprojectsoon.jpg"
-                    alt=""
+                    alt="flats near madipakkam"
                   />
 
                   <div className="onGoingProjectsLists ongoiingprojectssecond">
