@@ -16,19 +16,18 @@ export default function Homepage() {
     <>
       <Helmet>
         {/* Page Title */}
-        <title>Spectra Apartments in Chennai | Keystone Promoters</title>
+        <title>
+          Construction Companies in Nungambakkam - Keystone Promoters
+        </title>
 
         {/* Meta Description */}
         <meta
           name="description"
-          content="Spectra by Keystone Promoters offers premium residential apartments in Chennai with modern amenities, excellent connectivity, and prime location."
+          content="Keystone Promoters is among the trusted construction companies in Nungambakkam, with 25+ years of experience delivering quality homes & earning happy customers."
         />
 
         {/* Canonical URL */}
-        <link
-          rel="canonical"
-          href="https://keystonepromoters.com/ongoing-projects/spectra"
-        />
+        <link rel="canonical" href="/ " />
 
         {/* Schema Markup */}
         <script type="application/ld+json">
@@ -58,6 +57,8 @@ export default function Homepage() {
               `}
         </script>
       </Helmet>
+
+      <h1 style={{ display: "none"}}>builders in nugambakkam</h1>
       <VideoBanner />
       <WhatMakesKeyStonesUnique />
       <LiveThoughtFul />

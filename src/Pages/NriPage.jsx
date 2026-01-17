@@ -16,22 +16,21 @@ export default function NriPage() {
     <>
       <Helmet>
         {/* Page Title */}
-        <title>Spectra Apartments in Chennai | Keystone Promoters</title>
+        <title>NRI Home Buyers | Keystone Promoters</title>
 
         {/* Meta Description */}
         <meta
           name="description"
-          content="Spectra by Keystone Promoters offers premium residential apartments in Chennai with modern amenities, excellent connectivity, and prime location."
+          content="Keystone Promoters serves NRI home buyers with thoughtfully planned homes, clear documentation, and reliable project delivery in Chennai."
         />
 
         {/* Canonical URL */}
-        <link
-          rel="canonical"
-          href="https://keystonepromoters.com/ongoing-projects/spectra"
-        />
+        <link rel="canonical" href="/nri" />
 
         {/* Schema Markup */}
       </Helmet>
+
+      <h1 style={{ display: "none" }}>NRI Home Buyers</h1>
 
       <div className="">
         <div>

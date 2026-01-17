@@ -9,18 +9,18 @@ export default function ContactMainPage() {
     <>
       <Helmet>
         {/* Page Title */}
-        <title>Spectra Apartments in Chennai | Keystone Promoters</title>
+        <title>Nungambakkam Real Estate Company | Keystone Promoters</title>
 
         {/* Meta Description */}
         <meta
           name="description"
-          content="Spectra by Keystone Promoters offers premium residential apartments in Chennai with modern amenities, excellent connectivity, and prime location."
+          content="Contact Keystone Promoters, a trusted Nungambakkam real estate company. Call or WhatsApp our team for project information, pricing, and site visit support."
         />
 
         {/* Canonical URL */}
         <link
           rel="canonical"
-          href="https://keystonepromoters.com/ongoing-projects/spectra"
+          href="/contact"
         />
 
         {/* Schema Markup */}
@@ -51,6 +51,8 @@ export default function ContactMainPage() {
               `}
         </script>
       </Helmet>
+
+           <h1 style={{ display: "none"}}>nungambakkam real estate</h1>
       <div>
         {/* <Header /> */}
         <ContactPage />

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 
 export default function OngoingProjectsPage2() {
   const OnGoingProjectsData = [
@@ -25,10 +26,29 @@ export default function OngoingProjectsPage2() {
   }, []);
 
   return (
-    <div className="ongoingProjectsPage ongoingnewpage">
-      {/* Banner */}
-      <div>
-        {/* <div className="detailPageBanners">
+    <>
+      <Helmet>
+        {/* Page Title */}
+        <title>Best Interior Designers in Chennai | Keystone Promoters</title>
+
+        {/* Meta Description */}
+        <meta
+          name="description"
+          content="Keystone Promoters, among the best interior designers in Chennai, highlights interior projects focused on detail, modern aesthetics, and practical design."
+        />
+
+        {/* Canonical URL */}
+        <link rel="canonical" href="/interior" />
+
+        {/* Schema Markup */}
+      </Helmet>
+
+      <h1 style={{ display: "none" }}>best interior designers in chennai</h1>
+
+      <div className="ongoingProjectsPage ongoingnewpage">
+        {/* Banner */}
+        <div>
+          {/* <div className="detailPageBanners">
           <h5
             className="secondHeadingText"
             data-aos="fade-up"
@@ -58,190 +78,198 @@ export default function OngoingProjectsPage2() {
             </span>
           </div>
         </div> */}
-        <div className="detailPageBanners">
-          <h5
-            className="secondHeadingText"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            Crafted to
-          </h5>
-          <h5
-            className="secondHeadingText"
-            data-aos="fade-up"
-            data-aos-duration="1300"
-          >
-            Completion
-          </h5>
+          <div className="detailPageBanners">
+            <h5
+              className="secondHeadingText"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              Crafted to
+            </h5>
+            <h5
+              className="secondHeadingText"
+              data-aos="fade-up"
+              data-aos-duration="1300"
+            >
+              Completion
+            </h5>
 
-          <div
-            className="BreadCrumSection"
-            data-aos="fade-up"
-            data-aos-duration="1500"
-          >
-            <a href="/" className="subHeadingText  text-hover-underline">
-              Home
-            </a>
-            <span className="subHeadingText">-</span>
-            <span className="subHeadingText text-hover-underline">
-              COMPLETED PROJECTS
-            </span>
+            <div
+              className="BreadCrumSection"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
+              <a href="/" className="subHeadingText  text-hover-underline">
+                Home
+              </a>
+              <span className="subHeadingText">-</span>
+              <span className="subHeadingText text-hover-underline">
+                COMPLETED PROJECTS
+              </span>
+            </div>
           </div>
         </div>
-      </div>
-      {/* Banner */}
+        {/* Banner */}
 
-      {/* After-Banner-Section */}
+        {/* After-Banner-Section */}
 
-      <div className="afterMainBG">
-        <div className="container max-w-7xl mx-auto px-4 ">
-          <div className="lowconatinersectionafterbanner">
-            <div className="bannerafterSectionMAIN">
-              <div
-                className="firstbannerafterSectionMAIN"
-                data-aos="fade-left"
-                data-aos-duration="1000"
-              >
-                <div>
-                  <h4 className="gettknowHeading">COMPLETED PROJECTS</h4>
-                  <h3 className="visitOurOFficetext">
-                    {/* Currently Developing your Future Homes */}
-                    BUILDING LANDMARKS THAT STAND THE TEST OF TIME
-                  </h3>
+        <div className="afterMainBG">
+          <div className="container max-w-7xl mx-auto px-4 ">
+            <div className="lowconatinersectionafterbanner">
+              <div className="bannerafterSectionMAIN">
+                <div
+                  className="firstbannerafterSectionMAIN"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                >
+                  <div>
+                    <h4 className="gettknowHeading">COMPLETED PROJECTS</h4>
+                    <h3 className="visitOurOFficetext">
+                      {/* Currently Developing your Future Homes */}
+                      BUILDING LANDMARKS THAT STAND THE TEST OF TIME
+                    </h3>
+                  </div>
+                </div>
+                <div className="seondbannerafterSectionMAIN">
+                  {/* <div className="seondbannerafterSectionMAINrow"></div> */}
+                  <img src="/images/joint-venture-banner-icon.png" alt="" />
+                </div>
+                <div
+                  className="thirdbannerafterSectionMAIN"
+                  data-aos="fade-right"
+                  data-aos-duration="1800"
+                >
+                  <div style={{ marginTop: "15px" }}>
+                    <p className="contactPageAddress">
+                      Our completed projects reflect the quality, planning and
+                      craftsmanship Keystone is known for. These successful
+                      developments are now cherished spaces for the families and
+                      communities who call them home.
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="seondbannerafterSectionMAIN">
-                {/* <div className="seondbannerafterSectionMAINrow"></div> */}
-                <img src="/images/joint-venture-banner-icon.png" alt="" />
-              </div>
-              <div
-                className="thirdbannerafterSectionMAIN"
-                data-aos="fade-right"
-                data-aos-duration="1800"
-              >
-                <div style={{ marginTop: "15px" }}>
-                  <p className="contactPageAddress">
-                    Our completed projects reflect the quality, planning and
-                    craftsmanship Keystone is known for. These successful
-                    developments are now cherished spaces for the families and
-                    communities who call them home.
-                  </p>
+            </div>
+          </div>
+        </div>
+
+        {/* After-Banner-Section */}
+
+        <div
+          className="margintopafterlist"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div className="container max-w-7xl mx-auto px-4 ">
+            <div className="ongoingslistflex">
+              <ul className="ongoingprojectslist">
+                <li onClick={() => (window.location.href = "/apartments")}>
+                  Apartments
+                </li>
+                <li onClick={() => (window.location.href = "/architecture")}>
+                  Architecture
+                </li>
+                <li
+                  className="activestatus"
+                  onClick={() => (window.location.href = "/interior")}
+                >
+                  Interior
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Ongoing Projects*/}
+
+        <div
+          className="ongoingProjectsDiVMain"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+        >
+          <div className="container max-w-7xl mx-auto px-4 ">
+            <div className="ongoingnewstyke">
+              <div className="eachprojectcards">
+                <div className="imagehoveranimationse">
+                  <img
+                    src="/images/ongoing-images/keystone-commercial-main.png"
+                    alt=""
+                  />
                 </div>
+
+                <p className="subHeadingText text-hover-underline">
+                  Keystone Office
+                </p>
+              </div>
+
+              <div className="eachprojectcards">
+                <div className="imagehoveranimationse">
+                  <img src="/images/ongoing-images/globus-main.png" alt="" />
+                </div>
+
+                <p className="subHeadingText text-hover-underline ">Globus</p>
+              </div>
+              <div className="eachprojectcards">
+                <div className="imagehoveranimationse">
+                  <img
+                    src="/images/ongoing-images/oasis-residential-main-img.jpg"
+                    alt=""
+                  />
+                </div>
+
+                <p className="subHeadingText text-hover-underline">Oasis</p>
+              </div>
+
+              <div className="eachprojectcards">
+                <div className="imagehoveranimationse">
+                  <img src="/images/ongoing-images/shub.jpg" alt="" />
+                </div>
+
+                <p className="subHeadingText text-hover-underline">Shub</p>
+              </div>
+
+              <div className="eachprojectcards">
+                <div className="imagehoveranimationse">
+                  <img src="/images/ongoing-images/varnam.jpg" alt="" />
+                </div>
+
+                <p className="subHeadingText text-hover-underline">Varnam</p>
+              </div>
+              <div className="eachprojectcards">
+                <div className="imagehoveranimationse">
+                  <img
+                    src="/images/ongoing-images/aum-residence-mainimg.jpg"
+                    alt=""
+                  />
+                </div>
+
+                <p className="subHeadingText text-hover-underline">Aum</p>
+              </div>
+              <div className="eachprojectcards">
+                <div className="imagehoveranimationse">
+                  <img src="/images/ongoing-images/kwalitee-main.png" alt="" />
+                </div>
+
+                <p className="subHeadingText text-hover-underline">Kwalitee</p>
+              </div>
+              <div className="eachprojectcards">
+                <div className="imagehoveranimationse">
+                  <img
+                    src="/images/ongoing-images/random-box-main.png"
+                    alt=""
+                  />
+                </div>
+
+                <p className="subHeadingText text-hover-underline">
+                  Random box
+                </p>
               </div>
             </div>
           </div>
         </div>
+
+        {/* Ongoing Projects*/}
       </div>
-
-      {/* After-Banner-Section */}
-
-      <div
-        className="margintopafterlist"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-      >
-        <div className="container max-w-7xl mx-auto px-4 ">
-          <div className="ongoingslistflex">
-            <ul className="ongoingprojectslist">
-              <li onClick={() => (window.location.href = "/apartments")}>
-                Apartments
-              </li>
-              <li onClick={() => (window.location.href = "/architecture")}>
-                Architecture
-              </li>
-              <li
-                className="activestatus"
-                onClick={() => (window.location.href = "/interior")}
-              >
-                Interior
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      {/* Ongoing Projects*/}
-
-      <div
-        className="ongoingProjectsDiVMain"
-        data-aos="fade-up"
-        data-aos-duration="1200"
-      >
-        <div className="container max-w-7xl mx-auto px-4 ">
-          <div className="ongoingnewstyke">
-            <div className="eachprojectcards">
-              <div className="imagehoveranimationse">
-                <img
-                  src="/images/ongoing-images/keystone-commercial-main.png"
-                  alt=""
-                />
-              </div>
-
-              <p className="subHeadingText text-hover-underline">Keystone Office</p>
-            </div>
-
-            <div className="eachprojectcards">
-              <div className="imagehoveranimationse">
-                <img src="/images/ongoing-images/globus-main.png" alt="" />
-              </div>
-
-              <p className="subHeadingText text-hover-underline ">Globus</p>
-            </div>
-            <div className="eachprojectcards">
-              <div className="imagehoveranimationse">
-                <img
-                  src="/images/ongoing-images/oasis-residential-main-img.jpg"
-                  alt=""
-                />
-              </div>
-
-              <p className="subHeadingText text-hover-underline">Oasis</p>
-            </div>
-
-            <div className="eachprojectcards">
-              <div className="imagehoveranimationse">
-                <img src="/images/ongoing-images/shub.jpg" alt="" />
-              </div>
-
-              <p className="subHeadingText text-hover-underline">Shub</p>
-            </div>
-
-            <div className="eachprojectcards">
-              <div className="imagehoveranimationse">
-                <img src="/images/ongoing-images/varnam.jpg" alt="" />
-              </div>
-
-              <p className="subHeadingText text-hover-underline">Varnam</p>
-            </div>
-            <div className="eachprojectcards">
-              <div className="imagehoveranimationse">
-                <img
-                  src="/images/ongoing-images/aum-residence-mainimg.jpg"
-                  alt=""
-                />
-              </div>
-
-              <p className="subHeadingText text-hover-underline">Aum</p>
-            </div>
-            <div className="eachprojectcards">
-              <div className="imagehoveranimationse">
-                <img src="/images/ongoing-images/kwalitee-main.png" alt="" />
-              </div>
-
-              <p className="subHeadingText text-hover-underline">Kwalitee</p>
-            </div>
-            <div className="eachprojectcards">
-              <div className="imagehoveranimationse">
-                <img src="/images/ongoing-images/random-box-main.png" alt="" />
-              </div>
-
-              <p className="subHeadingText text-hover-underline">Random box</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Ongoing Projects*/}
-    </div>
+    </>
   );
 }

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 
 export default function AppartmentsPage() {
   const OnGoingProjectsData = [
@@ -25,123 +26,168 @@ export default function AppartmentsPage() {
   }, []);
 
   return (
-    <div className="ongoingProjectsPage ongoingnewpage">
-      {/* Banner */}
-      <div>
-        <div className="detailPageBanners">
-          <h5
-            className="secondHeadingText"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            Crafted to
-          </h5>
-          <h5
-            className="secondHeadingText"
-            data-aos="fade-up"
-            data-aos-duration="1300"
-          >
-            Completion
-          </h5>
+    <>
+      <Helmet>
+        {/* Page Title */}
+        <title>Completed Projects in Chennai | Keystone Promoters</title>
 
-          <div
-            className="BreadCrumSection"
-            data-aos="fade-up"
-            data-aos-duration="1500"
-          >
-            <a href="/" className="subHeadingText  text-hover-underline">
-              Home
-            </a>
-            <span className="subHeadingText">-</span>
-            <span className="subHeadingText text-hover-underline">
-              COMPLETED PROJECTS
-            </span>
+        {/* Meta Description */}
+        <meta
+          name="description"
+          content="Keystone Promoters has successfully delivered completed projects in Chennai, building quality homes through trusted planning, clear compliance, and lasting value."
+        />
+
+        {/* Canonical URL */}
+        <link rel="canonical" href="/ " />
+
+        {/* Schema Markup */}
+        <script type="application/ld+json">
+          {`
+                {
+                  "@context": "https://schema.org",
+                  "@type": "RealEstateAgent",
+                  "name": "Keystone Promoters",
+                  "image": "https://keystonepromoters.com/images/keystone-detailpage-logo.jpg",
+                  "@id": "",
+                  "url": "https://keystonepromoters.com/",
+                  "telephone": "9940008855",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Door No.1, GF-A, Amace Ganga Sarojini Street, Mahalingapuram, Nungambakkam,",
+                    "addressLocality": "Chennai",
+                    "postalCode": "600034",
+                    "addressCountry": "IN"
+                  } ,
+                  "sameAs": [
+                    "https://www.instagram.com/keystone_promoters/",
+                    "https://www.facebook.com/keystonechennai/",
+                    "https://www.youtube.com/@KeystonePromoters",
+                    "https://www.linkedin.com/company/keystone-promoters-pvt-ltd---india/about/"
+                  ] 
+                }
+                  `}
+        </script>
+      </Helmet>
+
+      <h1 style={{ display: "none" }}>promoters in chennai</h1>
+
+      <div className="ongoingProjectsPage ongoingnewpage">
+        {/* Banner */}
+        <div>
+          <div className="detailPageBanners">
+            <h5
+              className="secondHeadingText"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              Crafted to
+            </h5>
+            <h5
+              className="secondHeadingText"
+              data-aos="fade-up"
+              data-aos-duration="1300"
+            >
+              Completion
+            </h5>
+
+            <div
+              className="BreadCrumSection"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
+              <a href="/" className="subHeadingText  text-hover-underline">
+                Home
+              </a>
+              <span className="subHeadingText">-</span>
+              <span className="subHeadingText text-hover-underline">
+                COMPLETED PROJECTS
+              </span>
+            </div>
           </div>
         </div>
-      </div>
-      {/* Banner */}
+        {/* Banner */}
 
-      {/* After-Banner-Section */}
+        {/* After-Banner-Section */}
 
-      <div className="afterMainBG">
-        <div className="container max-w-7xl mx-auto px-4 ">
-          <div className="lowconatinersectionafterbanner">
-            <div className="bannerafterSectionMAIN">
-              <div
-                className="firstbannerafterSectionMAIN"
-                data-aos="fade-left"
-                data-aos-duration="1000"
-              >
-                <div>
-                  <h4 className="gettknowHeading">COMPLETED PROJECTS</h4>
-                  <h3 className="visitOurOFficetext">
-                    {/* Currently Developing your Future Homes */}
-                    BUILDING LANDMARKS THAT STAND THE TEST OF TIME
-                  </h3>
+        <div className="afterMainBG">
+          <div className="container max-w-7xl mx-auto px-4 ">
+            <div className="lowconatinersectionafterbanner">
+              <div className="bannerafterSectionMAIN">
+                <div
+                  className="firstbannerafterSectionMAIN"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                >
+                  <div>
+                    <h4 className="gettknowHeading">COMPLETED PROJECTS</h4>
+                    <h3 className="visitOurOFficetext">
+                      {/* Currently Developing your Future Homes */}
+                      BUILDING LANDMARKS THAT STAND THE TEST OF TIME
+                    </h3>
+                  </div>
                 </div>
-              </div>
-              <div className="seondbannerafterSectionMAIN">
-                {/* <div className="seondbannerafterSectionMAINrow"></div> */}
-                <img src="/images/joint-venture-banner-icon.png" alt="" />
-              </div>
-              <div
-                className="thirdbannerafterSectionMAIN"
-                data-aos="fade-right"
-                data-aos-duration="1800"
-              >
-                <div style={{ marginTop: "15px" }}>
-                  <p className="contactPageAddress">
-                    {/* Happy Clients already invested our ongoing projects are your
+                <div className="seondbannerafterSectionMAIN">
+                  {/* <div className="seondbannerafterSectionMAINrow"></div> */}
+                  <img src="/images/joint-venture-banner-icon.png" alt="" />
+                </div>
+                <div
+                  className="thirdbannerafterSectionMAIN"
+                  data-aos="fade-right"
+                  data-aos-duration="1800"
+                >
+                  <div style={{ marginTop: "15px" }}>
+                    <p className="contactPageAddress">
+                      {/* Happy Clients already invested our ongoing projects are your
                     next great oppurtunity. */}
-                    Our completed projects reflect the quality, planning and
-                    craftsmanship Keystone is known for. These successful
-                    developments are now cherished spaces for the families and
-                    communities who call them home.
-                  </p>
+                      Our completed projects reflect the quality, planning and
+                      craftsmanship Keystone is known for. These successful
+                      developments are now cherished spaces for the families and
+                      communities who call them home.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* After-Banner-Section */}
+        {/* After-Banner-Section */}
 
-      <div
-        className="margintopafterlist"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-      >
-        <div className="container max-w-7xl mx-auto px-4 ">
-          <div className="ongoingslistflex">
-            <ul className="ongoingprojectslist">
-              <li
-                onClick={() => (window.location.href = "/apartments")}
-                className="activestatus"
-              >
-                Apartments
-              </li>
-              <li onClick={() => (window.location.href = "/architecture")}>
-                Architecture
-              </li>
-              <li onClick={() => (window.location.href = "/interior")}>
-                Interior
-              </li>
-            </ul>
+        <div
+          className="margintopafterlist"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div className="container max-w-7xl mx-auto px-4 ">
+            <div className="ongoingslistflex">
+              <ul className="ongoingprojectslist">
+                <li
+                  onClick={() => (window.location.href = "/apartments")}
+                  className="activestatus"
+                >
+                  Apartments
+                </li>
+                <li onClick={() => (window.location.href = "/architecture")}>
+                  Architecture
+                </li>
+                <li onClick={() => (window.location.href = "/interior")}>
+                  Interior
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Ongoing Projects*/}
+        {/* Ongoing Projects*/}
 
-      <div
-        className="ongoingProjectsDiVMain"
-        data-aos="fade-up"
-        data-aos-duration="1200"
-      >
-        <div className="container max-w-7xl mx-auto px-4 ">
-          <div className="ongoingnewstyke">
-            {/* <div className="eachprojectcards">
+        <div
+          className="ongoingProjectsDiVMain"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+        >
+          <div className="container max-w-7xl mx-auto px-4 ">
+            <div className="ongoingnewstyke">
+              {/* <div className="eachprojectcards">
               <div className="imagehoveranimationse">
                 <img src="/images/ongoing-images/Spectra-image.png" alt="" />
               </div>
@@ -149,37 +195,40 @@ export default function AppartmentsPage() {
               <p className="subHeadingText ">Spectra</p>
             </div> */}
 
-            <div className="eachprojectcards">
-              <div className="imagehoveranimationse">
-                <img
-                  src="/images/ongoing-images/north-point-mainimg.jpg"
-                  alt=""
-                />
+              <div className="eachprojectcards">
+                <div className="imagehoveranimationse">
+                  <img
+                    src="/images/ongoing-images/north-point-mainimg.jpg"
+                    alt=""
+                  />
+                </div>
+
+                <p className="subHeadingText text-hover-underline ">
+                  North Point
+                </p>
               </div>
 
-              <p className="subHeadingText text-hover-underline ">North Point</p>
-            </div>
+              <div className="eachprojectcards">
+                <div className="imagehoveranimationse">
+                  <img src="/images/ongoing-images/groove.jpg" alt="" />
+                </div>
 
-            <div className="eachprojectcards">
-              <div className="imagehoveranimationse">
-                <img src="/images/ongoing-images/groove.jpg" alt="" />
+                <p className="subHeadingText text-hover-underline">The Grove</p>
               </div>
 
-              <p className="subHeadingText text-hover-underline">The Grove</p>
-            </div>
+              <div className="eachprojectcards">
+                <div className="imagehoveranimationse">
+                  <img src="/images/ongoing-images/scape-main.png" alt="" />
+                </div>
 
-            <div className="eachprojectcards">
-              <div className="imagehoveranimationse">
-                <img src="/images/ongoing-images/scape-main.png" alt="" />
+                <p className="subHeadingText text-hover-underline">The Scape</p>
               </div>
-
-              <p className="subHeadingText text-hover-underline">The Scape</p>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Ongoing Projects*/}
-    </div>
+        {/* Ongoing Projects*/}
+      </div>
+    </>
   );
 }

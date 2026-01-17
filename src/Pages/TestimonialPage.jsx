@@ -1,6 +1,7 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 export default function TestimonialPage() {
   useEffect(() => {
     AOS.init({
@@ -10,6 +11,23 @@ export default function TestimonialPage() {
   }, []);
   return (
     <>
+      <Helmet>
+        {/* Page Title */}
+        <title>Customer Testimonial | Keystone Promoters Happy Customers</title>
+
+        {/* Meta Description */}
+        <meta
+          name="description"
+          content="Customer testimonial showcase experiences with Keystone Promoters, underlining construction quality, transparency, and strong brand confidence."
+        />
+
+        {/* Canonical URL */}
+        <link rel="canonical" href="/testimonials" />
+
+        {/* Schema Markup */}
+      </Helmet>
+
+      <h1 style={{ display: "none" }}>Customer Testimonial</h1>
       <div className="">
         <div>
           <div className="testimonialmainpage">
@@ -143,9 +161,9 @@ export default function TestimonialPage() {
                     <div class="testimonalContent">
                       <p class="subHeadingText">
                         Initially hesitant about Keystone, I was soon impressed
-                        by their detailed planning, thoughtful design and
-                        highly professional execution that consistently exceeded
-                        my expectations.
+                        by their detailed planning, thoughtful design and highly
+                        professional execution that consistently exceeded my
+                        expectations.
                       </p>
                       <div class="flex items-center justify-between  testimonalPersonImageContainer ">
                         <div class="testimonalPersonImagediv">

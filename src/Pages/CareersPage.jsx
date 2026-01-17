@@ -10,19 +10,18 @@ export default function CareersPage() {
     <>
       <Helmet>
         {/* Page Title */}
-        <title>Spectra Apartments in Chennai | Keystone Promoters</title>
+        <title>
+          Real Estate Jobs / Real Estate Careers / Keystone Promoters
+        </title>
 
         {/* Meta Description */}
         <meta
           name="description"
-          content="Spectra by Keystone Promoters offers premium residential apartments in Chennai with modern amenities, excellent connectivity, and prime location."
+          content="Keystone Promoters offers real estate careers with rewarding real estate jobs, growth opportunities, and a quality-focused work culture."
         />
 
         {/* Canonical URL */}
-        <link
-          rel="canonical"
-          href="https://keystonepromoters.com/ongoing-projects/spectra"
-        />
+        <link rel="canonical" href="/careers" />
 
         {/* Schema Markup */}
         <script type="application/ld+json">
@@ -52,6 +51,8 @@ export default function CareersPage() {
               `}
         </script>
       </Helmet>
+
+      <h1 style={{ display: "none" }}>Real Estate Jobs</h1>
       <div>
         {/* <Header /> */}
         <CareerPageFunction />

@@ -10,19 +10,18 @@ export default function JointVentureMainPage() {
     <>
       <Helmet>
         {/* Page Title */}
-        <title>Spectra Apartments in Chennai | Keystone Promoters</title>
+        <title>
+          Best Joint Venture Builders in Chennai | Keystone Promoters
+        </title>
 
         {/* Meta Description */}
         <meta
           name="description"
-          content="Spectra by Keystone Promoters offers premium residential apartments in Chennai with modern amenities, excellent connectivity, and prime location."
+          content="Recognised as one of the best joint venture builders in Chennai, Keystone Promoters focuses on balanced planning, market-ready homes and sustainable returns."
         />
 
         {/* Canonical URL */}
-        <link
-          rel="canonical"
-          href="https://keystonepromoters.com/ongoing-projects/spectra"
-        />
+        <link rel="canonical" href="/joint-venture" />
 
         {/* Schema Markup */}
         <script type="application/ld+json">
@@ -53,6 +52,8 @@ export default function JointVentureMainPage() {
               `}
         </script>
       </Helmet>
+
+           <h1 style={{ display: "none"}}>builders for joint ventures in chennai</h1>
       <div>
         {/* <Header /> */}
         <JointVentureComponent />

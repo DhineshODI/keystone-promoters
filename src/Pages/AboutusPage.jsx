@@ -16,25 +16,28 @@ export default function AboutUsPage() {
 
   return (
     <>
-       <Helmet>
+      <Helmet>
         {/* Page Title */}
-        <title>Spectra Apartments in Chennai | Keystone Promoters</title>
+        <title>
+          Trusted Builders in Nugambakkam Chennai - Keystone Promoters
+        </title>
 
         {/* Meta Description */}
         <meta
           name="description"
-          content="Spectra by Keystone Promoters offers premium residential apartments in Chennai with modern amenities, excellent connectivity, and prime location."
+          content="Keystone Promoters, trusted builders in Nungambakkam, with 50+ projects, 2000+ happy customers, 1M+ sq ft built & design-led construction with timely delivery."
         />
 
         {/* Canonical URL */}
-        <link
-          rel="canonical"
-          href="https://keystonepromoters.com/ongoing-projects/spectra"
-        />
+        <link rel="canonical" href="/brand" />
 
         {/* Schema Markup */}
-  
       </Helmet>
+
+           <h1 style={{ display: "none"}}>builders in chennai</h1>
+
+
+
       <div>
         {/* <Header /> */}
         <div className="aboutuspagesection">

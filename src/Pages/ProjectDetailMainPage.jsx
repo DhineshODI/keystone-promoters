@@ -14,22 +14,23 @@ export default function ProjectDetailMainPage() {
     <>
       <Helmet>
         {/* Page Title */}
-        <title>Spectra Apartments in Chennai | Keystone Promoters</title>
+        <title>
+          2 flats & 3 BHK flats in keelkattalai | Keystone Promoters
+        </title>
 
         {/* Meta Description */}
         <meta
           name="description"
-          content="Spectra by Keystone Promoters offers premium residential apartments in Chennai with modern amenities, excellent connectivity, and prime location."
+          content="2 & 3 BHK apartments for sale in Keelkattalai at Spectra by Keystone Promoters, with 1069–1608 sq.ft homes offering quality design, open space and smart amenities."
         />
 
         {/* Canonical URL */}
-        <link
-          rel="canonical"
-          href="https://keystonepromoters.com/ongoing-projects/spectra"
-        />
+        <link rel="canonical" href="/ongoing-projects/spectra" />
 
         {/* Schema Markup */}
       </Helmet>
+
+      <h1 style={{ display: "none" }}>apartment for sale in keelkattalai</h1>
 
       <div className="projectDetailPage">
         {/* <Header /> */}

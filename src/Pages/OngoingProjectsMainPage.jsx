@@ -11,18 +11,18 @@ export default function OngoingProjectsMainPage() {
       <div>
         <Helmet>
           {/* Page Title */}
-          <title>Spectra Apartments in Chennai | Keystone Promoters</title>
+          <title>Apartments in keelkattalai | Flats for Sale in keelkattalai</title>
 
           {/* Meta Description */}
           <meta
             name="description"
-            content="Spectra by Keystone Promoters offers premium residential apartments in Chennai with modern amenities, excellent connectivity, and prime location."
+            content="Keystone Promoters presents well-crafted apartments in Keelkattalai, combining smart design, quality construction, and a convenient residential location."
           />
 
           {/* Canonical URL */}
           <link
             rel="canonical"
-            href="https://keystonepromoters.com/ongoing-projects/spectra"
+            href="/ongoing-projects"
           />
 
           {/* Schema Markup */}
@@ -54,6 +54,8 @@ export default function OngoingProjectsMainPage() {
                   `}
           </script>
         </Helmet>
+     <h1 style={{ display: "none"}}>flats for sale in keelkattalai</h1>
+        
         <OngoingProjectsPage />
       </div>
     </>
