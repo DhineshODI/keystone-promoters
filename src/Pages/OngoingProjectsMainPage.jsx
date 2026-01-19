@@ -11,7 +11,9 @@ export default function OngoingProjectsMainPage() {
       <div>
         <Helmet>
           {/* Page Title */}
-          <title>Apartments in keelkattalai | Flats for Sale in keelkattalai</title>
+          <title>
+            Apartments in keelkattalai | Flats for Sale in keelkattalai
+          </title>
 
           {/* Meta Description */}
           <meta
@@ -20,10 +22,7 @@ export default function OngoingProjectsMainPage() {
           />
 
           {/* Canonical URL */}
-          <link
-            rel="canonical"
-            href="/ongoing-projects"
-          />
+          <link rel="canonical" href="/ongoing-projects" />
 
           {/* Schema Markup */}
           <script type="application/ld+json">
@@ -54,8 +53,8 @@ export default function OngoingProjectsMainPage() {
                   `}
           </script>
         </Helmet>
-     <h1 style={{ display: "none"}}>flats for sale in keelkattalai</h1>
-        
+        <h1 style={{ display: "none" }}>flats for sale in keelkattalai</h1>
+
         <OngoingProjectsPage />
       </div>
     </>

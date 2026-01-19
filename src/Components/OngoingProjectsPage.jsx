@@ -73,10 +73,10 @@ export default function OngoingProjectsPage() {
                 data-aos-duration="1000"
               >
                 <div>
-                  <h4 className="gettknowHeading">Ongoing Projects</h4>
-                  <h3 className="visitOurOFficetext">
+                  <h2 className="gettknowHeading">Ongoing Projects</h2>
+                  <h2 className="visitOurOFficetext">
                     Currently Developing your Future Homes
-                  </h3>
+                  </h2>
                 </div>
               </div>
               <div className="seondbannerafterSectionMAIN">

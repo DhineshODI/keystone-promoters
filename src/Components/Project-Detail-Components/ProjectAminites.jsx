@@ -196,7 +196,7 @@ export default function ProjectAminities() {
     {
       img: "/images/project-detail/aminities/CCTV-survalance.jpg",
       title: "CCTV Surveillance",
-      altText: "",
+      altText: "apartment for sale in keelkattalai",
     },
     {
       img: "/images/project-detail/aminities/Children’s-Play-Area.jpg",

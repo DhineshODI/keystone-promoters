@@ -153,9 +153,9 @@ export default function JointVentureComponent() {
                 >
                   <div>
                     <h4 className="gettknowHeading">Grow with Us</h4>
-                    <h3 className="visitOurOFficetext">
+                    <h2 className="visitOurOFficetext">
                       Let's Build <br /> Sucess Through <br /> Joint Ventures.
-                    </h3>
+                    </h2>
                   </div>
                 </div>
                 <div className="seondbannerafterSectionMAIN">
@@ -270,13 +270,13 @@ export default function JointVentureComponent() {
           <div className="container max-w-7xl mx-auto px-4 ">
             <div className="mainSectionFormWithUs">
               <div className="formContactUsSectionFlex">
-                <h5
+                <h2
                   className="secondHeadingText "
                   data-aos="fade-down"
                   data-aos-duration="1500"
                 >
                   Joint Venture
-                </h5>
+                </h2>
                 <p
                   className="subHeadingText"
                   data-aos="fade-down"

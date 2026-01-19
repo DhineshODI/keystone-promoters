@@ -19,7 +19,7 @@ export default function ProjectDetailSectionContent() {
           <img
             className="projectDetailBannerIMageMain"
             src="/images/project-detail/project-detail-project-banner.jpg"
-            alt=""
+            alt="apartments in keelkattalai"
           />
 
           <div className="spectraprojectdetailssection">

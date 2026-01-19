@@ -119,11 +119,11 @@ export default function AppartmentsPage() {
                   data-aos-duration="1000"
                 >
                   <div>
-                    <h4 className="gettknowHeading">COMPLETED PROJECTS</h4>
-                    <h3 className="visitOurOFficetext">
+                    <h2 className="gettknowHeading">COMPLETED PROJECTS</h2>
+                    <h2 className="visitOurOFficetext">
                       {/* Currently Developing your Future Homes */}
                       BUILDING LANDMARKS THAT STAND THE TEST OF TIME
-                    </h3>
+                    </h2>
                   </div>
                 </div>
                 <div className="seondbannerafterSectionMAIN">

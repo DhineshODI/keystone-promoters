@@ -158,9 +158,9 @@ export default function ChannelPartnerComponent() {
                 >
                   <div>
                     <h4 className="gettknowHeading">Grow with us</h4>
-                    <h3 className="visitOurOFficetext">
+                    <h2 className="visitOurOFficetext">
                       EMPOWERING OUR CHANNEL PARTNERS TO SUCCEED TOGETHER
-                    </h3>
+                    </h2>
                   </div>
                 </div>
                 <div className="seondbannerafterSectionMAIN">
@@ -271,13 +271,13 @@ export default function ChannelPartnerComponent() {
           <div className="container max-w-7xl mx-auto px-4 ">
             <div className="lowconatinersectionafterbanner">
               <div className="channelContentPartner">
-                <h5
+                <h2
                   className="secondHeadingText "
                   data-aos="fade-down"
                   data-aos-duration="1400"
                 >
                   Channel Partners
-                </h5>
+                </h2>
                 <p
                   className="subHeadingText"
                   data-aos="fade-down"

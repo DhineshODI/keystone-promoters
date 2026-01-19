@@ -26,10 +26,10 @@ export default function WhatMakesKeyStonesUnique() {
       <div className="whatsmakeSectionBG reveal " ref={boxRef}>
         <div className="container max-w-7xl mx-auto px-4 ">
           <div className="whatMakesHeadingMainRow">
-            <h5 className="secondHeadingText whatMakesHeading1">What Makes</h5>
-            <h5 className="secondHeadingText whatMakesHeading2">
+            <h2 className="secondHeadingText whatMakesHeading1">What Makes</h2>
+            <h2 className="secondHeadingText whatMakesHeading2">
               Keystone Unique?
-            </h5>
+            </h2>
 
             <div className="WhatMakesKeyStonesFlex">
               <p className="subHeadingText text-center text-[#636465]">

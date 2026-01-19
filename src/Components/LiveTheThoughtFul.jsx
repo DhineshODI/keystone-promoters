@@ -68,8 +68,8 @@ export default function LiveThoughtFul() {
             </h3>
 
             <div className="LiveKeystonePromoters" data-aos="fade-up" data-aos-delay="200">
-              <h6 className="secondHeadingText">Live the Thoughtful</h6>
-              <h6 className="secondHeadingText">Difference</h6>
+              <h2 className="secondHeadingText">Live the Thoughtful</h2>
+              <h2 className="secondHeadingText">Difference</h2>
             </div>
           </div>
 

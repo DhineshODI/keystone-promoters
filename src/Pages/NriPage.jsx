@@ -81,14 +81,14 @@ export default function NriPage() {
                       We are Keystone Promoters
                     </p>
 
-                    <h5
+                    <h2
                       className="secondHeadingText "
                       data-aos="fade-right"
                       data-aos-duration="1300"
                     >
                       Discover Why Real Estate Investment Is Your Smartest
                       Choice
-                    </h5>
+                    </h2>
                   </div>
 
                   <div className="flexnriimage">
@@ -180,13 +180,13 @@ export default function NriPage() {
                     We are Keystone Promoters
                   </p>
                   <div className="unqiuesectionflex">
-                    <h5
+                    <h2
                       className="secondHeadingText "
                       data-aos="fade-up"
                       data-aos-duration="1400"
                     >
                       What Makes Keystone Unique?
-                    </h5>
+                    </h2>
                     <p className="subHeadingText ">
                       {/* Lorem ipsum dolor sit amet, consectetur adipiscingelit do
                       eius mmporincididunt ut labore et dolore magna uis ipsum
@@ -204,7 +204,7 @@ export default function NriPage() {
                         src="/images/about-us/icons/time-delivery.svg"
                         alt=""
                       />
-                      <h3 className="timedelivery">Timely Delivery </h3>
+                      <h2 className="timedelivery">Timely Delivery </h2>
                       <p className="subHeadingText ">
                         Every commitment met with precision
                       </p>
@@ -215,7 +215,7 @@ export default function NriPage() {
                       data-aos-duration="1400"
                     >
                       <img src="/images/about-us/icons/design-led.svg" alt="" />
-                      <h3 className="timedelivery">Design Led </h3>
+                      <h2 className="timedelivery">Design Led </h2>
                       <p className="subHeadingText ">
                         Architecture with a soul
                       </p>
@@ -226,7 +226,7 @@ export default function NriPage() {
                       data-aos-duration="1800"
                     >
                       <img src="/images/about-us/icons/compliment.svg" alt="" />
-                      <h3 className="timedelivery">100% Compliant</h3>
+                      <h2 className="timedelivery">100% Compliant</h2>
                       <p className="subHeadingText ">
                         Legal clarity, clear title
                       </p>
@@ -240,7 +240,7 @@ export default function NriPage() {
                         src="/images/about-us/icons/solid-foundation1.svg"
                         alt=""
                       />
-                      <h3 className="timedelivery">Solid Foundations</h3>
+                      <h2 className="timedelivery">Solid Foundations</h2>
                       <p className="subHeadingText ">
                         Structurally sound and aesthetically modern
                       </p>
@@ -251,7 +251,7 @@ export default function NriPage() {
                       data-aos-duration="1600"
                     >
                       <img src="/images/about-us/icons/investor.svg" alt="" />
-                      <h3 className="timedelivery">Investor Friendly</h3>
+                      <h2 className="timedelivery">Investor Friendly</h2>
                       <p className="subHeadingText ">High appreciation value</p>
                     </div>
                   </div>

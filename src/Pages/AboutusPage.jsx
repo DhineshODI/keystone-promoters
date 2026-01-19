@@ -222,9 +222,9 @@ export default function AboutUsPage() {
                   data-aos="fade-up"
                   data-aos-duration="1000"
                 >
-                  <h5 className="secondHeadingText ">
+                  <h2 className="secondHeadingText ">
                     What Makes Keystone Unique?
-                  </h5>
+                  </h2>
                   <p className="subHeadingText ">
                     What sets Keystone apart is our blend of thoughtful
                     planning, modern aesthetics, transparency and a
@@ -242,7 +242,7 @@ export default function AboutUsPage() {
                       src="/images/about-us/icons/time-delivery.svg"
                       alt=""
                     />
-                    <h3 className="timedelivery">Timely Delivery </h3>
+                    <h2 className="timedelivery">Timely Delivery </h2>
                     <p className="subHeadingText ">
                       Every commitment met with precision
                     </p>
@@ -253,7 +253,7 @@ export default function AboutUsPage() {
                     data-aos-duration="500"
                   >
                     <img src="/images/about-us/icons/design-led.svg" alt="" />
-                    <h3 className="timedelivery">Design Led </h3>
+                    <h2 className="timedelivery">Design Led </h2>
                     <p className="subHeadingText ">Architecture with a soul</p>
                   </div>
                   <div
@@ -262,7 +262,7 @@ export default function AboutUsPage() {
                     data-aos-duration="800"
                   >
                     <img src="/images/about-us/icons/compliment.svg" alt="" />
-                    <h3 className="timedelivery">100% Compliant</h3>
+                    <h2 className="timedelivery">100% Compliant</h2>
                     <p className="subHeadingText ">
                       Legal clarity, clear title
                     </p>
@@ -276,7 +276,7 @@ export default function AboutUsPage() {
                       src="/images/about-us/icons/solid-foundation1.svg"
                       alt=""
                     />
-                    <h3 className="timedelivery">Solid Foundations</h3>
+                    <h2 className="timedelivery">Solid Foundations</h2>
                     <p className="subHeadingText ">
                       Structurally sound and aesthetically modern
                     </p>
@@ -287,7 +287,7 @@ export default function AboutUsPage() {
                     data-aos-duration="1000"
                   >
                     <img src="/images/about-us/icons/investor.svg" alt="" />
-                    <h3 className="timedelivery">Investor Friendly</h3>
+                    <h2 className="timedelivery">Investor Friendly</h2>
                     <p className="subHeadingText ">High appreciation value</p>
                   </div>
                 </div>

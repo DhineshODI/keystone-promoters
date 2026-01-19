@@ -18,10 +18,7 @@ export default function ContactMainPage() {
         />
 
         {/* Canonical URL */}
-        <link
-          rel="canonical"
-          href="/contact"
-        />
+        <link rel="canonical" href="/contact" />
 
         {/* Schema Markup */}
         <script type="application/ld+json">
@@ -52,7 +49,7 @@ export default function ContactMainPage() {
         </script>
       </Helmet>
 
-           <h1 style={{ display: "none"}}>nungambakkam real estate</h1>
+      <h1 style={{ display: "none" }}>nungambakkam real estate</h1>
       <div>
         {/* <Header /> */}
         <ContactPage />

@@ -178,10 +178,10 @@ export default function ContactPage() {
                 data-aos-duration="1000"
               >
                 <div>
-                  <h4 className="gettknowHeading">Get to know us</h4>
-                  <h3 className="visitOurOFficetext">
+                  <h2 className="gettknowHeading">Get to know us</h2>
+                  <h2 className="visitOurOFficetext">
                     Visit us at our office location
-                  </h3>
+                  </h2>
                 </div>
 
                 <div style={{ marginTop: "15px" }}>
@@ -311,7 +311,7 @@ export default function ContactPage() {
               data-aos="fade-up"
               data-aos-duration="1100"
             >
-              <h5 className="secondHeadingText ">Begin Your Journey</h5>
+              <h2 className="secondHeadingText ">Begin Your Journey</h2>
               <p className="subHeadingText">
                 Contact us with your question we'll make sure your concerns are
                 addressed quickly and efficiently

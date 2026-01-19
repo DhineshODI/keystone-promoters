@@ -200,9 +200,9 @@ export default function CareerPageFunction() {
                     <h4 className="gettknowHeading">
                       Join a Legacy of exellence
                     </h4>
-                    <h3 className="visitOurOFficetext">
+                    <h2 className="visitOurOFficetext">
                       Driven People. <br /> Real Opportunities. <br /> Here.
-                    </h3>
+                    </h2>
                   </div>
                 </div>
                 <div className="seondbannerafterSectionMAIN">
@@ -397,13 +397,13 @@ export default function CareerPageFunction() {
           <div className="container max-w-7xl mx-auto px-4 ">
             <div className="mainSectionFormWithUs">
               <div className="formContactUsSectionFlex">
-                <h5
+                <h2
                   className="secondHeadingText "
                   data-aos="fade-down"
                   data-aos-duration="1500"
                 >
                   Work with Us
-                </h5>
+                </h2>
                 <p
                   className="subHeadingText"
                   data-aos="fade-down"

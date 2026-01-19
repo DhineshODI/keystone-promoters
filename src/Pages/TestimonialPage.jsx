@@ -78,13 +78,13 @@ export default function TestimonialPage() {
                       data-aos-duration="1000"
                     >
                       <div>
-                        <h4 className="gettknowHeading">
+                        <h2 className="gettknowHeading">
                           Client Testimonials Showcasing
-                        </h4>
-                        <h3 className="visitOurOFficetext">
+                        </h2>
+                        <h2 className="visitOurOFficetext">
                           {/* Driven People. <br /> Real Opportunities. <br /> Here. */}
                           Our Dedication to Building With Integrity and Care
-                        </h3>
+                        </h2>
                       </div>
                     </div>
                     <div className="seondbannerafterSectionMAIN">
